@@ -14,7 +14,7 @@ Activate/deactivate the virtual environment:
 ```
 source myvenv/bin/activate
 
-source deactivate
+deactivate
 ```
 ## Install dependencies
 

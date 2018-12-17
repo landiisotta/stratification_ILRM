@@ -67,3 +67,16 @@ For the disease stratification step:
 ## To-dos
 - Try adding a second layer to the CNN;
 - Run the model on 7/8 distinct disorders + random patients. Dataset numerosity $\sim 50,000/100,000$ subjects.
+
+Alzheimer ($N=\mathbf{4,905}$): most common cause of dementia. Greatest know risk factor is increasing age. The majority of people with Alzheimer's are $> 65$. SNOMED: alzheimer.
+ 
+Multiple myeloma ($N=\mathbf{4,727}$): bone marrow plasma cells cancer. Risk increases with age ($> 60$). SNOMED: multiple myeloma.
+
+Parkinson's ($N=\mathbf{5,821}$): progressive nervous system disorder that affects movements. Risk increases with age ($>= 60$). SNOMED: parkinson
+
+Breast cancer ($N=\mathbf{11,822}$): risk increases with age. SNOMED: malignant neoplasm of female breast.
+
+Prostate cancer ($N=\mathbf{11,106}$): risk increases with age. SNOMED: malignant tumor of prostate.
+
+TOCONTROL!!! Maybe not a good idea. Dementia: risk increases with age ($> 60$). SNOMED: senile dementia.
+

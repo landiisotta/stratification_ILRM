@@ -9,9 +9,8 @@ ehr_file = 'cohort-new_ehr.csv'
 mt_to_ix_file = 'cohort-new_vocab.csv'
 
 ##DISEASES AND TERM TYPES
-diseases = ['autism', 'active disintegrative psychoses', 
-            'psychosis with origin in childhood', 
-            'pervasive developmental disorder']
+diseases = ['diabetes mellitus type 2'
+            'multiple myeloma']
 dtype = ['icd9', 'icd10', 'medication']
 
 ##PREPROCESSING STEP PARAMETERS
