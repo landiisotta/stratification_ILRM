@@ -4,9 +4,7 @@ Move to the ```stratification_ILRM``` folder:
 
 ```
 mkdir myvenv
-
 pip install virtualenv
-
 virtualenv -p python 3 myvenv 
 ```
 
@@ -25,11 +23,8 @@ Run it with ```jupyter-lab``` from command line.
 
 ```
 pip install matplotlib
-
 pip install torch
-
 pip install numpy
-
 pip install sklearn
 ```
 
@@ -55,12 +50,10 @@ In ```stratificattion_ILRM``` folder:
 ### Run in sequence
 ```
 python /bin/run_preprocessing.py
-
 python /bin/main.py
-
 python /bin_baseline-lstm/main.py
 ```
 
 > Open jupyter-lab and run /bin/data_clustering_visualization.ipynb
-Change minimum number/maximum number of clusters in the ```hclust_ehr()``` function, select the number of the most frequent terms and the type of the terms to display for each subcluster in ```freq_term()``` function.
 
+Change minimum number/maximum number of clusters in the ```hclust_ehr()``` function, select the number of the most frequent terms and the type of the terms to display for each subcluster in ```freq_term()``` function.
