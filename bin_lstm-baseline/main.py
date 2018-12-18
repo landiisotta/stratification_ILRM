@@ -1,7 +1,7 @@
 import csv
 import os
 import utils
-from utils import L, ehr_file, mt_to_ix_file, model_pars
+from utils import ehr_file, mt_to_ix_file, model_pars
 from model.data_loader import myData, my_collate
 import model.net as net
 from model.net import metrics
@@ -14,9 +14,9 @@ import evaluate
 from evaluate import evaluate
 
 def main():
-    f = open("../bin/outdir.txt", 'r')
+    f = open("outdir.txt", 'r')
     outdir = f.read().rstrip('\n')
-    f = open("../bin/experiment_folder.txt", 'r')
+    f = open("experiment_folder.txt", 'r')
     experiment_folder = f.read().rstrip('\n')
    
     ##pass the size of the vocabulary to the model

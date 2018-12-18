@@ -2,24 +2,23 @@ import torch
 import os
 
 ##PATHS
-disease_folder = 'autism'
-data_folder = os.path.expanduser('~/data1/complex_disorders/data/%s/' % disease_folder) 
+disease_folder = ''
+data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder) 
 
 ehr_file = 'cohort-new_ehr.csv'
 mt_to_ix_file = 'cohort-new_vocab.csv'
 
 ##DISEASES AND TERM TYPES
-diseases = ['diabetes mellitus type 2'
-            'multiple myeloma']
+diseases = ['multiple myeloma']
 dtype = ['icd9', 'icd10', 'medication']
 
 ##PREPROCESSING STEP PARAMETERS
 data_preprocessing_pars = {'min_diagn' : 3,
-                           'n_rndm' : 3000,
+                           'n_rndm' : 0,
                            'age_step' : 15,
                            'len_min' : 3}
 ##MODEL PARAMETERS
-model_pars = {'num_epochs' : 200,
+model_pars = {'num_epochs' : 1,
               'batch_size' : 1, ##batch size equal 1 required
               'embedding_dim' : 128,
               'kernel_size' : 5,

@@ -17,7 +17,7 @@ def evaluate(model, loss_fn, data_iterator, metrics, best_eval=False):
             loss = loss_fn(out, batch)
             out.cpu()
             encoded.cpu()
-            summary_batch = {metric:metrics[metric](out, batch)
+            summary_batch = {metric:metrics[metric](out, batch).item()
                              for metric in metrics}
             summary_batch['loss'] = loss.item()
             summ.append(summary_batch)

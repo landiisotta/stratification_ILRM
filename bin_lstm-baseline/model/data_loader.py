@@ -44,5 +44,6 @@ def my_collate(batch):
         else:
             data.append(seq)
     data = torch.tensor(data, dtype=torch.long)
-    return [data, mrn[0], lengths]
+    print(mrn, len(mrn))
+    return [data, mrn, lengths]
         

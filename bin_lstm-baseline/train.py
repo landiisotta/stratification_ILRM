@@ -27,7 +27,7 @@ def train(model, optimizer, loss_fn, data_iterator):
         loss_batch.append(loss.item())
         
         encoded_list.extend(encoded_vect.tolist())
-        mrn_list.append(mrn)
+        mrn_list.extend(mrn)
     
     max_len = max(length_vect)
     encoded = [e + [0.0]*(max_len-len(e)) for e in encoded_list]

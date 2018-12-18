@@ -3,19 +3,17 @@ import os
 from datetime import datetime
 
 ##PATHS
-disease_folder = 'autism'
-data_folder = os.path.expanduser('~/data1/complex_disorders/data/%s/' % disease_folder)
+disease_folder = ''
+data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder)
 
 mt_to_ix_file = 'cohort-new_vocab.csv'
 ehr_file = 'cohort-new_ehr.csv'
 
 ##MODEL PARAMETERS
-model_pars = {'num_epochs' : 150,
+model_pars = {'num_epochs' : 1,
               'batch_size' : 8,
               'embedding_dim' : 128,
               'learning_rate' : 0.001}
-
-L = 256
 
 def save_best_model(state, folder):
     print("-- Found new best")
