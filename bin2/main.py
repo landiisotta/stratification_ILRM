@@ -21,7 +21,7 @@ def main():
     experiment_folder = os.path.expanduser('~/data1/stratification_ILRM/experiments/') + disease_folder +\
                     '-'.join(map(str, list(datetime.now().timetuple()[:6])))
     os.makedirs(experiment_folder)
-    f = open("experiment_folder.txt", 'w') ##path to the experiment folder is saved in a txt file
+    f = open("experiment_folder_bin2.txt", 'w') ##path to the experiment folder is saved in a txt file
     f.write(experiment_folder)
     f.close()
     

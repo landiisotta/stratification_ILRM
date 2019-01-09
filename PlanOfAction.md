@@ -68,15 +68,15 @@ For the disease stratification step:
 - Try adding a second layer to the CNN;
 - Run the model on 7/8 distinct disorders + random patients. Dataset numerosity ~ 50,000/100,000 subjects.
 
-Alzheimer (N=4,905): most common cause of dementia. Greatest know risk factor is increasing age. The majority of people with Alzheimer's are > 65. SNOMED: alzheimer.
+Alzheimer [key word: alzheimer's disease (G30.9/331.0)] (N=4,905): most common cause of dementia. Greatest know risk factor is increasing age. The majority of people with Alzheimer's are > 65. SNOMED: alzheimer.
  
-Multiple myeloma (N=4,727): bone marrow plasma cells cancer. Risk increases with age (> 60). SNOMED: multiple myeloma.
+Multiple myeloma [key word: multiple myeloma (C90.00-02/203.00-02)] (N=4,727): bone marrow plasma cells cancer. Risk increases with age (> 60). SNOMED: multiple myeloma.
 
-Parkinson's (N=5,821): progressive nervous system disorder that affects movements. Risk increases with age (>= 60). SNOMED: parkinson
+Parkinson's [key word: parkinson's disease (G20/332.0)](N=5,821): progressive nervous system disorder that affects movements. Risk increases with age (>= 60). SNOMED: parkinson
 
-Breast cancer (N=11,822): risk increases with age. SNOMED: malignant neoplasm of female breast.
+Breast cancer [key word: malignant neoplasm of female breast (C50.919/174.9 and 198.81/C79.81 = secondary malignant neoplasm of breast)] !!CHECK C50!! (N=11,822): risk increases with age. SNOMED: malignant neoplasm of female breast.
 
-Prostate cancer (N=11,106): risk increases with age. SNOMED: malignant tumor of prostate.
+Prostate cancer [key word: malignant tumor of prostate (C61/185)] (N=11,106): risk increases with age. SNOMED: malignant tumor of prostate.
 
 Hypertension.
 
