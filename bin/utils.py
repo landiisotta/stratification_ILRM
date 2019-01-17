@@ -18,8 +18,8 @@ data_preprocessing_pars = {'min_diagn' : 3,
                            'age_step' : 15,
                            'len_min' : 3}
 ##MODEL PARAMETERS
-model_pars = {'num_epochs' : 50,
-              'batch_size' : 32, ##batch size equal 1 required
+model_pars = {'num_epochs' : 100,
+              'batch_size' : 1, ##batch size equal 1 required
               'embedding_dim' : 128,
               'kernel_size' : 5,
               'learning_rate' : 0.001}

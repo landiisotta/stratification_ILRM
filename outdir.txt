@@ -1,1 +1,1 @@
-/home/isotta/data1/stratification_ILRM/data/mixed/cohorts/2019-1-8-12-25-16
+/data1/users/isotta/stratification_ILRM/data/mixed_rid/cohorts/2019-1-10-6-46-32/

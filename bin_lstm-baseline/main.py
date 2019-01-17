@@ -16,7 +16,7 @@ from evaluate import evaluate
 def main():
     f = open("outdir.txt", 'r')
     outdir = f.read().rstrip('\n')
-    f = open("experiment_folder.txt", 'r')
+    f = open("experiment_folder_bin2.txt", 'r')
     experiment_folder = f.read().rstrip('\n')
    
     ##pass the size of the vocabulary to the model
@@ -39,7 +39,7 @@ def main():
     #model = nn.DataParallel(model, device_ids=[1,2,3])
     optimizer = torch.optim.Adam(model.parameters(), lr=model_pars['learning_rate'], weight_decay=1e-5)
 
-    #start the unsupervised trauning and evaluation
+    #start the unsupervised training and evaluation
     model.cuda()
     loss_fn = net.criterion
     print("Starting training for {} epochs...".format(model_pars['num_epochs']))

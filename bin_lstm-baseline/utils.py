@@ -3,15 +3,15 @@ import os
 from datetime import datetime
 
 ##PATHS
-disease_folder = 'mixed'
+disease_folder = 'prova'
 data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder)
 
 mt_to_ix_file = 'cohort-new_vocab.csv'
 ehr_file = 'cohort-new_ehr.csv'
 
 ##MODEL PARAMETERS
-model_pars = {'num_epochs' : 100,
-              'batch_size' : 8,
+model_pars = {'num_epochs' : 5,
+              'batch_size' : 4,
               'embedding_dim' : 128,
               'learning_rate' : 0.001}
 

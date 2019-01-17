@@ -42,13 +42,15 @@ def my_collate(batch):
     for seq, pat in batch:
         mrn.append(pat)
         if len(seq) == L:
-            data.append(torch.tensor([seq], dtype=torch.long).view(-1, L))
+            data.append([seq])
         elif len(seq) % L == 0:
             l = []
             for idx in range(0, len(seq)-L+1, L):
                 l.append(seq[idx:idx+L])
-            data.append(torch.tensor(l, dtype=torch.long).view(-1, L))
+            data.append(l)
         else:
             raise Warning("Not all sequences have length multiple than {0}".format(L))
-    return [data, mrn]
+    data = torch.tensor(data, dtype=torch.long)
+    data = data.view(-1, L)
+    return [data, mrn[0]]
         

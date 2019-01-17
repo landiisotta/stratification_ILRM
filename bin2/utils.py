@@ -2,7 +2,7 @@ import torch
 import os
 
 ##PATHS
-disease_folder = 'mixed'
+disease_folder = 'mixed_rid'
 data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder) 
 
 ehr_file = 'cohort-new_ehr.csv'
@@ -14,12 +14,12 @@ dtype = ['icd9', 'icd10', 'medication']
 
 ##PREPROCESSING STEP PARAMETERS
 data_preprocessing_pars = {'min_diagn' : 3,
-                           'n_rndm' : 10000,
+                           'n_rndm' : 3000,
                            'age_step' : 15,
                            'len_min' : 3}
 ##MODEL PARAMETERS
-model_pars = {'num_epochs' : 50,
-              'batch_size' : 32, ##batch size equal 1 required
+model_pars = {'num_epochs' : 100,
+              'batch_size' : 1, ##batch size equal 1 required
               'embedding_dim' : 128,
               'kernel_size' : 5,
               'learning_rate' : 0.001}
