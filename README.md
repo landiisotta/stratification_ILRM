@@ -43,7 +43,7 @@ In ```stratificattion_ILRM``` folder:
 - ```data_preprocessing_pars``` = dictionary of parameters: ```min_diagn```: include only patients with minimum number of diagnoses,
 ```n_rndm```: number of random patients to include in the dataset, ```age_step```: number of days that represent an encounter (unique, shuffled terms),
 ```len_min```: minimum length of ehr sequences after preprocessing
-- ```model_pars``` = dictionary with architecture parameters: ```num_epochs```: number of epochs, ```batch_size```: **set batch size equal 1 for the CNN-AE architecture**, ```embedding_dim```: dimension of the embedding of medical terms,
+- ```model_pars``` = dictionary with architecture parameters: ```num_epochs```: number of epochs, ```batch_size```: **set batch size for the CNN-AE architecture**, ```embedding_dim```: dimension of the embedding of medical terms,
 ```kernel_size```: size of the CNN kernel, ```learning_rate```: learning rate.
 - ```L```= length of the subsequences to dicide the ehr sequences in
 

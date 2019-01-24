@@ -19,7 +19,7 @@ data_preprocessing_pars = {'min_diagn' : 3,
                            'len_min' : 3}
 ##MODEL PARAMETERS
 model_pars = {'num_epochs' : 200,
-              'batch_size' : 32, ##batch size equal 1 required
+              'batch_size' : 32, ##batch size
               'embedding_dim' : 128,
               'kernel_size' : 5,
               'learning_rate' : 0.001}
