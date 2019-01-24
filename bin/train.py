@@ -15,16 +15,17 @@ def train(model, optimizer, loss_fn, data_iterator):
     encoded_list = []
     loss_batch = []
     mrn_list = []
-    for idx, (batch, mrn) in enumerate(data_iterator):
-        batch = batch.cuda()
-        optimizer.zero_grad()
-        out, encoded_vect = model(batch)
-        loss = loss_fn(out, batch)
-        loss.backward()
-        optimizer.step()
-        loss_batch.append(loss.item())
-        encoded_list.append(np.mean(encoded_vect.tolist(), axis=0).tolist())
-        mrn_list.append(mrn)
+    for idx, (list_batch, list_mrn) in enumerate(data_iterator):
+        for batch, mrn in zip(list_batch, list_mrn):
+            batch = batch.cuda()
+            optimizer.zero_grad()
+            out, encoded_vect = model(batch)
+            loss = loss_fn(out, batch)
+            loss.backward()
+            optimizer.step()
+            loss_batch.append(loss.item())
+            encoded_list.append(np.mean(encoded_vect.tolist(), axis=0).tolist())
+            mrn_list.append(mrn)
 
     loss_mean = np.mean(loss_batch)
 

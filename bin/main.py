@@ -28,7 +28,8 @@ def main():
     ##pass the size of the vocabulary to the model
     with open(os.path.join(outdir, mt_to_ix_file)) as f:
             rd = csv.reader(f)
-            vocab_size = 0
+            next(rd)
+            vocab_size = 1
             for r in rd:
                 vocab_size+=1
 
