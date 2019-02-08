@@ -13,9 +13,10 @@ from evaluate import evaluate
 def train(model, optimizer, loss_fn, data_iterator):
     model.train()
     encoded_list = []
-    loss_batch = []
+    loss_list = []
     mrn_list = []
     for idx, (list_batch, list_mrn) in enumerate(data_iterator):
+        loss_batch = []
         for batch, mrn in zip(list_batch, list_mrn):
             batch = batch.cuda()
             optimizer.zero_grad()
@@ -27,16 +28,18 @@ def train(model, optimizer, loss_fn, data_iterator):
             encoded_list.append(np.mean(encoded_vect.tolist(), axis=0).tolist())
             mrn_list.append(mrn)
 
-    loss_mean = np.mean(loss_batch)
-
+        loss_list.append(np.mean(loss_batch))
+    loss_mean = np.mean(loss_list)
     return mrn_list, encoded_list, loss_mean
 
 def train_and_evaluate(model, data_iterator, loss_fn, optimizer, metrics, experiment_folder):
     num_epochs = model_pars['num_epochs']
+    loss_vect = []
     for epoch in range(num_epochs):
         print("Epoch {0} of {1}".format(epoch, num_epochs))
         mrn, encoded, loss_mean = train(model, optimizer, loss_fn, data_iterator)
         print("Mean loss: {0}, epoch {1}".format(loss_mean, epoch))
+        loss_vect.append(loss_mean)
         is_best = loss_mean < 0.001
         if(is_best or epoch == (num_epochs - 1)):
 
@@ -53,6 +56,12 @@ def train_and_evaluate(model, data_iterator, loss_fn, optimizer, metrics, experi
             with open(experiment_folder + '/TRmetrics.txt', 'w') as f:
                 wr = csv.writer(f, delimiter = '\t')
                 wr.writerow(["Mean loss:", loss_mean])  
+            
+            with open(experiment_folder + '/TRlosses.txt', 'w') as f:
+                wr = csv.writer(f, delimiter=',')
+                wr.writerow(["Epoch", "loss"])
+                for idx, l in enumerate(loss_vect):
+                    wr.writerow([idx, l])
             
             print("-- Found new best  at epoch {0}".format(epoch))
             utils.save_best_model(model, experiment_folder)
