@@ -44,32 +44,33 @@ def train_and_evaluate(model, data_iter, loss_fn,
                        optimizer, metrics, exp_dir):
     loss_vect = []
     n_epoch = ut.model_param['num_epochs']
-    for epoch in range(n_epoch):
+    for epoch in range(1, n_epoch + 1):
         print('Epoch {0} of {1}'.format(epoch, n_epoch))
 
         start = time()
         mrn, encoded, loss_mean = train(
             model, optimizer, loss_fn, data_iter)
         print ('-- time = ', round(time() - start, 3))
-        print ('-- mean loss: {0}'.format(loss_mean))
+        print ('-- mean loss: {0}'.format(round(loss_mean, 3)))
         loss_vect.append(loss_mean)
 
         is_best_1 = loss_mean < 0.01
-        is_best_2 = epoch == n_epoch - 1
+        is_best_2 = epoch == n_epoch
         if is_best_1 or is_best_2:
 
             outfile = os.path.join(exp_dir, 'TRencoded_vect.csv')
-            with open(outfile, 'wb') as f:
+            with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 wr.writerows(encoded)
 
             outfile = os.path.join(exp_dir, 'TRmrns.csv')
-            with open(outfile, 'wb') as f:
+            with open(outfile, 'w') as f:
                 wr = csv.writer(f)
-                wr.writerows(mrn)
+                for m in mrn:
+                    wr.writerows([m])
 
             outfile = os.path.join(exp_dir, 'TRmetrics.txt')
-            with open(outfile, 'wb') as f:
+            with open(outfile, 'w') as f:
                 f.write('Mean Loss: %.3f\n' % loss_mean)
 
             os.path.join(exp_dir, 'TRlosses.csv')

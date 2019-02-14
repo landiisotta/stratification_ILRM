@@ -28,7 +28,8 @@ def learn_patient_representations(indir, outdir, disease_dt):
     with open(fvocab) as f:
         rd = csv.reader(f)
         next(rd)
-        vocab_size = sum(1 for r in rd)
+        vocab_size = sum(1 for r in rd) + 1
+    print('Vocabulary size: {0}'.format(vocab_size))
 
     # set random seed for experiment reproducibility
     torch.manual_seed(123)
@@ -94,7 +95,6 @@ def _process_args():
 
 
 if __name__ == '__main__':
-    print ('')
     args = _process_args()
 
     start = time()
@@ -104,4 +104,4 @@ if __name__ == '__main__':
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 3))
 
-    print ('Task completed\n')
+    print ('Task completed')
