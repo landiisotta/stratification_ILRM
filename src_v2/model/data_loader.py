@@ -37,11 +37,13 @@ class EHRdata(Dataset):
                 else:
                     self.ehr[r[0]] = seq
 
+
     def __getitem__(self, index):
         ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
         seq = ehr_list[index][1]
         pat = ehr_list[index][0]
         return seq, pat
+
 
     def __len__(self):
         return len(self.ehr)
@@ -58,11 +60,11 @@ def ehr_collate(batch):
                 [seq], dtype=torch.long).view(-1, padded_seq_len))
 
         elif len(seq) % padded_seq_len == 0:
-            seq = []
+            sq = []
             for idx in range(0, len(seq) - padded_seq_len + 1, padded_seq_len):
-                seq.append(seq[idx:idx + padded_seq_len])
+                sq.append(seq[idx:idx + padded_seq_len])
             data.append(torch.tensor(
-                seq, dtype=torch.long).view(-1, padded_seq_len))
+                sq, dtype=torch.long).view(-1, padded_seq_len))
 
         else:
             raise Warning(

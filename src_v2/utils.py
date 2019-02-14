@@ -29,7 +29,7 @@ data_preproc_param = {'min_diagn': 3,
 
 # model parameters
 model_param = {'num_epochs': 3,
-               'batch_size': 32,
+               'batch_size': 8,
                'embedding_size': 128,
                'kernel_size': 5,
                'learning_rate': 0.001,
