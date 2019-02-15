@@ -41,7 +41,7 @@ def learn_patient_representations(indir, outdir, disease_dt):
                                 ut.model_param['batch_size'],
                                 shuffle=True,
                                 collate_fn=ehr_collate)
-    print('Cohort Size: {0} -- Max Sequence Length: {1}'.format(
+    print('Cohort Size: {0} -- Max Sequence Length: {1}\n'.format(
         len(data), ut.padded_seq_len))
 
     # define model and optimizer
@@ -65,21 +65,22 @@ def learn_patient_representations(indir, outdir, disease_dt):
 
     # encoded vectors (representations)
     outfile = os.path.join(exp_dir, 'encoded_vect.csv')
-    with open(outfile, 'wb') as f:
+    with open(outfile, 'w') as f:
         wr = csv.writer(f)
         wr.writerows(encoded)
 
     # MRNs to keep track of the order
     outfile = os.path.join(exp_dir, 'mrns.csv')
-    with open(outfile, 'wb') as f:
+    with open(outfile, 'w') as f:
         wr = csv.writer(f)
-        wr.writerows(mrn)
+        for m in mrn:
+            wr.writerow([m])
 
     # metrics (loss and accuracy)
     outfile = os.path.join(exp_dir, 'metrics.txt')
-    with open(outfile, 'wb') as f:
-        f.write('Mean loss: %.3f' % metrics_avg['loss'])
-        f.write('Accuracy: %.3f' % metrics_avg['accuracy'])
+    with open(outfile, 'w') as f:
+        f.write('Mean loss: %.3f\n' % metrics_avg['loss'])
+        f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
 
 
 # main function
@@ -96,6 +97,7 @@ def _process_args():
 
 if __name__ == '__main__':
     args = _process_args()
+    print ('')
 
     start = time()
     learn_patient_representations(args.indir,

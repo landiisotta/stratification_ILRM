@@ -28,8 +28,8 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 1,
-               'batch_size': 8,
+model_param = {'num_epochs': 3,
+               'batch_size': 16,
                'embedding_size': 128,
                'kernel_size': 5,
                'learning_rate': 0.0001,
@@ -44,5 +44,4 @@ padded_seq_len = 64
 
 
 def save_best_model(state, outdir):
-    print('-- Found new best model --')
     torch.save(state, os.path.join(outdir, 'best_model.pt'))

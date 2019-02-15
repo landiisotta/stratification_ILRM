@@ -67,23 +67,23 @@ def train_and_evaluate(model, data_iter, loss_fn,
             with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 for m in mrn:
-                    wr.writerows([m])
+                    wr.writerow([m])
 
             outfile = os.path.join(exp_dir, 'TRmetrics.txt')
             with open(outfile, 'w') as f:
                 f.write('Mean Loss: %.3f\n' % loss_mean)
 
-            os.path.join(exp_dir, 'TRlosses.csv')
-            with open(outfile, 'wb') as f:
+            outfile = os.path.join(exp_dir, 'TRlosses.csv')
+            with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 wr.writerow(['Epoch', 'Loss'])
                 for idx, l in enumerate(loss_vect):
                     wr.writerow([idx, l])
 
-            print('-- Found new best model at epoch {0}'.format(epoch))
+            print('\nFound new best model at epoch {0}'.format(epoch))
             ut.save_best_model(model, exp_dir)
 
-            print('Evaluating the model')
+            print('\nEvaluating the model')
             mrn, encoded, test_metrics = evaluate(
                 model, loss_fn, data_iter, metrics, best_eval=True)
 
