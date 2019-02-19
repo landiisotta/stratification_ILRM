@@ -3,6 +3,7 @@ from train import train_and_evaluate
 from time import time
 from datetime import datetime
 from torch.utils.data import DataLoader
+import clustering as clu
 import model.net as net
 import torch
 import utils as ut
@@ -85,6 +86,19 @@ def learn_patient_representations(indir, outdir, disease_dt):
     with open(outfile, 'w') as f:
         f.write('Mean loss: %.3f\n' % metrics_avg['loss'])
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
+
+    # evaluate clustering
+    min_cl = 2
+    max_cl = 20
+    print('\nRunning clustering on the TF-IDF vectors')
+    datafile = os.path.join(indir, ut.dt_files['ehr'])
+    svd_mtx = clu.svd_tfidf(datafile, vocab_size)
+    clu.hclust_ehr(svd_mtx, min_cl, max_cl, 'euclidean')
+
+    print('\nRunning clustering on the encoded vectors')
+    clu.hclust_ehr(encoded, min_cl, max_cl, 'euclidean')
+
+    return
 
 
 # main function

@@ -1,5 +1,5 @@
 """
-Evaluate function
+Evaluate representation model
 """
 import torch
 import numpy as np
