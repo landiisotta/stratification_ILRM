@@ -54,7 +54,7 @@ def train_and_evaluate(model, data_iter, loss_fn,
         print ('-- mean loss: {0}'.format(round(loss_mean, 3)))
         loss_vect.append(loss_mean)
 
-        is_best_1 = loss_mean < 0.01
+        is_best_1 = loss_mean < 0.1
         is_best_2 = epoch == n_epoch
         if is_best_1 or is_best_2:
 

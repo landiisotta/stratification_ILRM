@@ -17,31 +17,26 @@ EHR data class
 """
 
 
-
-
 class EHRdata(Dataset):
 
     def __init__(self, datadir, ehr_file):
-        self.ehr_list = []
+        self.ehr = {}
         with open(os.path.join(datadir, ehr_file)) as f:
             rd = csv.reader(f)
             for r in rd:
-                mrn = r[0]
                 seq = list(map(int, r[1::]))
 
                 if len(seq) < len_padded:
-                    ps = [seq + [0] * (len_padded - len(seq))]
+                    self.ehr[r[0]] = seq + [0] * (len_padded - len(seq))
 
                 elif len(seq) % len_padded != 0:
-                    seq += [0] * (len_padded - len(seq) % len_padded)
-                    ps = []
-                    for i in range(0, len(ps) - len_padded + 1, len_padded):
-                        ps.append(seq[i:i + len_padded])
+                    self.ehr[r[0]] = seq + [0] * \
+                        (len_padded - len(seq) % len_padded)
 
                 else:
-                    ps = [seq]
+                    self.ehr[r[0]] = seq
 
-                self.ehr_list.append([mrn, ps])
+        self.ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
 
 
     def __getitem__(self, index):
@@ -51,8 +46,7 @@ class EHRdata(Dataset):
 
 
     def __len__(self):
-        return len(self.ehr_list)
-
+        return len(self.ehr)
 
 
 def ehr_collate(batch):
@@ -60,6 +54,19 @@ def ehr_collate(batch):
     mrn = []
     for seq, pat in batch:
         mrn.append(pat)
-        data.append(torch.tensor(
-            seq, dtype=torch.long).view(-1, len_padded))
+        if len(seq) == len_padded:
+            data.append(torch.tensor(
+                [seq], dtype=torch.long).view(-1, len_padded))
+
+        elif len(seq) % len_padded == 0:
+            ps = []
+            for i in range(0, len(seq) - len_padded + 1, len_padded):
+                ps.append(seq[i:i + len_padded])
+            data.append(torch.tensor(
+                ps, dtype=torch.long).view(-1, len_padded))
+
+        else:
+            raise Warning(
+                'Not all sequences have length multiple than %d' % len_padded)
+
     return [data, mrn]

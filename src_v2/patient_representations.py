@@ -45,6 +45,10 @@ def learn_patient_representations(indir, outdir, disease_dt):
         len(data), ut.len_padded))
 
     # define model and optimizer
+    print('Learning rate: {0}'.format(ut.model_param['learning_rate']))
+    print('Batch size: {0}'.format(ut.model_param['batch_size']))
+    print('Kernel size: {0}\n'.format(ut.model_param['kernel_size']))
+
     model = net.ehrEncoding(vocab_size,
                             ut.len_padded,
                             ut.model_param['embedding_size'],
@@ -104,6 +108,6 @@ if __name__ == '__main__':
                                   args.outdir, args.
                                   disease_dt)
 
-    print ('\nProcessing time: %s seconds\n' % round(time() - start, 3))
+    print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
-    print ('Task completed')
+    print ('Task completed\n')
