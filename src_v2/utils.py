@@ -28,16 +28,16 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 2,
-               'batch_size': 16,
+model_param = {'num_epochs': 20,
+               'batch_size': 32,
                'embedding_size': 100,
-               'kernel_size': 3,
-               'learning_rate': 0.0001,
+               'kernel_size': 5,
+               'learning_rate': 0.001,
                'weight_decay': 1e-5
                }
 
 # length of padded sub-sequences
-len_padded = 64
+len_padded = 96
 
 
 # save the best model

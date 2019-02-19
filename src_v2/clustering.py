@@ -16,6 +16,8 @@ def hclust_ehr(data, min_cl, max_cl, metric, full_log=True):
                                          affinity=metric)
         tmp_label = hclust.fit_predict(data).tolist()
         tmp_silh = silhouette_score(data, tmp_label)
+        if tmp_silh < 0:
+            return
         if full_log:
             print(' -- {0}: {1:.3f}'.format(n, tmp_silh))
         list_silh.append(float(tmp_silh))
@@ -24,7 +26,7 @@ def hclust_ehr(data, min_cl, max_cl, metric, full_log=True):
             n_clust = n
             label = tmp_label
     try:
-        print('No. of clusters: {0} -- Silhouette Score:{1:.3f}'.format(
+        print('No. of clusters: {0} -- Silhouette Score: {1:.3f}'.format(
             n_clust, best_silh))
 
     except UnboundLocalError:
@@ -40,7 +42,7 @@ def hclust_ehr(data, min_cl, max_cl, metric, full_log=True):
 
 
 # SVD matrix of the TFIDF matrix of the raw ehr data
-def svd_tfidf(datafile, len_vocab, n_dimensions=100):
+def svd_tfidf(datafile, len_vocab, n_dimensions=64):
     data = _load_raw_data(datafile)
 
     # format data
