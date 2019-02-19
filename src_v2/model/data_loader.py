@@ -40,7 +40,7 @@ class EHRdata(Dataset):
 
                 else:
                     ps = [seq]
-        self.ehr_list.append(mrn, ps)
+        self.ehr_list.append([mrn, ps])
 
 
     def __getitem__(self, index):
