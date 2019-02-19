@@ -33,7 +33,7 @@ def learn_patient_representations(indir, outdir, disease_dt):
 
     # set random seed for experiment reproducibility
     torch.manual_seed(123)
-    # torch.cuda.manual_seed(123)
+    torch.cuda.manual_seed(123)
 
     # load data
     data = EHRdata(indir, ut.dt_files['ehr'])
@@ -55,7 +55,7 @@ def learn_patient_representations(indir, outdir, disease_dt):
                                  weight_decay=ut.model_param['weight_decay'])
 
     # training and evaluation
-    # model.cuda()
+    model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs'.format(ut.model_param['num_epochs']))
     mrn, encoded, metrics_avg = train_and_evaluate(
