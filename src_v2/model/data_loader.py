@@ -7,7 +7,7 @@ length "padded_seq_len".
 """
 
 from torch.utils.data import Dataset
-from utils import padded_seq_len
+from utils import len_padded
 import torch
 import os
 import csv
@@ -17,67 +17,48 @@ EHR data class
 """
 
 
+
+
 class EHRdata(Dataset):
 
     def __init__(self, datadir, ehr_file):
-        self.ehr = {}
+        self.ehr_list = []
         with open(os.path.join(datadir, ehr_file)) as f:
             rd = csv.reader(f)
             for r in rd:
-                seq = map(int, r[1::])
+                mrn = r[0]
+                seq = list(map(int, r[1::]))
 
-                if len(seq) < padded_seq_len:
-                    self.ehr[r[0]] = seq + [0] * \
-                        (padded_seq_len - len(seq))
+                if len(seq) < len_padded:
+                    ps = [seq + [0] * (len_padded - len(seq))]
 
-                elif len(seq) % padded_seq_len != 0:
-                    pad_seq = seq + [0] * \
-                        (padded_seq_len - len(seq) % padded_seq_len)
-                    sq = []
-                    for idx in range(0, len(pad_seq) - padded_seq_len + 1, padded_seq_len):
-                        sq.append(pad_seq[idx:idx + padded_seq_len])
+                elif len(seq) % len_padded != 0:
+                    seq += [0] * (len_padded - len(seq) % len_padded)
+                    ps = []
+                    for i in range(0, len(ps) - len_padded + 1, len_padded):
+                        ps.append(seq[i:i + len_padded])
 
                 else:
-                    self.ehr[r[0]] = seq
-
-        self.ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
+                    ps = [seq]
+        self.ehr_list.append(mrn, ps)
 
 
     def __getitem__(self, index):
-        # ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
         seq = self.ehr_list[index][1]
         pat = self.ehr_list[index][0]
         return (seq, pat)
 
+
     def __len__(self):
-        return len(self.ehr)
+        return len(self.ehr_list)
+
 
 
 def ehr_collate(batch):
-    print len(batch)
     data = []
     mrn = []
     for seq, pat in batch:
         mrn.append(pat)
         data.append(torch.tensor(
-                [seq], dtype=torch.long).view(-1, padded_seq_len))
-
-        """
-        if len(seq) == padded_seq_len:
-            data.append(torch.tensor(
-                [seq], dtype=torch.long).view(-1, padded_seq_len))
-
-        elif len(seq) % padded_seq_len == 0:
-            sq = []
-            for idx in range(0, len(seq) - padded_seq_len + 1, padded_seq_len):
-                sq.append(seq[idx:idx + padded_seq_len])
-            data.append(torch.tensor(
-                sq, dtype=torch.long).view(-1, padded_seq_len))
-
-        else:
-            raise Warning(
-                'Not all the sequences have length multiple than {0}'.format(
-                    padded_seq_len))
-        """
-
+            seq, dtype=torch.long).view(-1, len_padded))
     return [data, mrn]
