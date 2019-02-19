@@ -42,11 +42,11 @@ def learn_patient_representations(indir, outdir, disease_dt):
                                 shuffle=True,
                                 collate_fn=ehr_collate)
     print('Cohort Size: {0} -- Max Sequence Length: {1}\n'.format(
-        len(data), ut.padded_seq_len))
+        len(data), ut.len_padded))
 
     # define model and optimizer
     model = net.ehrEncoding(vocab_size,
-                            ut.padded_seq_len,
+                            ut.len_padded,
                             ut.model_param['embedding_size'],
                             ut.model_param['kernel_size'])
 
