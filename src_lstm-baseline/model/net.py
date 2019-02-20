@@ -17,12 +17,13 @@ class LSTMehrEncoding(nn.Module):
         self.n_layers = 2
         self.n_lstm_units = int(self.emb_dim / 2)
         self.ch_l2 = int(self.n_lstm_units / 2)
+        self.ch_l3 = int(self.ch_l2/2)
 
-        self.embedding = nn.Embedding(vocab_size+1, emb_dim, padding_idx=0)
+        self.embedding = nn.Embedding(vocab_size, emb_dim, padding_idx=0)
         self.lstm = nn.LSTM(self.emb_dim, self.n_lstm_units, self.n_layers, batch_first=True, dropout=0.5)
         self.linear1 = nn.Linear(self.n_lstm_units, self.ch_l2)
-        self.linear2 = nn.Linear(self.ch_l2, vocab_size)
-        self.hidden = self.init_hidden()
+        self.linear2 = nn.Linear(self.ch_l2, self.ch_l3)
+        self.linear3 = nn.Linear(self.ch_l3, vocab_size)
 
     def init_hidden(self):
         hidden_a = torch.randn(self.n_layers, self.batch_size, self.n_lstm_units)
@@ -34,6 +35,7 @@ class LSTMehrEncoding(nn.Module):
         return (hidden_a, hidden_b)
 
     def forward(self, x, x_lengths):
+        self.hidden = self.init_hidden()
         input_vect = x
         seq_len = input_vect.shape[1]
         embeds = self.embedding(x)
@@ -47,9 +49,9 @@ class LSTMehrEncoding(nn.Module):
         out = self.linear1(out)
         out = F.dropout(out)
         out = F.relu(out)
-         
-        encoded_vect = out.view(self.batch_size, seq_len * self.ch_l2)
         out = self.linear2(out)
+        encoded_vect = out.view(self.batch_size, seq_len * self.ch_l3)
+        out = self.linear3(out)
         #mask = torch.tensor([[1]*seq_len+[0]*(self.max_seq_len-seq_len)]*self.vocab_size)
         #print(mask.shape)
         #mask = mask.view(-1, self.vocab_size, self.max_seq_len)

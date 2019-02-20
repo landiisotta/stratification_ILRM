@@ -35,5 +35,5 @@ def evaluate(model, loss_fn, data_iterator, metrics, best_eval=False):
             #print(len(e))
         metrics_mean = {metric:np.mean([x[metric] for x in summ]) for metric in summ[0]}
         metrics_string = "--".join("{}: {:05.3f}".format(k,v) for k,v in metrics_mean.items())
-
+        print(metrics_string)
         return mrn_list, encoded_vect, metrics_mean

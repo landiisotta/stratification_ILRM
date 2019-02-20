@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 ##PATHS
-disease_folder = 'prova'
+disease_folder = 'mixed'
 data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder)
 
 mt_to_ix_file = 'cohort-new_vocab.csv'

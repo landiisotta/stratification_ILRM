@@ -16,7 +16,7 @@ from evaluate import evaluate
 def main():
     f = open("outdir.txt", 'r')
     outdir = f.read().rstrip('\n')
-    f = open("experiment_folder_bin2.txt", 'r')
+    f = open("experiment_folder.txt", 'r')
     experiment_folder = f.read().rstrip('\n')
    
     ##pass the size of the vocabulary to the model

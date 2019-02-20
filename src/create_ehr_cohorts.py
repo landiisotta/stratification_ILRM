@@ -151,7 +151,7 @@ def create_ehr_cohorts():
 #n_rndm = 2000
 
 # include the patient with specified T2D group
-    check_t2d = True
+    check_t2d = False
 
 # data types to include in the dataset SEE UTILS
 #dtype = ['icd9', 'icd10', 'medication']

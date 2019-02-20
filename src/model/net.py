@@ -20,7 +20,7 @@ class ehrEncoding(nn.Module):
         self.padding = int((kernel_size - 1) / 2)
         self.features = math.floor(max_seq_len + 2*self.padding - kernel_size + 1) + 2*self.padding - kernel_size + 1
         
-        self.embedding = nn.Embedding(vocab_size+1, emb_dim, padding_idx=0)
+        self.embedding = nn.Embedding(vocab_size, emb_dim, padding_idx=0)
         self.cnn_l1 = nn.Conv1d(emb_dim, self.ch_l1, kernel_size=kernel_size, padding=self.padding)
         #self.cnn_l2 = nn.Conv1d(self.ch_l1, self.ch_l2, kernel_size=kernel_size, padding=self.padding)
         self.linear1 = nn.Linear(self.ch_l1*self.features, 256)
