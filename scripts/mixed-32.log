@@ -1,0 +1,91 @@
+[3;J[H[2J
+Vocabulary size: 16375
+Cohort Size: 37632 -- Max Sequence Length: 32
+
+Learning rate: 0.001
+Batch size: 32
+Kernel size: 5
+
+Training for 10 epochs
+Epoch 1 of 10
+-- time =  1146.363
+-- mean loss: 6.365
+Epoch 2 of 10
+-- time =  1148.055
+-- mean loss: 5.868
+Epoch 3 of 10
+-- time =  1147.778
+-- mean loss: 5.724
+Epoch 4 of 10
+-- time =  1148.114
+-- mean loss: 5.652
+Epoch 5 of 10
+-- time =  1147.939
+-- mean loss: 5.609
+Epoch 6 of 10
+-- time =  1148.02
+-- mean loss: 5.572
+Epoch 7 of 10
+-- time =  1148.15
+-- mean loss: 5.55
+Epoch 8 of 10
+-- time =  1147.913
+-- mean loss: 5.536
+Epoch 9 of 10
+-- time =  1148.332
+-- mean loss: 5.522
+Epoch 10 of 10
+-- time =  1147.927
+-- mean loss: 5.51
+
+Found new best model at epoch 10
+
+Evaluating the model
+Accuracy: 0.339 -- Loss: 5.495
+
+Running clustering on the TF-IDF vectors
+ -- 2: 0.200
+ -- 3: 0.169
+ -- 4: 0.184
+ -- 5: 0.160
+ -- 6: 0.166
+ -- 7: 0.117
+ -- 8: 0.113
+ -- 9: 0.117
+ -- 10: 0.122
+ -- 11: 0.121
+ -- 12: 0.127
+ -- 13: 0.132
+ -- 14: 0.128
+ -- 15: 0.132
+ -- 16: 0.093
+ -- 17: 0.099
+ -- 18: 0.099
+ -- 19: 0.103
+No. of clusters: 2 -- Silhouette Score: 0.200
+
+Running clustering on the encoded vectors
+ -- 2: 0.261
+ -- 3: 0.246
+ -- 4: 0.245
+ -- 5: 0.222
+ -- 6: 0.232
+ -- 7: 0.239
+ -- 8: 0.260
+ -- 9: 0.277
+ -- 10: 0.223
+ -- 11: 0.209
+ -- 12: 0.209
+ -- 13: 0.186
+ -- 14: 0.183
+ -- 15: 0.177
+ -- 16: 0.175
+ -- 17: 0.167
+ -- 18: 0.160
+ -- 19: 0.152
+No. of clusters: 9 -- Silhouette Score: 0.277
+
+Processing time: 17808.32 seconds
+
+Task completed
+
