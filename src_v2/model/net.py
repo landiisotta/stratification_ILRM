@@ -43,13 +43,12 @@ class ehrEncoding(nn.Module):
         # self.bn1 = nn.BatchNorm1d(self.ch_l1)
         # self.bn2 = nn.BatchNorm1d(self.ch_l2)
 
+
     def forward(self, x):
 
         # embedding
         embeds = self.embedding(x)
         embeds = embeds.permute(0, 2, 1)
-
-        # no batch normalization (batch_size = 1 and dropout is used)
 
         # first CNN layer
         out = F.relu(self.bn1(self.cnn_l1(embeds)))
@@ -77,7 +76,7 @@ class ehrEncoding(nn.Module):
         # out = self.linear3(out)
         # out = F.relu(out)
         out = self.linear4(out)
-        out = F.relu(out)
+        # out = F.relu(out)
 
         out = out.view(-1, self.vocab_size, x.shape[1])
 

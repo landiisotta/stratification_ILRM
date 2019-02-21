@@ -5,6 +5,7 @@ from datetime import datetime
 from torch.utils.data import DataLoader
 import clustering as clu
 import model.net as net
+import torch.nn as nn
 import torch
 import utils as ut
 import argparse
@@ -17,7 +18,10 @@ Learn patient representations from the EHRs using an autoencoder of CNNs
 """
 
 
-def learn_patient_representations(indir, outdir, disease_dt):
+def learn_patient_representations(indir,
+                                  outdir,
+                                  disease_dt,
+                                  eval_baseline=False):
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
@@ -60,6 +64,10 @@ def learn_patient_representations(indir, outdir, disease_dt):
                                  weight_decay=ut.model_param['weight_decay'])
 
     # training and evaluation
+    if torch.cuda.device.device_count() > 1:
+        print("Let's use", torch.cuda.device_count(), "GPUs!")
+        model = nn.DataParallel(model)
+
     model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs'.format(ut.model_param['num_epochs']))
@@ -88,15 +96,19 @@ def learn_patient_representations(indir, outdir, disease_dt):
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
 
     # evaluate clustering
-    min_cl = 2
-    max_cl = 20
-    print('\nRunning clustering on the TF-IDF vectors')
-    datafile = os.path.join(indir, ut.dt_files['ehr'])
-    svd_mtx = clu.svd_tfidf(datafile, vocab_size)
-    clu.hclust_ehr(svd_mtx, min_cl, max_cl, 'euclidean')
+    gt_file = os.path.join(indir, ut.dt_files['diseases'])
+    gt_disease = clu.load_mrn_disease(gt_file, mrn)
+    min_clu = 2
+    max_clu = 10
+
+    if eval_baseline:
+        print('\nRunning clustering on the TF-IDF vectors')
+        datafile = os.path.join(indir, ut.dt_files['ehr'])
+        svd_mtx = clu.svd_tfidf(datafile, vocab_size)
+        clu.eval_hierarchical_clustering(svd_mtx, gt_disease, min_clu, max_clu)
 
     print('\nRunning clustering on the encoded vectors')
-    clu.hclust_ehr(encoded, min_cl, max_cl, 'euclidean')
+    clu.eval_hierarchical_clustering(encoded, gt_disease, min_clu, max_clu)
 
     return
 
@@ -110,6 +122,8 @@ def _process_args():
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
     parser.add_argument(dest='disease_dt', help='Disease dataset name')
+    parser.add_argument('-b', default=False, dest='disease_dt', type=bool,
+                        help='Evaluate the baseline (defaut: False)')
     return parser.parse_args(sys.argv[1:])
 
 
@@ -119,9 +133,8 @@ if __name__ == '__main__':
 
     start = time()
     learn_patient_representations(args.indir,
-                                  args.outdir, args.
-                                  disease_dt)
-
+                                  args.outdir,
+                                  args.disease_dt)
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
     print ('Task completed\n')

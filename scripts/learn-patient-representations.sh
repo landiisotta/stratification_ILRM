@@ -9,6 +9,8 @@ indir=$datadir/$disease_dt
 
 outdir=$datadir/experiments
 
-gpu=1
+gpu=1,3
 
-CUDA_VISIBLE_DEVICES=$gpu ../myvenv/bin/python -u $projdir/src_v2/patient_representations.py $indir $outdir $disease_dt
+eval_baseline=True
+
+CUDA_VISIBLE_DEVICES=$gpu ../myvenv/bin/python -u $projdir/src_v2/patient_representations.py $indir $outdir $disease_dt -b $eval_baseline

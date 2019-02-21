@@ -3,7 +3,8 @@ import os
 
 # dataset filenames
 dt_files = {'ehr': 'cohort-new_ehr.csv',
-            'vocab': 'cohort-new_vocab.csv'}
+            'vocab': 'cohort-new_vocab.csv',
+            'diseases': 'cohort-mrn_diseases.csv'}
 
 # diseases and term types
 
