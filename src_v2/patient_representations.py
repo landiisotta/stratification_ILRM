@@ -122,7 +122,7 @@ def _process_args():
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
     parser.add_argument(dest='disease_dt', help='Disease dataset name')
-    parser.add_argument('-b', default=False, dest='disease_dt', type=bool,
+    parser.add_argument('-b', default=False, type=bool,
                         help='Evaluate the baseline (defaut: False)')
     return parser.parse_args(sys.argv[1:])
 
@@ -132,9 +132,11 @@ if __name__ == '__main__':
     print ('')
 
     start = time()
-    learn_patient_representations(args.indir,
-                                  args.outdir,
-                                  args.disease_dt)
+    learn_patient_representations(indir=args.indir,
+                                  outdir=args.outdir,
+                                  disease_dt=args.disease_dt,
+                                  eval_baseline=args.b)
+
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
     print ('Task completed\n')
