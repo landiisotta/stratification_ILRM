@@ -65,8 +65,10 @@ def learn_patient_representations(indir,
 
     # training and evaluation
     if torch.cuda.device_count() > 1:
-        print("Let's use", torch.cuda.device_count(), "GPUs!")
+        print('No. of GPUs: {0}'.format(torch.cuda.device_count()))
         model = nn.DataParallel(model)
+    else:
+        print('No. of GPUs: 1')
 
     model.cuda()
     loss_fn = net.criterion
