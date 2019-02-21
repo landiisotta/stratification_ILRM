@@ -129,7 +129,7 @@ Baselines
 
 
 # SVD matrix of the TFIDF matrix of the raw ehr data
-def svd_tfidf(datafile, len_vocab, n_dimensions=64):
+def svd_tfidf(datafile, len_vocab, n_dimensions=100):
     data = load_raw_data(datafile)
 
     # format data
