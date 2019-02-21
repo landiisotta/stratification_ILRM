@@ -64,13 +64,13 @@ def learn_patient_representations(indir,
                                  weight_decay=ut.model_param['weight_decay'])
 
     # training and evaluation
-    if torch.cuda.device.device_count() > 1:
+    if torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!")
         model = nn.DataParallel(model)
 
     model.cuda()
     loss_fn = net.criterion
-    print('Training for {} epochs'.format(ut.model_param['num_epochs']))
+    print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
     mrn, encoded, metrics_avg = train_and_evaluate(
         model, data_generator, loss_fn, optimizer, net.metrics, exp_dir)
 

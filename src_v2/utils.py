@@ -38,7 +38,7 @@ model_param = {'num_epochs': 10,
                }
 
 # length of padded sub-sequences
-len_padded = 32
+len_padded = 96
 
 
 # save the best model

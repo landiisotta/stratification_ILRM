@@ -3,13 +3,13 @@
 clear
 projdir=..
 datadir=$projdir/data
-disease_dt=mixed
+disease_dt=multiple_myeloma
 
 indir=$datadir/$disease_dt
 
 outdir=$datadir/experiments
 
-gpu=1,3
+gpu=3
 
 eval_baseline=True
 
