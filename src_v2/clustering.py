@@ -15,6 +15,8 @@ def eval_hierarchical_clustering(data,
                                  affinity_clu='euclidean',
                                  preproc=False):
 
+    print len(data[0])
+
     # normalize data
     if preproc:
         data = preprocessing.scale(data)
@@ -129,7 +131,7 @@ Baselines
 
 
 # SVD matrix of the TFIDF matrix of the raw ehr data
-def svd_tfidf(datafile, len_vocab, n_dimensions=100):
+def svd_tfidf(datafile, len_vocab, n_dimensions=200):
     data = load_raw_data(datafile)
 
     # format data
