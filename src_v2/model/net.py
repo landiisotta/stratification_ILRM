@@ -37,7 +37,7 @@ class ehrEncoding(nn.Module):
         self.linear3 = nn.Linear(100, 200)
         self.linear4 = nn.Linear(200, vocab_size * max_seq_len)
 
-        self.sigm == nn.Sigmoid()
+        self.sigm = nn.Sigmoid()
 
         # self.ch_l2 = int(self.ch_l1 / 2)
         # self.cnn_l2 = nn.Conv1d(self.ch_l1, self.ch_l2,

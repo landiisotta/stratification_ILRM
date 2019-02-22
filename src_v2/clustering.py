@@ -15,7 +15,7 @@ def eval_hierarchical_clustering(data,
                                  affinity_clu='euclidean',
                                  preproc=False):
 
-    print len(data[0])
+    print(len(data[0]))
 
     # normalize data
     if preproc:
