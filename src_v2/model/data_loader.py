@@ -8,6 +8,7 @@ length "padded_seq_len".
 
 from torch.utils.data import Dataset
 from utils import len_padded
+import random
 import torch
 import os
 import csv
@@ -19,7 +20,7 @@ EHR data class
 
 class EHRdata(Dataset):
 
-    def __init__(self, datadir, ehr_file):
+    def __init__(self, datadir, ehr_file, sampling):
         self.ehr = {}
         with open(os.path.join(datadir, ehr_file)) as f:
             rd = csv.reader(f)
@@ -35,6 +36,15 @@ class EHRdata(Dataset):
 
                 else:
                     self.ehr[r[0]] = seq
+
+        # sub-sample dataset
+        if sampling is not None:
+            mrns = list(self.ehr.keys())
+            random.shuffle(mrns)
+            ehr = {}
+            for k in mrns[:sampling]:
+                ehr[k] = self.ehr[k]
+            self.ehr = ehr
 
         self.ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
 

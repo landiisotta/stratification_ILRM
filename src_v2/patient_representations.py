@@ -21,7 +21,9 @@ Learn patient representations from the EHRs using an autoencoder of CNNs
 def learn_patient_representations(indir,
                                   outdir,
                                   disease_dt,
-                                  eval_baseline=False):
+                                  eval_baseline=False,
+                                  sampling=None):
+
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
@@ -41,7 +43,7 @@ def learn_patient_representations(indir,
     torch.cuda.manual_seed(123)
 
     # load data
-    data = EHRdata(indir, ut.dt_files['ehr'])
+    data = EHRdata(indir, ut.dt_files['ehr'], sampling)
     data_generator = DataLoader(data,
                                 ut.model_param['batch_size'],
                                 shuffle=True,
@@ -126,6 +128,9 @@ def _process_args():
     parser.add_argument(dest='disease_dt', help='Disease dataset name')
     parser.add_argument('-b', default=False, type=bool,
                         help='Evaluate the baseline (defaut: False)')
+    parser.add_argument('-s', default=None, type=int,
+                        help='Enable sub-sampling with data size '
+                        '(defaut: None)')
     return parser.parse_args(sys.argv[1:])
 
 
@@ -137,7 +142,8 @@ if __name__ == '__main__':
     learn_patient_representations(indir=args.indir,
                                   outdir=args.outdir,
                                   disease_dt=args.disease_dt,
-                                  eval_baseline=args.b)
+                                  eval_baseline=args.b,
+                                  sampling=args.s)
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
