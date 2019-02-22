@@ -1,0 +1,90 @@
+[3;J[H[2J
+Vocabulary size: 16375
+Cohort Size: 37632 -- Max Sequence Length: 64
+
+Learning rate: 0.001
+Batch size: 64
+Kernel size: 5
+
+Training for 10 epochs
+
+Epoch 1 of 10
+-- time =  3097.504
+-- mean loss: 4.413
+Epoch 2 of 10
+-- time =  3099.305
+-- mean loss: 4.223
+Epoch 3 of 10
+-- time =  3101.356
+-- mean loss: 4.126
+Epoch 4 of 10
+-- time =  3102.062
+-- mean loss: 4.092
+Epoch 5 of 10
+-- time =  3102.053
+-- mean loss: 4.071
+Epoch 6 of 10
+-- time =  3098.993
+-- mean loss: 4.056
+Epoch 7 of 10
+-- time =  3100.46
+-- mean loss: 4.045
+Epoch 8 of 10
+-- time =  3098.521
+-- mean loss: 4.036
+Epoch 9 of 10
+-- time =  3098.626
+-- mean loss: 4.03
+Epoch 10 of 10
+-- time =  3097.244
+-- mean loss: 4.025
+
+Found new best model at epoch 10
+
+Evaluating the model
+Accuracy: 0.484 -- Loss: 3.989
+
+Running clustering on the TF-IDF vectors
+ -- 2: 0.172
+ -- 3: 0.170
+ -- 4: 0.177
+ -- 5: 0.152
+ -- 6: 0.157
+ -- 7: 0.156
+ -- 8: 0.142
+ -- 9: 0.149
+No. of clusters: 4 -- Silhouette Score: 0.177
+
+Cluster: 0 -- Entropy: 2.383, Purity: 0.268
+Cluster: 1 -- Entropy: 2.395, Purity: 0.257
+Cluster: 2 -- Entropy: 2.391, Purity: 0.261
+Cluster: 3 -- Entropy: 2.402, Purity: 0.273
+Cluster: 4 -- Entropy: 2.399, Purity: 0.265
+Cluster: 5 -- Entropy: 2.395, Purity: 0.261
+Average Entropy: 2.39
+Average Purity: 0.26
+
+Running clustering on the encoded vectors
+ -- 2: 0.115
+ -- 3: 0.095
+ -- 4: 0.061
+ -- 5: 0.030
+ -- 6: 0.034
+ -- 7: 0.031
+ -- 8: 0.030
+ -- 9: 0.005
+No. of clusters: 2 -- Silhouette Score: 0.115
+
+Cluster: 0 -- Entropy: 1.413, Purity: 0.620
+Cluster: 1 -- Entropy: 1.578, Purity: 0.570
+Cluster: 2 -- Entropy: 0.343, Purity: 0.954
+Cluster: 3 -- Entropy: 0.267, Purity: 0.966
+Cluster: 4 -- Entropy: 2.430, Purity: 0.232
+Cluster: 5 -- Entropy: 0.312, Purity: 0.958
+Average Entropy: 1.49
+Average Purity: 0.57
+
+Processing time: 34964.24 seconds
+
+Task completed
+

@@ -3,7 +3,8 @@ import os
 
 # dataset filenames
 dt_files = {'ehr': 'cohort-new_ehr.csv',
-            'vocab': 'cohort-new_vocab.csv'}
+            'vocab': 'cohort-new_vocab.csv',
+            'diseases': 'cohort-mrn_diseases.csv'}
 
 # diseases and term types
 
@@ -28,7 +29,7 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 10,
+model_param = {'num_epochs': 3,
                'batch_size': 64,
                'embedding_size': 100,
                'kernel_size': 5,

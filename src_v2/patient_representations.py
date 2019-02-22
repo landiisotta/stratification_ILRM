@@ -5,6 +5,7 @@ from datetime import datetime
 from torch.utils.data import DataLoader
 import clustering as clu
 import model.net as net
+import torch.nn as nn
 import torch
 import utils as ut
 import argparse
@@ -17,7 +18,12 @@ Learn patient representations from the EHRs using an autoencoder of CNNs
 """
 
 
-def learn_patient_representations(indir, outdir, disease_dt):
+def learn_patient_representations(indir,
+                                  outdir,
+                                  disease_dt,
+                                  eval_baseline=False,
+                                  sampling=None):
+
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
@@ -37,7 +43,7 @@ def learn_patient_representations(indir, outdir, disease_dt):
     torch.cuda.manual_seed(123)
 
     # load data
-    data = EHRdata(indir, ut.dt_files['ehr'])
+    data = EHRdata(indir, ut.dt_files['ehr'], sampling)
     data_generator = DataLoader(data,
                                 ut.model_param['batch_size'],
                                 shuffle=True,
@@ -60,9 +66,15 @@ def learn_patient_representations(indir, outdir, disease_dt):
                                  weight_decay=ut.model_param['weight_decay'])
 
     # training and evaluation
+    if torch.cuda.device_count() > 1:
+        print('No. of GPUs: {0}\n'.format(torch.cuda.device_count()))
+        model = nn.DataParallel(model)
+    else:
+        print('No. of GPUs: 1\n')
+
     model.cuda()
     loss_fn = net.criterion
-    print('Training for {} epochs'.format(ut.model_param['num_epochs']))
+    print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
     mrn, encoded, metrics_avg = train_and_evaluate(
         model, data_generator, loss_fn, optimizer, net.metrics, exp_dir)
 
@@ -88,15 +100,19 @@ def learn_patient_representations(indir, outdir, disease_dt):
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
 
     # evaluate clustering
-    min_cl = 2
-    max_cl = 20
-    print('\nRunning clustering on the TF-IDF vectors')
-    datafile = os.path.join(indir, ut.dt_files['ehr'])
-    svd_mtx = clu.svd_tfidf(datafile, vocab_size)
-    clu.hclust_ehr(svd_mtx, min_cl, max_cl, 'euclidean')
+    gt_file = os.path.join(indir, ut.dt_files['diseases'])
+    gt_disease = clu.load_mrn_disease(gt_file, mrn)
+    min_clu = 2
+    max_clu = 10
+
+    if eval_baseline:
+        print('\nRunning clustering on the TF-IDF vectors')
+        datafile = os.path.join(indir, ut.dt_files['ehr'])
+        svd_mtx = clu.svd_tfidf(datafile, vocab_size)
+        clu.eval_hierarchical_clustering(svd_mtx, gt_disease, min_clu, max_clu)
 
     print('\nRunning clustering on the encoded vectors')
-    clu.hclust_ehr(encoded, min_cl, max_cl, 'euclidean')
+    clu.eval_hierarchical_clustering(encoded, gt_disease, min_clu, max_clu)
 
     return
 
@@ -110,6 +126,11 @@ def _process_args():
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
     parser.add_argument(dest='disease_dt', help='Disease dataset name')
+    parser.add_argument('-b', default=False, type=bool,
+                        help='Evaluate the baseline (defaut: False)')
+    parser.add_argument('-s', default=None, type=int,
+                        help='Enable sub-sampling with data size '
+                        '(defaut: None)')
     return parser.parse_args(sys.argv[1:])
 
 
@@ -118,9 +139,11 @@ if __name__ == '__main__':
     print ('')
 
     start = time()
-    learn_patient_representations(args.indir,
-                                  args.outdir, args.
-                                  disease_dt)
+    learn_patient_representations(indir=args.indir,
+                                  outdir=args.outdir,
+                                  disease_dt=args.disease_dt,
+                                  eval_baseline=args.b,
+                                  sampling=args.s)
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
