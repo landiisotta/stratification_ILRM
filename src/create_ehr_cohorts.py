@@ -222,8 +222,21 @@ def create_ehr_cohorts():
             for r in rd:
                 if r[1] in icds:
                     icd_mrns.setdefault(r[0], set()).add((r[1], r[2]))
-                    mrns_icds.setdefault(r[0], set()).add(r[1])
+                    #mrns_icds.setdefault(r[0], set()).add(r[1])
                 all_mrns.setdefault(r[0], set()).add(r[1])
+    ##sort diagnoses
+    sorted_icd_mrns = {}
+    mult_mrns_icds = {}
+    for m in icd_mrns:
+        sorted_icd_mrns[m] = sorted(icd_mrns[m], key=lambda x: x[1]) 
+        mult_mrns_icds[m] = [d[0] for d in sorted_icd_mrns[m]]
+        tmp_list = []
+        for dis in mult_mrns_icds[m]:
+            if dis not in tmp_list:
+                tmp_list.append(dis)
+        mrns_icds[m] = tmp_list
+                    
+        
 ##icd_mrns=dictionary with 'mrn'={(icd9/10_diseasesDiag, time_of_diag)}
 ##all_mrns=dictionary with all 'mrn'={icd9/10_diag}
 
@@ -379,7 +392,7 @@ def create_ehr_cohorts():
 
     out_mrns = []
     for mrn, icds in mrns_icds.items():
-        out_mrns.append([mrn] + list(icds))
+        out_mrns.append([mrn] + icds)
     outfile = outdir + '/cohort-mrns_icds.csv'
     _save_dataset(outfile, out_mrns)
 
