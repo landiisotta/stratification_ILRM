@@ -8,10 +8,6 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
 
 # diseases and term types
 
-# diseases = ['alzheimer\'s disease',
-#            'multiple myeloma',
-#            'parkinson\'s disease']
-
 diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
@@ -29,16 +25,16 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 3,
-               'batch_size': 64,
+model_param = {'num_epochs': 10,
+               'batch_size': 128,
                'embedding_size': 100,
                'kernel_size': 5,
-               'learning_rate': 0.001,
+               'learning_rate': 0.0001,
                'weight_decay': 1e-5
                }
 
 # length of padded sub-sequences
-len_padded = 32
+len_padded = 64
 
 
 # save the best model

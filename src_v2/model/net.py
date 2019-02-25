@@ -38,6 +38,7 @@ class ehrEncoding(nn.Module):
         self.linear4 = nn.Linear(200, vocab_size * max_seq_len)
 
         self.sigm = nn.Sigmoid()
+        self.softplus = nn.Softplus()
 
         # self.ch_l2 = int(self.ch_l1 / 2)
         # self.cnn_l2 = nn.Conv1d(self.ch_l1, self.ch_l2,
@@ -67,7 +68,7 @@ class ehrEncoding(nn.Module):
         # two layers of encoding
         out = self.linear1(out)
         out = F.dropout(out)
-        out = self.sigm(out)
+        out = self.softplus(out)
         # out = self.linear2(out)
         # out = F.relu(out)
 
@@ -78,7 +79,7 @@ class ehrEncoding(nn.Module):
         # out = self.linear3(out)
         # out = F.relu(out)
         out = self.linear4(out)
-        out = self.sigm(out)
+        out = self.relu(out)
 
         out = out.view(-1, self.vocab_size, x.shape[1])
 
