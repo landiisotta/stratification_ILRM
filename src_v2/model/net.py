@@ -68,9 +68,10 @@ class ehrEncoding(nn.Module):
         # two layers of encoding
         out = self.linear1(out)
         out = F.dropout(out)
-        out = self.softplus(out)
+        # out = self.softplus(out)
+        # out = self.sigm(out)
         # out = self.linear2(out)
-        # out = F.relu(out)
+        out = F.relu(out)
 
         # encoded representation
         encoded_vect = out.view(-1, out.shape[1])
@@ -79,7 +80,7 @@ class ehrEncoding(nn.Module):
         # out = self.linear3(out)
         # out = F.relu(out)
         out = self.linear4(out)
-        out = self.relu(out)
+        out = F.relu(out)
 
         out = out.view(-1, self.vocab_size, x.shape[1])
 
