@@ -126,8 +126,8 @@ def _process_args():
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
     parser.add_argument(dest='disease_dt', help='Disease dataset name')
-    parser.add_argument('-b', default=False, type=bool,
-                        help='Evaluate the baseline (defaut: False)')
+    parser.add_argument('--eval-baseline', dest='b', action='store_true',
+                        help='Evaluate the baseline')
     parser.add_argument('-s', default=None, type=int,
                         help='Enable sub-sampling with data size '
                         '(defaut: None)')
