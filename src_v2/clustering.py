@@ -130,7 +130,7 @@ Baselines
 
 # SVD matrix of the TFIDF matrix of the raw ehr data
 def svd_tfidf(datafile, len_vocab, n_dimensions=200):
-    data = load_raw_data(datafile)
+    mrns, data = load_raw_data(datafile)
 
     # format data
     count_mtx = np.zeros((len(data), len_vocab))
@@ -146,7 +146,7 @@ def svd_tfidf(datafile, len_vocab, n_dimensions=200):
     svd = TruncatedSVD(n_components=n_dimensions)
     svd_mtx = svd.fit_transform(tfidf_mtx)
 
-    return svd_mtx
+    return (mrns, svd_mtx)
 
 
 """
@@ -155,13 +155,13 @@ Load data
 
 
 # load associations MRN - First Disease
-def load_mrn_disease(filename, mrn):
+def load_mrn_disease(filename):
     with open(filename) as f:
         rd = csv.reader(f)
         mrn_disease = {}
         for r in rd:
             mrn_disease.setdefault(r[0], list()).append(r[1])
-    return [mrn_disease[m][0] for m in mrn]
+    return mrn_disease
 
 
 # load roaw data for baseline comparison
@@ -171,4 +171,4 @@ def load_raw_data(filename):
         raw_ehr = {}
         for r in rd:
             raw_ehr.setdefault(r[0], list()).extend(list(map(int, r[1::])))
-    return raw_ehr.values()
+    return (raw_ehr.keys(), raw_ehr.values())
