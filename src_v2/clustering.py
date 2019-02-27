@@ -20,7 +20,7 @@ def eval_hierarchical_clustering(data,
         data = preprocessing.scale(data)
 
     # silhuoette analysis
-    silhouette_analysis(data, min_clu, max_clu, affinity_clu)
+    # silhouette_analysis(data, min_clu, max_clu, affinity_clu)
 
     # external cluster analysis
     outer_clustering_analysis(data, gt_clu, affinity_clu)
