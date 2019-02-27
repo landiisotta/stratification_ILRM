@@ -13,8 +13,8 @@ sampling=10000
 
 gpu=3
 
-# eval_baseline=''
-eval_baseline='--eval-baseline'
+eval_baseline=''
+# eval_baseline='--eval-baseline'
 
 # without sampling
 CUDA_VISIBLE_DEVICES=$gpu ../myvenv/bin/python -u $projdir/src_v2/patient_representations.py $indir $outdir $disease_dt $eval_baseline

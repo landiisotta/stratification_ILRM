@@ -55,6 +55,7 @@ class ehrEncoding(nn.Module):
 
         # first CNN layer
         out = F.relu(self.bn1(self.cnn_l1(embeds)))
+        # out = F.dropout(out)
         out = F.max_pool1d(out, kernel_size=self.kernel_size,
                            stride=1, padding=self.padding)
 
@@ -68,17 +69,19 @@ class ehrEncoding(nn.Module):
         # two layers of encoding
         out = self.linear1(out)
         out = F.dropout(out)
+        out = F.relu(out)
+
+        # out = self.sigm(out)
+        out = self.linear2(out)
         # out = self.softplus(out)
         # out = self.sigm(out)
-        # out = self.linear2(out)
-        out = F.relu(out)
 
         # encoded representation
         encoded_vect = out.view(-1, out.shape[1])
 
         # two layers of decoding
-        # out = self.linear3(out)
-        # out = F.relu(out)
+        out = self.linear3(out)
+        out = F.relu(out)
         out = self.linear4(out)
         out = F.relu(out)
 

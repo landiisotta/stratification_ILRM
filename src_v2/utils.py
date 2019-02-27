@@ -25,7 +25,7 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 10,
+model_param = {'num_epochs': 15,
                'batch_size': 128,
                'embedding_size': 100,
                'kernel_size': 5,
