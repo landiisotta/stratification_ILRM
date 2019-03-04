@@ -35,6 +35,7 @@ model_param = {'num_epochs': 15,
 
 # length of padded sub-sequences
 len_padded = 64
+seq_overlap = 5
 
 
 # save the best model
