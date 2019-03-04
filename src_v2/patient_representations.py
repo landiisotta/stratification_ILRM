@@ -43,8 +43,7 @@ def learn_patient_representations(indir,
     torch.cuda.manual_seed(123)
 
     # load data
-    data = EHRdata(indir, ut.dt_files['ehr'],
-                   sampling)
+    data = EHRdata(indir, ut.dt_files['ehr'], sampling)
     data_generator = DataLoader(
         data,
         ut.model_param['batch_size'],
