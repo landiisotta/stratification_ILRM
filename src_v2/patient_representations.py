@@ -27,7 +27,7 @@ def learn_patient_representations(indir,
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
-         datetime.now().strftime('%Y-%m-%d-%H-%M-%S')]))
+         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 'nobn-noact-norelu-10']))
     os.makedirs(exp_dir)
 
     # get the vocabulary size

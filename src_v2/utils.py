@@ -12,11 +12,15 @@ diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
             'malignant neopasm of female breast',
-            'malignant tumor of prostate']
+            'malignant tumor of prostate',
+            'type 2 dyabetes']
 
 dtype = ['icd9',
          'icd10',
-         'medication']
+         'medication',
+         'lab',
+         'procedure',
+         'cpt']
 
 # data pre-processing parameters
 data_preproc_param = {'min_diagn': 3,
@@ -25,8 +29,8 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 15,
-               'batch_size': 128,
+model_param = {'num_epochs': 10,
+               'batch_size': 16,
                'embedding_size': 100,
                'kernel_size': 5,
                'learning_rate': 0.0001,
@@ -34,7 +38,7 @@ model_param = {'num_epochs': 15,
                }
 
 # length of padded sub-sequences
-len_padded = 64
+len_padded = 32
 
 
 # save the best model

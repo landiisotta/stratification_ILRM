@@ -1,0 +1,7 @@
+[H[J
+Traceback (most recent call last):
+  File "../src_v2/patient_representations.py", line 150, in <module>
+    sampling=args.s)
+  File "../src_v2/patient_representations.py", line 35, in learn_patient_representations
+    with open(fvocab) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/ehr-100k/cohort-new_vocab.csv'
