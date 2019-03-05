@@ -7,7 +7,7 @@ length "padded_seq_len".
 """
 
 from torch.utils.data import Dataset
-from utils import len_padded
+from utils import len_padded, seq_overlap
 import random
 import torch
 import os
@@ -31,11 +31,15 @@ class EHRdata(Dataset):
                     self.ehr[r[0]] = seq + [0] * (len_padded - len(seq))
 
                 elif len(seq) % len_padded != 0:
+                    nseq, nleft = divmod(len(seq), len_padded)
                     self.ehr[r[0]] = seq + [0] * \
-                        (len_padded - len(seq) % len_padded)
+                        (len_padded - nleft - (seq_overlap - 1) * nseq)
 
                 else:
                     self.ehr[r[0]] = seq
+
+                if len(self.ehr) == 50:
+                    break
 
         # sub-sample dataset
         if sampling is not None:
@@ -68,9 +72,10 @@ def ehr_collate(batch):
             data.append(torch.tensor(
                 [seq], dtype=torch.long).view(-1, len_padded))
 
-        elif len(seq) % len_padded == 0:
+        elif len(seq) > len_padded:
             ps = []
-            for i in range(0, len(seq) - len_padded + 1, len_padded):
+            for i in range(0, len(seq) - len_padded + 1,
+                           len_padded - seq_overlap + 1):
                 ps.append(seq[i:i + len_padded])
             data.append(torch.tensor(
                 ps, dtype=torch.long).view(-1, len_padded))

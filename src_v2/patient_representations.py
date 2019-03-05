@@ -44,10 +44,12 @@ def learn_patient_representations(indir,
 
     # load data
     data = EHRdata(indir, ut.dt_files['ehr'], sampling)
-    data_generator = DataLoader(data,
-                                ut.model_param['batch_size'],
-                                shuffle=True,
-                                collate_fn=ehr_collate)
+    data_generator = DataLoader(
+        data,
+        ut.model_param['batch_size'],
+        shuffle=True,
+        collate_fn=ehr_collate)
+
     print('Cohort Size: {0} -- Max Sequence Length: {1}\n'.format(
         len(data), ut.len_padded))
 
@@ -72,7 +74,7 @@ def learn_patient_representations(indir,
     else:
         print('No. of GPUs: 1\n')
 
-    model.cuda()
+    # model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
     mrn, encoded, metrics_avg = train_and_evaluate(
