@@ -53,9 +53,8 @@ class ehrEncoding(nn.Module):
         embeds = embeds.permute(0, 2, 1)
 
         # first CNN layer
-        #out = F.relu(self.bn1(self.cnn_l1(embeds)))
-        # out = F.dropout(out)
-        out = F.relu(self.cnn_l1(embeds))
+        out = F.relu(self.bn1(self.cnn_l1(embeds)))
+        # out = F.relu(self.cnn_l1(embeds))
         out = F.max_pool1d(out, kernel_size=self.kernel_size,
                            stride=1, padding=self.padding)
 
@@ -72,7 +71,7 @@ class ehrEncoding(nn.Module):
         out = F.relu(out)
 
         # out = self.sigm(out)
-        out = self.linear2(out)
+        # out = self.linear2(out)
         # out = self.softplus(out)
         # out = self.sigm(out)
 
@@ -82,7 +81,7 @@ class ehrEncoding(nn.Module):
         # two layers of decoding
         out = self.linear3(out)
         out = F.relu(out)
-        out = self.linear4(out)
+        # out = self.linear4(out)
         #out = F.relu(out)
 
         out = out.view(-1, self.vocab_size, x.shape[1])
