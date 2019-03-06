@@ -38,9 +38,6 @@ class EHRdata(Dataset):
                 else:
                     self.ehr[r[0]] = seq
 
-                #if len(self.ehr) == 50:
-                #    break
-
         # sub-sample dataset
         if sampling is not None:
             mrns = list(self.ehr.keys())
