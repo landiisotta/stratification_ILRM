@@ -1,0 +1,92 @@
+[H[J
+Vocabulary size: 27651
+Cohort Size: 37853 -- Max Sequence Length: 32
+
+Learning rate: 0.0001
+Batch size: 16
+Kernel size: 5
+
+No. of GPUs: 1
+
+Training for 20 epochs
+
+Epoch 1 of 20
+-- time =  2021.427
+-- mean loss: 7.832
+Epoch 2 of 20
+-- time =  2022.4
+-- mean loss: 7.436
+Epoch 3 of 20
+-- time =  2021.771
+-- mean loss: 7.26
+Epoch 4 of 20
+-- time =  2020.257
+-- mean loss: 7.13
+Epoch 5 of 20
+-- time =  2022.987
+-- mean loss: 7.015
+Epoch 6 of 20
+-- time =  2022.559
+-- mean loss: 6.931
+Epoch 7 of 20
+-- time =  2019.862
+-- mean loss: 6.851
+Epoch 8 of 20
+-- time =  2018.746
+-- mean loss: 6.782
+Epoch 9 of 20
+-- time =  2019.417
+-- mean loss: 6.727
+Epoch 10 of 20
+-- time =  2024.237
+-- mean loss: 6.679
+Epoch 11 of 20
+-- time =  2026.284
+-- mean loss: 6.636
+Epoch 12 of 20
+-- time =  2023.167
+-- mean loss: 6.594
+Epoch 13 of 20
+-- time =  2020.779
+-- mean loss: 6.554
+Epoch 14 of 20
+-- time =  2019.434
+-- mean loss: 6.523
+Epoch 15 of 20
+-- time =  2022.982
+-- mean loss: 6.494
+Epoch 16 of 20
+-- time =  2024.902
+-- mean loss: 6.472
+Epoch 17 of 20
+-- time =  2027.583
+-- mean loss: 6.451
+Epoch 18 of 20
+-- time =  2026.332
+-- mean loss: 6.43
+Epoch 19 of 20
+-- time =  2023.3
+-- mean loss: 6.412
+Epoch 20 of 20
+-- time =  2027.808
+-- mean loss: 6.396
+
+Found new best model at epoch 20
+
+Evaluating the model
+Accuracy: 0.222 -- Loss: 6.378
+
+Running clustering on the encoded vectors
+Cluster: 0 -- Entropy: 1.662, Purity: 0.530
+Cluster: 1 -- Entropy: 2.217, Purity: 0.382
+Cluster: 2 -- Entropy: 2.002, Purity: 0.405
+Cluster: 3 -- Entropy: 1.538, Purity: 0.626
+Cluster: 4 -- Entropy: 2.440, Purity: 0.294
+Cluster: 5 -- Entropy: 0.375, Purity: 0.949
+Average Entropy: 1.97
+Average Purity: 0.45
+
+Processing time: 42163.25 seconds
+
+Task completed
+

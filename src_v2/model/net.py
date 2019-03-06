@@ -48,7 +48,6 @@ class ehrEncoding(nn.Module):
 
 
     def forward(self, x):
-
         # embedding
         embeds = self.embedding(x)
         embeds = embeds.permute(0, 2, 1)

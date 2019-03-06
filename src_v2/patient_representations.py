@@ -27,7 +27,7 @@ def learn_patient_representations(indir,
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
-         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 'nobn-noact-norelu-10']))
+         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 'nobn-noact-norelu-10-l64']))
     os.makedirs(exp_dir)
 
     # get the vocabulary size
@@ -72,6 +72,7 @@ def learn_patient_representations(indir,
         print('No. of GPUs: {0}\n'.format(torch.cuda.device_count()))
         model = nn.DataParallel(model)
     else:
+        model.cuda()
         print('No. of GPUs: 1\n')
 
     # model.cuda()

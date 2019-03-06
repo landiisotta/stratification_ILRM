@@ -1,0 +1,13 @@
+[H[J
+Vocabulary size: 27651
+Cohort Size: 37853 -- Max Sequence Length: 64
+
+Learning rate: 0.0001
+Batch size: 8
+Kernel size: 5
+
+No. of GPUs: 1
+
+Training for 10 epochs
+
+Epoch 1 of 10

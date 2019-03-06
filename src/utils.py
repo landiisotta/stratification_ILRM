@@ -2,16 +2,16 @@ import torch
 import os
 
 ##PATHS
-disease_folder = 'mixed'
+disease_folder = 'neurodev'
 data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder) 
 
 ehr_file = 'cohort-new_ehr.csv'
 mt_to_ix_file = 'cohort-new_vocab.csv'
 
 ##DISEASES AND TERM TYPES
-#diseases = ['autism', 'autistic', 'pervasive developmental disorder', 'asperger', 'mental retardation', 'attention deficit']
+diseases = ['autism', 'autistic', 'pervasive developmental disorder', 'asperger', 'mental retardation', 'attention deficit']
 #diseases = ["alzheimer's disease", "multiple myeloma", "parkinson's disease"]
-diseases = ["alzheimer's disease", "multiple myeloma", "parkinson's disease", "malignant neoplasm of female breast", "malignant tumor of prostate"]
+#diseases = ["alzheimer's disease", "multiple myeloma", "parkinson's disease", "malignant neoplasm of female breast", "malignant tumor of prostate"]
 #diseases = ["diabetes", "alzheimer's disease", "multiple myeloma", "parkinson's disease", "malignant neoplasm of female breast", "malignant tumor of prostate"]
 dtype = ['icd9', 'icd10', 'medication', 'lab', 'cpt', 'procedure']
 #diseases = ["multiple myeloma", "autism"]

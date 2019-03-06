@@ -17,15 +17,14 @@ class myData(Dataset):
             rd = csv.reader(f)
             for r in rd:
                 self.ehr[r[0]] = list(map(int, r[1::]))
+        
+        self.ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
     
     def __getitem__(self, index):
-        ehr_list = []
-        for mrn, term in self.ehr.items():
-            ehr_list.append([mrn, term])
         seq = ehr_list[index][1]
         pat = ehr_list[index][0]
-        
-        return seq, pat
+        return (seq, pat)
+
     ##len(dataset) returns the number of patients     
     def __len__(self):
         return len(self.ehr)
