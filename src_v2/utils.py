@@ -29,8 +29,8 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 10,
-               'batch_size': 16,
+model_param = {'num_epochs': 20,
+               'batch_size': 8,
                'embedding_size': 100,
                'kernel_size': 5,
                'learning_rate': 0.0001,
@@ -39,7 +39,7 @@ model_param = {'num_epochs': 10,
 
 # length of padded sub-sequences
 len_padded = 32
-seq_overlap = 5
+seq_overlap = 0
 
 
 # save the best model
