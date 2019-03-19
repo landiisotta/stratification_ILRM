@@ -1,0 +1,62 @@
+[H[J
+Vocabulary size: 27651
+Cohort Size: 37853 -- Max Sequence Length: 32
+
+Learning rate: 0.0001
+Batch size: 16
+Kernel size: 5
+
+No. of GPUs: 1
+
+Training for 10 epochs
+
+Epoch 1 of 10
+-- time =  2856.151
+-- mean loss: 8.029
+Epoch 2 of 10
+-- time =  2862.153
+-- mean loss: 7.503
+Epoch 3 of 10
+-- time =  2861.251
+-- mean loss: 7.342
+Epoch 4 of 10
+-- time =  2862.65
+-- mean loss: 7.195
+Epoch 5 of 10
+-- time =  2867.148
+-- mean loss: 7.081
+Epoch 6 of 10
+-- time =  2867.974
+-- mean loss: 6.985
+Epoch 7 of 10
+-- time =  2860.888
+-- mean loss: 6.899
+Epoch 8 of 10
+-- time =  2867.937
+-- mean loss: 6.826
+Epoch 9 of 10
+-- time =  2870.373
+-- mean loss: 6.773
+Epoch 10 of 10
+-- time =  2863.091
+-- mean loss: 6.725
+
+Found new best model at epoch 10
+
+Evaluating the model
+Accuracy: 0.218 -- Loss: 6.693
+
+Running clustering on the encoded vectors
+Cluster: 0 -- Entropy: 2.346, Purity: 0.341
+Cluster: 1 -- Entropy: 2.087, Purity: 0.382
+Cluster: 2 -- Entropy: 1.662, Purity: 0.527
+Cluster: 3 -- Entropy: 0.347, Purity: 0.953
+Cluster: 4 -- Entropy: 1.719, Purity: 0.408
+Cluster: 5 -- Entropy: 0.826, Purity: 0.839
+Average Entropy: 1.85
+Average Purity: 0.48
+
+Processing time: 30106.33 seconds
+
+Task completed
+

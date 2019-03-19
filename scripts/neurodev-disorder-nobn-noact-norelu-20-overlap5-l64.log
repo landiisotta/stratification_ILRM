@@ -1,0 +1,91 @@
+[H[J
+Vocabulary size: 12257
+Cohort Size: 13120 -- Max Sequence Length: 64
+
+Learning rate: 0.0001
+Batch size: 16
+Kernel size: 5
+
+No. of GPUs: 1
+
+Training for 20 epochs
+
+Epoch 1 of 20
+-- time =  810.757
+-- mean loss: 4.118
+Epoch 2 of 20
+-- time =  815.968
+-- mean loss: 3.744
+Epoch 3 of 20
+-- time =  815.109
+-- mean loss: 3.647
+Epoch 4 of 20
+-- time =  817.305
+-- mean loss: 3.589
+Epoch 5 of 20
+-- time =  817.675
+-- mean loss: 3.515
+Epoch 6 of 20
+-- time =  816.167
+-- mean loss: 3.452
+Epoch 7 of 20
+-- time =  818.398
+-- mean loss: 3.412
+Epoch 8 of 20
+-- time =  816.485
+-- mean loss: 3.376
+Epoch 9 of 20
+-- time =  814.421
+-- mean loss: 3.347
+Epoch 10 of 20
+-- time =  812.589
+-- mean loss: 3.325
+Epoch 11 of 20
+-- time =  813.112
+-- mean loss: 3.303
+Epoch 12 of 20
+-- time =  816.131
+-- mean loss: 3.286
+Epoch 13 of 20
+-- time =  814.648
+-- mean loss: 3.268
+Epoch 14 of 20
+-- time =  816.283
+-- mean loss: 3.254
+Epoch 15 of 20
+-- time =  814.951
+-- mean loss: 3.245
+Epoch 16 of 20
+-- time =  817.571
+-- mean loss: 3.229
+Epoch 17 of 20
+-- time =  815.024
+-- mean loss: 3.22
+Epoch 18 of 20
+-- time =  812.686
+-- mean loss: 3.212
+Epoch 19 of 20
+-- time =  814.356
+-- mean loss: 3.204
+Epoch 20 of 20
+-- time =  815.599
+-- mean loss: 3.202
+
+Found new best model at epoch 20
+
+Evaluating the model
+Accuracy: 0.528 -- Loss: 3.070
+
+Running clustering on the encoded vectors
+Cluster: 0 -- Entropy: 1.534, Purity: 0.485
+Cluster: 1 -- Entropy: 1.597, Purity: 0.555
+Cluster: 2 -- Entropy: 1.149, Purity: 0.775
+Cluster: 3 -- Entropy: 1.795, Purity: 0.431
+Cluster: 4 -- Entropy: 1.347, Purity: 0.660
+Average Entropy: 1.48
+Average Purity: 0.57
+
+Processing time: 16474.72 seconds
+
+Task completed
+

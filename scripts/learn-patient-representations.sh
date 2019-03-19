@@ -3,7 +3,7 @@
 clear
 projdir=..
 datadir=$projdir/data
-disease_dt=mixed
+disease_dt=neurodev-disorder
 
 indir=$datadir/$disease_dt
 
@@ -11,7 +11,7 @@ outdir=$datadir/experiments
 
 sampling=10000
 
-gpu=1
+gpu=2
 
 eval_baseline=''
 # eval_baseline='--eval-baseline'

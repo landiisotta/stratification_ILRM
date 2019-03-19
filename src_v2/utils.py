@@ -12,14 +12,14 @@ diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
             'malignant neopasm of female breast',
-            'malignant tumor of prostate']
-            #,'type 2 dyabetes']
+            'malignant tumor of prostate',
+            'type 2 dyabetes']
 
 dtype = ['icd9',
          'icd10',
          'medication',
-         'lab',
-         'procedure',
+#         'lab',
+#         'procedure',
          'cpt']
 
 # data pre-processing parameters
@@ -30,7 +30,7 @@ data_preproc_param = {'min_diagn': 3,
 
 # model parameters
 model_param = {'num_epochs': 20,
-               'batch_size': 8,
+               'batch_size': 16,
                'embedding_size': 100,
                'kernel_size': 5,
                'learning_rate': 0.0001,

@@ -11,3 +11,52 @@ No. of GPUs: 1
 Training for 10 epochs
 
 Epoch 1 of 10
+-- time =  5424.016
+-- mean loss: 5.332
+Epoch 2 of 10
+-- time =  5398.271
+-- mean loss: 4.93
+Epoch 3 of 10
+-- time =  5288.948
+-- mean loss: 4.809
+Epoch 4 of 10
+-- time =  5291.342
+-- mean loss: 4.74
+Epoch 5 of 10
+-- time =  5289.115
+-- mean loss: 4.693
+Epoch 6 of 10
+-- time =  5288.752
+-- mean loss: 4.659
+Epoch 7 of 10
+-- time =  5290.286
+-- mean loss: 4.637
+Epoch 8 of 10
+-- time =  5292.227
+-- mean loss: 4.619
+Epoch 9 of 10
+-- time =  5293.689
+-- mean loss: 4.603
+Epoch 10 of 10
+-- time =  5294.325
+-- mean loss: 4.591
+
+Found new best model at epoch 10
+
+Evaluating the model
+Accuracy: 0.329 -- Loss: 4.512
+
+Running clustering on the encoded vectors
+Cluster: 0 -- Entropy: 1.922, Purity: 0.471
+Cluster: 1 -- Entropy: 0.499, Purity: 0.921
+Cluster: 2 -- Entropy: 2.464, Purity: 0.239
+Cluster: 3 -- Entropy: 0.384, Purity: 0.949
+Cluster: 4 -- Entropy: 0.259, Purity: 0.966
+Cluster: 5 -- Entropy: 2.339, Purity: 0.319
+Average Entropy: 1.83
+Average Purity: 0.48
+
+Processing time: 54876.54 seconds
+
+Task completed
+

@@ -17,7 +17,7 @@ class LSTMehrEncoding(nn.Module):
         self.n_layers = 2
         self.n_lstm_units = int(self.emb_dim / 2)
         self.ch_l2 = int(self.n_lstm_units / 2)
-        self.ch_l3 = int(self.ch_l2/2)
+        self.ch_l3 = 1
 
         self.embedding = nn.Embedding(vocab_size, emb_dim, padding_idx=0)
         self.lstm = nn.LSTM(self.emb_dim, self.n_lstm_units, self.n_layers, batch_first=True, dropout=0.5)

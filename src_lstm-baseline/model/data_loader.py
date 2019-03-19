@@ -21,8 +21,8 @@ class myData(Dataset):
         self.ehr_list = [[mrn, term] for mrn, term in self.ehr.items()]
     
     def __getitem__(self, index):
-        seq = ehr_list[index][1]
-        pat = ehr_list[index][0]
+        seq = self.ehr_list[index][1]
+        pat = self.ehr_list[index][0]
         return (seq, pat)
 
     ##len(dataset) returns the number of patients     

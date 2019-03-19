@@ -2,7 +2,7 @@ import torch
 import os
 
 ##PATHS
-disease_folder = 'neurodev'
+disease_folder = 'neurodev-disorder'
 data_folder = os.path.expanduser('~/data1/stratification_ILRM/data/%s/' % disease_folder) 
 
 ehr_file = 'cohort-new_ehr.csv'
@@ -13,13 +13,13 @@ diseases = ['autism', 'autistic', 'pervasive developmental disorder', 'asperger'
 #diseases = ["alzheimer's disease", "multiple myeloma", "parkinson's disease"]
 #diseases = ["alzheimer's disease", "multiple myeloma", "parkinson's disease", "malignant neoplasm of female breast", "malignant tumor of prostate"]
 #diseases = ["diabetes", "alzheimer's disease", "multiple myeloma", "parkinson's disease", "malignant neoplasm of female breast", "malignant tumor of prostate"]
-dtype = ['icd9', 'icd10', 'medication', 'lab', 'cpt', 'procedure']
+dtype = ['icd9', 'icd10', 'medication']
 #diseases = ["multiple myeloma", "autism"]
 #dtype = ['icd9', 'icd10']
 
 ##PREPROCESSING STEP PARAMETERS
 data_preprocessing_pars = {'min_diagn' : 3,
-                           'n_rndm' : 10000,
+                           'n_rndm' : 5000,
                            'age_step' : 15,
                            'len_min' : 3}
 ##MODEL PARAMETERS

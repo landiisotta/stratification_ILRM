@@ -38,7 +38,7 @@ def data_preparation(outdir):
         mrn_disease = {}
         for r in rd:
             for c in r[1::]:
-                mrn_disease.setdefault(r[0], set()).add(code_disease[c])
+                mrn_disease.setdefault(r[0], list()).append(code_disease[c])
 
     ehr_shuffleRid = {}
     for mrn in ehr_shuffle:

@@ -1,3 +1,4 @@
+from sklearn.decomposition import TruncatedSVD
 import csv
 import os
 import utils
@@ -44,6 +45,9 @@ def main():
     loss_fn = net.criterion
     print("Starting training for {} epochs...".format(model_pars['num_epochs']))
     mrn, encoded, metrics_avg = train_and_evaluate(model, data_generator, loss_fn, optimizer, metrics, experiment_folder)
+    svd = TruncatedSVD(n_components=100)
+    encoded = svd.fit_transform(encoded)
+
     with open(experiment_folder + '/LSTMencoded_vect.csv', 'w') as f:
         wr = csv.writer(f, delimiter=',')
         for e in encoded:

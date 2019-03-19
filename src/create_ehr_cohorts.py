@@ -201,7 +201,8 @@ def create_ehr_cohorts():
                 except Exception:
                     pass
         disease_icds_dict[q] = list(set(icd_codes))
-
+    if check_t2d:
+        disease_icds_dict['diabetes'] = ['250.00']
     """
     ##################
     End the comment here if you want to specify manually ICD-9/10s
@@ -252,7 +253,6 @@ def create_ehr_cohorts():
     if data_preprocessing_pars['n_rndm'] > 0 and len(rndm) > data_preprocessing_pars['n_rndm']:
         rndm = rndm[:data_preprocessing_pars['n_rndm']]
         mrns |= set(rndm)
-    print('No of Patients:', len(mrns))
 
 
 # check T2D patients
@@ -263,7 +263,12 @@ def create_ehr_cohorts():
             next(rd)
             t2d_mrns = set(r[0] for r in rd)
         mrns |= t2d_mrns
-
+        for tm in t2d_mrns:
+            if tm not in mrns_icds:
+                mrns_icds[tm] = ['250.00']
+            else:
+                mrns_icds[tm].append('250.00')
+    print('No of Patients:', len(mrns))
 
 # create the dataset
     vocab = set()
