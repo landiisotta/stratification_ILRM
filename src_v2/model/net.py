@@ -80,7 +80,7 @@ class ehrEncoding(nn.Module):
 
         # two layers of decoding
         out = self.linear3(out)
-        out = F.relu(out)
+        out = F.softplus(out)
         out = self.linear4(out)
         #out = F.sigmoid(out)
 
