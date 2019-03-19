@@ -73,7 +73,7 @@ class ehrEncoding(nn.Module):
 
         # out = self.sigm(out)
         out = self.linear2(out)
-        # out = self.softplus(out)
+        #out = self.softplus(out)
         # out = self.sigm(out)
 
         # encoded representation
