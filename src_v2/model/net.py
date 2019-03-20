@@ -1,12 +1,14 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import numpy as np
 import math
 
 
 class ehrEncoding(nn.Module):
 
-    def __init__(self, vocab_size, max_seq_len, emb_size, kernel_size):
+    def __init__(self, vocab_size, max_seq_len,
+                 emb_size, kernel_size, pre_embs=None, vocab=None):
         super(ehrEncoding, self).__init__()
 
         # initiate parameters
@@ -23,7 +25,24 @@ class ehrEncoding(nn.Module):
             + 2 * self.padding - kernel_size + 1
 
         self.embedding = nn.Embedding(
-            vocab_size + 1, self.emb_size, padding_idx=0)
+            vocab_size, self.emb_size, padding_idx=0)
+
+        # load pre-computed embeddings
+        cnd_emb = pre_embs is not None
+        cnd_vocab = vocab is not None
+        if cnd_emb and cnd_vocab:
+            weight_mtx = np.zeros((vocab_size, emb_size))
+            wfound = 0
+            for i in range(vocab_size):
+                try:
+                    weight_mtx[i] = pre_embs[vocab[i]]
+                    wfound += 1
+                except KeyError:
+                    weight_mtx[i] = np.random.normal(
+                        scale=0.6, size=(emb_size,))
+            print('Found pre-computed embeddings for {0} concepts'.format(
+                wfound))
+            self.embedding.from_pretrained(torch.FloatTensor(weight_mtx))
 
         self.cnn_l1 = nn.Conv1d(self.emb_size, self.ch_l1,
                                 kernel_size=kernel_size, padding=self.padding)
@@ -45,7 +64,6 @@ class ehrEncoding(nn.Module):
         #                        kernel_size=kernel_size, padding=self.padding)
         # self.bn1 = nn.BatchNorm1d(self.ch_l1)
         # self.bn2 = nn.BatchNorm1d(self.ch_l2)
-
 
     def forward(self, x):
         # embedding

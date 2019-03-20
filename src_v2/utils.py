@@ -11,15 +11,15 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
 diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
-            'malignant neoplasm of female breast',
-            'malignant tumor of prostate',
-            'type 2 dyabetes']
+            'malignant neopasm of female breast',
+            'malignant tumor of prostate']
+            #,'type 2 dyabetes']
 
 dtype = ['icd9',
          'icd10',
          'medication',
-#         'lab',
-#         'procedure',
+         'lab',
+         'procedure',
          'cpt']
 
 # data pre-processing parameters
@@ -29,16 +29,16 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 10,
-               'batch_size': 16,
-               'embedding_size': 100,
+model_param = {'num_epochs': 5,
+               'batch_size': 8,
+               'embedding_size': 200,
                'kernel_size': 5,
                'learning_rate': 0.0001,
                'weight_decay': 1e-5
                }
 
 # length of padded sub-sequences
-len_padded = 64
+len_padded = 32
 seq_overlap = 0
 
 
@@ -46,4 +46,4 @@ seq_overlap = 0
 
 
 def save_best_model(state, outdir):
-    torch.save(state.state_dict(), os.path.join(outdir, 'best_model.pt'))
+    torch.save(state, os.path.join(outdir, 'best_model.pt'))

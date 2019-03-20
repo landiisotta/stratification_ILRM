@@ -1,4 +1,5 @@
 from model.data_loader import EHRdata, ehr_collate
+from gensim.models import Word2Vec
 from train import train_and_evaluate
 from time import time
 from datetime import datetime
@@ -22,12 +23,13 @@ def learn_patient_representations(indir,
                                   outdir,
                                   disease_dt,
                                   eval_baseline=False,
-                                  sampling=None):
+                                  sampling=None,
+                                  emb_filename=None):
 
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, '-'.join(
         [disease_dt,
-         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 'relu-nobn-noact-norelu-10-l64']))
+         datetime.now().strftime('%Y-%m-%d-%H-%M-%S')]))
     os.makedirs(exp_dir)
 
     # get the vocabulary size
@@ -35,8 +37,23 @@ def learn_patient_representations(indir,
     with open(fvocab) as f:
         rd = csv.reader(f)
         next(rd)
-        vocab_size = sum(1 for r in rd) + 1
+        vocab = {}
+        for r in rd:
+            tkn = r[0].split('::')
+            tkn[1] = tkn[1].capitalize()
+            vocab[int(r[1])] = '::'.join(tkn)
+        vocab_size = len(vocab) + 1
     print('Vocabulary size: {0}'.format(vocab_size))
+
+    # load pre-computed embeddings
+    if emb_filename is not None:
+        model = Word2Vec.load(emb_filename)
+        embs = model.wv
+        del model
+        print('Loaded pre-computed embeddings for {0} concepts'.format(
+            len(embs.vocab)))
+    else:
+        embs = None
 
     # set random seed for experiment reproducibility
     torch.manual_seed(123)
@@ -58,10 +75,13 @@ def learn_patient_representations(indir,
     print('Batch size: {0}'.format(ut.model_param['batch_size']))
     print('Kernel size: {0}\n'.format(ut.model_param['kernel_size']))
 
-    model = net.ehrEncoding(vocab_size,
-                            ut.len_padded,
-                            ut.model_param['embedding_size'],
-                            ut.model_param['kernel_size'])
+    model = net.ehrEncoding(vocab_size=vocab_size,
+                            max_seq_len=ut.len_padded,
+                            emb_size=ut.model_param['embedding_size'],
+                            kernel_size=ut.model_param['kernel_size'],
+                            pre_embs=embs,
+                            vocab=vocab
+                            )
 
     optimizer = torch.optim.Adam(model.parameters(),
                                  lr=ut.model_param['learning_rate'],
@@ -138,6 +158,8 @@ def _process_args():
     parser.add_argument('-s', default=None, type=int,
                         help='Enable sub-sampling with data size '
                         '(defaut: None)')
+    parser.add_argument('-e', default=None,
+                        help='Pre-computed embeddings (defaut: None)')
     return parser.parse_args(sys.argv[1:])
 
 
@@ -150,7 +172,8 @@ if __name__ == '__main__':
                                   outdir=args.outdir,
                                   disease_dt=args.disease_dt,
                                   eval_baseline=args.b,
-                                  sampling=args.s)
+                                  sampling=args.s,
+                                  emb_filename=args.e)
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
