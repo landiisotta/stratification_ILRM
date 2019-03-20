@@ -447,8 +447,8 @@ def clustering_inspection(indir,
     disease_dict = {d: i for i, d in enumerate(set(disease_class_first))}
     
     ##Parameters for CNN-AE and LSTM
-    HCpar = {'linkage_clu':'complete',
-             'affinity_clu':'cosine',
+    HCpar = {'linkage_clu':'ward',
+             'affinity_clu':'euclidean',
              'min_cl':3,
              'max_cl':11}
 

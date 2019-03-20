@@ -1,0 +1,1523 @@
+[H[J
+Loading datasets...
+Number of subjects:28071
+Disease numerosities:
+ {"parkinson's disease": 3694, 'multiple myeloma': 2709, 'malignant neoplasm of female breast': 9936, "alzheimer's disease": 2518, 'malignant tumor of prostate': 9214}
+UMAP embeddings for CNN-AE encodings...
+Computed: CNN - AE encoded vectors umap
+Evaluating CNN-AE encodings...
+Cluster: 0 -- Entropy: 1.892, Purity: 0.350
+max(P) in cluster disease parkinson's disease
+Cluster: 1 -- Entropy: 1.013, Purity: 0.804
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 2 -- Entropy: 2.214, Purity: 0.280
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 3 -- Entropy: 0.199, Purity: 0.974
+max(P) in cluster disease malignant tumor of prostate
+Cluster: 4 -- Entropy: 0.260, Purity: 0.965
+max(P) in cluster disease multiple myeloma
+Average Entropy: 1.44
+Average Purity: 0.57
+Cluster 0 numerosity = 4752
+Cluster 1 numerosity = 7039
+Cluster 2 numerosity = 10439
+Cluster 3 numerosity = 4121
+Cluster 4 numerosity = 1720
+Inspecting disease: alzheimer's disease
+
+3 0.19557142500561878
+4 0.09791180031719661
+5 0.08290799816377861
+6 0.09007944553348862
+7 0.07301878710441487
+8 0.07646010083037065
+9 0.07030336267028091
+10 0.07368007541442681
+Number of clusters found:3, Silhouette score:0.196
+
+Cluster 0 numerosity: 1240
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.33 (7504 out of 22599 terms in the whole dataset-- N patients in cluster 1240)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.10 (3644 out of 38316 terms in the whole dataset-- N patients in cluster 1038)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.08 (7760 out of 101851 terms in the whole dataset-- N patients in cluster 989)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.35 (2528 out of 7131 terms in the whole dataset-- N patients in cluster 912)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.08 (3075 out of 38806 terms in the whole dataset-- N patients in cluster 882)
+
+
+Cluster 1 numerosity: 1159
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.47 (10537 out of 22599 terms in the whole dataset-- N patients in cluster 1159)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.12 (12063 out of 101851 terms in the whole dataset-- N patients in cluster 830)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.14 (2575 out of 18017 terms in the whole dataset-- N patients in cluster 751)
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.33 (3271 out of 10062 terms in the whole dataset-- N patients in cluster 628)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.31 (2200 out of 7131 terms in the whole dataset-- N patients in cluster 565)
+
+
+Cluster 2 numerosity: 119
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.02 (563 out of 22599 terms in the whole dataset-- N patients in cluster 119)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.03 (249 out of 7131 terms in the whole dataset-- N patients in cluster 57)
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.02 (213 out of 10062 terms in the whole dataset-- N patients in cluster 54)
+% most frequent term:medication::Memantine::6719::C0025242 = 0.04 (170 out of 4849 terms in the whole dataset-- N patients in cluster 40)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (76 out of 101851 terms in the whole dataset-- N patients in cluster 30)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [1240 1159  119]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[ 202  711  119]
+ [1038  448    0]]
+Chi-squared test statistics: chi2_stat = 682.64046076087 -- p_val = 5.84127138278336e-149 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[251 329  89]
+ [989 830  30]]
+Chi-squared test statistics: chi2_stat = 169.23523531294538 -- p_val = 1.7825247965311942e-37 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[328 594  62]
+ [912 565  57]]
+Chi-squared test statistics: chi2_stat = 163.65384931306542 -- p_val = 2.9041440253906764e-36 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[358 768 116]
+ [882 391   3]]
+Chi-squared test statistics: chi2_stat = 450.98862721986745 -- p_val = 1.1723678457625973e-98 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [1240 1159  119]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[251 329  89]
+ [989 830  30]]
+Chi-squared test statistics: chi2_stat = 169.23523531294538 -- p_val = 1.7825247965311942e-37 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[774 408  99]
+ [466 751  20]]
+Chi-squared test statistics: chi2_stat = 229.75895556108907 -- p_val = 1.2837389429767897e-50 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[578 531  65]
+ [662 628  54]]
+Chi-squared test statistics: chi2_stat = 3.36330202296834 -- p_val = 0.1860665243376024 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[328 594  62]
+ [912 565  57]]
+Chi-squared test statistics: chi2_stat = 163.65384931306542 -- p_val = 2.9041440253906764e-36 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [1240 1159  119]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[328 594  62]
+ [912 565  57]]
+Chi-squared test statistics: chi2_stat = 163.65384931306542 -- p_val = 2.9041440253906764e-36 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[578 531  65]
+ [662 628  54]]
+Chi-squared test statistics: chi2_stat = 3.36330202296834 -- p_val = 0.1860665243376024 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Memantine::6719::C0025242
+Count matrix:
+ [[944 767  79]
+ [296 392  40]]
+Chi-squared test statistics: chi2_stat = 30.207654309629703 -- p_val = 2.757345650494315e-07 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[251 329  89]
+ [989 830  30]]
+Chi-squared test statistics: chi2_stat = 169.23523531294538 -- p_val = 1.7825247965311942e-37 -- dof = 2
+
+
+
+Inspecting disease: malignant neoplasm of female breast
+
+3 0.18021875826156297
+4 0.1004916324859889
+5 0.11876830047445555
+6 0.09125122994556298
+7 0.09041181133234812
+8 0.09192712521244907
+9 0.08910603021365633
+10 0.06741292163954406
+Number of clusters found:3, Silhouette score:0.180
+
+Cluster 0 numerosity: 6353
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.56 (49956 out of 88804 terms in the whole dataset-- N patients in cluster 6338)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.33 (12732 out of 38806 terms in the whole dataset-- N patients in cluster 3994)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.35 (9808 out of 28372 terms in the whole dataset-- N patients in cluster 3770)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.34 (11768 out of 34492 terms in the whole dataset-- N patients in cluster 3727)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.34 (8424 out of 24510 terms in the whole dataset-- N patients in cluster 3617)
+
+
+Cluster 1 numerosity: 902
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.03 (2602 out of 88804 terms in the whole dataset-- N patients in cluster 901)
+% most frequent term:medication::Calcium::1895::C0006675 = 0.01 (96 out of 8492 terms in the whole dataset-- N patients in cluster 96)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (97 out of 26889 terms in the whole dataset-- N patients in cluster 94)
+% most frequent term:icd9::Carcinoma in situ of breast::233.0::C0154084 = 0.02 (159 out of 10322 terms in the whole dataset-- N patients in cluster 89)
+% most frequent term:medication::Anastrozole 1 mg::315382::C0983723 = 0.04 (118 out of 3291 terms in the whole dataset-- N patients in cluster 88)
+
+
+Cluster 2 numerosity: 2681
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.41 (36246 out of 88804 terms in the whole dataset-- N patients in cluster 2678)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.12 (3416 out of 28372 terms in the whole dataset-- N patients in cluster 1484)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.12 (2863 out of 24510 terms in the whole dataset-- N patients in cluster 1461)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.07 (2744 out of 38806 terms in the whole dataset-- N patients in cluster 1344)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.08 (2739 out of 34492 terms in the whole dataset-- N patients in cluster 1297)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  15    1    3]
+ [6338  901 2678]]
+Chi-squared test statistics: chi2_stat = 1.8597131173179458 -- p_val = 0.39461030974417194 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[2359  844 1337]
+ [3994   58 1344]]
+Chi-squared test statistics: chi2_stat = 1039.6888167867944 -- p_val = 1.7157025094702032e-226 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[2583  873 1197]
+ [3770   29 1484]]
+Chi-squared test statistics: chi2_stat = 1006.3329347065762 -- p_val = 3.003168843636797e-219 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[2626  845 1384]
+ [3727   57 1297]]
+Chi-squared test statistics: chi2_stat = 877.3522411535808 -- p_val = 3.0576057806075747e-191 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[2736  865 1220]
+ [3617   37 1461]]
+Chi-squared test statistics: chi2_stat = 895.9924380549061 -- p_val = 2.7397703592250957e-195 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  15    1    3]
+ [6338  901 2678]]
+Chi-squared test statistics: chi2_stat = 1.8597131173179458 -- p_val = 0.39461030974417194 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Calcium::1895::C0006675
+Count matrix:
+ [[4710  806 2045]
+ [1643   96  636]]
+Chi-squared test statistics: chi2_stat = 100.64030448301372 -- p_val = 1.4003466377436918e-22 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[3194  808 1722]
+ [3159   94  959]]
+Chi-squared test statistics: chi2_stat = 565.5320851792601 -- p_val = 1.571332284927075e-123 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Carcinoma in situ of breast::233.0::C0154084
+Count matrix:
+ [[5054  813 1758]
+ [1299   89  923]]
+Chi-squared test statistics: chi2_stat = 306.1315333261641 -- p_val = 3.344892540051484e-67 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Anastrozole 1 mg::315382::C0983723
+Count matrix:
+ [[5516  814 2186]
+ [ 837   88  495]]
+Chi-squared test statistics: chi2_stat = 59.70626174767397 -- p_val = 1.0838021144262085e-13 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  15    1    3]
+ [6338  901 2678]]
+Chi-squared test statistics: chi2_stat = 1.8597131173179458 -- p_val = 0.39461030974417194 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[2583  873 1197]
+ [3770   29 1484]]
+Chi-squared test statistics: chi2_stat = 1006.3329347065762 -- p_val = 3.003168843636797e-219 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[2736  865 1220]
+ [3617   37 1461]]
+Chi-squared test statistics: chi2_stat = 895.9924380549061 -- p_val = 2.7397703592250957e-195 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[2359  844 1337]
+ [3994   58 1344]]
+Chi-squared test statistics: chi2_stat = 1039.6888167867944 -- p_val = 1.7157025094702032e-226 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[2626  845 1384]
+ [3727   57 1297]]
+Chi-squared test statistics: chi2_stat = 877.3522411535808 -- p_val = 3.0576057806075747e-191 -- dof = 2
+
+
+
+Inspecting disease: malignant tumor of prostate
+
+3 0.12325686958432493
+4 0.12732607184132322
+5 0.11846583951278468
+6 0.06356069589271546
+7 0.06615421868019401
+8 0.07320413190470577
+9 0.07138578816483779
+10 0.07462215730375908
+Number of clusters found:4, Silhouette score:0.127
+
+Cluster 0 numerosity: 2723
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.17 (8739 out of 51054 terms in the whole dataset-- N patients in cluster 2723)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.08 (3033 out of 38806 terms in the whole dataset-- N patients in cluster 2513)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.09 (3016 out of 34492 terms in the whole dataset-- N patients in cluster 2505)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.16 (2464 out of 15614 terms in the whole dataset-- N patients in cluster 2323)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.12 (2831 out of 24510 terms in the whole dataset-- N patients in cluster 2240)
+
+
+Cluster 1 numerosity: 3520
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.50 (25386 out of 51054 terms in the whole dataset-- N patients in cluster 3520)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.20 (20406 out of 101851 terms in the whole dataset-- N patients in cluster 2503)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.16 (6074 out of 38806 terms in the whole dataset-- N patients in cluster 2061)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.14 (5546 out of 38316 terms in the whole dataset-- N patients in cluster 1892)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.14 (5958 out of 43635 terms in the whole dataset-- N patients in cluster 1884)
+
+
+Cluster 2 numerosity: 2124
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.26 (13128 out of 51054 terms in the whole dataset-- N patients in cluster 2124)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.05 (1163 out of 24510 terms in the whole dataset-- N patients in cluster 1030)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.03 (1171 out of 34492 terms in the whole dataset-- N patients in cluster 998)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.03 (1111 out of 38806 terms in the whole dataset-- N patients in cluster 947)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.03 (984 out of 28372 terms in the whole dataset-- N patients in cluster 888)
+
+
+Cluster 3 numerosity: 847
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.06 (2946 out of 51054 terms in the whole dataset-- N patients in cluster 847)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.02 (240 out of 14460 terms in the whole dataset-- N patients in cluster 235)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.01 (215 out of 24510 terms in the whole dataset-- N patients in cluster 210)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (177 out of 101851 terms in the whole dataset-- N patients in cluster 164)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.01 (121 out of 17221 terms in the whole dataset-- N patients in cluster 118)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2723 3520 2124  847]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 210 1459 1177  788]
+ [2513 2061  947   59]]
+Chi-squared test statistics: chi2_stat = 2399.099576338541 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 218 1674 1126  765]
+ [2505 1846  998   82]]
+Chi-squared test statistics: chi2_stat = 2265.3961986051695 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[ 400 2258 1359  833]
+ [2323 1262  765   14]]
+Chi-squared test statistics: chi2_stat = 2579.4437362569033 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 483 1843 1094  637]
+ [2240 1677 1030  210]]
+Chi-squared test statistics: chi2_stat = 1245.139763628113 -- p_val = 1.1782385127852348e-269 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2723 3520 2124  847]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1497 1017 1444  683]
+ [1226 2503  680  164]]
+Chi-squared test statistics: chi2_stat = 1246.6925888401786 -- p_val = 5.423900426376699e-270 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 210 1459 1177  788]
+ [2513 2061  947   59]]
+Chi-squared test statistics: chi2_stat = 2399.099576338541 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[1592 1628 1578  834]
+ [1131 1892  546   13]]
+Chi-squared test statistics: chi2_stat = 987.869282753353 -- p_val = 7.702639871338521e-214 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[1450 1636 1335  771]
+ [1273 1884  789   76]]
+Chi-squared test statistics: chi2_stat = 600.7302678723921 -- p_val = 6.999721191101715e-130 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2723 3520 2124  847]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 483 1843 1094  637]
+ [2240 1677 1030  210]]
+Chi-squared test statistics: chi2_stat = 1245.139763628113 -- p_val = 1.1782385127852348e-269 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 218 1674 1126  765]
+ [2505 1846  998   82]]
+Chi-squared test statistics: chi2_stat = 2265.3961986051695 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 210 1459 1177  788]
+ [2513 2061  947   59]]
+Chi-squared test statistics: chi2_stat = 2399.099576338541 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 823 2002 1236  743]
+ [1900 1518  888  104]]
+Chi-squared test statistics: chi2_stat = 1016.6317877004303 -- p_val = 4.4377282295902035e-220 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2723 3520 2124  847]]
+empty class(es)
+Odds ratio chi2 test for cluster 3term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[1066 2294 1392  612]
+ [1657 1226  732  235]]
+Chi-squared test statistics: chi2_stat = 592.4210318791596 -- p_val = 4.429900568290274e-128 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 483 1843 1094  637]
+ [2240 1677 1030  210]]
+Chi-squared test statistics: chi2_stat = 1245.139763628113 -- p_val = 1.1782385127852348e-269 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1497 1017 1444  683]
+ [1226 2503  680  164]]
+Chi-squared test statistics: chi2_stat = 1246.6925888401786 -- p_val = 5.423900426376699e-270 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 896 2222 1420  729]
+ [1827 1298  704  118]]
+Chi-squared test statistics: chi2_stat = 1075.9602407799448 -- p_val = 5.976454084867409e-233 -- dof = 3
+
+
+
+Inspecting disease: multiple myeloma
+
+3 0.15281470698496946
+4 0.16344489373122
+5 0.08711815864774097
+6 0.10213164613819349
+7 0.10340043237634375
+8 0.11167308474459253
+9 0.11670329618593214
+10 0.09966537075275922
+Number of clusters found:4, Silhouette score:0.163
+
+Cluster 0 numerosity: 1211
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.61 (27480 out of 45045 terms in the whole dataset-- N patients in cluster 1211)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.14 (6145 out of 43635 terms in the whole dataset-- N patients in cluster 886)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.15 (5568 out of 38316 terms in the whole dataset-- N patients in cluster 826)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.13 (3658 out of 28372 terms in the whole dataset-- N patients in cluster 785)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.18 (3535 out of 20009 terms in the whole dataset-- N patients in cluster 749)
+
+
+Cluster 1 numerosity: 617
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.12 (5203 out of 45045 terms in the whole dataset-- N patients in cluster 614)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.07 (2682 out of 38316 terms in the whole dataset-- N patients in cluster 539)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.06 (2388 out of 38806 terms in the whole dataset-- N patients in cluster 510)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.06 (1974 out of 34492 terms in the whole dataset-- N patients in cluster 459)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.06 (1685 out of 28372 terms in the whole dataset-- N patients in cluster 403)
+
+
+Cluster 2 numerosity: 549
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.21 (9502 out of 45045 terms in the whole dataset-- N patients in cluster 549)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.01 (238 out of 16010 terms in the whole dataset-- N patients in cluster 209)
+% most frequent term:medication::Dexamethasone 4 mg::315778::C0985346 = 0.11 (824 out of 7545 terms in the whole dataset-- N patients in cluster 186)
+% most frequent term:medication::Acyclovir 400 mg::315281::C0983010 = 0.19 (445 out of 2366 terms in the whole dataset-- N patients in cluster 177)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.01 (440 out of 43635 terms in the whole dataset-- N patients in cluster 142)
+
+
+Cluster 3 numerosity: 332
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.03 (1406 out of 45045 terms in the whole dataset-- N patients in cluster 327)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.01 (1127 out of 101851 terms in the whole dataset-- N patients in cluster 143)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.01 (151 out of 16010 terms in the whole dataset-- N patients in cluster 112)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.01 (121 out of 12588 terms in the whole dataset-- N patients in cluster 88)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (124 out of 26889 terms in the whole dataset-- N patients in cluster 85)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    3    0    5]
+ [1211  614  549  327]]
+Chi-squared test statistics: chi2_stat = 22.504754340117454 -- p_val = 5.121324736969675e-05 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[325 217 407 248]
+ [886 400 142  84]]
+Chi-squared test statistics: chi2_stat = 493.1283986649536 -- p_val = 1.471725763424611e-106 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[385  78 473 290]
+ [826 539  76  42]]
+Chi-squared test statistics: chi2_stat = 961.648267027449 -- p_val = 3.755183375220088e-208 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[426 214 470 291]
+ [785 403  79  41]]
+Chi-squared test statistics: chi2_stat = 628.5928356530221 -- p_val = 6.376965820655385e-136 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[462 308 485 297]
+ [749 309  64  35]]
+Chi-squared test statistics: chi2_stat = 551.7569987501588 -- p_val = 2.8912724342933373e-119 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    3    0    5]
+ [1211  614  549  327]]
+Chi-squared test statistics: chi2_stat = 22.504754340117454 -- p_val = 5.121324736969675e-05 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[385  78 473 290]
+ [826 539  76  42]]
+Chi-squared test statistics: chi2_stat = 961.648267027449 -- p_val = 3.755183375220088e-208 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[568 107 467 256]
+ [643 510  82  76]]
+Chi-squared test statistics: chi2_stat = 633.3090034130422 -- p_val = 6.055210833452213e-137 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[481 158 453 254]
+ [730 459  96  78]]
+Chi-squared test statistics: chi2_stat = 523.4020263943596 -- p_val = 4.0446338250742596e-113 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[426 214 470 291]
+ [785 403  79  41]]
+Chi-squared test statistics: chi2_stat = 628.5928356530221 -- p_val = 6.376965820655385e-136 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    3    0    5]
+ [1211  614  549  327]]
+Chi-squared test statistics: chi2_stat = 22.504754340117454 -- p_val = 5.121324736969675e-05 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[643 459 340 220]
+ [568 158 209 112]]
+Chi-squared test statistics: chi2_stat = 82.51187305119545 -- p_val = 8.874494348629174e-18 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Dexamethasone 4 mg::315778::C0985346
+Count matrix:
+ [[497 492 363 270]
+ [714 125 186  62]]
+Chi-squared test statistics: chi2_stat = 352.65716682260415 -- p_val = 3.965627682347245e-76 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Acyclovir 400 mg::315281::C0983010
+Count matrix:
+ [[647 565 372 289]
+ [564  52 177  43]]
+Chi-squared test statistics: chi2_stat = 336.03750983235375 -- p_val = 1.5732672519383145e-72 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[325 217 407 248]
+ [886 400 142  84]]
+Chi-squared test statistics: chi2_stat = 493.1283986649536 -- p_val = 1.471725763424611e-106 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    3    0    5]
+ [1211  614  549  327]]
+Chi-squared test statistics: chi2_stat = 22.504754340117454 -- p_val = 5.121324736969675e-05 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[650 220 463 189]
+ [561 397  86 143]]
+Chi-squared test statistics: chi2_stat = 285.51725141318025 -- p_val = 1.3551457835851634e-61 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[643 459 340 220]
+ [568 158 209 112]]
+Chi-squared test statistics: chi2_stat = 82.51187305119545 -- p_val = 8.874494348629174e-18 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[859 509 416 244]
+ [352 108 133  88]]
+Chi-squared test statistics: chi2_stat = 29.6127432522621 -- p_val = 1.6647155728327385e-06 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[770 244 435 247]
+ [441 373 114  85]]
+Chi-squared test statistics: chi2_stat = 225.20465206611362 -- p_val = 1.5051356943814947e-48 -- dof = 3
+
+
+
+Inspecting disease: parkinson's disease
+
+3 0.2582870353896051
+4 0.19640653000112734
+5 0.11526252304261703
+6 0.0921371139706049
+7 0.08953680852188624
+8 0.07695029591598093
+9 0.07661145627468438
+10 0.07661177466148533
+Number of clusters found:3, Silhouette score:0.258
+
+Cluster 0 numerosity: 811
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.11 (3574 out of 32209 terms in the whole dataset-- N patients in cluster 811)
+% most frequent term:medication::Levodopa 100 mg::316141::C0987130 = 0.18 (669 out of 3721 terms in the whole dataset-- N patients in cluster 404)
+% most frequent term:medication::Carbidopa 25 mg::315568::C0984524 = 0.17 (652 out of 3881 terms in the whole dataset-- N patients in cluster 402)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.07 (691 out of 10324 terms in the whole dataset-- N patients in cluster 369)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.06 (525 out of 9209 terms in the whole dataset-- N patients in cluster 263)
+
+
+Cluster 1 numerosity: 2196
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.60 (19453 out of 32209 terms in the whole dataset-- N patients in cluster 2196)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.65 (6709 out of 10324 terms in the whole dataset-- N patients in cluster 1596)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.66 (6069 out of 9209 terms in the whole dataset-- N patients in cluster 1473)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.10 (10471 out of 101851 terms in the whole dataset-- N patients in cluster 1455)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.10 (3973 out of 38806 terms in the whole dataset-- N patients in cluster 1330)
+
+
+Cluster 2 numerosity: 687
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.21 (6623 out of 32209 terms in the whole dataset-- N patients in cluster 687)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.19 (1988 out of 10324 terms in the whole dataset-- N patients in cluster 515)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.19 (1744 out of 9209 terms in the whole dataset-- N patients in cluster 436)
+% most frequent term:medication::Carbidopa 25 mg::315568::C0984524 = 0.23 (898 out of 3881 terms in the whole dataset-- N patients in cluster 407)
+% most frequent term:medication::Levodopa 100 mg::316141::C0987130 = 0.22 (823 out of 3721 terms in the whole dataset-- N patients in cluster 388)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 811 2196  687]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: medication::Levodopa 100 mg::316141::C0987130
+Count matrix:
+ [[ 407 1438  299]
+ [ 404  758  388]]
+Chi-squared test statistics: chi2_stat = 129.94974659203965 -- p_val = 6.050218582975288e-29 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Carbidopa 25 mg::315568::C0984524
+Count matrix:
+ [[ 409 1410  280]
+ [ 402  786  407]]
+Chi-squared test statistics: chi2_stat = 134.59027227388634 -- p_val = 5.94420415293636e-30 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 442  600  172]
+ [ 369 1596  515]]
+Chi-squared test statistics: chi2_stat = 221.72037475443574 -- p_val = 7.14549565232659e-49 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 548  723  251]
+ [ 263 1473  436]]
+Chi-squared test statistics: chi2_stat = 301.0667732376478 -- p_val = 4.2090186416799175e-66 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 811 2196  687]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 442  600  172]
+ [ 369 1596  515]]
+Chi-squared test statistics: chi2_stat = 221.72037475443574 -- p_val = 7.14549565232659e-49 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 548  723  251]
+ [ 263 1473  436]]
+Chi-squared test statistics: chi2_stat = 301.0667732376478 -- p_val = 4.2090186416799175e-66 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 660  741  558]
+ [ 151 1455  129]]
+Chi-squared test statistics: chi2_stat = 808.8882972426723 -- p_val = 2.249769452961386e-176 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 763  866  620]
+ [  48 1330   67]]
+Chi-squared test statistics: chi2_stat = 1048.2050316248117 -- p_val = 2.427556971795234e-228 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 811 2196  687]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 442  600  172]
+ [ 369 1596  515]]
+Chi-squared test statistics: chi2_stat = 221.72037475443574 -- p_val = 7.14549565232659e-49 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 548  723  251]
+ [ 263 1473  436]]
+Chi-squared test statistics: chi2_stat = 301.0667732376478 -- p_val = 4.2090186416799175e-66 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Carbidopa 25 mg::315568::C0984524
+Count matrix:
+ [[ 409 1410  280]
+ [ 402  786  407]]
+Chi-squared test statistics: chi2_stat = 134.59027227388634 -- p_val = 5.94420415293636e-30 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Levodopa 100 mg::316141::C0987130
+Count matrix:
+ [[ 407 1438  299]
+ [ 404  758  388]]
+Chi-squared test statistics: chi2_stat = 129.94974659203965 -- p_val = 6.050218582975288e-29 -- dof = 2
+
+
+
+ -- 3: 0.108
+ -- 4: 0.111
+ -- 5: 0.116
+ -- 6: 0.129
+ -- 7: 0.082
+ -- 8: 0.086
+ -- 9: 0.093
+ -- 10: 0.097
+No. of clusters: 6 -- Silhouette Score: 0.129
+
+UMAP embedding for COUNT-SVD matrix...
+Computed: COUNT matrix umap
+Evaluating scaled COUNT matrix...
+Cluster: 0 -- Entropy: 1.936, Purity: 0.388
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 1 -- Entropy: 0.298, Purity: 0.956
+max(P) in cluster disease multiple myeloma
+Cluster: 2 -- Entropy: 2.037, Purity: 0.463
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 3 -- Entropy: 0.039, Purity: 0.996
+max(P) in cluster disease malignant tumor of prostate
+Cluster: 4 -- Entropy: 2.194, Purity: 0.296
+max(P) in cluster disease malignant neoplasm of female breast
+Average Entropy: 1.90
+Average Purity: 0.40
+Cluster 0 numerosity = 20715
+Cluster 1 numerosity = 904
+Cluster 2 numerosity = 715
+Cluster 3 numerosity = 533
+Cluster 4 numerosity = 5204
+Inspecting disease: alzheimer's disease
+
+3 0.35299837445588195
+4 0.14185851882930903
+5 0.14409704634405063
+6 0.14889512679065167
+7 0.139535541627936
+8 0.14595334354328987
+9 0.1189215124266744
+10 0.10740189010076419
+Number of clusters found:3, Silhouette score:0.353
+
+Cluster 0 numerosity: 2002
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.48 (10934 out of 22599 terms in the whole dataset-- N patients in cluster 2002)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.08 (8273 out of 101851 terms in the whole dataset-- N patients in cluster 1393)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.47 (3333 out of 7131 terms in the whole dataset-- N patients in cluster 1171)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.07 (2725 out of 38316 terms in the whole dataset-- N patients in cluster 1062)
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.37 (3709 out of 10062 terms in the whole dataset-- N patients in cluster 1011)
+
+
+Cluster 1 numerosity: 100
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.06 (1316 out of 22599 terms in the whole dataset-- N patients in cluster 100)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.02 (915 out of 38316 terms in the whole dataset-- N patients in cluster 100)
+% most frequent term:medication::Heparin sodium::9877::C0037513 = 0.07 (705 out of 10728 terms in the whole dataset-- N patients in cluster 99)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.02 (922 out of 38806 terms in the whole dataset-- N patients in cluster 97)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.03 (2723 out of 101851 terms in the whole dataset-- N patients in cluster 96)
+
+
+Cluster 2 numerosity: 416
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.28 (6354 out of 22599 terms in the whole dataset-- N patients in cluster 416)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.11 (1998 out of 18017 terms in the whole dataset-- N patients in cluster 407)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.09 (8903 out of 101851 terms in the whole dataset-- N patients in cluster 360)
+% most frequent term:icd9::Constipation, unspecified::564.00::C0009806 = 0.19 (4146 out of 22117 terms in the whole dataset-- N patients in cluster 331)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.04 (1553 out of 43635 terms in the whole dataset-- N patients in cluster 328)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [2002  100  416]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 609    4   56]
+ [1393   96  360]]
+Chi-squared test statistics: chi2_stat = 77.95626359898579 -- p_val = 1.1803544578822052e-17 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[ 831    9  144]
+ [1171   91  272]]
+Chi-squared test statistics: chi2_stat = 46.447897535812366 -- p_val = 8.20289593746528e-11 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[ 940    0   92]
+ [1062  100  324]]
+Chi-squared test statistics: chi2_stat = 160.16904673075837 -- p_val = 1.6585685140624918e-35 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[ 991   34  149]
+ [1011   66  267]]
+Chi-squared test statistics: chi2_stat = 32.58210441898048 -- p_val = 8.411741558911623e-08 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [2002  100  416]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[ 940    0   92]
+ [1062  100  324]]
+Chi-squared test statistics: chi2_stat = 160.16904673075837 -- p_val = 1.6585685140624918e-35 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Heparin sodium::9877::C0037513
+Count matrix:
+ [[1310    1  183]
+ [ 692   99  233]]
+Chi-squared test statistics: chi2_stat = 212.4959515636698 -- p_val = 7.19598757105765e-47 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[1110    3  129]
+ [ 892   97  287]]
+Chi-squared test statistics: chi2_stat = 171.6800841863205 -- p_val = 5.249807664575453e-38 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 609    4   56]
+ [1393   96  360]]
+Chi-squared test statistics: chi2_stat = 77.95626359898579 -- p_val = 1.1803544578822052e-17 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [2002  100  416]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[1251   21    9]
+ [ 751   79  407]]
+Chi-squared test statistics: chi2_stat = 538.6895941949737 -- p_val = 1.0593534644280024e-117 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 609    4   56]
+ [1393   96  360]]
+Chi-squared test statistics: chi2_stat = 77.95626359898579 -- p_val = 1.1803544578822052e-17 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Constipation, unspecified::564.00::C0009806
+Count matrix:
+ [[1414   19   85]
+ [ 588   81  331]]
+Chi-squared test statistics: chi2_stat = 436.624037323194 -- p_val = 1.5427478935588243e-95 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[1201   10   88]
+ [ 801   90  328]]
+Chi-squared test statistics: chi2_stat = 280.1226778508577 -- p_val = 1.4863920598663747e-61 -- dof = 2
+
+
+
+Inspecting disease: malignant neoplasm of female breast
+
+3 0.2312378341504726
+4 0.1334908598457262
+5 0.14449633911890858
+6 0.14624877636698771
+7 0.159004055271368
+8 0.16419981074700657
+9 0.1652456644527156
+10 0.16551700136515074
+Number of clusters found:3, Silhouette score:0.231
+
+Cluster 0 numerosity: 6537
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.52 (46015 out of 88804 terms in the whole dataset-- N patients in cluster 6525)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.15 (6013 out of 38806 terms in the whole dataset-- N patients in cluster 3136)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.21 (5987 out of 28372 terms in the whole dataset-- N patients in cluster 3079)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.22 (5487 out of 24510 terms in the whole dataset-- N patients in cluster 2998)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.17 (5814 out of 34492 terms in the whole dataset-- N patients in cluster 2986)
+
+
+Cluster 1 numerosity: 342
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.08 (7194 out of 88804 terms in the whole dataset-- N patients in cluster 342)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.11 (11606 out of 101851 terms in the whole dataset-- N patients in cluster 321)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.06 (2569 out of 43635 terms in the whole dataset-- N patients in cluster 317)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.07 (2873 out of 38806 terms in the whole dataset-- N patients in cluster 315)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.11 (1964 out of 18017 terms in the whole dataset-- N patients in cluster 315)
+
+
+Cluster 2 numerosity: 3057
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.40 (35595 out of 88804 terms in the whole dataset-- N patients in cluster 3050)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.17 (6653 out of 38806 terms in the whole dataset-- N patients in cluster 1945)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.21 (6078 out of 28372 terms in the whole dataset-- N patients in cluster 1931)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.20 (4869 out of 24510 terms in the whole dataset-- N patients in cluster 1846)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.18 (6208 out of 34492 terms in the whole dataset-- N patients in cluster 1805)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  12    0    7]
+ [6525  342 3050]]
+Chi-squared test statistics: chi2_stat = 0.9036614244812539 -- p_val = 0.6364619058155909 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3401   27 1112]
+ [3136  315 1945]]
+Chi-squared test statistics: chi2_stat = 409.5467636246797 -- p_val = 1.1696346839693016e-89 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[3458   69 1126]
+ [3079  273 1931]]
+Chi-squared test statistics: chi2_stat = 316.96709490637494 -- p_val = 1.4841229079756999e-69 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[3539   71 1211]
+ [2998  271 1846]]
+Chi-squared test statistics: chi2_stat = 285.1846531916861 -- p_val = 1.182876483257e-62 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3551   52 1252]
+ [2986  290 1805]]
+Chi-squared test statistics: chi2_stat = 309.5145812500439 -- p_val = 6.162581094130354e-68 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  12    0    7]
+ [6525  342 3050]]
+Chi-squared test statistics: chi2_stat = 0.9036614244812539 -- p_val = 0.6364619058155909 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[4372   21 1702]
+ [2165  321 1355]]
+Chi-squared test statistics: chi2_stat = 565.4402683102762 -- p_val = 1.6451511806571023e-123 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[3971   25 1278]
+ [2566  317 1779]]
+Chi-squared test statistics: chi2_stat = 597.9670584632415 -- p_val = 1.4226664003915493e-130 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3401   27 1112]
+ [3136  315 1945]]
+Chi-squared test statistics: chi2_stat = 409.5467636246797 -- p_val = 1.1696346839693016e-89 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[5541   27 1975]
+ [ 996  315 1082]]
+Chi-squared test statistics: chi2_stat = 1359.229336516252 -- p_val = 7.032338301684743e-296 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  12    0    7]
+ [6525  342 3050]]
+Chi-squared test statistics: chi2_stat = 0.9036614244812539 -- p_val = 0.6364619058155909 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3401   27 1112]
+ [3136  315 1945]]
+Chi-squared test statistics: chi2_stat = 409.5467636246797 -- p_val = 1.1696346839693016e-89 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[3458   69 1126]
+ [3079  273 1931]]
+Chi-squared test statistics: chi2_stat = 316.96709490637494 -- p_val = 1.4841229079756999e-69 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[3539   71 1211]
+ [2998  271 1846]]
+Chi-squared test statistics: chi2_stat = 285.1846531916861 -- p_val = 1.182876483257e-62 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3551   52 1252]
+ [2986  290 1805]]
+Chi-squared test statistics: chi2_stat = 309.5145812500439 -- p_val = 6.162581094130354e-68 -- dof = 2
+
+
+
+Inspecting disease: malignant tumor of prostate
+
+3 0.2944914560589146
+4 0.36172069199756013
+5 0.41204590029910076
+6 0.43487184313539584
+7 0.46511031661778995
+8 0.4802993447771329
+9 0.4612472404252342
+10 0.3859624818090623
+Number of clusters found:8, Silhouette score:0.480
+
+Cluster 0 numerosity: 5418
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.62 (31739 out of 51054 terms in the whole dataset-- N patients in cluster 5418)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.12 (12151 out of 101851 terms in the whole dataset-- N patients in cluster 2610)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.14 (3378 out of 24510 terms in the whole dataset-- N patients in cluster 2139)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.10 (4074 out of 38806 terms in the whole dataset-- N patients in cluster 2047)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.11 (3717 out of 34492 terms in the whole dataset-- N patients in cluster 1980)
+
+
+Cluster 1 numerosity: 458
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.11 (5628 out of 51054 terms in the whole dataset-- N patients in cluster 458)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.10 (1832 out of 18017 terms in the whole dataset-- N patients in cluster 444)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.06 (6603 out of 101851 terms in the whole dataset-- N patients in cluster 375)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.03 (1118 out of 43635 terms in the whole dataset-- N patients in cluster 292)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.07 (2800 out of 37839 terms in the whole dataset-- N patients in cluster 288)
+
+
+Cluster 2 numerosity: 250
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.05 (2339 out of 51054 terms in the whole dataset-- N patients in cluster 250)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.05 (1819 out of 38316 terms in the whole dataset-- N patients in cluster 248)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.04 (1693 out of 38806 terms in the whole dataset-- N patients in cluster 242)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (2484 out of 101851 terms in the whole dataset-- N patients in cluster 225)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.03 (1426 out of 43635 terms in the whole dataset-- N patients in cluster 220)
+
+
+Cluster 3 numerosity: 531
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.03 (1763 out of 51054 terms in the whole dataset-- N patients in cluster 531)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.02 (646 out of 38806 terms in the whole dataset-- N patients in cluster 516)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.02 (631 out of 34492 terms in the whole dataset-- N patients in cluster 505)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.04 (548 out of 15614 terms in the whole dataset-- N patients in cluster 504)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.02 (635 out of 26889 terms in the whole dataset-- N patients in cluster 486)
+
+
+Cluster 4 numerosity: 524
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.03 (1701 out of 51054 terms in the whole dataset-- N patients in cluster 524)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.02 (599 out of 38806 terms in the whole dataset-- N patients in cluster 522)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.02 (586 out of 34492 terms in the whole dataset-- N patients in cluster 516)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.03 (537 out of 15614 terms in the whole dataset-- N patients in cluster 515)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.05 (511 out of 9500 terms in the whole dataset-- N patients in cluster 486)
+
+
+Cluster 5 numerosity: 832
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.06 (2882 out of 51054 terms in the whole dataset-- N patients in cluster 832)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.02 (952 out of 38806 terms in the whole dataset-- N patients in cluster 829)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.03 (945 out of 34492 terms in the whole dataset-- N patients in cluster 827)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.06 (874 out of 15614 terms in the whole dataset-- N patients in cluster 826)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.09 (854 out of 9500 terms in the whole dataset-- N patients in cluster 825)
+
+
+Cluster 6 numerosity: 310
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.02 (1200 out of 51054 terms in the whole dataset-- N patients in cluster 310)
+% most frequent term:medication::Docusate sodium 100 mg::1099278::C3153447 = 0.02 (335 out of 16526 terms in the whole dataset-- N patients in cluster 309)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.01 (359 out of 34492 terms in the whole dataset-- N patients in cluster 309)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.01 (357 out of 38806 terms in the whole dataset-- N patients in cluster 308)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.03 (315 out of 9500 terms in the whole dataset-- N patients in cluster 305)
+
+
+Cluster 7 numerosity: 891
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.06 (2947 out of 51054 terms in the whole dataset-- N patients in cluster 891)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.03 (1009 out of 38806 terms in the whole dataset-- N patients in cluster 879)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.03 (1001 out of 34492 terms in the whole dataset-- N patients in cluster 873)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.06 (892 out of 15614 terms in the whole dataset-- N patients in cluster 860)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.09 (869 out of 9500 terms in the whole dataset-- N patients in cluster 837)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2808   83   25  259  304  492  178  492]
+ [2610  375  225  272  220  340  132  399]]
+Chi-squared test statistics: chi2_stat = 411.0083842204431 -- p_val = 1.0385525032408582e-84 -- dof = 7
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[3279  277   43  134   77   86    8  153]
+ [2139  181  207  397  447  746  302  738]]
+Chi-squared test statistics: chi2_stat = 1840.4784921624 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[4762   14  168  512  505  815  298  866]
+ [ 656  444   82   19   19   17   12   25]]
+Chi-squared test statistics: chi2_stat = 3050.611450322674 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2808   83   25  259  304  492  178  492]
+ [2610  375  225  272  220  340  132  399]]
+Chi-squared test statistics: chi2_stat = 411.0083842204431 -- p_val = 1.0385525032408582e-84 -- dof = 7
+Odds ratio chi2 test for cluster 1term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[3652  166   30  478  242  195   29  400]
+ [1766  292  220   53  282  637  281  491]]
+Chi-squared test statistics: chi2_stat = 1503.4239625515736 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[3971  170  100  439  378  627  212  680]
+ [1447  288  150   92  146  205   98  211]]
+Chi-squared test statistics: chi2_stat = 445.1410267268485 -- p_val = 4.9071646358051696e-92 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[3892  260    2  476  224  243   53  482]
+ [1526  198  248   55  300  589  257  409]]
+Chi-squared test statistics: chi2_stat = 1532.3500637015864 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2808   83   25  259  304  492  178  492]
+ [2610  375  225  272  220  340  132  399]]
+Chi-squared test statistics: chi2_stat = 411.0083842204431 -- p_val = 1.0385525032408582e-84 -- dof = 7
+Odds ratio chi2 test for cluster 2term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[3652  166   30  478  242  195   29  400]
+ [1766  292  220   53  282  637  281  491]]
+Chi-squared test statistics: chi2_stat = 1503.4239625515736 -- p_val = 0.0 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 3term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 3term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 3term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[4367  351   53   27    9    6    6   31]
+ [1051  107  197  504  515  826  304  860]]
+Chi-squared test statistics: chi2_stat = 5013.816150753889 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[4012  227   57   45  235  555  237  412]
+ [1406  231  193  486  289  277   73  479]]
+Chi-squared test statistics: chi2_stat = 1375.857466287319 -- p_val = 6.459642849449187e-293 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 4term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 4term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 4term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 4term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[4367  351   53   27    9    6    6   31]
+ [1051  107  197  504  515  826  304  860]]
+Chi-squared test statistics: chi2_stat = 5013.816150753889 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 4term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[4685  362  136   85   38    7    5   54]
+ [ 733   96  114  446  486  825  305  837]]
+Chi-squared test statistics: chi2_stat = 5343.469550230972 -- p_val = 0.0 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 5term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 5term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 5term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 5term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[4367  351   53   27    9    6    6   31]
+ [1051  107  197  504  515  826  304  860]]
+Chi-squared test statistics: chi2_stat = 5013.816150753889 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 5term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[4685  362  136   85   38    7    5   54]
+ [ 733   96  114  446  486  825  305  837]]
+Chi-squared test statistics: chi2_stat = 5343.469550230972 -- p_val = 0.0 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 6term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 6term: medication::Docusate sodium 100 mg::1099278::C3153447
+Count matrix:
+ [[4493  324   90  506  173  181    1  393]
+ [ 925  134  160   25  351  651  309  498]]
+Chi-squared test statistics: chi2_stat = 2798.1860518023527 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 6term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 6term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 6term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[4685  362  136   85   38    7    5   54]
+ [ 733   96  114  446  486  825  305  837]]
+Chi-squared test statistics: chi2_stat = 5343.469550230972 -- p_val = 0.0 -- dof = 7
+
+
+
+Odds ratio chi2 test for cluster 7term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0    0    0    0    0]
+ [5418  458  250  531  524  832  310  891]]
+empty class(es)
+Odds ratio chi2 test for cluster 7term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[3371  221    8   15    2    3    2   12]
+ [2047  237  242  516  522  829  308  879]]
+Chi-squared test statistics: chi2_stat = 3230.7082035804137 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 7term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[3438  248   39   26    8    5    1   18]
+ [1980  210  211  505  516  827  309  873]]
+Chi-squared test statistics: chi2_stat = 3184.111670029386 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 7term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[4367  351   53   27    9    6    6   31]
+ [1051  107  197  504  515  826  304  860]]
+Chi-squared test statistics: chi2_stat = 5013.816150753889 -- p_val = 0.0 -- dof = 7
+Odds ratio chi2 test for cluster 7term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[4685  362  136   85   38    7    5   54]
+ [ 733   96  114  446  486  825  305  837]]
+Chi-squared test statistics: chi2_stat = 5343.469550230972 -- p_val = 0.0 -- dof = 7
+
+
+
+Inspecting disease: multiple myeloma
+
+3 0.36693039218667745
+4 0.3439846664030636
+5 0.3469580364201493
+6 0.351062159185127
+7 0.25513666366791377
+8 0.2602482590961326
+9 0.2617247493987297
+10 0.262249821043104
+Number of clusters found:3, Silhouette score:0.367
+
+Cluster 0 numerosity: 612
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.29 (12840 out of 45045 terms in the whole dataset-- N patients in cluster 612)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.10 (3813 out of 38316 terms in the whole dataset-- N patients in cluster 601)
+% most frequent term:medication::Diphenhydramine::3498::C0012522 = 0.15 (2489 out of 17054 terms in the whole dataset-- N patients in cluster 562)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.09 (2691 out of 28372 terms in the whole dataset-- N patients in cluster 549)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.09 (3835 out of 43635 terms in the whole dataset-- N patients in cluster 530)
+
+
+Cluster 1 numerosity: 1838
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.35 (15815 out of 45045 terms in the whole dataset-- N patients in cluster 1830)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.05 (2291 out of 43635 terms in the whole dataset-- N patients in cluster 744)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.03 (3435 out of 101851 terms in the whole dataset-- N patients in cluster 682)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.05 (1707 out of 34492 terms in the whole dataset-- N patients in cluster 675)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.04 (1678 out of 38806 terms in the whole dataset-- N patients in cluster 673)
+
+
+Cluster 2 numerosity: 259
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.33 (14936 out of 45045 terms in the whole dataset-- N patients in cluster 259)
+% most frequent term:medication::Injection::1649574::C1272883 = 0.06 (2833 out of 43635 terms in the whole dataset-- N patients in cluster 238)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.08 (2934 out of 38316 terms in the whole dataset-- N patients in cluster 227)
+% most frequent term:medication::Dexamethasone 4 mg::315778::C0985346 = 0.36 (2740 out of 7545 terms in the whole dataset-- N patients in cluster 220)
+% most frequent term:icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677 = 0.25 (4725 out of 19218 terms in the whole dataset-- N patients in cluster 213)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    8    0]
+ [ 612 1830  259]]
+Chi-squared test statistics: chi2_stat = 3.802305920629888 -- p_val = 0.14939627191420587 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[  11 1183   32]
+ [ 601  655  227]]
+Chi-squared test statistics: chi2_stat = 850.5572267295494 -- p_val = 2.0130054199415913e-185 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Diphenhydramine::3498::C0012522
+Count matrix:
+ [[  50 1385   68]
+ [ 562  453  191]]
+Chi-squared test statistics: chi2_stat = 938.0586995412507 -- p_val = 2.0097477167927445e-204 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[  63 1284   54]
+ [ 549  554  205]]
+Chi-squared test statistics: chi2_stat = 761.6155478637828 -- p_val = 4.1427155597737787e-166 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[  82 1094   21]
+ [ 530  744  238]]
+Chi-squared test statistics: chi2_stat = 547.1774360152187 -- p_val = 1.5203005699262433e-119 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    8    0]
+ [ 612 1830  259]]
+Chi-squared test statistics: chi2_stat = 3.802305920629888 -- p_val = 0.14939627191420587 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[  82 1094   21]
+ [ 530  744  238]]
+Chi-squared test statistics: chi2_stat = 547.1774360152187 -- p_val = 1.5203005699262433e-119 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 241 1156  125]
+ [ 371  682  134]]
+Chi-squared test statistics: chi2_stat = 110.4284861629844 -- p_val = 1.0489599509418463e-24 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 108 1163   75]
+ [ 504  675  184]]
+Chi-squared test statistics: chi2_stat = 431.5851161069448 -- p_val = 1.9163851708412418e-94 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 155 1165   78]
+ [ 457  673  181]]
+Chi-squared test statistics: chi2_stat = 319.22242836179527 -- p_val = 4.8054098179708437e-70 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    8    0]
+ [ 612 1830  259]]
+Chi-squared test statistics: chi2_stat = 3.802305920629888 -- p_val = 0.14939627191420587 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Injection::1649574::C1272883
+Count matrix:
+ [[  82 1094   21]
+ [ 530  744  238]]
+Chi-squared test statistics: chi2_stat = 547.1774360152187 -- p_val = 1.5203005699262433e-119 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[  11 1183   32]
+ [ 601  655  227]]
+Chi-squared test statistics: chi2_stat = 850.5572267295494 -- p_val = 2.0130054199415913e-185 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Dexamethasone 4 mg::315778::C0985346
+Count matrix:
+ [[ 263 1320   39]
+ [ 349  518  220]]
+Chi-squared test statistics: chi2_stat = 398.40469058298777 -- p_val = 3.072703518478642e-87 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677
+Count matrix:
+ [[ 335 1565   46]
+ [ 277  273  213]]
+Chi-squared test statistics: chi2_stat = 623.7058123519823 -- p_val = 3.664406815937433e-136 -- dof = 2
+
+
+
+Inspecting disease: parkinson's disease
+
+3 0.40739038829198515
+4 0.3996132845190648
+5 0.3882993227635881
+6 0.3989631026718783
+7 0.3703272280834514
+8 0.37049250725993926
+9 0.3706471500404932
+10 0.3702172301928245
+Number of clusters found:3, Silhouette score:0.407
+
+Cluster 0 numerosity: 885
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.27 (8804 out of 32209 terms in the whole dataset-- N patients in cluster 885)
+% most frequent term:medication::Sodium chloride::9863::C0037494 = 0.07 (2863 out of 38316 terms in the whole dataset-- N patients in cluster 764)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.07 (6795 out of 101851 terms in the whole dataset-- N patients in cluster 697)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.07 (2663 out of 38806 terms in the whole dataset-- N patients in cluster 685)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.35 (3586 out of 10324 terms in the whole dataset-- N patients in cluster 658)
+
+
+Cluster 1 numerosity: 242
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.15 (4929 out of 32209 terms in the whole dataset-- N patients in cluster 242)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.03 (691 out of 24510 terms in the whole dataset-- N patients in cluster 235)
+% most frequent term:medication::Vancomycin::11124::C0042313 = 0.07 (542 out of 8015 terms in the whole dataset-- N patients in cluster 231)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.03 (536 out of 17221 terms in the whole dataset-- N patients in cluster 224)
+% most frequent term:medication::Acetaminophen::161::C0000970 = 0.02 (620 out of 38806 terms in the whole dataset-- N patients in cluster 219)
+
+
+Cluster 2 numerosity: 2567
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.49 (15917 out of 32209 terms in the whole dataset-- N patients in cluster 2567)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.43 (4388 out of 10324 terms in the whole dataset-- N patients in cluster 1606)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.41 (3758 out of 9209 terms in the whole dataset-- N patients in cluster 1359)
+% most frequent term:medication::Carbidopa 25 mg::315568::C0984524 = 0.60 (2324 out of 3881 terms in the whole dataset-- N patients in cluster 1172)
+% most frequent term:medication::Levodopa 100 mg::316141::C0987130 = 0.61 (2265 out of 3721 terms in the whole dataset-- N patients in cluster 1156)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 885  242 2567]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: medication::Sodium chloride::9863::C0037494
+Count matrix:
+ [[ 121  149 2080]
+ [ 764   93  487]]
+Chi-squared test statistics: chi2_stat = 1290.437178175935 -- p_val = 6.097153624591296e-281 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 188  123 1648]
+ [ 697  119  919]]
+Chi-squared test statistics: chi2_stat = 488.05255379974216 -- p_val = 1.0489010085307735e-106 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 200   23 2026]
+ [ 685  219  541]]
+Chi-squared test statistics: chi2_stat = 1163.7391912064995 -- p_val = 1.9826472055287674e-253 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 227   26  961]
+ [ 658  216 1606]]
+Chi-squared test statistics: chi2_stat = 98.87175411294224 -- p_val = 3.3905596267256875e-22 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 885  242 2567]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 461    7 2222]
+ [ 424  235  345]]
+Chi-squared test statistics: chi2_stat = 1034.893397776813 -- p_val = 1.8869221984568016e-225 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Vancomycin::11124::C0042313
+Count matrix:
+ [[ 491   11 2377]
+ [ 394  231  190]]
+Chi-squared test statistics: chi2_stat = 1338.5135585839173 -- p_val = 2.215510319050466e-291 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 532   18 2279]
+ [ 353  224  288]]
+Chi-squared test statistics: chi2_stat = 992.0216022146044 -- p_val = 3.848097919794196e-216 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen::161::C0000970
+Count matrix:
+ [[ 200   23 2026]
+ [ 685  219  541]]
+Chi-squared test statistics: chi2_stat = 1163.7391912064995 -- p_val = 1.9826472055287674e-253 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [ 885  242 2567]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 227   26  961]
+ [ 658  216 1606]]
+Chi-squared test statistics: chi2_stat = 98.87175411294224 -- p_val = 3.3905596267256875e-22 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 271   43 1208]
+ [ 614  199 1359]]
+Chi-squared test statistics: chi2_stat = 132.09640377817138 -- p_val = 2.0683802390180085e-29 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Carbidopa 25 mg::315568::C0984524
+Count matrix:
+ [[ 606   98 1395]
+ [ 279  144 1172]]
+Chi-squared test statistics: chi2_stat = 81.6962574018259 -- p_val = 1.81921114984864e-18 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Levodopa 100 mg::316141::C0987130
+Count matrix:
+ [[ 628  105 1411]
+ [ 257  137 1156]]
+Chi-squared test statistics: chi2_stat = 91.95068684537192 -- p_val = 1.0793493837951655e-20 -- dof = 2
+
+
+
+ -- 3: 0.567
+ -- 4: 0.527
+ -- 5: 0.271
+ -- 6: 0.230
+ -- 7: 0.252
+ -- 8: 0.222
+ -- 9: 0.224
+ -- 10: 0.226
+No. of clusters: 3 -- Silhouette Score: 0.567
+
+Plotting silhouettes for model and baselines:
+
+Processing time: 3350.01 seconds
+
+Task completed
+

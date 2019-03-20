@@ -45,5 +45,8 @@ seq_overlap = 0
 # save the best model
 
 
-def save_best_model(state, outdir):
-    torch.save(state.state_dict(), os.path.join(outdir, 'best_model.pt'))
+def save_best_model(epoch, model, optimizer, loss,  outdir):
+    torch.save({'epoch':epoch,
+                'model_state_dict': model.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'loss': loss}, os.path.join(outdir, 'best_model.pt'))

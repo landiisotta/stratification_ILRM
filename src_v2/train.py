@@ -81,7 +81,7 @@ def train_and_evaluate(model, data_iter, loss_fn,
                     wr.writerow([idx, l])
 
             print('\nFound new best model at epoch {0}'.format(epoch))
-            ut.save_best_model(model, exp_dir)
+            ut.save_best_model(epoch, model, optimizer, loss, exp_dir)
 
             print('\nEvaluating the model')
             mrn, encoded, test_metrics = evaluate(
