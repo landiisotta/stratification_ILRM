@@ -11,7 +11,7 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
 diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
-            'malignant neoplasm of female breast',
+            'malignant neopasm of female breast',
             'malignant tumor of prostate',
             'type 2 dyabetes']
 
@@ -29,7 +29,7 @@ data_preproc_param = {'min_diagn': 3,
                       'len_min': 3}
 
 # model parameters
-model_param = {'num_epochs': 10,
+model_param = {'num_epochs': 20,
                'batch_size': 16,
                'embedding_size': 100,
                'kernel_size': 5,
@@ -46,4 +46,4 @@ seq_overlap = 0
 
 
 def save_best_model(state, outdir):
-    torch.save(state.state_dict(), os.path.join(outdir, 'best_model.pt'))
+    torch.save(state, os.path.join(outdir, 'best_model.pt'))

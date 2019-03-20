@@ -3,11 +3,11 @@
 clear
 projdir=..
 datadir=$projdir/data
-disease_dt=ehr100k
+disease_dt=mixed
 
 indir=$datadir/$disease_dt
 
-expdir=$datadir/experiments/ehr100k-2019-03-14-05-09-15-nobn-noact-norelu-10-l64
+expdir=$datadir/experiments/mixed-w2v-200
 
 sampling=10000
 exclude_oth=True

@@ -1,0 +1,28 @@
+[H[J
+Vocabulary size: 30017
+Cohort Size: 109434 -- Max Sequence Length: 64
+
+Learning rate: 0.0001
+Batch size: 16
+Kernel size: 5
+
+No. of GPUs: 1
+
+Training for 10 epochs
+
+Epoch 1 of 10
+-- time =  10492.146
+-- mean loss: 4.128
+Epoch 2 of 10
+-- time =  10495.104
+-- mean loss: 3.882
+Epoch 3 of 10
+-- time =  10489.228
+-- mean loss: 3.809
+Epoch 4 of 10
+-- time =  10503.788
+-- mean loss: 3.785
+Epoch 5 of 10
+-- time =  10504.115
+-- mean loss: 3.769
+Epoch 6 of 10

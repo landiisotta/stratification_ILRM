@@ -25,8 +25,8 @@ import sys
 from time import time
 
 ##global variables
-FRpar = {'n_terms':20,
-         'ty_terms':['icd9', 'medication', 'lab', 'cpt', 'procedure']}
+FRpar = {'n_terms':5,
+         'ty_terms':['icd9', 'medication']}
 
 # analyze clustering using silhouette scores
 def silhouette_analysis(data,
@@ -186,12 +186,17 @@ def outer_clustering_analysis(data, gt_clu,
 #Output: dictionary of term counts
 def FreqDict(tokens):
     freq_dict = {}
+    tok = []
     for seq in tokens:
-        for s in seq:
-            if s not in freq_dict:
-                freq_dict[s] = 1
-            else:
-                freq_dict[s] += 1
+        tok.extend(seq)
+    tok = set(tok)
+    for t in tok:
+        for seq in tokens:
+            if t in seq:
+                if t not in freq_dict:
+                    freq_dict[t] = 1
+                else:
+                    freq_dict[t] += 1
     return freq_dict
 #Input: dictionary cluster:ehrs; list mrns
 #Output:
@@ -212,22 +217,22 @@ def freq_term(data, pred_class, vocab, raw_ehr):
             try:
                 MFMT = max(term_count, key=(lambda key: term_count[key]))
                 num_MFMT = 0
-                n_subj = 0
+                subc_termc = 0
                 for ehr in tmp_data[subc]:
-                    if MFMT in ehr:
-                        n_subj += 1
-                for _, seq in raw_ehr.items():
+                    for e in ehr:
+                        if e == MFMT:
+                            subc_termc += 1
+                for seq in raw_ehr.values():
                     for t in seq:
                         if t == MFMT:
                             num_MFMT += 1
-                print("% most frequent term:{1} "
-                       "= {2:.2f} ({3} out of {4} terms in the whole dataset"
-                       "-- N patients in cluster {5})".format(subc,
-                                                             vocab[str(MFMT)], 
-                                                             term_count[MFMT]/num_MFMT, 
-                                                             term_count[MFMT],
-                                                             num_MFMT,
-                                                             n_subj))
+                print("% most frequent term:{0} "
+                       "= {1:.2f} ({2} out of {3} terms in the whole dataset"
+                       "-- N patients in cluster {4})".format(vocab[str(MFMT)], 
+                                                              subc_termc/num_MFMT, 
+                                                              subc_termc,
+                                                              num_MFMT,
+                                                              term_count[MFMT]))
                 term_count.pop(MFMT)
                 clust_mostfreq.append(MFMT)
             except ValueError:
@@ -379,33 +384,34 @@ def clustering_inspection(indir,
                 raw_ehr.setdefault(r[0], list()).extend(list(map(int, r[1::])))
                 
     ##Read LSTM encoded vectors file and ordered medical record numbers
-    with open(expdir + '/LSTMencoded_vect.csv') as f:
-        rd = csv.reader(f)
-        lstm_encoded_vect = []
-        for r in rd:
-            lstm_encoded_vect.append(list(map(float, r)))
+#    with open(expdir + '/LSTMencoded_vect.csv') as f:
+#        rd = csv.reader(f)
+#        lstm_encoded_vect = []
+#        for r in rd:
+#            lstm_encoded_vect.append(list(map(float, r)))
         
-    with open(expdir + '/LSTMmrns.csv') as f:
-        rd = csv.reader(f)
-        lstm_mrns = [r[0] for r in rd]
+#    with open(expdir + '/LSTMmrns.csv') as f:
+#        rd = csv.reader(f)
+#        lstm_mrns = [r[0] for r in rd]
 
     tmp_mrns = []
-    tmp_lstm_mrns = []
+ #   tmp_lstm_mrns = []
     tmp_encoded = []
-    tmp_lstm_encoded = []
-    for (idx, m), m_lstm in zip(enumerate(set_mrns), lstm_mrns):
+ #   tmp_lstm_encoded = []
+ #   for (idx, m), m_lstm in zip(enumerate(set_mrns), lstm_mrns):
+    for idx, m in enumerate(set_mrns): 
         if m in gt_disease.keys():
             tmp_mrns.append(m)
             tmp_encoded.append(encoded[idx])
-        elif m_lstm in gt_disease.keys():
-            tmp_lstm_mrns.append(m_lstm)
-            tmp_lstm_encoded.append(lstm_encoded_vect[idx])
+            #elif m_lstm in gt_disease.keys():
+            #    tmp_lstm_mrns.append(m_lstm)
+            #    tmp_lstm_encoded.append(lstm_encoded_vect[idx])
         else:
             pass
     set_mrns = tmp_mrns
-    lstm_mrns = tmp_lstm_mrns
+#    lstm_mrns = tmp_lstm_mrns
     encoded = tmp_encoded
-    lstm_encoded_vect = tmp_lstm_encoded
+#    lstm_encoded_vect = tmp_lstm_encoded
 
     # raw data (scaled) counts
     scaler = MinMaxScaler()
@@ -437,13 +443,13 @@ def clustering_inspection(indir,
     # choose the disease classes: first_disease, oth_disease
     disease_class_first = [gt_disease[m] for m in set_mrns]
     raw_disease_class_first = [gt_disease[m] for m in mrn_list]
-    lstm_disease_class_first = [gt_disease[m] for m in lstm_mrns]
+#    lstm_disease_class_first = [gt_disease[m] for m in lstm_mrns]
     disease_dict = {d: i for i, d in enumerate(set(disease_class_first))}
     
     ##Parameters for CNN-AE and LSTM
     HCpar = {'linkage_clu':'complete',
              'affinity_clu':'cosine',
-             'min_cl':2,
+             'min_cl':3,
              'max_cl':11}
 
     print("UMAP embeddings for CNN-AE encodings...")
@@ -462,6 +468,9 @@ def clustering_inspection(indir,
                 path.join(expdir, 'cnn-ae_encodings_plot.png'))
     # plot cluster results
     clusters = outer_clustering_analysis(encoded, disease_class_first, HCpar['linkage_clu'], HCpar['affinity_clu'], preproc=False)
+    for c in set(clusters):
+        print("Cluster {0} numerosity = {1}".format(c, clusters.count(c)))
+
     colors_en2 = [colormap[v] for v in clusters]
     single_plot(encoded_umap, clusters, colors_en2, 
                 path.join(expdir, 'cnn-ae_outer-clust_plot.png'))
@@ -479,44 +488,47 @@ def clustering_inspection(indir,
                 path.join(expdir, 'cnn-ae_sub-clust_plot.png'))
  
     # UMAP on the LSTM encoded vectors
-    print("UMAP embedding for LSTM encodings...")
-    lstm_encoded_umap = reducer.fit_transform(lstm_encoded_vect).tolist()
-    print("Computed: LSTM encoded vectors umap")
+ #   print("UMAP embedding for LSTM encodings...")
+ #   lstm_encoded_umap = reducer.fit_transform(lstm_encoded_vect).tolist()
+ #   print("Computed: LSTM encoded vectors umap")
 
-    print("Evaluating LSTM encodings...")
+ #   print("Evaluating LSTM encodings...")
     ##LSTM encodings
     # plot data
-    colors_lstm1 = [colormap[disease_dict[v]] for v in lstm_disease_class_first]
-    single_plot(lstm_encoded_umap, lstm_disease_class_first, colors_lstm1, 
-                path.join(expdir, 'lstm_encodings_plot.png'))
+ #   colors_lstm1 = [colormap[disease_dict[v]] for v in lstm_disease_class_first]
+ #   single_plot(lstm_encoded_umap, lstm_disease_class_first, colors_lstm1, 
+ #               path.join(expdir, 'lstm_encodings_plot.png'))
     # plot cluster results
-    clusters = outer_clustering_analysis(lstm_encoded_vect, lstm_disease_class_first, HCpar['linkage_clu'], 
-                                         HCpar['affinity_clu'], preproc=False)
-    colors_lstm2 = [colormap[v] for v in clusters]
-    single_plot(lstm_encoded_umap, clusters, colors_lstm2, 
-                path.join(expdir, 'lstm_outer-clust_plot.png'))
-    lstm_subplots, lstm_sub_clust = inner_clustering_analysis(lstm_disease_class_first, lstm_encoded_vect, 
-                                                              raw_ehr, lstm_mrns, lstm_encoded_umap,
-                                                              HCpar['min_cl'], HCpar['max_cl'],
-                                                              HCpar['linkage_clu'], HCpar['affinity_clu'],
-                                                              vocab, preproc=False)
-    lstm_new_disease_dict = {}
-    for idx, nd in enumerate(set(lstm_sub_clust)):
-        lstm_new_disease_dict[nd] = idx
-    colors_lstm3 = [colormap[lstm_new_disease_dict[v]] for v in lstm_sub_clust]
-    single_plot(lstm_subplots, lstm_sub_clust, colors_lstm3, 
-                path.join(expdir, 'lstm_sub-clust_plot.png'))
+ #   clusters = outer_clustering_analysis(lstm_encoded_vect, lstm_disease_class_first, HCpar['linkage_clu'], 
+ #                                        HCpar['affinity_clu'], preproc=False)
+ #   for c in set(clusters):
+ #       print("Cluster {0} numerosity = {1}".format(c, clusters.count(c)))
+    
+ #   colors_lstm2 = [colormap[v] for v in clusters]
+ #   single_plot(lstm_encoded_umap, clusters, colors_lstm2, 
+ #               path.join(expdir, 'lstm_outer-clust_plot.png'))
+ #   lstm_subplots, lstm_sub_clust = inner_clustering_analysis(lstm_disease_class_first, lstm_encoded_vect, 
+ #                                                             raw_ehr, lstm_mrns, lstm_encoded_umap,
+ #                                                             HCpar['min_cl'], HCpar['max_cl'],
+ #                                                             HCpar['linkage_clu'], HCpar['affinity_clu'],
+ #                                                             vocab, preproc=False)
+ #   lstm_new_disease_dict = {}
+ #   for idx, nd in enumerate(set(lstm_sub_clust)):
+ #       lstm_new_disease_dict[nd] = idx
+ #   colors_lstm3 = [colormap[lstm_new_disease_dict[v]] for v in lstm_sub_clust]
+ #   single_plot(lstm_subplots, lstm_sub_clust, colors_lstm3, 
+ #               path.join(expdir, 'lstm_sub-clust_plot.png'))
     
     ##Silhouette analysis
     _,_,enc_silh = silhouette_analysis(encoded, HCpar['min_cl'], HCpar['max_cl'],
                                        HCpar['linkage_clu'], HCpar['affinity_clu'])
-    _,_,lstm_silh = silhouette_analysis(lstm_encoded_vect, HCpar['min_cl'], HCpar['max_cl'],
-                                        HCpar['linkage_clu'], HCpar['affinity_clu'])
+ #   _,_,lstm_silh = silhouette_analysis(lstm_encoded_vect, HCpar['min_cl'], HCpar['max_cl'],
+ #                                       HCpar['linkage_clu'], HCpar['affinity_clu'])
     
     ##Parameters for COUNT baseline
     HCpar = {'linkage_clu':'ward',
              'affinity_clu':'euclidean',
-             'min_cl':2,
+             'min_cl':3,
              'max_cl':11}
     
     print("UMAP embedding for COUNT-SVD matrix...")
@@ -536,6 +548,9 @@ def clustering_inspection(indir,
     # plot cluster results
     clusters = outer_clustering_analysis(svd_mat, raw_disease_class_first, HCpar['linkage_clu'], 
                                          HCpar['affinity_clu'], preproc=False)
+    for c in set(clusters):
+        print("Cluster {0} numerosity = {1}".format(c, clusters.count(c)))
+
     colors_count2 = [colormap[v] for v in clusters]
     single_plot(count_umap, clusters, colors_count2, 
                 path.join(expdir, 'count_outer-clust_plot.png'))
@@ -559,9 +574,10 @@ def clustering_inspection(indir,
     minmax_clust = [r for r in range(HCpar['min_cl'], HCpar['max_cl'])]
     fig, ax = plt.subplots()
     ax.plot(minmax_clust, enc_silh, '-o')
-    ax.plot(minmax_clust, lstm_silh, '-o')
+ #   ax.plot(minmax_clust, lstm_silh, '-o')
     ax.plot(minmax_clust, count_silh, '-o')
-    ax.legend(['cnn-ae', 'lstm', 'count matrix'])
+ #   ax.legend(['cnn-ae', 'lstm', 'count matrix'])
+    ax.legend(['cnn-ae', 'count matrix'])
     fig.savefig(path.join(expdir, 'silhouette_plot.png'))
 
 def _process_args():
