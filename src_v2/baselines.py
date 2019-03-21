@@ -1,6 +1,7 @@
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.decomposition import FastICA, TruncatedSVD
 from sklearn.cluster import AgglomerativeClustering
+import deep_patient as dp
 from time import time
 from os import path
 import numpy as np
@@ -26,6 +27,9 @@ def clustering_inspection(indir, outdir, disease_dt, n_dimensions=100,
     ica = FastICA(n_components=n_dimensions)
     ica_mtx = ica.fit_transform(raw_mtx)
 
+    print('Applying DEEP PATIENT')
+    dp_mtx = _deep_patient(raw_mtx)
+
     print('\nLoading ground truth data')
     gt_disease, disease_class = _load_ground_truth(indir, mrns)
 
@@ -38,6 +42,7 @@ def clustering_inspection(indir, outdir, disease_dt, n_dimensions=100,
         raw_mtx = raw_mtx[idx, :]
         svd_mtx = svd_mtx[idx, :]
         ica_mtx = ica_mtx[idx, :]
+        dp_mtx = dp_mtx[idx, :]
 
     # print statistics
     disease_cnt = {}
@@ -69,6 +74,12 @@ def clustering_inspection(indir, outdir, disease_dt, n_dimensions=100,
 
     print('\nEvaluating ICA matrix')
     outer_clustering_analysis(ica_mtx,
+                              disease_class,
+                              HCpar['linkage_clu'],
+                              HCpar['affinity_clu'])
+
+    print('\nEvaluating DP matrix')
+    outer_clustering_analysis(dp_mtx,
                               disease_class,
                               HCpar['linkage_clu'],
                               HCpar['affinity_clu'])
@@ -197,6 +208,17 @@ def _load_ground_truth(indir, mrns):
     return (gt_disease, disease_class)
 
 
+def _deep_patient(data):
+    sda = dp.SDA(data.shape[1], nhidden=100, nlayer=3,
+                 param={'epochs': 15,
+                        'batch_size': 4,
+                        'corrupt_lvl': 0.05})
+    sda.train(data)
+    return sda.apply(data)
+
+
+# main function
+
 if __name__ == '__main__':
     print ('')
 
@@ -207,7 +229,7 @@ if __name__ == '__main__':
     indir = path.join(datadir, dt_name)
     outdir = path.join(datadir, 'experiments',
                        '{0}-baselines'.format(dt_name))
-    sampling = 2000
+    sampling = -1
     exclude_oth = True
 
     start = time()
