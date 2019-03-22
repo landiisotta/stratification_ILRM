@@ -539,7 +539,7 @@ if __name__ == '__main__':
 
     # define parameters
     datadir = '../data'
-    dt_name = 'ehr100k'
+    dt_name = 'ehr-100k'
 
     indir = os.path.join(datadir, dt_name)
     outdir = os.path.join(datadir, 'experiments',
