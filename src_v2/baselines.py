@@ -9,7 +9,7 @@ import random
 import csv
 
 
-def clustering_inspection(indir, outdir, disease_dt, n_dimensions=100,
+def clustering_inspection(indir, outdir, disease_dt, n_dim=100,
                           sampling=-1, exclude_oth=True):
 
     print('Loading datasets')
@@ -20,15 +20,15 @@ def clustering_inspection(indir, outdir, disease_dt, n_dimensions=100,
     raw_mtx = scaler.fit_transform(raw_data)
 
     print('Applying SVD')
-    svd = TruncatedSVD(n_components=n_dimensions)
+    svd = TruncatedSVD(n_components=n_dim)
     svd_mtx = svd.fit_transform(raw_mtx)
 
     print('Applying ICA')
-    ica = FastICA(n_components=n_dimensions)
+    ica = FastICA(n_components=n_dim, max_iter=5, tol=0.01, whiten=True)
     ica_mtx = ica.fit_transform(raw_mtx)
 
     print('Applying DEEP PATIENT')
-    dp_mtx = _deep_patient(raw_mtx)
+    dp_mtx = _deep_patient(raw_mtx, n_dim)
 
     print('\nLoading ground truth data')
     gt_disease, disease_class = _load_ground_truth(indir, mrns)
@@ -208,8 +208,8 @@ def _load_ground_truth(indir, mrns):
     return (gt_disease, disease_class)
 
 
-def _deep_patient(data):
-    sda = dp.SDA(data.shape[1], nhidden=100, nlayer=3,
+def _deep_patient(data, n_dim):
+    sda = dp.SDA(data.shape[1], nhidden=n_dim, nlayer=3,
                  param={'epochs': 15,
                         'batch_size': 4,
                         'corrupt_lvl': 0.05})
