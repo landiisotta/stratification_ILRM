@@ -1,34 +1,51 @@
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.decomposition import FastICA, TruncatedSVD
 from sklearn.cluster import AgglomerativeClustering
+from os import path
+import matplotlib
+import matplotlib.pyplot as plt
 import deep_patient as dp
 from time import time
-from os import path
+import umap
 import numpy as np
 import random
 import csv
+import os
 
 
 def clustering_inspection(indir, outdir, disease_dt, n_dim=100,
                           sampling=-1, exclude_oth=True):
 
+    # create output directory
+    try:
+        os.mkdir(outdir)
+    except OSError:
+        pass
+
+    colormap = _define_colormap()
+
     print('Loading datasets')
     mrns, raw_data, vocab = _load_ehr_dataset(indir, sampling)
+    _save_mrns(outdir, mrns)
 
     print('\nRescaling the COUNT matrix')
     scaler = MinMaxScaler()
     raw_mtx = scaler.fit_transform(raw_data)
+    _save_matrices(outdir, 'raw-mxt.npy', raw_mtx)
 
     print('Applying SVD')
     svd = TruncatedSVD(n_components=n_dim)
     svd_mtx = svd.fit_transform(raw_mtx)
+    _save_matrices(outdir, 'svd-mxt.npy', svd_mtx)
 
-    print('Applying ICA')
-    ica = FastICA(n_components=n_dim, max_iter=5, tol=0.01, whiten=True)
-    ica_mtx = ica.fit_transform(raw_mtx)
+    # print('Applying ICA')
+    # ica = FastICA(n_components=n_dim, max_iter=5, tol=0.01, whiten=True)
+    # ica_mtx = ica.fit_transform(raw_mtx)
+    # _save(outdir, 'ica-mxt.npy', ica_mtx)
 
-    print('Applying DEEP PATIENT')
-    dp_mtx = _deep_patient(raw_mtx, n_dim)
+    # print('Applying DEEP PATIENT')
+    # dp_mtx = _deep_patient(raw_mtx, n_dim)
+    # _save_matrices(outdir, 'dp-mxt.npy', dp_mtx)
 
     print('\nLoading ground truth data')
     gt_disease, disease_class = _load_ground_truth(indir, mrns)
@@ -39,20 +56,12 @@ def clustering_inspection(indir, outdir, disease_dt, n_dim=100,
         idx = [i for i, m in enumerate(mrns) if gt_disease[m] != 'OTH']
         mrns = list(np.array(mrns)[idx])
         disease_class = list(np.array(disease_class)[idx])
-        raw_mtx = raw_mtx[idx, :]
+        # raw_mtx = raw_mtx[idx, :]
         svd_mtx = svd_mtx[idx, :]
-        ica_mtx = ica_mtx[idx, :]
-        dp_mtx = dp_mtx[idx, :]
+        # ica_mtx = ica_mtx[idx, :]
+        # dp_mtx = dp_mtx[idx, :]
 
-    # print statistics
-    disease_cnt = {}
-    for d in disease_class:
-        disease_cnt.setdefault(d, 1)
-        disease_cnt[d] += 1
-    print('-- no. of subjects: {0}'.format(len(gt_disease)))
-    print('-- disease numerosities:')
-    for k, v in disease_cnt.items():
-        print('----- {0}: {1}'.format(k, v))
+    _print_dataset_statistics(gt_disease, disease_class)
 
     # define clustering and plotting parameters
     HCpar = {'linkage_clu': 'ward',
@@ -60,36 +69,64 @@ def clustering_inspection(indir, outdir, disease_dt, n_dim=100,
              'min_cl': 3,
              'max_cl': 11}
 
-    print('\nEvaluating COUNT matrix')
-    outer_clustering_analysis(raw_mtx,
-                              disease_class,
-                              HCpar['linkage_clu'],
-                              HCpar['affinity_clu'])
+    print(svd_mtx)
 
-    print('\nEvaluating SVD matrix')
-    outer_clustering_analysis(svd_mtx,
-                              disease_class,
-                              HCpar['linkage_clu'],
-                              HCpar['affinity_clu'])
+    cluster_evaluation(svd_mtx, disease_class, colormap, HCpar, 'svd')
 
-    print('\nEvaluating ICA matrix')
-    outer_clustering_analysis(ica_mtx,
-                              disease_class,
-                              HCpar['linkage_clu'],
-                              HCpar['affinity_clu'])
-
-    print('\nEvaluating DP matrix')
-    outer_clustering_analysis(dp_mtx,
-                              disease_class,
-                              HCpar['linkage_clu'],
-                              HCpar['affinity_clu'])
+    return
 
 
-# external clustering analysis
-def outer_clustering_analysis(data,
-                              gt_clu,
-                              linkage,
-                              affinity):
+def cluster_evaluation(data_mtx, gt_clu, colormap, HCpar, model_name):
+    label = model_name.upper()
+    print('Evaluating {0} embeddings'.format(label))
+
+    # initialize UMAP
+    reducer = umap.UMAP(n_neighbors=10, min_dist=0.5,
+                        metric=HCpar['affinity_clu'], n_components=2)
+
+    # apply UMAP to the embeddings
+    print(data_mtx.shape)
+    umap_mtx = reducer.fit_transform(data_mtx).tolist()
+    print('Computed: {0} vectors umap'.format(label))
+
+    disease_dict = {d: i for i, d in enumerate(set(gt_clu))}
+    colors = [colormap[disease_dict[v]] for v in gt_clu]
+    single_plot(umap_mtx, gt_clu, colors,
+                path.join(outdir, '{0}-encodings.png'.format(model_name)))
+
+    # evaluate cluster results
+    clu = _outer_clustering_analysis(
+        data_mtx, gt_clu, HCpar['linkage_clu'], HCpar['affinity_clu'])
+
+    colors = [colormap[v] for v in clu]
+    single_plot(umap_mtx, clu, colors,
+                path.join(outdir, '{0}-outer-cluster.png'.format(model_name)))
+
+    # inner clustering analysis
+    # encoded_subplots, en_sub_clust = inner_clustering_analysis(disease_class_first, encoded, raw_ehr,
+    #                                                           set_mrns, encoded_umap,
+    #                                                           HCpar['min_cl'], HCpar['max_cl'],
+    #                                                           HCpar['linkage_clu'], HCpar['affinity_clu'],
+    #                                                           vocab, preproc=False)
+    #encoded_new_disease_dict = {}
+    # for idx, nd in enumerate(set(en_sub_clust)):
+    #    encoded_new_disease_dict[nd] = idx
+    #colors_en3 = [colormap[encoded_new_disease_dict[v]] for v in en_sub_clust]
+    # single_plot(encoded_subplots, en_sub_clust, colors_en3,
+    #            path.join(expdir, 'cnn-ae_sub-clust_plot.png'))
+
+
+"""
+Private Functions
+"""
+
+
+# clustering evaluation
+
+def _outer_clustering_analysis(data,
+                               gt_clu,
+                               linkage,
+                               affinity):
 
     label_clu = sorted(set(gt_clu))
 
@@ -152,7 +189,20 @@ def outer_clustering_analysis(data,
     return clusters
 
 
-# private functions
+def single_plot(data, mrn_disease, colors, name):
+    plt.figure(figsize=(20, 10))
+    for cl in set(mrn_disease):
+        x = [d[0] for j, d in enumerate(data) if mrn_disease[j] == cl]
+        y = [d[1] for j, d in enumerate(data) if mrn_disease[j] == cl]
+        cols = [c for j, c in enumerate(colors) if mrn_disease[j] == cl]
+        plt.xticks([])
+        plt.yticks([])
+        plt.scatter(x, y, c=cols, label=cl)
+    plt.legend(loc=1)
+    plt.savefig(name)
+
+
+# load data
 
 def _load_ehr_dataset(indir, sampling):
     # read the vocabulary
@@ -208,16 +258,63 @@ def _load_ground_truth(indir, mrns):
     return (gt_disease, disease_class)
 
 
+# run deep patient model
+
 def _deep_patient(data, n_dim):
     sda = dp.SDA(data.shape[1], nhidden=n_dim, nlayer=3,
-                 param={'epochs': 15,
+                 param={'epochs': 10,
                         'batch_size': 4,
                         'corrupt_lvl': 0.05})
     sda.train(data)
     return sda.apply(data)
 
 
-# main function
+# save data
+
+def _save_matrices(datadir, filename, data):
+    outfile = path.join(datadir, filename)
+    np.save(outfile, data)
+
+
+def _save_mrns(datadir, data):
+    with open(path.join(datadir, 'mrn.txt'), 'w') as f:
+        f.write('\n'.join(data))
+
+
+# miscellaneous
+
+def _print_dataset_statistics(gt_disease, disease_class):
+    disease_cnt = {}
+    for d in disease_class:
+        disease_cnt.setdefault(d, 1)
+        disease_cnt[d] += 1
+    print('-- no. of subjects: {0}'.format(len(gt_disease)))
+    print('-- disease numerosities:')
+    for k, v in disease_cnt.items():
+        print('----- {0}: {1}'.format(k, v))
+    print('')
+
+
+def _define_colormap():
+    col_dict = matplotlib.colors.CSS4_COLORS
+    c_out = set(['mintcream', 'cornsilk', 'lavenderblush', 'aliceblue',
+                 'antiquewhite', 'aqua', 'aquamarine', 'azure', 'beige',
+                 'powderblue', 'floralwhite', 'ghostwhite', 'lightcoral',
+                 'lightcyan', 'lightgoldenrodyellow', 'lightgray',
+                 'lightgreen', 'lightgrey', 'lightpink', 'lightsalmon',
+                 'lightseagreen', 'lightskyblue', 'lightslategray',
+                 'lightslategrey', 'lightsteelblue', 'lightyellow', 'linen',
+                 'palegoldenrod', 'palegreen', 'paleturquoise',
+                 'palevioletred', 'papayawhip', 'peachpuff', 'mistyrose',
+                 'lemonchiffon', 'lightblue', 'seashell', 'white',
+                 'blanchedalmond', 'oldlace', 'moccasin', 'snow',
+                 'darkgray', 'ivory', 'whitesmoke'])
+    return [c for c in col_dict if c not in c_out]
+
+
+"""
+Main Function
+"""
 
 if __name__ == '__main__':
     print ('')
@@ -226,10 +323,10 @@ if __name__ == '__main__':
     datadir = '../data'
     dt_name = 'mixed'
 
-    indir = path.join(datadir, dt_name)
-    outdir = path.join(datadir, 'experiments',
-                       '{0}-baselines'.format(dt_name))
-    sampling = -1
+    indir = os.path.join(datadir, dt_name)
+    outdir = os.path.join(datadir, 'experiments',
+                          '{0}-baselines'.format(dt_name))
+    sampling = 200
     exclude_oth = True
 
     start = time()
