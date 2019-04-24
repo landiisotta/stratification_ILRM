@@ -9,10 +9,12 @@ Return the stop word list and the list of TERM, sum(PATIENT_FREQUENCY/P), DOCUME
 import os
 import csv
 import re
+import numpy as np
 from utils import dtype
 from utils import data_preprocessing_pars as dpp
 
-##we don't consider icd among the terms to filte out
+##we don't consider icd among the terms to filter out
+##Read vocabulary and EHRs
 with open(os.path.join(outdir, 'cohort-vocab.csv')) as f:
     rd = csv.reader(f)
     next(rd)
@@ -30,6 +32,7 @@ with open(os.path.join(outdir, 'cohort-ehr.csv')) as f:
     for r in rd:
         ehr_age.setdefault(r[0], list()).append((int(r[1]), int(r[2])))
 
+##Filter most/least frequent terms
 ##probability of term w to be in document D and 
 ##sum of the probabilities of term w to be in patient sequence s
 coll_freq = []
@@ -54,6 +57,7 @@ for cfs in reversed(coll_freq_sorted):
 
 print("Number of stop words: {0}".format(len(stop_words)))
 
+##Write stop words file and collection frequencies
 with open(os.path.join(outdir, 'stop-words.csv'), 'w') as f:
     wr = csv.writer(f, quoting=csv.QUOTE_NONE)
     wr.writerow(["LABEL", "CODE"])
@@ -99,6 +103,7 @@ for m in ehr_rid:
     subseq_len += len(tmp)
     n_subseq += 1 
     ehr_subseq.setdefault(m, list()).extend(np.random.shuffle(tmp))
+    ##Remove too short sequences and trim too long sequences
     if len(ehr_subseq[m]) > dpp['max_seq_len']:
         count_long += 1
         ehr_subseq[m] = ehr_subseq[m][-dpp['max_seq_len']:]
@@ -106,26 +111,29 @@ for m in ehr_rid:
         count_short += 1
         ehr_subseq.pop(m)
 
+##Report statistics
 print("The average number of tokens for each time slot of {0} days is: \
        {1:.3f%}".format(dpp['age_step'], subseq_len/n_subseq))
 print("Number of dropped sequences: {0} (< {1}), number of trimmed sequences: {2} (> {3}). \
        Initial total number of sequences: {4}.".format(count_short, dpp['min_seq_len'],
                                                        count_long, dpp['max_seq_len'],
                                                        len(ehr_age)))
-
 l = []
     for m in ehr_subseq:
         l.append(len(ehr_subseq[m]))
 print("The average length of ehr sequences is: {0:.2f}".format(np.mean(l)))
 print("The sequence length ranges from {0} to {1}".format(min(l), max(l)))
 
+##Write ehrs 1)[MRN, EHRseq]; 2)[MRN,AID_start,AID_end,EHRseq]
 with open(os.path.join(outdir, 'cohort-ehr-shuffle.csv'), 'w') as f:
     wr = csv.writer(f)
+    wr.writerow("[MRN, EHRseq]")
     for m in ehr_subseq:
         wr.writerow([m] + [e[0] for e in ehr_subseq[m]])
 
 with open(os.path.join(outdir, 'cohort-ehr-shuffle-age.csv'), 'w') as f:
     wr = csv.writer(f)
+    wr.writerow("[MRN, AID_start, AID_stop, EHRseq]")
     for m in ehr_subseq:
         wr.writerow([m, ehr_subseq[m][0][1], ehr_subseq[m][-1][1]] + [e[0] for e in ehr_subseq[m]])
 
