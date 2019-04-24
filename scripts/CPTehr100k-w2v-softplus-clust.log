@@ -1,0 +1,1537 @@
+[H[J
+Loading datasets...
+Number of subjects:31391
+Disease numerosities:
+ {"Parkinson's disease": 3839, 'Breast Cancer': 10121, 'Diabetes': 2205, "Alzheimer's disease": 3116, 'Prostate Cancer': 9405, 'Multiple Myeloma': 2705}
+UMAP embeddings for CNN-AE encodings...
+Computed: CNN - AE encoded vectors umap
+Evaluating CNN-AE encodings...
+Cluster: 0 -- Entropy: 2.232, Purity: 0.432
+P=0.17 in cluster disease Alzheimer's disease
+P=0.43 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.07 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.10 in cluster disease Parkinson's disease
+P=0.17 in cluster disease Prostate Cancer
+Cluster: 1 -- Entropy: 2.124, Purity: 0.337
+P=0.05 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.03 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.21 in cluster disease Parkinson's disease
+P=0.32 in cluster disease Prostate Cancer
+Cluster: 2 -- Entropy: 2.399, Purity: 0.261
+P=0.14 in cluster disease Alzheimer's disease
+P=0.17 in cluster disease Breast Cancer
+P=0.21 in cluster disease Diabetes
+P=0.02 in cluster disease Multiple Myeloma
+P=0.26 in cluster disease Parkinson's disease
+max(P) in cluster disease Parkinson's disease
+P=0.20 in cluster disease Prostate Cancer
+Cluster: 3 -- Entropy: 0.594, Purity: 0.884
+P=0.00 in cluster disease Alzheimer's disease
+P=0.10 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.01 in cluster disease Parkinson's disease
+P=0.88 in cluster disease Prostate Cancer
+max(P) in cluster disease Prostate Cancer
+Cluster: 4 -- Entropy: 0.400, Purity: 0.937
+P=0.00 in cluster disease Alzheimer's disease
+P=0.05 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.94 in cluster disease Multiple Myeloma
+max(P) in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Cluster: 5 -- Entropy: 0.107, Purity: 0.988
+P=0.00 in cluster disease Alzheimer's disease
+P=0.99 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Average Entropy: 1.76
+Average Purity: 0.52
+Cluster 0 numerosity = 11440
+Cluster 1 numerosity = 5311
+Cluster 2 numerosity = 6011
+Cluster 3 numerosity = 5163
+Cluster 4 numerosity = 1679
+Cluster 5 numerosity = 1787
+Inspecting disease: Alzheimer's disease
+
+3 0.11238589250890528
+4 0.12572487263560342
+5 0.04943775958687691
+6 0.04274948114656658
+7 0.04880672143701774
+8 0.05051762734377054
+9 0.05446465900077817
+10 0.04834074826637786
+Number of clusters found:4, Silhouette score:0.126
+
+Cluster 0 numerosity: 1332
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.13 (5349 out of 40675 terms in the whole dataset-- N patients in cluster 1194)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.10 (4253 out of 41571 terms in the whole dataset-- N patients in cluster 1115)
+% most frequent term:cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791 = 0.15 (3813 out of 24876 terms in the whole dataset-- N patients in cluster 1091)
+% most frequent term:cpt::Urinalysis; microscopic only::81015::C0202506|C0430397 = 0.12 (4056 out of 33608 terms in the whole dataset-- N patients in cluster 1085)
+% most frequent term:cpt::Magnesium::83735::C0373675 = 0.11 (3713 out of 32314 terms in the whole dataset-- N patients in cluster 1069)
+% most frequent term:cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585 = 0.22 (2846 out of 13053 terms in the whole dataset-- N patients in cluster 1015)
+% most frequent term:cpt::Phosphorus inorganic (phosphate)::84100::C0523827|C0523826 = 0.11 (3049 out of 27021 terms in the whole dataset-- N patients in cluster 997)
+% most frequent term:cpt::Phosphorus inorganic (phosphate)::1014270::C0523827 = 0.11 (3049 out of 27021 terms in the whole dataset-- N patients in cluster 997)
+% most frequent term:cpt::Troponin, quantitative::84484::C0519832|C0523952|C3516382 = 0.14 (3119 out of 21648 terms in the whole dataset-- N patients in cluster 970)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.07 (4298 out of 62900 terms in the whole dataset-- N patients in cluster 968)
+
+
+Cluster 1 numerosity: 907
+% most frequent term:cpt::Unlisted vaccine/toxoid::90749::C0374131|C0040555|C0042196|C3516781 = 0.11 (2437 out of 21932 terms in the whole dataset-- N patients in cluster 708)
+% most frequent term:cpt::Virus::T005::n/a = 0.11 (2383 out of 21371 terms in the whole dataset-- N patients in cluster 700)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.04 (2544 out of 64056 terms in the whole dataset-- N patients in cluster 577)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.04 (2461 out of 62900 terms in the whole dataset-- N patients in cluster 571)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.04 (2461 out of 62900 terms in the whole dataset-- N patients in cluster 571)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.04 (2294 out of 60007 terms in the whole dataset-- N patients in cluster 552)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.04 (2229 out of 56623 terms in the whole dataset-- N patients in cluster 549)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.04 (2229 out of 56623 terms in the whole dataset-- N patients in cluster 549)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.04 (2229 out of 56623 terms in the whole dataset-- N patients in cluster 549)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.05 (1874 out of 40675 terms in the whole dataset-- N patients in cluster 536)
+
+
+Cluster 2 numerosity: 616
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.05 (2875 out of 62900 terms in the whole dataset-- N patients in cluster 596)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.05 (2875 out of 62900 terms in the whole dataset-- N patients in cluster 596)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.05 (2888 out of 60007 terms in the whole dataset-- N patients in cluster 587)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.05 (2699 out of 56623 terms in the whole dataset-- N patients in cluster 581)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.05 (2699 out of 56623 terms in the whole dataset-- N patients in cluster 581)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.05 (2699 out of 56623 terms in the whole dataset-- N patients in cluster 581)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.05 (2676 out of 54363 terms in the whole dataset-- N patients in cluster 575)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.05 (2926 out of 64056 terms in the whole dataset-- N patients in cluster 574)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.04 (1645 out of 40675 terms in the whole dataset-- N patients in cluster 480)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.04 (1522 out of 41571 terms in the whole dataset-- N patients in cluster 463)
+
+
+Cluster 3 numerosity: 261
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.00 (76 out of 40675 terms in the whole dataset-- N patients in cluster 59)
+% most frequent term:cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585 = 0.00 (62 out of 13053 terms in the whole dataset-- N patients in cluster 53)
+% most frequent term:cpt::Urinalysis; microscopic only::81015::C0202506|C0430397 = 0.00 (58 out of 33608 terms in the whole dataset-- N patients in cluster 46)
+% most frequent term:cpt::Thyroid stimulating hormone (tsh)::84443::C0202230 = 0.00 (45 out of 17556 terms in the whole dataset-- N patients in cluster 41)
+% most frequent term:cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791 = 0.00 (40 out of 24876 terms in the whole dataset-- N patients in cluster 35)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.00 (50 out of 41571 terms in the whole dataset-- N patients in cluster 33)
+% most frequent term:cpt::Syphilis test, non-treponemal antibody; quantitative::86593::C0201400 = 0.01 (38 out of 4415 terms in the whole dataset-- N patients in cluster 33)
+% most frequent term:cpt::Magnesium::83735::C0373675 = 0.00 (30 out of 32314 terms in the whole dataset-- N patients in cluster 26)
+% most frequent term:cpt::Cyanocobalamin (vitamin b-12)::82607::C0202252 = 0.01 (29 out of 4836 terms in the whole dataset-- N patients in cluster 25)
+% most frequent term:cpt::Cyanocobalamin (vitamin b-12)::1014264::C0202252 = 0.01 (29 out of 4836 terms in the whole dataset-- N patients in cluster 25)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 138  371  136  202]
+ [1194  536  480   59]]
+Chi-squared test statistics: chi2_stat = 617.2758767705612 -- p_val = 1.8118741617814304e-133 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 217  477  153  228]
+ [1115  430  463   33]]
+Chi-squared test statistics: chi2_stat = 674.934207420475 -- p_val = 5.716258420890724e-146 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791
+Count matrix:
+ [[ 241  568  262  226]
+ [1091  339  354   35]]
+Chi-squared test statistics: chi2_stat = 685.5418721953031 -- p_val = 2.8645939847373344e-148 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Urinalysis; microscopic only::81015::C0202506|C0430397
+Count matrix:
+ [[ 247  422  216  215]
+ [1085  485  400   46]]
+Chi-squared test statistics: chi2_stat = 467.0649669736365 -- p_val = 6.541640209599994e-101 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Magnesium::83735::C0373675
+Count matrix:
+ [[ 263  566  267  235]
+ [1069  341  349   26]]
+Chi-squared test statistics: chi2_stat = 669.8791514357182 -- p_val = 7.131414161486098e-145 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585
+Count matrix:
+ [[ 317  508  238  208]
+ [1015  399  378   53]]
+Chi-squared test statistics: chi2_stat = 410.94391797561616 -- p_val = 9.43075270599201e-89 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Phosphorus inorganic (phosphate)::84100::C0523827|C0523826
+Count matrix:
+ [[335 612 310 244]
+ [997 295 306  17]]
+Chi-squared test statistics: chi2_stat = 633.9376148889423 -- p_val = 4.424281732471181e-137 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Phosphorus inorganic (phosphate)::1014270::C0523827
+Count matrix:
+ [[335 612 310 244]
+ [997 295 306  17]]
+Chi-squared test statistics: chi2_stat = 633.9376148889423 -- p_val = 4.424281732471181e-137 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Troponin, quantitative::84484::C0519832|C0523952|C3516382
+Count matrix:
+ [[362 528 383 243]
+ [970 379 233  18]]
+Chi-squared test statistics: chi2_stat = 530.6155791172366 -- p_val = 1.1051906964591037e-114 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[364 336  20 241]
+ [968 571 596  20]]
+Chi-squared test statistics: chi2_stat = 706.7520749184341 -- p_val = 7.209807954546581e-153 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Unlisted vaccine/toxoid::90749::C0374131|C0040555|C0042196|C3516781
+Count matrix:
+ [[901 199 502 243]
+ [431 708 114  18]]
+Chi-squared test statistics: chi2_stat = 811.6472592502789 -- p_val = 1.2888276511058578e-175 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Virus::T005::n/a
+Count matrix:
+ [[897 207 503 243]
+ [435 700 113  18]]
+Chi-squared test statistics: chi2_stat = 787.2961288706979 -- p_val = 2.4625071719486406e-170 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[501 330  42 243]
+ [831 577 574  18]]
+Chi-squared test statistics: chi2_stat = 599.9387144100062 -- p_val = 1.0391518811713929e-129 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[364 336  20 241]
+ [968 571 596  20]]
+Chi-squared test statistics: chi2_stat = 706.7520749184341 -- p_val = 7.209807954546581e-153 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[364 336  20 241]
+ [968 571 596  20]]
+Chi-squared test statistics: chi2_stat = 706.7520749184341 -- p_val = 7.209807954546581e-153 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[407 355  29 245]
+ [925 552 587  16]]
+Chi-squared test statistics: chi2_stat = 676.8050878960764 -- p_val = 2.246232141837539e-146 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 138  371  136  202]
+ [1194  536  480   59]]
+Chi-squared test statistics: chi2_stat = 617.2758767705612 -- p_val = 1.8118741617814304e-133 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[364 336  20 241]
+ [968 571 596  20]]
+Chi-squared test statistics: chi2_stat = 706.7520749184341 -- p_val = 7.209807954546581e-153 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[364 336  20 241]
+ [968 571 596  20]]
+Chi-squared test statistics: chi2_stat = 706.7520749184341 -- p_val = 7.209807954546581e-153 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[407 355  29 245]
+ [925 552 587  16]]
+Chi-squared test statistics: chi2_stat = 676.8050878960764 -- p_val = 2.246232141837539e-146 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[502 358  35 247]
+ [830 549 581  14]]
+Chi-squared test statistics: chi2_stat = 636.1508926752789 -- p_val = 1.4655142548347337e-137 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[538 378  41 248]
+ [794 529 575  13]]
+Chi-squared test statistics: chi2_stat = 620.751905953383 -- p_val = 3.1954596856432975e-134 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[501 330  42 243]
+ [831 577 574  18]]
+Chi-squared test statistics: chi2_stat = 599.9387144100062 -- p_val = 1.0391518811713929e-129 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 138  371  136  202]
+ [1194  536  480   59]]
+Chi-squared test statistics: chi2_stat = 617.2758767705612 -- p_val = 1.8118741617814304e-133 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 217  477  153  228]
+ [1115  430  463   33]]
+Chi-squared test statistics: chi2_stat = 674.934207420475 -- p_val = 5.716258420890724e-146 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 138  371  136  202]
+ [1194  536  480   59]]
+Chi-squared test statistics: chi2_stat = 617.2758767705612 -- p_val = 1.8118741617814304e-133 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585
+Count matrix:
+ [[ 317  508  238  208]
+ [1015  399  378   53]]
+Chi-squared test statistics: chi2_stat = 410.94391797561616 -- p_val = 9.43075270599201e-89 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Urinalysis; microscopic only::81015::C0202506|C0430397
+Count matrix:
+ [[ 247  422  216  215]
+ [1085  485  400   46]]
+Chi-squared test statistics: chi2_stat = 467.0649669736365 -- p_val = 6.541640209599994e-101 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Thyroid stimulating hormone (tsh)::84443::C0202230
+Count matrix:
+ [[540 501 364 220]
+ [792 406 252  41]]
+Chi-squared test statistics: chi2_stat = 195.3509025085708 -- p_val = 4.262305772653768e-42 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791
+Count matrix:
+ [[ 241  568  262  226]
+ [1091  339  354   35]]
+Chi-squared test statistics: chi2_stat = 685.5418721953031 -- p_val = 2.8645939847373344e-148 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 217  477  153  228]
+ [1115  430  463   33]]
+Chi-squared test statistics: chi2_stat = 674.934207420475 -- p_val = 5.716258420890724e-146 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Syphilis test, non-treponemal antibody; quantitative::86593::C0201400
+Count matrix:
+ [[831 730 413 228]
+ [501 177 203  33]]
+Chi-squared test statistics: chi2_stat = 125.19857523041094 -- p_val = 5.856562512987164e-27 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Magnesium::83735::C0373675
+Count matrix:
+ [[ 263  566  267  235]
+ [1069  341  349   26]]
+Chi-squared test statistics: chi2_stat = 669.8791514357182 -- p_val = 7.131414161486098e-145 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Cyanocobalamin (vitamin b-12)::82607::C0202252
+Count matrix:
+ [[760 713 431 236]
+ [572 194 185  25]]
+Chi-squared test statistics: chi2_stat = 183.05931714066185 -- p_val = 1.9264760640838503e-39 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Cyanocobalamin (vitamin b-12)::1014264::C0202252
+Count matrix:
+ [[760 713 431 236]
+ [572 194 185  25]]
+Chi-squared test statistics: chi2_stat = 183.05931714066185 -- p_val = 1.9264760640838503e-39 -- dof = 3
+
+
+
+Inspecting disease: Breast Cancer
+
+3 0.15511632284839325
+4 0.14754626196585682
+5 0.14296011455222743
+6 0.09178387421544476
+7 0.09909577543665787
+8 0.10198154903250614
+9 0.08562475670680678
+10 0.08477657048596217
+Number of clusters found:3, Silhouette score:0.155
+
+Cluster 0 numerosity: 5781
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.28 (17755 out of 62900 terms in the whole dataset-- N patients in cluster 3884)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.28 (17755 out of 62900 terms in the whole dataset-- N patients in cluster 3884)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.28 (17079 out of 60007 terms in the whole dataset-- N patients in cluster 3822)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.30 (19481 out of 64056 terms in the whole dataset-- N patients in cluster 3822)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.29 (16279 out of 56623 terms in the whole dataset-- N patients in cluster 3696)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.29 (16279 out of 56623 terms in the whole dataset-- N patients in cluster 3696)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.29 (16279 out of 56623 terms in the whole dataset-- N patients in cluster 3696)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.29 (15591 out of 54363 terms in the whole dataset-- N patients in cluster 3570)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.22 (9185 out of 41571 terms in the whole dataset-- N patients in cluster 3010)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.22 (8831 out of 40675 terms in the whole dataset-- N patients in cluster 2886)
+
+
+Cluster 1 numerosity: 2301
+% most frequent term:cpt::Ultrasound, breast(s) (unilateral or bilateral), real time with image documentation = 0.42 (4670 out of 11240 terms in the whole dataset-- N patients in cluster 1325)
+% most frequent term:cpt::Mammography; bilateral::77056::C0203027 = 0.37 (3393 out of 9163 terms in the whole dataset-- N patients in cluster 1214)
+% most frequent term:cpt::Lymphatics and lymph nodes imaging::78195::C0203827|C3516098 = 0.43 (944 out of 2206 terms in the whole dataset-- N patients in cluster 916)
+% most frequent term:cpt::Mammography::1014840::C0024671 = 0.19 (2203 out of 11406 terms in the whole dataset-- N patients in cluster 912)
+% most frequent term:cpt::Mammography; unilateral::77055::C0203026 = 0.38 (1884 out of 4906 terms in the whole dataset-- N patients in cluster 846)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.02 (994 out of 60007 terms in the whole dataset-- N patients in cluster 619)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.02 (971 out of 62900 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.02 (971 out of 62900 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.02 (1288 out of 64056 terms in the whole dataset-- N patients in cluster 595)
+% most frequent term:cpt::Dual-energy x-ray absorptiometry (dxa), bone density study, 1 or more sites; axial skeleton (eg, hips, pelvis, spine)::77080::C3866034|C2122094|C3703905|C1740748|C3866035|C3866032|C3866033 = 0.16 (1020 out of 6512 terms in the whole dataset-- N patients in cluster 583)
+
+
+Cluster 2 numerosity: 2039
+% most frequent term:cpt::Lymphatics and lymph nodes imaging::78195::C0203827|C3516098 = 0.13 (286 out of 2206 terms in the whole dataset-- N patients in cluster 279)
+% most frequent term:cpt::Ultrasound, breast(s) (unilateral or bilateral), real time with image documentation = 0.03 (382 out of 11240 terms in the whole dataset-- N patients in cluster 262)
+% most frequent term:cpt::Mammography; bilateral::77056::C0203027 = 0.03 (275 out of 9163 terms in the whole dataset-- N patients in cluster 198)
+% most frequent term:cpt::Mammography; unilateral::77055::C0203026 = 0.04 (218 out of 4906 terms in the whole dataset-- N patients in cluster 156)
+% most frequent term:cpt::Dual-energy x-ray absorptiometry (dxa), bone density study, 1 or more sites; axial skeleton (eg, hips, pelvis, spine)::77080::C3866034|C2122094|C3703905|C1740748|C3866035|C3866032|C3866033 = 0.02 (159 out of 6512 terms in the whole dataset-- N patients in cluster 129)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.00 (141 out of 41571 terms in the whole dataset-- N patients in cluster 129)
+% most frequent term:cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791 = 0.00 (121 out of 24876 terms in the whole dataset-- N patients in cluster 114)
+% most frequent term:cpt::Mammography::1014840::C0024671 = 0.02 (205 out of 11406 terms in the whole dataset-- N patients in cluster 114)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; non-automated, without microscopy::81002::C3525582|C3525583|C0373519|C3516204 = 0.01 (124 out of 19123 terms in the whole dataset-- N patients in cluster 105)
+% most frequent term:cpt::Excision of breast lesion identified by preoperative placement of radiological marker, open; single lesion::19125::C0370609|C3705620|C3702698|C3518226 = 0.14 (97 out of 680 terms in the whole dataset-- N patients in cluster 91)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[1897 1703 2015]
+ [3884  598   24]]
+Chi-squared test statistics: chi2_stat = 3073.115354738099 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[1897 1703 2015]
+ [3884  598   24]]
+Chi-squared test statistics: chi2_stat = 3073.115354738099 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[1959 1682 2007]
+ [3822  619   32]]
+Chi-squared test statistics: chi2_stat = 2907.233466575144 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[1959 1706 1989]
+ [3822  595   50]]
+Chi-squared test statistics: chi2_stat = 2881.1245243695594 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[2085 1728 2018]
+ [3696  573   21]]
+Chi-squared test statistics: chi2_stat = 2815.1976890668975 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[2085 1728 2018]
+ [3696  573   21]]
+Chi-squared test statistics: chi2_stat = 2815.1976890668975 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[2085 1728 2018]
+ [3696  573   21]]
+Chi-squared test statistics: chi2_stat = 2815.1976890668975 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[2211 1770 2019]
+ [3570  531   20]]
+Chi-squared test statistics: chi2_stat = 2690.296910916031 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[2771 1754 1910]
+ [3010  547  129]]
+Chi-squared test statistics: chi2_stat = 1567.6497179058906 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[2895 1993 1998]
+ [2886  308   41]]
+Chi-squared test statistics: chi2_stat = 2063.7297845392923 -- p_val = 0.0 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Ultrasound, breast(s) (unilateral or bilateral), real time with image documentation
+Count matrix:
+ [[3858  976 1777]
+ [1923 1325  262]]
+Chi-squared test statistics: chi2_stat = 966.9213091366734 -- p_val = 1.0856891649388176e-210 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Mammography; bilateral::77056::C0203027
+Count matrix:
+ [[4114 1087 1841]
+ [1667 1214  198]]
+Chi-squared test statistics: chi2_stat = 962.5029661546278 -- p_val = 9.888638298124485e-210 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Lymphatics and lymph nodes imaging::78195::C0203827|C3516098
+Count matrix:
+ [[4855 1385 1760]
+ [ 926  916  279]]
+Chi-squared test statistics: chi2_stat = 643.9307035605781 -- p_val = 1.4867034792391202e-140 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Mammography::1014840::C0024671
+Count matrix:
+ [[4219 1389 1925]
+ [1562  912  114]]
+Chi-squared test statistics: chi2_stat = 673.1945981911795 -- p_val = 6.571286151065572e-147 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Mammography; unilateral::77055::C0203026
+Count matrix:
+ [[4686 1455 1883]
+ [1095  846  156]]
+Chi-squared test statistics: chi2_stat = 583.8474116109468 -- p_val = 1.6563245230188369e-127 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[1959 1682 2007]
+ [3822  619   32]]
+Chi-squared test statistics: chi2_stat = 2907.233466575144 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[1897 1703 2015]
+ [3884  598   24]]
+Chi-squared test statistics: chi2_stat = 3073.115354738099 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[1897 1703 2015]
+ [3884  598   24]]
+Chi-squared test statistics: chi2_stat = 3073.115354738099 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[1959 1706 1989]
+ [3822  595   50]]
+Chi-squared test statistics: chi2_stat = 2881.1245243695594 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Dual-energy x-ray absorptiometry (dxa), bone density study, 1 or more sites; axial skeleton (eg, hips, pelvis, spine)::77080::C3866034|C2122094|C3703905|C1740748|C3866035|C3866032|C3866033
+Count matrix:
+ [[4443 1718 1910]
+ [1338  583  129]]
+Chi-squared test statistics: chi2_stat = 311.57425401974217 -- p_val = 2.2004443422581312e-68 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Lymphatics and lymph nodes imaging::78195::C0203827|C3516098
+Count matrix:
+ [[4855 1385 1760]
+ [ 926  916  279]]
+Chi-squared test statistics: chi2_stat = 643.9307035605781 -- p_val = 1.4867034792391202e-140 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Ultrasound, breast(s) (unilateral or bilateral), real time with image documentation
+Count matrix:
+ [[3858  976 1777]
+ [1923 1325  262]]
+Chi-squared test statistics: chi2_stat = 966.9213091366734 -- p_val = 1.0856891649388176e-210 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Mammography; bilateral::77056::C0203027
+Count matrix:
+ [[4114 1087 1841]
+ [1667 1214  198]]
+Chi-squared test statistics: chi2_stat = 962.5029661546278 -- p_val = 9.888638298124485e-210 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Mammography; unilateral::77055::C0203026
+Count matrix:
+ [[4686 1455 1883]
+ [1095  846  156]]
+Chi-squared test statistics: chi2_stat = 583.8474116109468 -- p_val = 1.6563245230188369e-127 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Dual-energy x-ray absorptiometry (dxa), bone density study, 1 or more sites; axial skeleton (eg, hips, pelvis, spine)::77080::C3866034|C2122094|C3703905|C1740748|C3866035|C3866032|C3866033
+Count matrix:
+ [[4443 1718 1910]
+ [1338  583  129]]
+Chi-squared test statistics: chi2_stat = 311.57425401974217 -- p_val = 2.2004443422581312e-68 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[2771 1754 1910]
+ [3010  547  129]]
+Chi-squared test statistics: chi2_stat = 1567.6497179058906 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791
+Count matrix:
+ [[3591 1874 1925]
+ [2190  427  114]]
+Chi-squared test statistics: chi2_stat = 905.0920231345349 -- p_val = 2.895772030165793e-197 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Mammography::1014840::C0024671
+Count matrix:
+ [[4219 1389 1925]
+ [1562  912  114]]
+Chi-squared test statistics: chi2_stat = 673.1945981911795 -- p_val = 6.571286151065572e-147 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; non-automated, without microscopy::81002::C3525582|C3525583|C0373519|C3516204
+Count matrix:
+ [[3794 1792 1934]
+ [1987  509  105]]
+Chi-squared test statistics: chi2_stat = 694.048446275378 -- p_val = 1.9466810647335258e-151 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Excision of breast lesion identified by preoperative placement of radiological marker, open; single lesion::19125::C0370609|C3705620|C3702698|C3518226
+Count matrix:
+ [[5502 2053 1948]
+ [ 279  248   91]]
+Chi-squared test statistics: chi2_stat = 113.71744076260569 -- p_val = 2.0256830322217816e-25 -- dof = 2
+
+
+
+Inspecting disease: Diabetes
+
+3 0.10951548965955829
+4 0.08761687499978285
+5 0.10351195477878676
+6 0.09721263600952842
+7 0.10340253756922646
+8 0.10175494339139349
+9 0.08222383748185437
+10 0.07065813922502177
+Number of clusters found:3, Silhouette score:0.110
+
+Cluster 0 numerosity: 1358
+% most frequent term:cpt::Glucose; blood, reagent strip::82948::C0373620 = 0.23 (6927 out of 30374 terms in the whole dataset-- N patients in cluster 1160)
+% most frequent term:cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957 = 0.19 (7552 out of 39885 terms in the whole dataset-- N patients in cluster 1101)
+% most frequent term:cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638 = 0.22 (4754 out of 21627 terms in the whole dataset-- N patients in cluster 1093)
+% most frequent term:cpt::Unlisted vaccine/toxoid::90749::C0374131|C0040555|C0042196|C3516781 = 0.22 (4865 out of 21932 terms in the whole dataset-- N patients in cluster 1062)
+% most frequent term:cpt::Virus::T005::n/a = 0.22 (4755 out of 21371 terms in the whole dataset-- N patients in cluster 1053)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.09 (5925 out of 62900 terms in the whole dataset-- N patients in cluster 1025)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.09 (5925 out of 62900 terms in the whole dataset-- N patients in cluster 1025)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.09 (5918 out of 64056 terms in the whole dataset-- N patients in cluster 1012)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.09 (5497 out of 60007 terms in the whole dataset-- N patients in cluster 973)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.09 (5298 out of 56623 terms in the whole dataset-- N patients in cluster 968)
+
+
+Cluster 1 numerosity: 423
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.03 (1339 out of 41571 terms in the whole dataset-- N patients in cluster 383)
+% most frequent term:cpt::Glucose; blood, reagent strip::82948::C0373620 = 0.04 (1172 out of 30374 terms in the whole dataset-- N patients in cluster 349)
+% most frequent term:cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957 = 0.03 (1196 out of 39885 terms in the whole dataset-- N patients in cluster 313)
+% most frequent term:cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638 = 0.05 (1006 out of 21627 terms in the whole dataset-- N patients in cluster 309)
+% most frequent term:cpt::C-reactive protein; high sensitivity (hscrp)::86141::C3516428|C0973334 = 0.06 (643 out of 11619 terms in the whole dataset-- N patients in cluster 277)
+% most frequent term:cpt::Troponin, quantitative::84484::C0519832|C0523952|C3516382 = 0.04 (801 out of 21648 terms in the whole dataset-- N patients in cluster 261)
+% most frequent term:cpt::Transferase; aspartate amino (ast) (sgot)::84450::C0201899 = 0.04 (550 out of 12853 terms in the whole dataset-- N patients in cluster 260)
+% most frequent term:cpt::Transferase; alanine amino (alt) (sgpt)::84460::C0201836 = 0.04 (510 out of 11516 terms in the whole dataset-- N patients in cluster 249)
+% most frequent term:cpt::Lipoprotein, direct measurement::1011549::C3702066 = 0.05 (564 out of 10526 terms in the whole dataset-- N patients in cluster 231)
+% most frequent term:cpt::Triglycerides::84478::C0202236 = 0.05 (566 out of 12172 terms in the whole dataset-- N patients in cluster 231)
+
+
+Cluster 2 numerosity: 424
+% most frequent term:cpt::Glucose; blood, reagent strip::82948::C0373620 = 0.13 (3827 out of 30374 terms in the whole dataset-- N patients in cluster 410)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.07 (2939 out of 41571 terms in the whole dataset-- N patients in cluster 400)
+% most frequent term:cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638 = 0.12 (2587 out of 21627 terms in the whole dataset-- N patients in cluster 397)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.05 (3397 out of 62900 terms in the whole dataset-- N patients in cluster 376)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.05 (3397 out of 62900 terms in the whole dataset-- N patients in cluster 376)
+% most frequent term:cpt::Magnesium::83735::C0373675 = 0.09 (3032 out of 32314 terms in the whole dataset-- N patients in cluster 372)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.07 (2995 out of 40675 terms in the whole dataset-- N patients in cluster 368)
+% most frequent term:cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957 = 0.07 (2765 out of 39885 terms in the whole dataset-- N patients in cluster 366)
+% most frequent term:cpt::Phosphorus inorganic (phosphate)::84100::C0523827|C0523826 = 0.08 (2215 out of 27021 terms in the whole dataset-- N patients in cluster 358)
+% most frequent term:cpt::Phosphorus inorganic (phosphate)::1014270::C0523827 = 0.08 (2215 out of 27021 terms in the whole dataset-- N patients in cluster 358)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Glucose; blood, reagent strip::82948::C0373620
+Count matrix:
+ [[ 198   74   14]
+ [1160  349  410]]
+Chi-squared test statistics: chi2_stat = 45.89867604601961 -- p_val = 1.0795161234869916e-10 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957
+Count matrix:
+ [[ 257  110   58]
+ [1101  313  366]]
+Chi-squared test statistics: chi2_stat = 20.95220784795352 -- p_val = 2.8202387401477724e-05 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638
+Count matrix:
+ [[ 265  114   27]
+ [1093  309  397]]
+Chi-squared test statistics: chi2_stat = 62.56823160202057 -- p_val = 2.591081875148247e-14 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Unlisted vaccine/toxoid::90749::C0374131|C0040555|C0042196|C3516781
+Count matrix:
+ [[ 296  387  165]
+ [1062   36  259]]
+Chi-squared test statistics: chi2_stat = 661.9443192681047 -- p_val = 1.8222896449561427e-144 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Virus::T005::n/a
+Count matrix:
+ [[ 305  387  165]
+ [1053   36  259]]
+Chi-squared test statistics: chi2_stat = 646.8402877478569 -- p_val = 3.4706928347859386e-141 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[ 333  278   48]
+ [1025  145  376]]
+Chi-squared test statistics: chi2_stat = 347.61822998450157 -- p_val = 3.278388777381271e-76 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[ 333  278   48]
+ [1025  145  376]]
+Chi-squared test statistics: chi2_stat = 347.61822998450157 -- p_val = 3.278388777381271e-76 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[ 346  315   68]
+ [1012  108  356]]
+Chi-squared test statistics: chi2_stat = 418.51176825625987 -- p_val = 1.322282399970365e-91 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[385 292  69]
+ [973 131 355]]
+Chi-squared test statistics: chi2_stat = 310.72867064767115 -- p_val = 3.3583540898953534e-68 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[390 299  74]
+ [968 124 350]]
+Chi-squared test statistics: chi2_stat = 319.2562360900904 -- p_val = 4.724862521473717e-70 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[472  40  24]
+ [886 383 400]]
+Chi-squared test statistics: chi2_stat = 211.42548246400904 -- p_val = 1.2289658528786099e-46 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Glucose; blood, reagent strip::82948::C0373620
+Count matrix:
+ [[ 198   74   14]
+ [1160  349  410]]
+Chi-squared test statistics: chi2_stat = 45.89867604601961 -- p_val = 1.0795161234869916e-10 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957
+Count matrix:
+ [[ 257  110   58]
+ [1101  313  366]]
+Chi-squared test statistics: chi2_stat = 20.95220784795352 -- p_val = 2.8202387401477724e-05 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638
+Count matrix:
+ [[ 265  114   27]
+ [1093  309  397]]
+Chi-squared test statistics: chi2_stat = 62.56823160202057 -- p_val = 2.591081875148247e-14 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::C-reactive protein; high sensitivity (hscrp)::86141::C3516428|C0973334
+Count matrix:
+ [[1053  146  251]
+ [ 305  277  173]]
+Chi-squared test statistics: chi2_stat = 275.20652639772106 -- p_val = 1.7364492733739884e-60 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Troponin, quantitative::84484::C0519832|C0523952|C3516382
+Count matrix:
+ [[706 162  89]
+ [652 261 335]]
+Chi-squared test statistics: chi2_stat = 131.93775741782292 -- p_val = 2.2391335610034477e-29 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Transferase; aspartate amino (ast) (sgot)::84450::C0201899
+Count matrix:
+ [[803 163  94]
+ [555 260 330]]
+Chi-squared test statistics: chi2_stat = 195.9065963862149 -- p_val = 2.8802030802470072e-43 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Transferase; alanine amino (alt) (sgpt)::84460::C0201836
+Count matrix:
+ [[829 174 100]
+ [529 249 324]]
+Chi-squared test statistics: chi2_stat = 197.9110144259798 -- p_val = 1.0572294772677471e-43 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Lipoprotein, direct measurement::1011549::C3702066
+Count matrix:
+ [[867 192 187]
+ [491 231 237]]
+Chi-squared test statistics: chi2_stat = 77.5563589916317 -- p_val = 1.4416194288782902e-17 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Triglycerides::84478::C0202236
+Count matrix:
+ [[848 192 175]
+ [510 231 249]]
+Chi-squared test statistics: chi2_stat = 78.49563450376297 -- p_val = 9.013418595405503e-18 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Glucose; blood, reagent strip::82948::C0373620
+Count matrix:
+ [[ 198   74   14]
+ [1160  349  410]]
+Chi-squared test statistics: chi2_stat = 45.89867604601961 -- p_val = 1.0795161234869916e-10 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[472  40  24]
+ [886 383 400]]
+Chi-squared test statistics: chi2_stat = 211.42548246400904 -- p_val = 1.2289658528786099e-46 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Hemoglobin; glycosylated (a1c)::83036::C0474680|C0373638
+Count matrix:
+ [[ 265  114   27]
+ [1093  309  397]]
+Chi-squared test statistics: chi2_stat = 62.56823160202057 -- p_val = 2.591081875148247e-14 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[ 333  278   48]
+ [1025  145  376]]
+Chi-squared test statistics: chi2_stat = 347.61822998450157 -- p_val = 3.278388777381271e-76 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[ 333  278   48]
+ [1025  145  376]]
+Chi-squared test statistics: chi2_stat = 347.61822998450157 -- p_val = 3.278388777381271e-76 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Magnesium::83735::C0373675
+Count matrix:
+ [[769 262  52]
+ [589 161 372]]
+Chi-squared test statistics: chi2_stat = 288.88446538162714 -- p_val = 1.860096127444223e-63 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[496 314  56]
+ [862 109 368]]
+Chi-squared test statistics: chi2_stat = 341.8426017232286 -- p_val = 5.886026270029165e-75 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Lipid panel this panel must include the following: cholesterol, serum, total (82465) lipoprotein, direct measurement, high density cholesterol (hdl cholesterol) (83718) triglycerides (84478)::80061::C0202236|C0200382|C3525572|C1445957
+Count matrix:
+ [[ 257  110   58]
+ [1101  313  366]]
+Chi-squared test statistics: chi2_stat = 20.95220784795352 -- p_val = 2.8202387401477724e-05 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Phosphorus inorganic (phosphate)::84100::C0523827|C0523826
+Count matrix:
+ [[817 324  66]
+ [541  99 358]]
+Chi-squared test statistics: chi2_stat = 360.2964146574114 -- p_val = 5.789321024737713e-79 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Phosphorus inorganic (phosphate)::1014270::C0523827
+Count matrix:
+ [[817 324  66]
+ [541  99 358]]
+Chi-squared test statistics: chi2_stat = 360.2964146574114 -- p_val = 5.789321024737713e-79 -- dof = 2
+
+
+
+Inspecting disease: Multiple Myeloma
+
+3 0.12502126294096208
+4 0.134401222545245
+5 0.11388720735144052
+6 0.11425391407984037
+7 0.08823115076261107
+8 0.08476356074952049
+9 0.08534721270316775
+10 0.0823980369409795
+Number of clusters found:4, Silhouette score:0.134
+
+Cluster 0 numerosity: 771
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.06 (3556 out of 64056 terms in the whole dataset-- N patients in cluster 613)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.05 (3383 out of 62900 terms in the whole dataset-- N patients in cluster 605)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.05 (3383 out of 62900 terms in the whole dataset-- N patients in cluster 605)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.06 (3304 out of 60007 terms in the whole dataset-- N patients in cluster 601)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.06 (3243 out of 54363 terms in the whole dataset-- N patients in cluster 600)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.06 (3283 out of 56623 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Lactate dehydrogenase (ld), (ldh)::83615::C0202113 = 0.15 (3369 out of 22114 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.06 (3283 out of 56623 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.06 (3283 out of 56623 terms in the whole dataset-- N patients in cluster 598)
+% most frequent term:cpt::Lactate dehydrogenase (ld), (ldh)::1014266::C0202113 = 0.15 (3369 out of 22114 terms in the whole dataset-- N patients in cluster 598)
+
+
+Cluster 1 numerosity: 1085
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.06 (4086 out of 62900 terms in the whole dataset-- N patients in cluster 818)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.06 (4086 out of 62900 terms in the whole dataset-- N patients in cluster 818)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.07 (3960 out of 60007 terms in the whole dataset-- N patients in cluster 811)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.06 (3912 out of 64056 terms in the whole dataset-- N patients in cluster 759)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.07 (3723 out of 56623 terms in the whole dataset-- N patients in cluster 758)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.07 (3723 out of 56623 terms in the whole dataset-- N patients in cluster 758)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.07 (3723 out of 56623 terms in the whole dataset-- N patients in cluster 758)
+% most frequent term:cpt::Magnesium::83735::C0373675 = 0.11 (3447 out of 32314 terms in the whole dataset-- N patients in cluster 744)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.07 (3570 out of 54363 terms in the whole dataset-- N patients in cluster 742)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.07 (2991 out of 40675 terms in the whole dataset-- N patients in cluster 739)
+
+
+Cluster 2 numerosity: 452
+% most frequent term:cpt::Lactate dehydrogenase (ld), (ldh)::83615::C0202113 = 0.10 (2217 out of 22114 terms in the whole dataset-- N patients in cluster 385)
+% most frequent term:cpt::Nephelometry, each analyte not elsewhere specified::83883::C0373681|C0027692 = 0.28 (2928 out of 10418 terms in the whole dataset-- N patients in cluster 385)
+% most frequent term:cpt::Lactate dehydrogenase (ld), (ldh)::1014266::C0202113 = 0.10 (2217 out of 22114 terms in the whole dataset-- N patients in cluster 385)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.04 (2477 out of 64056 terms in the whole dataset-- N patients in cluster 384)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.04 (2194 out of 54363 terms in the whole dataset-- N patients in cluster 381)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.04 (2217 out of 62900 terms in the whole dataset-- N patients in cluster 381)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.04 (2217 out of 62900 terms in the whole dataset-- N patients in cluster 381)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.04 (2202 out of 60007 terms in the whole dataset-- N patients in cluster 378)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.04 (2193 out of 56623 terms in the whole dataset-- N patients in cluster 377)
+% most frequent term:cpt::Immunofixation electrophoresis; serum::86334::C3516447|C1611269 = 0.23 (2131 out of 9164 terms in the whole dataset-- N patients in cluster 377)
+
+
+Cluster 3 numerosity: 397
+% most frequent term:cpt::Bone marrow; biopsy, needle or trocar::38221::C3521240|C0194014 = 0.03 (43 out of 1642 terms in the whole dataset-- N patients in cluster 42)
+% most frequent term:cpt::Positron emission tomography (pet) with concurrently acquired computed tomography (ct) for attenuation correction and anatomical localization imaging; skull base to mid-thigh::78815::C3525559|C1504150|C3516176|C3865756 = 0.01 (52 out of 5565 terms in the whole dataset-- N patients in cluster 42)
+% most frequent term:cpt::Immunofixation electrophoresis; serum::86334::C3516447|C1611269 = 0.00 (42 out of 9164 terms in the whole dataset-- N patients in cluster 35)
+% most frequent term:cpt::Nephelometry, each analyte not elsewhere specified::83883::C0373681|C0027692 = 0.00 (39 out of 10418 terms in the whole dataset-- N patients in cluster 32)
+% most frequent term:cpt::Echocardiography, transthoracic, real-time with image documentation (2d), includes m-mode recording, when performed, complete, with spectral doppler echocardiography, and with color flow doppler echocardiography::93306::C2366742|C3517019|C3526770|C3526771 = 0.00 (36 out of 11009 terms in the whole dataset-- N patients in cluster 31)
+% most frequent term:cpt::Beta-2 microglobulin::82232::C0201910 = 0.00 (32 out of 7809 terms in the whole dataset-- N patients in cluster 29)
+% most frequent term:cpt::C-reactive protein; high sensitivity (hscrp)::86141::C3516428|C0973334 = 0.00 (24 out of 11619 terms in the whole dataset-- N patients in cluster 23)
+% most frequent term:cpt::Radiologic examination, osseous survey; complete (axial and appendicular skeleton)::77075::C0202616|C3516044|C3866043|C3525439 = 0.02 (20 out of 1120 terms in the whole dataset-- N patients in cluster 17)
+% most frequent term:cpt::Creatinine; blood::82565::C3525719|C0201975 = 0.00 (19 out of 20883 terms in the whole dataset-- N patients in cluster 16)
+% most frequent term:cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760 = 0.00 (15 out of 24107 terms in the whole dataset-- N patients in cluster 15)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[158 326  68 382]
+ [613 759 384  15]]
+Chi-squared test statistics: chi2_stat = 821.1321532267682 -- p_val = 1.1300378628788985e-177 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[170 274  74 388]
+ [601 811 378   9]]
+Chi-squared test statistics: chi2_stat = 873.3681741178523 -- p_val = 5.291098061606381e-189 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[171 343  71 388]
+ [600 742 381   9]]
+Chi-squared test statistics: chi2_stat = 810.7204121206674 -- p_val = 2.0474327326099742e-175 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Lactate dehydrogenase (ld), (ldh)::83615::C0202113
+Count matrix:
+ [[173 429  67 384]
+ [598 656 385  13]]
+Chi-squared test statistics: chi2_stat = 756.6542957552432 -- p_val = 1.0878498805440456e-163 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Lactate dehydrogenase (ld), (ldh)::1014266::C0202113
+Count matrix:
+ [[173 429  67 384]
+ [598 656 385  13]]
+Chi-squared test statistics: chi2_stat = 756.6542957552432 -- p_val = 1.0878498805440456e-163 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[170 274  74 388]
+ [601 811 378   9]]
+Chi-squared test statistics: chi2_stat = 873.3681741178523 -- p_val = 5.291098061606381e-189 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[158 326  68 382]
+ [613 759 384  15]]
+Chi-squared test statistics: chi2_stat = 821.1321532267682 -- p_val = 1.1300378628788985e-177 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Magnesium::83735::C0373675
+Count matrix:
+ [[284 341 316 395]
+ [487 744 136   2]]
+Chi-squared test statistics: chi2_stat = 663.5523696648609 -- p_val = 1.6786663705936013e-143 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[171 343  71 388]
+ [600 742 381   9]]
+Chi-squared test statistics: chi2_stat = 810.7204121206674 -- p_val = 2.0474327326099742e-175 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[412 346 374 391]
+ [359 739  78   6]]
+Chi-squared test statistics: chi2_stat = 681.0314708494733 -- p_val = 2.723046504797789e-147 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Lactate dehydrogenase (ld), (ldh)::83615::C0202113
+Count matrix:
+ [[173 429  67 384]
+ [598 656 385  13]]
+Chi-squared test statistics: chi2_stat = 756.6542957552432 -- p_val = 1.0878498805440456e-163 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Nephelometry, each analyte not elsewhere specified::83883::C0373681|C0027692
+Count matrix:
+ [[213 566  67 365]
+ [558 519 385  32]]
+Chi-squared test statistics: chi2_stat = 636.8190034429931 -- p_val = 1.0498780629503844e-137 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Lactate dehydrogenase (ld), (ldh)::1014266::C0202113
+Count matrix:
+ [[173 429  67 384]
+ [598 656 385  13]]
+Chi-squared test statistics: chi2_stat = 756.6542957552432 -- p_val = 1.0878498805440456e-163 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[158 326  68 382]
+ [613 759 384  15]]
+Chi-squared test statistics: chi2_stat = 821.1321532267682 -- p_val = 1.1300378628788985e-177 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[171 343  71 388]
+ [600 742 381   9]]
+Chi-squared test statistics: chi2_stat = 810.7204121206674 -- p_val = 2.0474327326099742e-175 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[166 267  71 389]
+ [605 818 381   8]]
+Chi-squared test statistics: chi2_stat = 899.654001264092 -- p_val = 1.0521449294006303e-194 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[170 274  74 388]
+ [601 811 378   9]]
+Chi-squared test statistics: chi2_stat = 873.3681741178523 -- p_val = 5.291098061606381e-189 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[173 327  75 389]
+ [598 758 377   8]]
+Chi-squared test statistics: chi2_stat = 817.1377190595928 -- p_val = 8.306480111971925e-177 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Immunofixation electrophoresis; serum::86334::C3516447|C1611269
+Count matrix:
+ [[235 501  75 362]
+ [536 584 377  35]]
+Chi-squared test statistics: chi2_stat = 557.1497458951881 -- p_val = 1.959626560988506e-120 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: cpt::Bone marrow; biopsy, needle or trocar::38221::C3521240|C0194014
+Count matrix:
+ [[372 819 272 355]
+ [399 266 180  42]]
+Chi-squared test statistics: chi2_stat = 258.4867500382329 -- p_val = 9.553117304927444e-56 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Positron emission tomography (pet) with concurrently acquired computed tomography (ct) for attenuation correction and anatomical localization imaging; skull base to mid-thigh::78815::C3525559|C1504150|C3516176|C3865756
+Count matrix:
+ [[329 795 219 355]
+ [442 290 233  42]]
+Chi-squared test statistics: chi2_stat = 344.7968073467068 -- p_val = 1.996642941857151e-74 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Immunofixation electrophoresis; serum::86334::C3516447|C1611269
+Count matrix:
+ [[235 501  75 362]
+ [536 584 377  35]]
+Chi-squared test statistics: chi2_stat = 557.1497458951881 -- p_val = 1.959626560988506e-120 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Nephelometry, each analyte not elsewhere specified::83883::C0373681|C0027692
+Count matrix:
+ [[213 566  67 365]
+ [558 519 385  32]]
+Chi-squared test statistics: chi2_stat = 636.8190034429931 -- p_val = 1.0498780629503844e-137 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Echocardiography, transthoracic, real-time with image documentation (2d), includes m-mode recording, when performed, complete, with spectral doppler echocardiography, and with color flow doppler echocardiography::93306::C2366742|C3517019|C3526770|C3526771
+Count matrix:
+ [[381 621 328 366]
+ [390 464 124  31]]
+Chi-squared test statistics: chi2_stat = 238.47878758316602 -- p_val = 2.0298501342738218e-51 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Beta-2 microglobulin::82232::C0201910
+Count matrix:
+ [[329 583 133 368]
+ [442 502 319  29]]
+Chi-squared test statistics: chi2_stat = 383.9777384333737 -- p_val = 6.539028831977643e-83 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::C-reactive protein; high sensitivity (hscrp)::86141::C3516428|C0973334
+Count matrix:
+ [[408 652 189 374]
+ [363 433 263  23]]
+Chi-squared test statistics: chi2_stat = 271.953296707067 -- p_val = 1.166453435873163e-58 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Radiologic examination, osseous survey; complete (axial and appendicular skeleton)::77075::C0202616|C3516044|C3866043|C3525439
+Count matrix:
+ [[485 809 347 380]
+ [286 276 105  17]]
+Chi-squared test statistics: chi2_stat = 150.63668834538163 -- p_val = 1.9205210246467412e-32 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Creatinine; blood::82565::C3525719|C0201975
+Count matrix:
+ [[334 620 245 381]
+ [437 465 207  16]]
+Chi-squared test statistics: chi2_stat = 306.82390210006076 -- p_val = 3.3176414863897865e-66 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760
+Count matrix:
+ [[315 508 324 382]
+ [456 577 128  15]]
+Chi-squared test statistics: chi2_stat = 415.44095293658944 -- p_val = 1.0008745340458998e-89 -- dof = 3
+
+
+
+Inspecting disease: Parkinson's disease
+
+3 0.15112952984616707
+4 0.13820093130839312
+5 0.12616767918622238
+6 0.10332987072336514
+7 0.10755953646404182
+8 0.0999488497847111
+9 0.09725168600401311
+10 0.06321150365161315
+Number of clusters found:3, Silhouette score:0.151
+
+Cluster 0 numerosity: 1098
+% most frequent term:cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material::70551::C3866606|C0412675|C0202699 = 0.11 (455 out of 4029 terms in the whole dataset-- N patients in cluster 287)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.01 (439 out of 41571 terms in the whole dataset-- N patients in cluster 242)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.01 (470 out of 40675 terms in the whole dataset-- N patients in cluster 235)
+% most frequent term:cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791 = 0.02 (388 out of 24876 terms in the whole dataset-- N patients in cluster 233)
+% most frequent term:cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760 = 0.02 (415 out of 24107 terms in the whole dataset-- N patients in cluster 221)
+% most frequent term:cpt::Radiologic examination, chest, 2 views, frontal and lateral::1014245::C0202792 = 0.02 (415 out of 24107 terms in the whole dataset-- N patients in cluster 221)
+% most frequent term:cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material, followed by contrast material(s) and further sequences::70553::C3866605|C0373149|C3515758|C3525171 = 0.07 (309 out of 4351 terms in the whole dataset-- N patients in cluster 213)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.01 (392 out of 62900 terms in the whole dataset-- N patients in cluster 202)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.01 (392 out of 62900 terms in the whole dataset-- N patients in cluster 202)
+% most frequent term:cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585 = 0.03 (358 out of 13053 terms in the whole dataset-- N patients in cluster 202)
+
+
+Cluster 1 numerosity: 981
+% most frequent term:cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material::70551::C3866606|C0412675|C0202699 = 0.02 (99 out of 4029 terms in the whole dataset-- N patients in cluster 81)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.00 (67 out of 41571 terms in the whole dataset-- N patients in cluster 57)
+% most frequent term:cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585 = 0.00 (50 out of 13053 terms in the whole dataset-- N patients in cluster 46)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.00 (51 out of 40675 terms in the whole dataset-- N patients in cluster 46)
+% most frequent term:cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791 = 0.00 (42 out of 24876 terms in the whole dataset-- N patients in cluster 40)
+% most frequent term:cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760 = 0.00 (39 out of 24107 terms in the whole dataset-- N patients in cluster 30)
+% most frequent term:cpt::Thyroid stimulating hormone (tsh)::84443::C0202230 = 0.00 (32 out of 17556 terms in the whole dataset-- N patients in cluster 30)
+% most frequent term:cpt::Radiologic examination, chest, 2 views, frontal and lateral::1014245::C0202792 = 0.00 (39 out of 24107 terms in the whole dataset-- N patients in cluster 30)
+% most frequent term:cpt::Electronic analysis of implanted neurostimulator pulse generator system (eg, rate, pulse amplitude and duration, battery status, electrode selectability and polarity, impedance and patient compliance measurements), complex deep brain neurostimulator pulse generator/transmitter, with initial or subsequent programming; first hour::95978::C3527029|C1504195|C3704094 = 0.04 (85 out of 1938 terms in the whole dataset-- N patients in cluster 29)
+% most frequent term:cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material, followed by contrast material(s) and further sequences::70553::C3866605|C0373149|C3515758|C3525171 = 0.01 (40 out of 4351 terms in the whole dataset-- N patients in cluster 29)
+
+
+Cluster 2 numerosity: 1760
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.07 (4405 out of 62900 terms in the whole dataset-- N patients in cluster 1241)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.07 (4405 out of 62900 terms in the whole dataset-- N patients in cluster 1241)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.07 (4175 out of 60007 terms in the whole dataset-- N patients in cluster 1207)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.09 (3843 out of 41571 terms in the whole dataset-- N patients in cluster 1189)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.09 (3731 out of 40675 terms in the whole dataset-- N patients in cluster 1174)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.06 (4142 out of 64056 terms in the whole dataset-- N patients in cluster 1137)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.07 (3864 out of 56623 terms in the whole dataset-- N patients in cluster 1133)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.07 (3864 out of 56623 terms in the whole dataset-- N patients in cluster 1133)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.07 (3864 out of 56623 terms in the whole dataset-- N patients in cluster 1133)
+% most frequent term:cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311 = 0.07 (3673 out of 54363 terms in the whole dataset-- N patients in cluster 1087)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material::70551::C3866606|C0412675|C0202699
+Count matrix:
+ [[ 811  900 1256]
+ [ 287   81  504]]
+Chi-squared test statistics: chi2_stat = 159.29705650038125 -- p_val = 2.5649782642262936e-35 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 856  924  571]
+ [ 242   57 1189]]
+Chi-squared test statistics: chi2_stat = 1192.878247054015 -- p_val = 9.327813645550079e-260 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 863  935  586]
+ [ 235   46 1174]]
+Chi-squared test statistics: chi2_stat = 1207.1375734883989 -- p_val = 7.471477070265369e-263 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791
+Count matrix:
+ [[ 865  941  713]
+ [ 233   40 1047]]
+Chi-squared test statistics: chi2_stat = 975.3492113300356 -- p_val = 1.60549809776055e-212 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760
+Count matrix:
+ [[ 877  951 1012]
+ [ 221   30  748]]
+Chi-squared test statistics: chi2_stat = 536.7865434268522 -- p_val = 2.743361976232286e-117 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Radiologic examination, chest, 2 views, frontal and lateral::1014245::C0202792
+Count matrix:
+ [[ 877  951 1012]
+ [ 221   30  748]]
+Chi-squared test statistics: chi2_stat = 536.7865434268522 -- p_val = 2.743361976232286e-117 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material, followed by contrast material(s) and further sequences::70553::C3866605|C0373149|C3515758|C3525171
+Count matrix:
+ [[ 885  952 1443]
+ [ 213   29  317]]
+Chi-squared test statistics: chi2_stat = 143.69236599152472 -- p_val = 6.27478975983065e-32 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[ 896  954  519]
+ [ 202   27 1241]]
+Chi-squared test statistics: chi2_stat = 1481.5253635964698 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[ 896  954  519]
+ [ 202   27 1241]]
+Chi-squared test statistics: chi2_stat = 1481.5253635964698 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585
+Count matrix:
+ [[896 935 897]
+ [202  46 863]]
+Chi-squared test statistics: chi2_stat = 685.4555030910415 -- p_val = 1.4296466425030254e-149 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material::70551::C3866606|C0412675|C0202699
+Count matrix:
+ [[ 811  900 1256]
+ [ 287   81  504]]
+Chi-squared test statistics: chi2_stat = 159.29705650038125 -- p_val = 2.5649782642262936e-35 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 856  924  571]
+ [ 242   57 1189]]
+Chi-squared test statistics: chi2_stat = 1192.878247054015 -- p_val = 9.327813645550079e-260 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Computed tomography, head or brain; without contrast material::70450::C0202691|C3866632|C3866633|C0202692|C3515741|C0412585
+Count matrix:
+ [[896 935 897]
+ [202  46 863]]
+Chi-squared test statistics: chi2_stat = 685.4555030910415 -- p_val = 1.4296466425030254e-149 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 863  935  586]
+ [ 235   46 1174]]
+Chi-squared test statistics: chi2_stat = 1207.1375734883989 -- p_val = 7.471477070265369e-263 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Radiologic examination, chest; single view, frontal::71010::C3866590|C3866591|C0202791
+Count matrix:
+ [[ 865  941  713]
+ [ 233   40 1047]]
+Chi-squared test statistics: chi2_stat = 975.3492113300356 -- p_val = 1.60549809776055e-212 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Radiologic examination, chest, 2 views, frontal and lateral::71020::C3866588|C0202792|C3515760
+Count matrix:
+ [[ 877  951 1012]
+ [ 221   30  748]]
+Chi-squared test statistics: chi2_stat = 536.7865434268522 -- p_val = 2.743361976232286e-117 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Thyroid stimulating hormone (tsh)::84443::C0202230
+Count matrix:
+ [[946 951 927]
+ [152  30 833]]
+Chi-squared test statistics: chi2_stat = 760.2331000744591 -- p_val = 8.269511180919913e-166 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Radiologic examination, chest, 2 views, frontal and lateral::1014245::C0202792
+Count matrix:
+ [[ 877  951 1012]
+ [ 221   30  748]]
+Chi-squared test statistics: chi2_stat = 536.7865434268522 -- p_val = 2.743361976232286e-117 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Electronic analysis of implanted neurostimulator pulse generator system (eg, rate, pulse amplitude and duration, battery status, electrode selectability and polarity, impedance and patient compliance measurements), complex deep brain neurostimulator pulse generator/transmitter, with initial or subsequent programming; first hour::95978::C3527029|C1504195|C3704094
+Count matrix:
+ [[ 935  952 1662]
+ [ 163   29   98]]
+Chi-squared test statistics: chi2_stat = 123.22042619716983 -- p_val = 1.749945093419442e-27 -- dof = 2
+Odds ratio chi2 test for cluster 1term: cpt::Magnetic resonance (eg, proton) imaging, brain (including brain stem); without contrast material, followed by contrast material(s) and further sequences::70553::C3866605|C0373149|C3515758|C3525171
+Count matrix:
+ [[ 885  952 1443]
+ [ 213   29  317]]
+Chi-squared test statistics: chi2_stat = 143.69236599152472 -- p_val = 6.27478975983065e-32 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[ 896  954  519]
+ [ 202   27 1241]]
+Chi-squared test statistics: chi2_stat = 1481.5253635964698 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[ 896  954  519]
+ [ 202   27 1241]]
+Chi-squared test statistics: chi2_stat = 1481.5253635964698 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[ 898  953  553]
+ [ 200   28 1207]]
+Chi-squared test statistics: chi2_stat = 1403.7879950676754 -- p_val = 1.4835766523445943e-305 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 856  924  571]
+ [ 242   57 1189]]
+Chi-squared test statistics: chi2_stat = 1192.878247054015 -- p_val = 9.327813645550079e-260 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[ 863  935  586]
+ [ 235   46 1174]]
+Chi-squared test statistics: chi2_stat = 1207.1375734883989 -- p_val = 7.471477070265369e-263 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[ 899  953  623]
+ [ 199   28 1137]]
+Chi-squared test statistics: chi2_stat = 1251.9009642733952 -- p_val = 1.4228517860115566e-272 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[ 918  957  627]
+ [ 180   24 1133]]
+Chi-squared test statistics: chi2_stat = 1294.534920067456 -- p_val = 7.85803197785558e-282 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[ 918  957  627]
+ [ 180   24 1133]]
+Chi-squared test statistics: chi2_stat = 1294.534920067456 -- p_val = 7.85803197785558e-282 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[ 918  957  627]
+ [ 180   24 1133]]
+Chi-squared test statistics: chi2_stat = 1294.534920067456 -- p_val = 7.85803197785558e-282 -- dof = 2
+Odds ratio chi2 test for cluster 2term: cpt::Carbon dioxide (bicarbonate)::82374::C0201930|C3516311
+Count matrix:
+ [[ 927  961  673]
+ [ 171   20 1087]]
+Chi-squared test statistics: chi2_stat = 1229.0302732850857 -- p_val = 1.3166401974855282e-267 -- dof = 2
+
+
+
+Inspecting disease: Prostate Cancer
+
+3 0.14314402946068971
+4 0.14900182460594155
+5 0.14291467872222033
+6 0.10186892043467195
+7 0.09918278805596059
+8 0.09325216250792515
+9 0.079752042820723
+10 0.08115731208473607
+Number of clusters found:4, Silhouette score:0.149
+
+Cluster 0 numerosity: 2438
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.04 (1578 out of 41571 terms in the whole dataset-- N patients in cluster 1543)
+% most frequent term:cpt::Prostate specific antigen (psa); total::84153::C0201544 = 0.20 (4738 out of 23966 terms in the whole dataset-- N patients in cluster 1350)
+% most frequent term:cpt::Testosterone; total::84403::C0523912|C0202227 = 0.13 (1093 out of 8639 terms in the whole dataset-- N patients in cluster 627)
+% most frequent term:cpt::Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy::38571::C3703331|C0372523 = 0.59 (541 out of 911 terms in the whole dataset-- N patients in cluster 541)
+% most frequent term:cpt::Enterolysis (freeing of intestinal adhesion) (separate procedure)::44005::C0198667 = 0.56 (473 out of 843 terms in the whole dataset-- N patients in cluster 473)
+% most frequent term:cpt::Laparoscopy, surgical::1008896::C3668855 = 0.64 (346 out of 539 terms in the whole dataset-- N patients in cluster 346)
+% most frequent term:cpt::Laparoscopy, surgical::1007375::C0812574 = 0.64 (346 out of 539 terms in the whole dataset-- N patients in cluster 346)
+% most frequent term:cpt::Laparoscopy, surgical::1007480::C1609019 = 0.64 (346 out of 539 terms in the whole dataset-- N patients in cluster 346)
+% most frequent term:cpt::Laparoscopy, surgical::1014150::C1609571 = 0.64 (346 out of 539 terms in the whole dataset-- N patients in cluster 346)
+% most frequent term:cpt::Laparoscopy, surgical::1008311::C0812582 = 0.64 (346 out of 539 terms in the whole dataset-- N patients in cluster 346)
+
+
+Cluster 1 numerosity: 4829
+% most frequent term:cpt::Prostate specific antigen (psa); total::84153::C0201544 = 0.51 (12225 out of 23966 terms in the whole dataset-- N patients in cluster 2957)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.19 (7778 out of 41571 terms in the whole dataset-- N patients in cluster 2863)
+% most frequent term:cpt::Phosphatase, alkaline::1014268::C0201850 = 0.16 (10033 out of 62900 terms in the whole dataset-- N patients in cluster 2612)
+% most frequent term:cpt::Phosphatase, alkaline::84075::C0201850|C3516363 = 0.16 (10033 out of 62900 terms in the whole dataset-- N patients in cluster 2612)
+% most frequent term:cpt::Albumin::1011249::C0201838 = 0.16 (9588 out of 60007 terms in the whole dataset-- N patients in cluster 2543)
+% most frequent term:cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850 = 0.16 (10070 out of 64056 terms in the whole dataset-- N patients in cluster 2499)
+% most frequent term:cpt::Bilirubin::1011294::C0201913 = 0.16 (9067 out of 56623 terms in the whole dataset-- N patients in cluster 2430)
+% most frequent term:cpt::Transferase::1011714::C3853637 = 0.16 (9067 out of 56623 terms in the whole dataset-- N patients in cluster 2430)
+% most frequent term:cpt::Protein::1011659::C0202202 = 0.16 (9067 out of 56623 terms in the whole dataset-- N patients in cluster 2430)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.17 (6791 out of 40675 terms in the whole dataset-- N patients in cluster 2354)
+
+
+Cluster 2 numerosity: 1523
+% most frequent term:cpt::Prostate specific antigen (psa); total::84153::C0201544 = 0.05 (1123 out of 23966 terms in the whole dataset-- N patients in cluster 612)
+% most frequent term:cpt::Testosterone; total::84403::C0523912|C0202227 = 0.08 (673 out of 8639 terms in the whole dataset-- N patients in cluster 408)
+% most frequent term:cpt::Magnetic resonance (eg, proton) imaging, pelvis; without contrast material(s), followed by contrast material(s) and further sequences::72197::C0918152|C3515810|C0203200|C0203201 = 0.14 (237 out of 1696 terms in the whole dataset-- N patients in cluster 163)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; non-automated, without microscopy::81002::C3525582|C3525583|C0373519|C3516204 = 0.01 (246 out of 19123 terms in the whole dataset-- N patients in cluster 141)
+% most frequent term:cpt::Ultrasound, transrectal::1014258::C0373345 = 0.14 (136 out of 945 terms in the whole dataset-- N patients in cluster 121)
+% most frequent term:cpt::Ultrasound, transrectal::76872::C0373345|C3516014 = 0.14 (136 out of 945 terms in the whole dataset-- N patients in cluster 121)
+% most frequent term:cpt::Biopsy, prostate; needle or punch, single or multiple, any approach::55700::C0372506|C3867552|C3867554|C3523164|C3514832|C3867553|C3867555|C3523163 = 0.14 (120 out of 876 terms in the whole dataset-- N patients in cluster 108)
+% most frequent term:cpt::Ultrasonic guidance for needle placement (eg, biopsy, aspiration, injection, localization device), imaging supervision and interpretation::76942::C3866092|C3516022|C0373350|C3866094|C3866091|C3866093 = 0.03 (111 out of 3181 terms in the whole dataset-- N patients in cluster 98)
+% most frequent term:cpt::Measurement of post-voiding residual urine and/or bladder capacity by ultrasound, non-imaging::51798::C1144666|C3522849|C3522850|C3514616 = 0.02 (114 out of 5236 terms in the whole dataset-- N patients in cluster 88)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.00 (88 out of 41571 terms in the whole dataset-- N patients in cluster 87)
+
+
+Cluster 3 numerosity: 615
+% most frequent term:cpt::Prostate specific antigen (psa); total::84153::C0201544 = 0.16 (3809 out of 23966 terms in the whole dataset-- N patients in cluster 580)
+% most frequent term:cpt::Testosterone; total::84403::C0523912|C0202227 = 0.26 (2210 out of 8639 terms in the whole dataset-- N patients in cluster 501)
+% most frequent term:cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393 = 0.01 (240 out of 41571 terms in the whole dataset-- N patients in cluster 238)
+% most frequent term:cpt::Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy::38571::C3703331|C0372523 = 0.11 (104 out of 911 terms in the whole dataset-- N patients in cluster 104)
+% most frequent term:cpt::Measurement of post-voiding residual urine and/or bladder capacity by ultrasound, non-imaging::51798::C1144666|C3522849|C3522850|C3514616 = 0.06 (323 out of 5236 terms in the whole dataset-- N patients in cluster 97)
+% most frequent term:cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584 = 0.00 (113 out of 40675 terms in the whole dataset-- N patients in cluster 97)
+% most frequent term:cpt::Culture, bacterial; with isolation and presumptive identification of each isolate, urine::87088::C0374003|C2188557 = 0.00 (96 out of 22068 terms in the whole dataset-- N patients in cluster 78)
+% most frequent term:cpt::Bone and/or joint imaging; whole body::78306::C3865886|C0373416|C3865887|C3865879|C3865885|C3865880|C3865881 = 0.02 (87 out of 5061 terms in the whole dataset-- N patients in cluster 68)
+% most frequent term:cpt::Cystography, minimum of three views, radiological supervision and interpretation = 0.21 (66 out of 320 terms in the whole dataset-- N patients in cluster 66)
+% most frequent term:cpt::Cystoplasty or cystourethroplasty, plastic operation on bladder and/or vesical neck (anterior y-plasty, vesical fundus resection), any procedure, with or without wedge resection of posterior vesical neck::51800::C3867827|C0372380|C0194475|C3867826|C3522852|C3867828|C0194479|C3867829|C3514617|C3522851 = 0.12 (62 out of 528 terms in the whole dataset-- N patients in cluster 62)
+
+
+Odds ratio chi2 test for cluster 0term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 895 1966 1436  377]
+ [1543 2863   87  238]]
+Chi-squared test statistics: chi2_stat = 1564.8606593212621 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Prostate specific antigen (psa); total::84153::C0201544
+Count matrix:
+ [[1088 1872  911   35]
+ [1350 2957  612  580]]
+Chi-squared test statistics: chi2_stat = 559.848596351839 -- p_val = 5.0953142935112994e-121 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Testosterone; total::84403::C0523912|C0202227
+Count matrix:
+ [[1811 3479 1115  114]
+ [ 627 1350  408  501]]
+Chi-squared test statistics: chi2_stat = 801.6005149116329 -- p_val = 1.9458962035985042e-173 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy::38571::C3703331|C0372523
+Count matrix:
+ [[1897 4609 1482  511]
+ [ 541  220   41  104]]
+Chi-squared test statistics: chi2_stat = 706.320768461779 -- p_val = 8.942285253496248e-153 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Enterolysis (freeing of intestinal adhesion) (separate procedure)::44005::C0198667
+Count matrix:
+ [[1965 4549 1494  563]
+ [ 473  280   29   52]]
+Chi-squared test statistics: chi2_stat = 482.543150914703 -- p_val = 2.895286255778632e-104 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical::1008896::C3668855
+Count matrix:
+ [[2092 4641 1523  611]
+ [ 346  188    0    4]]
+Chi-squared test statistics: chi2_stat = 476.0452556714636 -- p_val = 7.409003232335252e-103 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical::1007375::C0812574
+Count matrix:
+ [[2092 4641 1523  611]
+ [ 346  188    0    4]]
+Chi-squared test statistics: chi2_stat = 476.0452556714636 -- p_val = 7.409003232335252e-103 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical::1007480::C1609019
+Count matrix:
+ [[2092 4641 1523  611]
+ [ 346  188    0    4]]
+Chi-squared test statistics: chi2_stat = 476.0452556714636 -- p_val = 7.409003232335252e-103 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical::1014150::C1609571
+Count matrix:
+ [[2092 4641 1523  611]
+ [ 346  188    0    4]]
+Chi-squared test statistics: chi2_stat = 476.0452556714636 -- p_val = 7.409003232335252e-103 -- dof = 3
+Odds ratio chi2 test for cluster 0term: cpt::Laparoscopy, surgical::1008311::C0812582
+Count matrix:
+ [[2092 4641 1523  611]
+ [ 346  188    0    4]]
+Chi-squared test statistics: chi2_stat = 476.0452556714636 -- p_val = 7.409003232335252e-103 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: cpt::Prostate specific antigen (psa); total::84153::C0201544
+Count matrix:
+ [[1088 1872  911   35]
+ [1350 2957  612  580]]
+Chi-squared test statistics: chi2_stat = 559.848596351839 -- p_val = 5.0953142935112994e-121 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 895 1966 1436  377]
+ [1543 2863   87  238]]
+Chi-squared test statistics: chi2_stat = 1564.8606593212621 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::1014268::C0201850
+Count matrix:
+ [[2338 2217 1508  581]
+ [ 100 2612   15   34]]
+Chi-squared test statistics: chi2_stat = 2933.750873804161 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Phosphatase, alkaline::84075::C0201850|C3516363
+Count matrix:
+ [[2338 2217 1508  581]
+ [ 100 2612   15   34]]
+Chi-squared test statistics: chi2_stat = 2933.750873804161 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Albumin::1011249::C0201838
+Count matrix:
+ [[2312 2286 1502  577]
+ [ 126 2543   21   38]]
+Chi-squared test statistics: chi2_stat = 2705.0648504194514 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Comprehensive metabolic panel this panel must include the following: albumin (82040) bilirubin, total (82247) calcium, total (82310) carbon dioxide (bicarbonate) (82374) chloride (82435) creatinine (82565) glucose (82947) phosphatase, alkaline (84075) potassium (84132) protein, total (84155) sodium (84295) transferase, alanine amino (alt) (sgpt) (84460) transferase, aspartate amino (ast) (sgot) (84450) urea nitrogen (bun) (84520)::80053::C0201975|C0201838|C0337438|C0201930|C0201952|C0519825|C0201925|C0201850
+Count matrix:
+ [[2336 2330 1492  570]
+ [ 102 2499   31   45]]
+Chi-squared test statistics: chi2_stat = 2649.318204953393 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Bilirubin::1011294::C0201913
+Count matrix:
+ [[2341 2399 1509  582]
+ [  97 2430   14   33]]
+Chi-squared test statistics: chi2_stat = 2636.544230532646 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Transferase::1011714::C3853637
+Count matrix:
+ [[2341 2399 1509  582]
+ [  97 2430   14   33]]
+Chi-squared test statistics: chi2_stat = 2636.544230532646 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Protein::1011659::C0202202
+Count matrix:
+ [[2341 2399 1509  582]
+ [  97 2430   14   33]]
+Chi-squared test statistics: chi2_stat = 2636.544230532646 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[2134 2475 1450  518]
+ [ 304 2354   73   97]]
+Chi-squared test statistics: chi2_stat = 1682.8273883380887 -- p_val = 0.0 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: cpt::Prostate specific antigen (psa); total::84153::C0201544
+Count matrix:
+ [[1088 1872  911   35]
+ [1350 2957  612  580]]
+Chi-squared test statistics: chi2_stat = 559.848596351839 -- p_val = 5.0953142935112994e-121 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Testosterone; total::84403::C0523912|C0202227
+Count matrix:
+ [[1811 3479 1115  114]
+ [ 627 1350  408  501]]
+Chi-squared test statistics: chi2_stat = 801.6005149116329 -- p_val = 1.9458962035985042e-173 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Magnetic resonance (eg, proton) imaging, pelvis; without contrast material(s), followed by contrast material(s) and further sequences::72197::C0918152|C3515810|C0203200|C0203201
+Count matrix:
+ [[2221 4352 1360  568]
+ [ 217  477  163   47]]
+Chi-squared test statistics: chi2_stat = 6.64364446500428 -- p_val = 0.0841664426308967 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; non-automated, without microscopy::81002::C3525582|C3525583|C0373519|C3516204
+Count matrix:
+ [[2305 3399 1382  554]
+ [ 133 1430  141   61]]
+Chi-squared test statistics: chi2_stat = 777.9165089166706 -- p_val = 2.6640364343979576e-168 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Ultrasound, transrectal::1014258::C0373345
+Count matrix:
+ [[2356 4355 1402  573]
+ [  82  474  121   42]]
+Chi-squared test statistics: chi2_stat = 96.3021286252788 -- p_val = 9.692994238991746e-21 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Ultrasound, transrectal::76872::C0373345|C3516014
+Count matrix:
+ [[2356 4355 1402  573]
+ [  82  474  121   42]]
+Chi-squared test statistics: chi2_stat = 96.3021286252788 -- p_val = 9.692994238991746e-21 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Biopsy, prostate; needle or punch, single or multiple, any approach::55700::C0372506|C3867552|C3867554|C3523164|C3514832|C3867553|C3867555|C3523163
+Count matrix:
+ [[2364 4364 1415  571]
+ [  74  465  108   44]]
+Chi-squared test statistics: chi2_stat = 103.71356792799843 -- p_val = 2.470991321113259e-22 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Ultrasonic guidance for needle placement (eg, biopsy, aspiration, injection, localization device), imaging supervision and interpretation::76942::C3866092|C3516022|C0373350|C3866094|C3866091|C3866093
+Count matrix:
+ [[2377 4349 1425  580]
+ [  61  480   98   35]]
+Chi-squared test statistics: chi2_stat = 138.80256704358393 -- p_val = 6.849203561599247e-30 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Measurement of post-voiding residual urine and/or bladder capacity by ultrasound, non-imaging::51798::C1144666|C3522849|C3522850|C3514616
+Count matrix:
+ [[2206 3754 1435  518]
+ [ 232 1075   88   97]]
+Chi-squared test statistics: chi2_stat = 337.75421355942063 -- p_val = 6.685363450995585e-73 -- dof = 3
+Odds ratio chi2 test for cluster 2term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 895 1966 1436  377]
+ [1543 2863   87  238]]
+Chi-squared test statistics: chi2_stat = 1564.8606593212621 -- p_val = 0.0 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: cpt::Prostate specific antigen (psa); total::84153::C0201544
+Count matrix:
+ [[1088 1872  911   35]
+ [1350 2957  612  580]]
+Chi-squared test statistics: chi2_stat = 559.848596351839 -- p_val = 5.0953142935112994e-121 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Testosterone; total::84403::C0523912|C0202227
+Count matrix:
+ [[1811 3479 1115  114]
+ [ 627 1350  408  501]]
+Chi-squared test statistics: chi2_stat = 801.6005149116329 -- p_val = 1.9458962035985042e-173 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Blood count; complete (cbc), automated (hgb, hct, rbc, wbc and platelet count)::85027::C3525787|C3516392|C1144713|C0373763|C3495375|C3525786|C3516393
+Count matrix:
+ [[ 895 1966 1436  377]
+ [1543 2863   87  238]]
+Chi-squared test statistics: chi2_stat = 1564.8606593212621 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Laparoscopy, surgical; with bilateral total pelvic lymphadenectomy::38571::C3703331|C0372523
+Count matrix:
+ [[1897 4609 1482  511]
+ [ 541  220   41  104]]
+Chi-squared test statistics: chi2_stat = 706.320768461779 -- p_val = 8.942285253496248e-153 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Measurement of post-voiding residual urine and/or bladder capacity by ultrasound, non-imaging::51798::C1144666|C3522849|C3522850|C3514616
+Count matrix:
+ [[2206 3754 1435  518]
+ [ 232 1075   88   97]]
+Chi-squared test statistics: chi2_stat = 337.75421355942063 -- p_val = 6.685363450995585e-73 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Urinalysis, by dip stick or tablet reagent for bilirubin, glucose, hemoglobin, ketones, leukocytes, nitrite, ph, protein, specific gravity, urobilinogen, any number of these constituents; automated, without microscopy::81003::C3525585|C3516205|C0373520|C3525584
+Count matrix:
+ [[2134 2475 1450  518]
+ [ 304 2354   73   97]]
+Chi-squared test statistics: chi2_stat = 1682.8273883380887 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Culture, bacterial; with isolation and presumptive identification of each isolate, urine::87088::C0374003|C2188557
+Count matrix:
+ [[2142 3073 1465  537]
+ [ 296 1756   58   78]]
+Chi-squared test statistics: chi2_stat = 994.6427110397635 -- p_val = 2.613901125914228e-215 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Bone and/or joint imaging; whole body::78306::C3865886|C0373416|C3865887|C3865879|C3865885|C3865880|C3865881
+Count matrix:
+ [[2340 3927 1449  547]
+ [  98  902   74   68]]
+Chi-squared test statistics: chi2_stat = 420.59445821735017 -- p_val = 7.655518116418756e-91 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Cystography, minimum of three views, radiological supervision and interpretation
+Count matrix:
+ [[2408 4705 1443  549]
+ [  30  124   80   66]]
+Chi-squared test statistics: chi2_stat = 170.62680731232024 -- p_val = 9.31851128199886e-37 -- dof = 3
+Odds ratio chi2 test for cluster 3term: cpt::Cystoplasty or cystourethroplasty, plastic operation on bladder and/or vesical neck (anterior y-plasty, vesical fundus resection), any procedure, with or without wedge resection of posterior vesical neck::51800::C3867827|C0372380|C0194475|C3867826|C3522852|C3867828|C0194479|C3867829|C3514617|C3522851
+Count matrix:
+ [[2129 4685 1511  553]
+ [ 309  144   12   62]]
+Chi-squared test statistics: chi2_stat = 383.26955526267153 -- p_val = 9.308816851974612e-83 -- dof = 3
+
+
+
+ -- 3: 0.200
+ -- 4: 0.132
+ -- 5: 0.135
+ -- 6: 0.082
+ -- 7: 0.069
+ -- 8: 0.059
+ -- 9: 0.064
+ -- 10: 0.066
+No. of clusters: 3 -- Silhouette Score: 0.200
+
+
+Processing time: 2027.18 seconds
+
+Task completed
+

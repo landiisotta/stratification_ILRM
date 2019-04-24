@@ -11,25 +11,26 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
 diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
-            'malignant neoplasm of female breast',
-            'malignant tumor of prostate',
-            'type 2 dyabetes']
+            'malignant neopasm of female breast',
+            'malignant tumor of prostate']
+            #,'type 2 dyabetes']
 
 dtype = ['icd9',
          'icd10',
          'medication',
-#         'lab',
-#         'procedure',
+         'lab',
+         'procedure',
          'cpt']
 
 # data pre-processing parameters
 data_preproc_param = {'min_diagn': 3,
                       'n_rndm': 10000,
                       'age_step': 15,
-                      'len_min': 3}
+                      'min_seq_len': 3,
+                      'max_seq_len': 10000}
 
 # model parameters
-model_param = {'num_epochs': 10,
+model_param = {'num_epochs': 20,
                'batch_size': 16,
                'embedding_size': 100,
                'kernel_size': 5,

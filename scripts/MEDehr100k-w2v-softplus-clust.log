@@ -1,0 +1,1590 @@
+[H[J
+Loading datasets...
+Number of subjects:31391
+Disease numerosities:
+ {"Parkinson's disease": 3839, "Alzheimer's disease": 3116, 'Multiple Myeloma': 2705, 'Prostate Cancer': 9405, 'Diabetes': 2205, 'Breast Cancer': 10121}
+UMAP embeddings for CNN-AE encodings...
+Computed: CNN - AE encoded vectors umap
+Evaluating CNN-AE encodings...
+Cluster: 0 -- Entropy: 2.232, Purity: 0.432
+P=0.17 in cluster disease Alzheimer's disease
+P=0.43 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.07 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.10 in cluster disease Parkinson's disease
+P=0.17 in cluster disease Prostate Cancer
+Cluster: 1 -- Entropy: 2.124, Purity: 0.337
+P=0.05 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.03 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.21 in cluster disease Parkinson's disease
+P=0.32 in cluster disease Prostate Cancer
+Cluster: 2 -- Entropy: 2.399, Purity: 0.261
+P=0.14 in cluster disease Alzheimer's disease
+P=0.17 in cluster disease Breast Cancer
+P=0.21 in cluster disease Diabetes
+P=0.02 in cluster disease Multiple Myeloma
+P=0.26 in cluster disease Parkinson's disease
+max(P) in cluster disease Parkinson's disease
+P=0.20 in cluster disease Prostate Cancer
+Cluster: 3 -- Entropy: 0.594, Purity: 0.884
+P=0.00 in cluster disease Alzheimer's disease
+P=0.10 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.01 in cluster disease Parkinson's disease
+P=0.88 in cluster disease Prostate Cancer
+max(P) in cluster disease Prostate Cancer
+Cluster: 4 -- Entropy: 0.400, Purity: 0.937
+P=0.00 in cluster disease Alzheimer's disease
+P=0.05 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.94 in cluster disease Multiple Myeloma
+max(P) in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Cluster: 5 -- Entropy: 0.107, Purity: 0.988
+P=0.00 in cluster disease Alzheimer's disease
+P=0.99 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Average Entropy: 1.76
+Average Purity: 0.52
+Cluster 0 numerosity = 11440
+Cluster 1 numerosity = 5311
+Cluster 2 numerosity = 6011
+Cluster 3 numerosity = 5163
+Cluster 4 numerosity = 1679
+Cluster 5 numerosity = 1787
+Inspecting disease: Alzheimer's disease
+
+3 0.11238589250890528
+4 0.12572487263560342
+5 0.04943775958687691
+6 0.04274948114656658
+7 0.04880672143701774
+8 0.05051762734377054
+9 0.05446465900077817
+10 0.04834074826637786
+Number of clusters found:4, Silhouette score:0.126
+
+Cluster 0 numerosity: 1332
+% most frequent term:medication::Heparin sodium::9877::C0037513 = 0.21 (2917 out of 13621 terms in the whole dataset-- N patients in cluster 874)
+% most frequent term:medication::Aspirin::1191::C0004057 = 0.18 (3080 out of 17072 terms in the whole dataset-- N patients in cluster 821)
+% most frequent term:medication::Docusate sodium::71722::C0243237 = 0.16 (2526 out of 15733 terms in the whole dataset-- N patients in cluster 800)
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.33 (3483 out of 10512 terms in the whole dataset-- N patients in cluster 737)
+% most frequent term:medication::Potassium chloride::8591::C0032825 = 0.11 (1659 out of 14544 terms in the whole dataset-- N patients in cluster 689)
+% most frequent term:medication::SENNA STANDARD CONC TAB = 0.20 (1768 out of 8651 terms in the whole dataset-- N patients in cluster 651)
+% most frequent term:medication::Metoprolol::6918::C0025859 = 0.16 (2035 out of 12707 terms in the whole dataset-- N patients in cluster 632)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.07 (1433 out of 20473 terms in the whole dataset-- N patients in cluster 581)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.03 (1500 out of 43006 terms in the whole dataset-- N patients in cluster 572)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.05 (925 out of 18334 terms in the whole dataset-- N patients in cluster 538)
+
+
+Cluster 1 numerosity: 907
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.32 (3320 out of 10512 terms in the whole dataset-- N patients in cluster 550)
+% most frequent term:medication::Vitamin::T127::n/a = 0.13 (1829 out of 14591 terms in the whole dataset-- N patients in cluster 447)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.07 (1853 out of 25669 terms in the whole dataset-- N patients in cluster 444)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.09 (1499 out of 16811 terms in the whole dataset-- N patients in cluster 416)
+% most frequent term:medication::Memantine::6719::C0025242 = 0.43 (2148 out of 4966 terms in the whole dataset-- N patients in cluster 377)
+% most frequent term:medication::Docusate sodium 100 mg::1099278::C3153447 = 0.06 (1234 out of 20065 terms in the whole dataset-- N patients in cluster 334)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.03 (792 out of 23709 terms in the whole dataset-- N patients in cluster 324)
+% most frequent term:medication::FLU VACCINE TR-VL SPLT 2011-12(PF) 45 MCG (15 MCG X 3)/0.5 ML IM SUSP = 0.14 (324 out of 2359 terms in the whole dataset-- N patients in cluster 317)
+% most frequent term:medication::Cholecalciferol::2418::C0008318 = 0.08 (798 out of 9824 terms in the whole dataset-- N patients in cluster 315)
+% most frequent term:medication::Calcium::1895::C0006675 = 0.09 (928 out of 10715 terms in the whole dataset-- N patients in cluster 312)
+
+
+Cluster 2 numerosity: 616
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.06 (652 out of 10512 terms in the whole dataset-- N patients in cluster 221)
+% most frequent term:medication::Heparin sodium::9877::C0037513 = 0.04 (522 out of 13621 terms in the whole dataset-- N patients in cluster 216)
+% most frequent term:medication::Aspirin::1191::C0004057 = 0.02 (389 out of 17072 terms in the whole dataset-- N patients in cluster 177)
+% most frequent term:medication::Docusate sodium::71722::C0243237 = 0.02 (381 out of 15733 terms in the whole dataset-- N patients in cluster 166)
+% most frequent term:medication::Aricept::135446::C0527315 = 0.11 (324 out of 2933 terms in the whole dataset-- N patients in cluster 163)
+% most frequent term:medication::Potassium chloride::8591::C0032825 = 0.02 (243 out of 14544 terms in the whole dataset-- N patients in cluster 151)
+% most frequent term:medication::SENNA STANDARD CONC TAB = 0.03 (292 out of 8651 terms in the whole dataset-- N patients in cluster 139)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.01 (234 out of 20473 terms in the whole dataset-- N patients in cluster 135)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.01 (220 out of 25669 terms in the whole dataset-- N patients in cluster 134)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.01 (183 out of 18334 terms in the whole dataset-- N patients in cluster 126)
+
+
+Cluster 3 numerosity: 261
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.02 (192 out of 10512 terms in the whole dataset-- N patients in cluster 109)
+% most frequent term:medication::Memantine::6719::C0025242 = 0.02 (112 out of 4966 terms in the whole dataset-- N patients in cluster 63)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.00 (43 out of 25669 terms in the whole dataset-- N patients in cluster 36)
+% most frequent term:medication::Quetiapine 25 mg::343201::C1145939 = 0.02 (62 out of 2961 terms in the whole dataset-- N patients in cluster 29)
+% most frequent term:medication::Trazodone::10737::C0040805 = 0.00 (41 out of 8271 terms in the whole dataset-- N patients in cluster 28)
+% most frequent term:medication::Aricept::135446::C0527315 = 0.01 (33 out of 2933 terms in the whole dataset-- N patients in cluster 27)
+% most frequent term:medication::Aspirin::1191::C0004057 = 0.00 (26 out of 17072 terms in the whole dataset-- N patients in cluster 23)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.00 (23 out of 16811 terms in the whole dataset-- N patients in cluster 22)
+% most frequent term:medication::Docusate sodium::71722::C0243237 = 0.00 (24 out of 15733 terms in the whole dataset-- N patients in cluster 22)
+% most frequent term:medication::Vitamin::T127::n/a = 0.00 (31 out of 14591 terms in the whole dataset-- N patients in cluster 21)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Heparin sodium::9877::C0037513
+Count matrix:
+ [[458 694 400 246]
+ [874 213 216  15]]
+Chi-squared test statistics: chi2_stat = 584.3401467784447 -- p_val = 2.501287412074356e-126 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Aspirin::1191::C0004057
+Count matrix:
+ [[511 705 439 238]
+ [821 202 177  23]]
+Chi-squared test statistics: chi2_stat = 519.6009346565977 -- p_val = 2.6958708964700897e-112 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Docusate sodium::71722::C0243237
+Count matrix:
+ [[532 720 450 239]
+ [800 187 166  22]]
+Chi-squared test statistics: chi2_stat = 521.716749830282 -- p_val = 9.378528896654057e-113 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[595 357 395 152]
+ [737 550 221 109]]
+Chi-squared test statistics: chi2_stat = 108.12664851672514 -- p_val = 2.776292873931423e-23 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Potassium chloride::8591::C0032825
+Count matrix:
+ [[643 714 465 246]
+ [689 193 151  15]]
+Chi-squared test statistics: chi2_stat = 371.2609602757082 -- p_val = 3.712372942910951e-80 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::SENNA STANDARD CONC TAB
+Count matrix:
+ [[681 757 477 248]
+ [651 150 139  13]]
+Chi-squared test statistics: chi2_stat = 393.4129567713352 -- p_val = 5.914608595248374e-85 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Metoprolol::6918::C0025859
+Count matrix:
+ [[700 755 529 249]
+ [632 152  87  12]]
+Chi-squared test statistics: chi2_stat = 433.13648786204055 -- p_val = 1.4684473375119503e-93 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[751 678 481 251]
+ [581 229 135  10]]
+Chi-squared test statistics: chi2_stat = 228.27686874216107 -- p_val = 3.2611362084663583e-49 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[760 635 509 242]
+ [572 272 107  19]]
+Chi-squared test statistics: chi2_stat = 210.90058341431296 -- p_val = 1.860132740271655e-45 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[794 713 490 253]
+ [538 194 126   8]]
+Chi-squared test statistics: chi2_stat = 219.9225476914831 -- p_val = 2.0867092999624025e-47 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[595 357 395 152]
+ [737 550 221 109]]
+Chi-squared test statistics: chi2_stat = 108.12664851672514 -- p_val = 2.776292873931423e-23 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Vitamin::T127::n/a
+Count matrix:
+ [[967 460 522 240]
+ [365 447  94  21]]
+Chi-squared test statistics: chi2_stat = 289.81734421862063 -- p_val = 1.5902170370086314e-62 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[823 463 482 225]
+ [509 444 134  36]]
+Chi-squared test statistics: chi2_stat = 178.91851522184547 -- p_val = 1.5101256012105115e-38 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[1075  491  561  239]
+ [ 257  416   55   22]]
+Chi-squared test statistics: chi2_stat = 364.5874762929297 -- p_val = 1.034814972619281e-78 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Memantine::6719::C0025242
+Count matrix:
+ [[1015  530  523  198]
+ [ 317  377   93   63]]
+Chi-squared test statistics: chi2_stat = 148.8313228519679 -- p_val = 4.7083125426876325e-32 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Docusate sodium 100 mg::1099278::C3153447
+Count matrix:
+ [[903 573 539 247]
+ [429 334  77  14]]
+Chi-squared test statistics: chi2_stat = 188.40493270356973 -- p_val = 1.3494658924503194e-40 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[819 583 496 242]
+ [513 324 120  19]]
+Chi-squared test statistics: chi2_stat = 150.4743533977978 -- p_val = 2.081797895262399e-32 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::FLU VACCINE TR-VL SPLT 2011-12(PF) 45 MCG (15 MCG X 3)/0.5 ML IM SUSP
+Count matrix:
+ [[1222  590  602  257]
+ [ 110  317   14    4]]
+Chi-squared test statistics: chi2_stat = 463.21688583497837 -- p_val = 4.461676480227402e-100 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Cholecalciferol::2418::C0008318
+Count matrix:
+ [[1140  592  581  246]
+ [ 192  315   35   15]]
+Chi-squared test statistics: chi2_stat = 274.92266291962335 -- p_val = 2.657166517954132e-59 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Calcium::1895::C0006675
+Count matrix:
+ [[1018  595  508  247]
+ [ 314  312  108   14]]
+Chi-squared test statistics: chi2_stat = 117.71239555382752 -- p_val = 2.3992350168922997e-25 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[595 357 395 152]
+ [737 550 221 109]]
+Chi-squared test statistics: chi2_stat = 108.12664851672514 -- p_val = 2.776292873931423e-23 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Heparin sodium::9877::C0037513
+Count matrix:
+ [[458 694 400 246]
+ [874 213 216  15]]
+Chi-squared test statistics: chi2_stat = 584.3401467784447 -- p_val = 2.501287412074356e-126 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Aspirin::1191::C0004057
+Count matrix:
+ [[511 705 439 238]
+ [821 202 177  23]]
+Chi-squared test statistics: chi2_stat = 519.6009346565977 -- p_val = 2.6958708964700897e-112 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Docusate sodium::71722::C0243237
+Count matrix:
+ [[532 720 450 239]
+ [800 187 166  22]]
+Chi-squared test statistics: chi2_stat = 521.716749830282 -- p_val = 9.378528896654057e-113 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Aricept::135446::C0527315
+Count matrix:
+ [[916 663 453 234]
+ [416 244 163  27]]
+Chi-squared test statistics: chi2_stat = 48.490886370615854 -- p_val = 1.6741803020103274e-10 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Potassium chloride::8591::C0032825
+Count matrix:
+ [[643 714 465 246]
+ [689 193 151  15]]
+Chi-squared test statistics: chi2_stat = 371.2609602757082 -- p_val = 3.712372942910951e-80 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::SENNA STANDARD CONC TAB
+Count matrix:
+ [[681 757 477 248]
+ [651 150 139  13]]
+Chi-squared test statistics: chi2_stat = 393.4129567713352 -- p_val = 5.914608595248374e-85 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[751 678 481 251]
+ [581 229 135  10]]
+Chi-squared test statistics: chi2_stat = 228.27686874216107 -- p_val = 3.2611362084663583e-49 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[823 463 482 225]
+ [509 444 134  36]]
+Chi-squared test statistics: chi2_stat = 178.91851522184547 -- p_val = 1.5101256012105115e-38 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[794 713 490 253]
+ [538 194 126   8]]
+Chi-squared test statistics: chi2_stat = 219.9225476914831 -- p_val = 2.0867092999624025e-47 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[595 357 395 152]
+ [737 550 221 109]]
+Chi-squared test statistics: chi2_stat = 108.12664851672514 -- p_val = 2.776292873931423e-23 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Memantine::6719::C0025242
+Count matrix:
+ [[1015  530  523  198]
+ [ 317  377   93   63]]
+Chi-squared test statistics: chi2_stat = 148.8313228519679 -- p_val = 4.7083125426876325e-32 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[823 463 482 225]
+ [509 444 134  36]]
+Chi-squared test statistics: chi2_stat = 178.91851522184547 -- p_val = 1.5101256012105115e-38 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Quetiapine 25 mg::343201::C1145939
+Count matrix:
+ [[1158  711  574  232]
+ [ 174  196   42   29]]
+Chi-squared test statistics: chi2_stat = 72.07498702580467 -- p_val = 1.5340965648972637e-15 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Trazodone::10737::C0040805
+Count matrix:
+ [[935 643 516 233]
+ [397 264 100  28]]
+Chi-squared test statistics: chi2_stat = 77.3313419254244 -- p_val = 1.1464133417267084e-16 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aricept::135446::C0527315
+Count matrix:
+ [[916 663 453 234]
+ [416 244 163  27]]
+Chi-squared test statistics: chi2_stat = 48.490886370615854 -- p_val = 1.6741803020103274e-10 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aspirin::1191::C0004057
+Count matrix:
+ [[511 705 439 238]
+ [821 202 177  23]]
+Chi-squared test statistics: chi2_stat = 519.6009346565977 -- p_val = 2.6958708964700897e-112 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[1075  491  561  239]
+ [ 257  416   55   22]]
+Chi-squared test statistics: chi2_stat = 364.5874762929297 -- p_val = 1.034814972619281e-78 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Docusate sodium::71722::C0243237
+Count matrix:
+ [[532 720 450 239]
+ [800 187 166  22]]
+Chi-squared test statistics: chi2_stat = 521.716749830282 -- p_val = 9.378528896654057e-113 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Vitamin::T127::n/a
+Count matrix:
+ [[967 460 522 240]
+ [365 447  94  21]]
+Chi-squared test statistics: chi2_stat = 289.81734421862063 -- p_val = 1.5902170370086314e-62 -- dof = 3
+
+
+
+Inspecting disease: Breast Cancer
+
+3 0.15511632284839325
+4 0.14754626196585682
+5 0.14296011455222743
+6 0.09178387421544476
+7 0.09909577543665787
+8 0.10198154903250614
+9 0.08562475670680678
+10 0.08477657048596217
+Number of clusters found:3, Silhouette score:0.155
+
+Cluster 0 numerosity: 5781
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.28 (8860 out of 31640 terms in the whole dataset-- N patients in cluster 3240)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.25 (10896 out of 43006 terms in the whole dataset-- N patients in cluster 3239)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.27 (7359 out of 27584 terms in the whole dataset-- N patients in cluster 3096)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.27 (5364 out of 19539 terms in the whole dataset-- N patients in cluster 2645)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.27 (4381 out of 16383 terms in the whole dataset-- N patients in cluster 2321)
+% most frequent term:medication::Cefazolin::2180::C0007546 = 0.32 (4238 out of 13377 terms in the whole dataset-- N patients in cluster 2179)
+% most frequent term:medication::Diphenhydramine::3498::C0012522 = 0.30 (5796 out of 19516 terms in the whole dataset-- N patients in cluster 2096)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.22 (5122 out of 23709 terms in the whole dataset-- N patients in cluster 2070)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.24 (4351 out of 18334 terms in the whole dataset-- N patients in cluster 2026)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.31 (5194 out of 16811 terms in the whole dataset-- N patients in cluster 1864)
+
+
+Cluster 1 numerosity: 2301
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.12 (3650 out of 31640 terms in the whole dataset-- N patients in cluster 1527)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.12 (3271 out of 27584 terms in the whole dataset-- N patients in cluster 1498)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.07 (3009 out of 43006 terms in the whole dataset-- N patients in cluster 1372)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.14 (2688 out of 19539 terms in the whole dataset-- N patients in cluster 1318)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.14 (2319 out of 16383 terms in the whole dataset-- N patients in cluster 1204)
+% most frequent term:medication::Dexamethasone::3264::C0011777 = 0.20 (2613 out of 13384 terms in the whole dataset-- N patients in cluster 1101)
+% most frequent term:medication::Cefazolin::2180::C0007546 = 0.16 (2189 out of 13377 terms in the whole dataset-- N patients in cluster 1084)
+% most frequent term:medication::Diphenhydramine::3498::C0012522 = 0.12 (2320 out of 19516 terms in the whole dataset-- N patients in cluster 903)
+% most frequent term:medication::Meperidine::6754::C0025376 = 0.14 (1177 out of 8446 terms in the whole dataset-- N patients in cluster 752)
+% most frequent term:medication::Glycopyrrolate::4955::C0017970 = 0.14 (1135 out of 8370 terms in the whole dataset-- N patients in cluster 714)
+
+
+Cluster 2 numerosity: 2039
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.02 (670 out of 31640 terms in the whole dataset-- N patients in cluster 551)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.02 (689 out of 27584 terms in the whole dataset-- N patients in cluster 548)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.01 (607 out of 43006 terms in the whole dataset-- N patients in cluster 503)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.03 (556 out of 19539 terms in the whole dataset-- N patients in cluster 447)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.03 (466 out of 16383 terms in the whole dataset-- N patients in cluster 380)
+% most frequent term:medication::Cefazolin::2180::C0007546 = 0.03 (427 out of 13377 terms in the whole dataset-- N patients in cluster 356)
+% most frequent term:medication::Dexamethasone::3264::C0011777 = 0.02 (293 out of 13384 terms in the whole dataset-- N patients in cluster 265)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.01 (232 out of 16811 terms in the whole dataset-- N patients in cluster 223)
+% most frequent term:medication::Anastrozole 1 mg::315382::C0983723 = 0.10 (336 out of 3317 terms in the whole dataset-- N patients in cluster 216)
+% most frequent term:medication::Calcium::1895::C0006675 = 0.02 (218 out of 10715 terms in the whole dataset-- N patients in cluster 213)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[2541  774 1488]
+ [3240 1527  551]]
+Chi-squared test statistics: chi2_stat = 737.2283955692784 -- p_val = 8.182536494104744e-161 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[2542  929 1536]
+ [3239 1372  503]]
+Chi-squared test statistics: chi2_stat = 691.6095012839473 -- p_val = 6.590296896816271e-151 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[2685  803 1491]
+ [3096 1498  548]]
+Chi-squared test statistics: chi2_stat = 672.8091623688051 -- p_val = 7.967951916769698e-147 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[3136  983 1592]
+ [2645 1318  447]]
+Chi-squared test statistics: chi2_stat = 575.7256607578129 -- p_val = 9.610837215086795e-126 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[3460 1097 1659]
+ [2321 1204  380]]
+Chi-squared test statistics: chi2_stat = 531.6974223123633 -- p_val = 3.494392815518332e-116 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Cefazolin::2180::C0007546
+Count matrix:
+ [[3602 1217 1683]
+ [2179 1084  356]]
+Chi-squared test statistics: chi2_stat = 435.7063215266077 -- p_val = 2.4410372980806263e-95 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Diphenhydramine::3498::C0012522
+Count matrix:
+ [[3685 1398 1909]
+ [2096  903  130]]
+Chi-squared test statistics: chi2_stat = 726.8543593294946 -- p_val = 1.464135591377969e-158 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[3711 1787 1923]
+ [2070  514  116]]
+Chi-squared test statistics: chi2_stat = 727.6746724820624 -- p_val = 9.715218222652632e-159 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[3755 1594 1891]
+ [2026  707  148]]
+Chi-squared test statistics: chi2_stat = 579.0468346837306 -- p_val = 1.8263224876782148e-126 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[3917 1734 1816]
+ [1864  567  223]]
+Chi-squared test statistics: chi2_stat = 357.56151805023273 -- p_val = 2.272494730873318e-78 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[2541  774 1488]
+ [3240 1527  551]]
+Chi-squared test statistics: chi2_stat = 737.2283955692784 -- p_val = 8.182536494104744e-161 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[2685  803 1491]
+ [3096 1498  548]]
+Chi-squared test statistics: chi2_stat = 672.8091623688051 -- p_val = 7.967951916769698e-147 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[2542  929 1536]
+ [3239 1372  503]]
+Chi-squared test statistics: chi2_stat = 691.6095012839473 -- p_val = 6.590296896816271e-151 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[3136  983 1592]
+ [2645 1318  447]]
+Chi-squared test statistics: chi2_stat = 575.7256607578129 -- p_val = 9.610837215086795e-126 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[3460 1097 1659]
+ [2321 1204  380]]
+Chi-squared test statistics: chi2_stat = 531.6974223123633 -- p_val = 3.494392815518332e-116 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Dexamethasone::3264::C0011777
+Count matrix:
+ [[4027 1200 1774]
+ [1754 1101  265]]
+Chi-squared test statistics: chi2_stat = 617.2901999348455 -- p_val = 9.060167310014634e-135 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Cefazolin::2180::C0007546
+Count matrix:
+ [[3602 1217 1683]
+ [2179 1084  356]]
+Chi-squared test statistics: chi2_stat = 435.7063215266077 -- p_val = 2.4410372980806263e-95 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Diphenhydramine::3498::C0012522
+Count matrix:
+ [[3685 1398 1909]
+ [2096  903  130]]
+Chi-squared test statistics: chi2_stat = 726.8543593294946 -- p_val = 1.464135591377969e-158 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Meperidine::6754::C0025376
+Count matrix:
+ [[4397 1549 1833]
+ [1384  752  206]]
+Chi-squared test statistics: chi2_stat = 314.71936866116744 -- p_val = 4.5662261956440516e-69 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Glycopyrrolate::4955::C0017970
+Count matrix:
+ [[4342 1587 1855]
+ [1439  714  184]]
+Chi-squared test statistics: chi2_stat = 319.4192913506988 -- p_val = 4.354940005625475e-70 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[2541  774 1488]
+ [3240 1527  551]]
+Chi-squared test statistics: chi2_stat = 737.2283955692784 -- p_val = 8.182536494104744e-161 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[2685  803 1491]
+ [3096 1498  548]]
+Chi-squared test statistics: chi2_stat = 672.8091623688051 -- p_val = 7.967951916769698e-147 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[2542  929 1536]
+ [3239 1372  503]]
+Chi-squared test statistics: chi2_stat = 691.6095012839473 -- p_val = 6.590296896816271e-151 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[3136  983 1592]
+ [2645 1318  447]]
+Chi-squared test statistics: chi2_stat = 575.7256607578129 -- p_val = 9.610837215086795e-126 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[3460 1097 1659]
+ [2321 1204  380]]
+Chi-squared test statistics: chi2_stat = 531.6974223123633 -- p_val = 3.494392815518332e-116 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Cefazolin::2180::C0007546
+Count matrix:
+ [[3602 1217 1683]
+ [2179 1084  356]]
+Chi-squared test statistics: chi2_stat = 435.7063215266077 -- p_val = 2.4410372980806263e-95 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Dexamethasone::3264::C0011777
+Count matrix:
+ [[4027 1200 1774]
+ [1754 1101  265]]
+Chi-squared test statistics: chi2_stat = 617.2901999348455 -- p_val = 9.060167310014634e-135 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[3917 1734 1816]
+ [1864  567  223]]
+Chi-squared test statistics: chi2_stat = 357.56151805023273 -- p_val = 2.272494730873318e-78 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Anastrozole 1 mg::315382::C0983723
+Count matrix:
+ [[4971 1904 1823]
+ [ 810  397  216]]
+Chi-squared test statistics: chi2_stat = 39.709455202521355 -- p_val = 2.383424301296896e-09 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Calcium::1895::C0006675
+Count matrix:
+ [[4088 1833 1826]
+ [1693  468  213]]
+Chi-squared test statistics: chi2_stat = 314.0892352078526 -- p_val = 6.257331477401038e-69 -- dof = 2
+
+
+
+Inspecting disease: Diabetes
+
+3 0.10951548965955829
+4 0.08761687499978285
+5 0.10351195477878676
+6 0.09721263600952842
+7 0.10340253756922646
+8 0.10175494339139349
+9 0.08222383748185437
+10 0.07065813922502177
+Number of clusters found:3, Silhouette score:0.110
+
+Cluster 0 numerosity: 1358
+% most frequent term:medication::Metformin::6809::C0025598 = 0.47 (10657 out of 22884 terms in the whole dataset-- N patients in cluster 1122)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.25 (6489 out of 25669 terms in the whole dataset-- N patients in cluster 884)
+% most frequent term:medication::BLOOD SUGAR DIAGNOSTIC STRIPS = 0.50 (3362 out of 6683 terms in the whole dataset-- N patients in cluster 761)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.10 (4443 out of 43006 terms in the whole dataset-- N patients in cluster 757)
+% most frequent term:medication::LANCETS = 0.53 (3334 out of 6274 terms in the whole dataset-- N patients in cluster 713)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.04 (1395 out of 31640 terms in the whole dataset-- N patients in cluster 676)
+% most frequent term:medication::Human::T016::n/a = 0.12 (1838 out of 15382 terms in the whole dataset-- N patients in cluster 632)
+% most frequent term:medication::Aerosol::324049::C1112870 = 0.32 (5387 out of 17056 terms in the whole dataset-- N patients in cluster 622)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.07 (1633 out of 23709 terms in the whole dataset-- N patients in cluster 613)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.06 (1144 out of 19539 terms in the whole dataset-- N patients in cluster 611)
+
+
+Cluster 1 numerosity: 423
+% most frequent term:medication::Aspirin::1191::C0004057 = 0.07 (1181 out of 17072 terms in the whole dataset-- N patients in cluster 357)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.03 (752 out of 25669 terms in the whole dataset-- N patients in cluster 282)
+% most frequent term:medication::Angiomax::285044::C0939677 = 0.29 (681 out of 2350 terms in the whole dataset-- N patients in cluster 274)
+% most frequent term:medication::Glucagon::4832::C0017687 = 0.06 (750 out of 12365 terms in the whole dataset-- N patients in cluster 271)
+% most frequent term:medication::IC NTG = 0.24 (555 out of 2344 terms in the whole dataset-- N patients in cluster 240)
+% most frequent term:medication::Plavix::174742::C0633084 = 0.16 (640 out of 3997 terms in the whole dataset-- N patients in cluster 233)
+% most frequent term:medication::Clopidogrel 75 mg::329449::C1124675 = 0.09 (627 out of 6890 terms in the whole dataset-- N patients in cluster 233)
+% most frequent term:medication::Insulin lispro::86009::C0293359 = 0.06 (572 out of 9937 terms in the whole dataset-- N patients in cluster 228)
+% most frequent term:medication::Glucophage::151827::C0591573 = 0.24 (520 out of 2129 terms in the whole dataset-- N patients in cluster 227)
+% most frequent term:medication::Human::T016::n/a = 0.04 (627 out of 15382 terms in the whole dataset-- N patients in cluster 227)
+
+
+Cluster 2 numerosity: 424
+% most frequent term:medication::Glucagon::4832::C0017687 = 0.16 (2026 out of 12365 terms in the whole dataset-- N patients in cluster 376)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.06 (2724 out of 43006 terms in the whole dataset-- N patients in cluster 364)
+% most frequent term:medication::Human::T016::n/a = 0.14 (2193 out of 15382 terms in the whole dataset-- N patients in cluster 358)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.04 (1280 out of 31640 terms in the whole dataset-- N patients in cluster 328)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.04 (968 out of 27584 terms in the whole dataset-- N patients in cluster 327)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.05 (1302 out of 23709 terms in the whole dataset-- N patients in cluster 324)
+% most frequent term:medication::Insulin lispro::86009::C0293359 = 0.16 (1636 out of 9937 terms in the whole dataset-- N patients in cluster 316)
+% most frequent term:medication::Water::11295::C0043047 = 0.15 (1252 out of 8534 terms in the whole dataset-- N patients in cluster 316)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.07 (1435 out of 20473 terms in the whole dataset-- N patients in cluster 309)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.07 (1736 out of 25669 terms in the whole dataset-- N patients in cluster 297)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Metformin::6809::C0025598
+Count matrix:
+ [[ 236  207  195]
+ [1122  216  229]]
+Chi-squared test statistics: chi2_stat = 230.48097962513918 -- p_val = 8.947283173105881e-51 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[474 141 127]
+ [884 282 297]]
+Chi-squared test statistics: chi2_stat = 3.5716786628364794 -- p_val = 0.16765628274307187 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::BLOOD SUGAR DIAGNOSTIC STRIPS
+Count matrix:
+ [[597 399 267]
+ [761  24 157]]
+Chi-squared test statistics: chi2_stat = 341.29254888124945 -- p_val = 7.749338880066928e-75 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[601 207  60]
+ [757 216 364]]
+Chi-squared test statistics: chi2_stat = 142.77803533164635 -- p_val = 9.91159525828022e-32 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::LANCETS
+Count matrix:
+ [[645 401 267]
+ [713  22 157]]
+Chi-squared test statistics: chi2_stat = 302.1528972114339 -- p_val = 2.445299308233667e-66 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[682 342  96]
+ [676  81 328]]
+Chi-squared test statistics: chi2_stat = 287.5293472113176 -- p_val = 3.662651186076675e-63 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Human::T016::n/a
+Count matrix:
+ [[726 196  66]
+ [632 227 358]]
+Chi-squared test statistics: chi2_stat = 188.1190896724081 -- p_val = 1.4140302727595557e-41 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Aerosol::324049::C1112870
+Count matrix:
+ [[736 387 252]
+ [622  36 172]]
+Chi-squared test statistics: chi2_stat = 193.00524405736465 -- p_val = 1.2286940742107016e-42 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[745 212 100]
+ [613 211 324]]
+Chi-squared test statistics: chi2_stat = 127.6344514083016 -- p_val = 1.9254445953234098e-28 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[747 372 151]
+ [611  51 273]]
+Chi-squared test statistics: chi2_stat = 247.12805255114026 -- p_val = 2.1718269941381804e-54 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Aspirin::1191::C0004057
+Count matrix:
+ [[843  66 130]
+ [515 357 294]]
+Chi-squared test statistics: chi2_stat = 336.64988106631773 -- p_val = 7.896000365342671e-74 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[474 141 127]
+ [884 282 297]]
+Chi-squared test statistics: chi2_stat = 3.5716786628364794 -- p_val = 0.16765628274307187 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Angiomax::285044::C0939677
+Count matrix:
+ [[1267  149  357]
+ [  91  274   67]]
+Chi-squared test statistics: chi2_stat = 695.2965733711316 -- p_val = 1.0429595120645366e-151 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Glucagon::4832::C0017687
+Count matrix:
+ [[791 152  48]
+ [567 271 376]]
+Chi-squared test statistics: chi2_stat = 304.7257576735055 -- p_val = 6.75526630380545e-67 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::IC NTG
+Count matrix:
+ [[1268  183  369]
+ [  90  240   55]]
+Chi-squared test statistics: chi2_stat = 569.3091856722338 -- p_val = 2.3772840845591847e-124 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Plavix::174742::C0633084
+Count matrix:
+ [[1243  190  344]
+ [ 115  233   80]]
+Chi-squared test statistics: chi2_stat = 448.1240533967103 -- p_val = 4.910188907315574e-98 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Clopidogrel 75 mg::329449::C1124675
+Count matrix:
+ [[1213  190  327]
+ [ 145  233   97]]
+Chi-squared test statistics: chi2_stat = 376.84401282538795 -- p_val = 1.4769382763793485e-82 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Insulin lispro::86009::C0293359
+Count matrix:
+ [[818 195 108]
+ [540 228 316]]
+Chi-squared test statistics: chi2_stat = 160.94682204323246 -- p_val = 1.1241950103500243e-35 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Glucophage::151827::C0591573
+Count matrix:
+ [[1100  196  359]
+ [ 258  227   65]]
+Chi-squared test statistics: chi2_stat = 232.94230834123945 -- p_val = 2.6134875934986653e-51 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Human::T016::n/a
+Count matrix:
+ [[726 196  66]
+ [632 227 358]]
+Chi-squared test statistics: chi2_stat = 188.1190896724081 -- p_val = 1.4140302727595557e-41 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Glucagon::4832::C0017687
+Count matrix:
+ [[791 152  48]
+ [567 271 376]]
+Chi-squared test statistics: chi2_stat = 304.7257576735055 -- p_val = 6.75526630380545e-67 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[601 207  60]
+ [757 216 364]]
+Chi-squared test statistics: chi2_stat = 142.77803533164635 -- p_val = 9.91159525828022e-32 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Human::T016::n/a
+Count matrix:
+ [[726 196  66]
+ [632 227 358]]
+Chi-squared test statistics: chi2_stat = 188.1190896724081 -- p_val = 1.4140302727595557e-41 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[682 342  96]
+ [676  81 328]]
+Chi-squared test statistics: chi2_stat = 287.5293472113176 -- p_val = 3.662651186076675e-63 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[773 353  97]
+ [585  70 327]]
+Chi-squared test statistics: chi2_stat = 317.5795243128745 -- p_val = 1.0926536295903249e-69 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[745 212 100]
+ [613 211 324]]
+Chi-squared test statistics: chi2_stat = 127.6344514083016 -- p_val = 1.9254445953234098e-28 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Insulin lispro::86009::C0293359
+Count matrix:
+ [[818 195 108]
+ [540 228 316]]
+Chi-squared test statistics: chi2_stat = 160.94682204323246 -- p_val = 1.1241950103500243e-35 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Water::11295::C0043047
+Count matrix:
+ [[895 218 108]
+ [463 205 316]]
+Chi-squared test statistics: chi2_stat = 216.8951208021425 -- p_val = 7.976694181354557e-48 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[993 313 115]
+ [365 110 309]]
+Chi-squared test statistics: chi2_stat = 319.219046077719 -- p_val = 4.813543324043107e-70 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[474 141 127]
+ [884 282 297]]
+Chi-squared test statistics: chi2_stat = 3.5716786628364794 -- p_val = 0.16765628274307187 -- dof = 2
+
+
+
+Inspecting disease: Multiple Myeloma
+
+3 0.12502126294096208
+4 0.134401222545245
+5 0.11388720735144052
+6 0.11425391407984037
+7 0.08823115076261107
+8 0.08476356074952049
+9 0.08534721270316775
+10 0.0823980369409795
+Number of clusters found:4, Silhouette score:0.134
+
+Cluster 0 numerosity: 771
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.08 (2565 out of 31640 terms in the whole dataset-- N patients in cluster 512)
+% most frequent term:medication::Diphenhydramine::3498::C0012522 = 0.12 (2347 out of 19516 terms in the whole dataset-- N patients in cluster 497)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.10 (2452 out of 23709 terms in the whole dataset-- N patients in cluster 486)
+% most frequent term:medication::Dexamethasone 4 mg::315778::C0985346 = 0.44 (3279 out of 7494 terms in the whole dataset-- N patients in cluster 470)
+% most frequent term:medication::Filgrastim::68442::C0210630 = 0.41 (1884 out of 4563 terms in the whole dataset-- N patients in cluster 463)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.05 (2018 out of 43006 terms in the whole dataset-- N patients in cluster 461)
+% most frequent term:medication::Prochlorperazine::8704::C0033229 = 0.12 (840 out of 6973 terms in the whole dataset-- N patients in cluster 408)
+% most frequent term:medication::Potassium chloride::8591::C0032825 = 0.07 (1015 out of 14544 terms in the whole dataset-- N patients in cluster 399)
+% most frequent term:medication::Hydrocortisone::5492::C0020268 = 0.19 (650 out of 3499 terms in the whole dataset-- N patients in cluster 391)
+% most frequent term:medication::Ondansetron 8 mg::328451::C1123368 = 0.50 (3173 out of 6340 terms in the whole dataset-- N patients in cluster 391)
+
+
+Cluster 1 numerosity: 1085
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.07 (2892 out of 43006 terms in the whole dataset-- N patients in cluster 707)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.09 (2722 out of 31640 terms in the whole dataset-- N patients in cluster 655)
+% most frequent term:medication::Diphenhydramine::3498::C0012522 = 0.13 (2569 out of 19516 terms in the whole dataset-- N patients in cluster 617)
+% most frequent term:medication::Potassium chloride::8591::C0032825 = 0.13 (1949 out of 14544 terms in the whole dataset-- N patients in cluster 575)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.05 (1493 out of 27584 terms in the whole dataset-- N patients in cluster 560)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.10 (2360 out of 23709 terms in the whole dataset-- N patients in cluster 553)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.09 (1887 out of 20473 terms in the whole dataset-- N patients in cluster 544)
+% most frequent term:medication::Vancomycin::11124::C0042313 = 0.15 (1428 out of 9360 terms in the whole dataset-- N patients in cluster 502)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.07 (1348 out of 18334 terms in the whole dataset-- N patients in cluster 500)
+% most frequent term:medication::Magnesium sulfate::6585::C0024480 = 0.21 (1429 out of 6763 terms in the whole dataset-- N patients in cluster 493)
+
+
+Cluster 2 numerosity: 452
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.01 (283 out of 25669 terms in the whole dataset-- N patients in cluster 233)
+% most frequent term:medication::Dexamethasone 4 mg::315778::C0985346 = 0.20 (1498 out of 7494 terms in the whole dataset-- N patients in cluster 222)
+% most frequent term:medication::Acyclovir 400 mg::315281::C0983010 = 0.25 (610 out of 2395 terms in the whole dataset-- N patients in cluster 201)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.01 (470 out of 43006 terms in the whole dataset-- N patients in cluster 151)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.02 (579 out of 31640 terms in the whole dataset-- N patients in cluster 136)
+% most frequent term:medication::Zoledronic acid::77655::C0257685 = 0.24 (876 out of 3718 terms in the whole dataset-- N patients in cluster 133)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.01 (183 out of 16811 terms in the whole dataset-- N patients in cluster 130)
+% most frequent term:medication::Ondansetron 8 mg::328451::C1123368 = 0.20 (1268 out of 6340 terms in the whole dataset-- N patients in cluster 129)
+% most frequent term:medication::Filgrastim::68442::C0210630 = 0.08 (350 out of 4563 terms in the whole dataset-- N patients in cluster 127)
+% most frequent term:medication::Bortezomib injection::1804994::C4255457 = 0.28 (1479 out of 5315 terms in the whole dataset-- N patients in cluster 125)
+
+
+Cluster 3 numerosity: 397
+% most frequent term:medication::Dexamethasone 4 mg::315778::C0985346 = 0.01 (88 out of 7494 terms in the whole dataset-- N patients in cluster 80)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.00 (76 out of 25669 terms in the whole dataset-- N patients in cluster 75)
+% most frequent term:medication::Acyclovir 400 mg::315281::C0983010 = 0.03 (72 out of 2395 terms in the whole dataset-- N patients in cluster 71)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.00 (58 out of 16811 terms in the whole dataset-- N patients in cluster 56)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.00 (55 out of 43006 terms in the whole dataset-- N patients in cluster 51)
+% most frequent term:medication::Aspirin 81 mg chewable tablet::318272::C0995060 = 0.01 (46 out of 7980 terms in the whole dataset-- N patients in cluster 46)
+% most frequent term:medication::Cholecalciferol::2418::C0008318 = 0.00 (44 out of 9824 terms in the whole dataset-- N patients in cluster 43)
+% most frequent term:medication::Zoledronic acid::77655::C0257685 = 0.01 (39 out of 3718 terms in the whole dataset-- N patients in cluster 39)
+% most frequent term:medication::Velcade::356733::C1174739 = 0.07 (39 out of 533 terms in the whole dataset-- N patients in cluster 38)
+% most frequent term:medication::Valacyclovir 500 mg::330526::C1126204 = 0.01 (30 out of 2492 terms in the whole dataset-- N patients in cluster 30)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[259 430 316 378]
+ [512 655 136  19]]
+Chi-squared test statistics: chi2_stat = 524.8897606782392 -- p_val = 1.9250225735666774e-113 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Diphenhydramine::3498::C0012522
+Count matrix:
+ [[274 468 347 387]
+ [497 617 105  10]]
+Chi-squared test statistics: chi2_stat = 554.6051428502456 -- p_val = 6.978087051103978e-120 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[285 532 337 381]
+ [486 553 115  16]]
+Chi-squared test statistics: chi2_stat = 456.4819995022131 -- p_val = 1.2846754996299576e-98 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Dexamethasone 4 mg::315778::C0985346
+Count matrix:
+ [[301 763 230 317]
+ [470 322 222  80]]
+Chi-squared test statistics: chi2_stat = 268.9253119455976 -- p_val = 5.271963617655407e-58 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Filgrastim::68442::C0210630
+Count matrix:
+ [[308 690 325 384]
+ [463 395 127  13]]
+Chi-squared test statistics: chi2_stat = 385.45210904729265 -- p_val = 3.134625327767682e-83 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[310 378 301 346]
+ [461 707 151  51]]
+Chi-squared test statistics: chi2_stat = 397.933638052706 -- p_val = 6.204990093391784e-86 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Prochlorperazine::8704::C0033229
+Count matrix:
+ [[363 695 389 395]
+ [408 390  63   2]]
+Chi-squared test statistics: chi2_stat = 412.1990297617464 -- p_val = 5.042678784139707e-89 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Potassium chloride::8591::C0032825
+Count matrix:
+ [[372 510 365 388]
+ [399 575  87   9]]
+Chi-squared test statistics: chi2_stat = 438.76743293567847 -- p_val = 8.849244945713473e-95 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Hydrocortisone::5492::C0020268
+Count matrix:
+ [[380 695 384 397]
+ [391 390  68   0]]
+Chi-squared test statistics: chi2_stat = 381.85559114498835 -- p_val = 1.8842324185662564e-82 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron 8 mg::328451::C1123368
+Count matrix:
+ [[380 842 323 383]
+ [391 243 129  14]]
+Chi-squared test statistics: chi2_stat = 326.43228659999147 -- p_val = 1.8892550410252806e-70 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[310 378 301 346]
+ [461 707 151  51]]
+Chi-squared test statistics: chi2_stat = 397.933638052706 -- p_val = 6.204990093391784e-86 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[259 430 316 378]
+ [512 655 136  19]]
+Chi-squared test statistics: chi2_stat = 524.8897606782392 -- p_val = 1.9250225735666774e-113 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Diphenhydramine::3498::C0012522
+Count matrix:
+ [[274 468 347 387]
+ [497 617 105  10]]
+Chi-squared test statistics: chi2_stat = 554.6051428502456 -- p_val = 6.978087051103978e-120 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Potassium chloride::8591::C0032825
+Count matrix:
+ [[372 510 365 388]
+ [399 575  87   9]]
+Chi-squared test statistics: chi2_stat = 438.76743293567847 -- p_val = 8.849244945713473e-95 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[515 525 396 374]
+ [256 560  56  23]]
+Chi-squared test statistics: chi2_stat = 389.2441409114067 -- p_val = 4.730110843575487e-84 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[285 532 337 381]
+ [486 553 115  16]]
+Chi-squared test statistics: chi2_stat = 456.4819995022131 -- p_val = 1.2846754996299576e-98 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[430 541 385 394]
+ [341 544  67   3]]
+Chi-squared test statistics: chi2_stat = 421.8893315857778 -- p_val = 4.0129223944606714e-91 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Vancomycin::11124::C0042313
+Count matrix:
+ [[437 583 411 396]
+ [334 502  41   1]]
+Chi-squared test statistics: chi2_stat = 436.4767059672504 -- p_val = 2.7745960260938513e-94 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[506 585 407 391]
+ [265 500  45   6]]
+Chi-squared test statistics: chi2_stat = 379.33175000856005 -- p_val = 6.633567297941452e-82 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Magnesium sulfate::6585::C0024480
+Count matrix:
+ [[414 592 404 397]
+ [357 493  48   0]]
+Chi-squared test statistics: chi2_stat = 434.20522042432026 -- p_val = 8.616258757234798e-94 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[386 726 219 322]
+ [385 359 233  75]]
+Chi-squared test statistics: chi2_stat = 152.23126097958738 -- p_val = 8.697990786409894e-33 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Dexamethasone 4 mg::315778::C0985346
+Count matrix:
+ [[301 763 230 317]
+ [470 322 222  80]]
+Chi-squared test statistics: chi2_stat = 268.9253119455976 -- p_val = 5.271963617655407e-58 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Acyclovir 400 mg::315281::C0983010
+Count matrix:
+ [[392 886 251 326]
+ [379 199 201  71]]
+Chi-squared test statistics: chi2_stat = 268.1598642557858 -- p_val = 7.719210168264919e-58 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[310 378 301 346]
+ [461 707 151  51]]
+Chi-squared test statistics: chi2_stat = 397.933638052706 -- p_val = 6.204990093391784e-86 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[259 430 316 378]
+ [512 655 136  19]]
+Chi-squared test statistics: chi2_stat = 524.8897606782392 -- p_val = 1.9250225735666774e-113 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Zoledronic acid::77655::C0257685
+Count matrix:
+ [[485 966 319 358]
+ [286 119 133  39]]
+Chi-squared test statistics: chi2_stat = 232.58402507360466 -- p_val = 3.820375322129491e-50 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[528 828 322 341]
+ [243 257 130  56]]
+Chi-squared test statistics: chi2_stat = 46.37445460894784 -- p_val = 4.721433460543717e-10 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron 8 mg::328451::C1123368
+Count matrix:
+ [[380 842 323 383]
+ [391 243 129  14]]
+Chi-squared test statistics: chi2_stat = 326.43228659999147 -- p_val = 1.8892550410252806e-70 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Filgrastim::68442::C0210630
+Count matrix:
+ [[308 690 325 384]
+ [463 395 127  13]]
+Chi-squared test statistics: chi2_stat = 385.45210904729265 -- p_val = 3.134625327767682e-83 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Bortezomib injection::1804994::C4255457
+Count matrix:
+ [[481 908 327 381]
+ [290 177 125  16]]
+Chi-squared test statistics: chi2_stat = 209.51575443466436 -- p_val = 3.705429898776373e-45 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: medication::Dexamethasone 4 mg::315778::C0985346
+Count matrix:
+ [[301 763 230 317]
+ [470 322 222  80]]
+Chi-squared test statistics: chi2_stat = 268.9253119455976 -- p_val = 5.271963617655407e-58 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[386 726 219 322]
+ [385 359 233  75]]
+Chi-squared test statistics: chi2_stat = 152.23126097958738 -- p_val = 8.697990786409894e-33 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Acyclovir 400 mg::315281::C0983010
+Count matrix:
+ [[392 886 251 326]
+ [379 199 201  71]]
+Chi-squared test statistics: chi2_stat = 268.1598642557858 -- p_val = 7.719210168264919e-58 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[528 828 322 341]
+ [243 257 130  56]]
+Chi-squared test statistics: chi2_stat = 46.37445460894784 -- p_val = 4.721433460543717e-10 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[310 378 301 346]
+ [461 707 151  51]]
+Chi-squared test statistics: chi2_stat = 397.933638052706 -- p_val = 6.204990093391784e-86 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Aspirin 81 mg chewable tablet::318272::C0995060
+Count matrix:
+ [[572 846 397 351]
+ [199 239  55  46]]
+Chi-squared test statistics: chi2_stat = 54.089039506967 -- p_val = 1.074055145232493e-11 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Cholecalciferol::2418::C0008318
+Count matrix:
+ [[572 873 351 354]
+ [199 212 101  43]]
+Chi-squared test statistics: chi2_stat = 37.64910650835281 -- p_val = 3.353707101861494e-08 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Zoledronic acid::77655::C0257685
+Count matrix:
+ [[485 966 319 358]
+ [286 119 133  39]]
+Chi-squared test statistics: chi2_stat = 232.58402507360466 -- p_val = 3.820375322129491e-50 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Velcade::356733::C1174739
+Count matrix:
+ [[604 964 338 359]
+ [167 121 114  38]]
+Chi-squared test statistics: chi2_stat = 76.97956645370314 -- p_val = 1.3638386058944947e-16 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Valacyclovir 500 mg::330526::C1126204
+Count matrix:
+ [[560 920 403 367]
+ [211 165  49  30]]
+Chi-squared test statistics: chi2_stat = 99.2142637656927 -- p_val = 2.2931712147157806e-21 -- dof = 3
+
+
+
+Inspecting disease: Parkinson's disease
+
+3 0.15112952984616707
+4 0.13820093130839312
+5 0.12616767918622238
+6 0.10332987072336514
+7 0.10755953646404182
+8 0.0999488497847111
+9 0.09725168600401311
+10 0.06321150365161315
+Number of clusters found:3, Silhouette score:0.151
+
+Cluster 0 numerosity: 1098
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.38 (3926 out of 10426 terms in the whole dataset-- N patients in cluster 877)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.38 (3515 out of 9292 terms in the whole dataset-- N patients in cluster 806)
+% most frequent term:medication::Carbidopa 25 mg::315568::C0984524 = 0.37 (1439 out of 3928 terms in the whole dataset-- N patients in cluster 592)
+% most frequent term:medication::Levodopa 100 mg::316141::C0987130 = 0.35 (1336 out of 3770 terms in the whole dataset-- N patients in cluster 561)
+% most frequent term:medication::Entacapone 200 mg::330326::C1125961 = 0.54 (796 out of 1464 terms in the whole dataset-- N patients in cluster 308)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.02 (616 out of 27584 terms in the whole dataset-- N patients in cluster 302)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.03 (523 out of 19539 terms in the whole dataset-- N patients in cluster 293)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.02 (716 out of 43006 terms in the whole dataset-- N patients in cluster 280)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.02 (503 out of 31640 terms in the whole dataset-- N patients in cluster 260)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.02 (400 out of 25669 terms in the whole dataset-- N patients in cluster 247)
+
+
+Cluster 1 numerosity: 981
+% most frequent term:medication::Levodopa 100 mg::316141::C0987130 = 0.20 (751 out of 3770 terms in the whole dataset-- N patients in cluster 473)
+% most frequent term:medication::Carbidopa 25 mg::315568::C0984524 = 0.19 (744 out of 3928 terms in the whole dataset-- N patients in cluster 471)
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.06 (667 out of 10426 terms in the whole dataset-- N patients in cluster 427)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.05 (443 out of 9292 terms in the whole dataset-- N patients in cluster 277)
+% most frequent term:medication::Amantadine::620::C0002403 = 0.15 (240 out of 1653 terms in the whole dataset-- N patients in cluster 165)
+% most frequent term:medication::Selegiline::9639::C0036579 = 0.23 (233 out of 998 terms in the whole dataset-- N patients in cluster 155)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.01 (153 out of 25669 terms in the whole dataset-- N patients in cluster 149)
+% most frequent term:medication::Rasagiline 1 mg::608326::C1638357 = 0.21 (193 out of 902 terms in the whole dataset-- N patients in cluster 140)
+% most frequent term:medication::Vitamin d3::1244014::C3265062 = 0.01 (143 out of 16811 terms in the whole dataset-- N patients in cluster 139)
+% most frequent term:medication::Pramipexole::746741::C0074710 = 0.12 (221 out of 1845 terms in the whole dataset-- N patients in cluster 139)
+
+
+Cluster 2 numerosity: 1760
+% most frequent term:medication::Carbidopa::2019::C0006982 = 0.49 (5103 out of 10426 terms in the whole dataset-- N patients in cluster 1290)
+% most frequent term:medication::Levodopa::6375::C0023570 = 0.50 (4641 out of 9292 terms in the whole dataset-- N patients in cluster 1184)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.05 (2226 out of 43006 terms in the whole dataset-- N patients in cluster 808)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.07 (1681 out of 23709 terms in the whole dataset-- N patients in cluster 756)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.06 (1546 out of 27584 terms in the whole dataset-- N patients in cluster 717)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.08 (1569 out of 20473 terms in the whole dataset-- N patients in cluster 682)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.04 (1351 out of 31640 terms in the whole dataset-- N patients in cluster 671)
+% most frequent term:medication::Docusate sodium 100 mg::1099278::C3153447 = 0.08 (1656 out of 20065 terms in the whole dataset-- N patients in cluster 664)
+% most frequent term:medication::Docusate sodium::71722::C0243237 = 0.11 (1739 out of 15733 terms in the whole dataset-- N patients in cluster 647)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.06 (1450 out of 25669 terms in the whole dataset-- N patients in cluster 634)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 221  554  470]
+ [ 877  427 1290]]
+Chi-squared test statistics: chi2_stat = 360.9536660404574 -- p_val = 4.167804199669422e-79 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 292  704  576]
+ [ 806  277 1184]]
+Chi-squared test statistics: chi2_stat = 527.996565127849 -- p_val = 2.2233234598239524e-115 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Carbidopa 25 mg::315568::C0984524
+Count matrix:
+ [[ 506  510 1154]
+ [ 592  471  606]]
+Chi-squared test statistics: chi2_stat = 115.49880048611817 -- p_val = 8.312930339323285e-26 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Levodopa 100 mg::316141::C0987130
+Count matrix:
+ [[ 537  508 1179]
+ [ 561  473  581]]
+Chi-squared test statistics: chi2_stat = 111.1456438982752 -- p_val = 7.3287529785310795e-25 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Entacapone 200 mg::330326::C1125961
+Count matrix:
+ [[ 790  875 1561]
+ [ 308  106  199]]
+Chi-squared test statistics: chi2_stat = 167.4558749655554 -- p_val = 4.339290944849064e-37 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 796  938 1043]
+ [ 302   43  717]]
+Chi-squared test statistics: chi2_stat = 416.0691136403867 -- p_val = 4.484767444221334e-91 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 805  940 1164]
+ [ 293   41  596]]
+Chi-squared test statistics: chi2_stat = 307.43559329809534 -- p_val = 1.742645884548704e-67 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[818 945 952]
+ [280  36 808]]
+Chi-squared test statistics: chi2_stat = 553.3577671807901 -- p_val = 6.916519370043034e-121 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 838  942 1089]
+ [ 260   39  671]]
+Chi-squared test statistics: chi2_stat = 391.07485669661924 -- p_val = 1.1999795994417857e-85 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[ 851  832 1126]
+ [ 247  149  634]]
+Chi-squared test statistics: chi2_stat = 153.9916792725954 -- p_val = 3.6402542404968192e-34 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Levodopa 100 mg::316141::C0987130
+Count matrix:
+ [[ 537  508 1179]
+ [ 561  473  581]]
+Chi-squared test statistics: chi2_stat = 111.1456438982752 -- p_val = 7.3287529785310795e-25 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Carbidopa 25 mg::315568::C0984524
+Count matrix:
+ [[ 506  510 1154]
+ [ 592  471  606]]
+Chi-squared test statistics: chi2_stat = 115.49880048611817 -- p_val = 8.312930339323285e-26 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 221  554  470]
+ [ 877  427 1290]]
+Chi-squared test statistics: chi2_stat = 360.9536660404574 -- p_val = 4.167804199669422e-79 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 292  704  576]
+ [ 806  277 1184]]
+Chi-squared test statistics: chi2_stat = 527.996565127849 -- p_val = 2.2233234598239524e-115 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Amantadine::620::C0002403
+Count matrix:
+ [[ 879  816 1521]
+ [ 219  165  239]]
+Chi-squared test statistics: chi2_stat = 20.494438683936274 -- p_val = 3.5455954789066296e-05 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Selegiline::9639::C0036579
+Count matrix:
+ [[ 947  826 1613]
+ [ 151  155  147]]
+Chi-squared test statistics: chi2_stat = 39.20545164994971 -- p_val = 3.0665097082098676e-09 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[ 851  832 1126]
+ [ 247  149  634]]
+Chi-squared test statistics: chi2_stat = 153.9916792725954 -- p_val = 3.6402542404968192e-34 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Rasagiline 1 mg::608326::C1638357
+Count matrix:
+ [[ 914  841 1633]
+ [ 184  140  127]]
+Chi-squared test statistics: chi2_stat = 67.47140008166323 -- p_val = 2.2323980224224795e-15 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Vitamin d3::1244014::C3265062
+Count matrix:
+ [[ 908  842 1372]
+ [ 190  139  388]]
+Chi-squared test statistics: chi2_stat = 27.634767628379972 -- p_val = 9.981284972236736e-07 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Pramipexole::746741::C0074710
+Count matrix:
+ [[ 855  842 1558]
+ [ 243  139  202]]
+Chi-squared test statistics: chi2_stat = 60.61476186206038 -- p_val = 6.881319152764698e-14 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Carbidopa::2019::C0006982
+Count matrix:
+ [[ 221  554  470]
+ [ 877  427 1290]]
+Chi-squared test statistics: chi2_stat = 360.9536660404574 -- p_val = 4.167804199669422e-79 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Levodopa::6375::C0023570
+Count matrix:
+ [[ 292  704  576]
+ [ 806  277 1184]]
+Chi-squared test statistics: chi2_stat = 527.996565127849 -- p_val = 2.2233234598239524e-115 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[818 945 952]
+ [280  36 808]]
+Chi-squared test statistics: chi2_stat = 553.3577671807901 -- p_val = 6.916519370043034e-121 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[ 909  943 1004]
+ [ 189   38  756]]
+Chi-squared test statistics: chi2_stat = 561.9034739339472 -- p_val = 9.642973074522872e-123 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 796  938 1043]
+ [ 302   43  717]]
+Chi-squared test statistics: chi2_stat = 416.0691136403867 -- p_val = 4.484767444221334e-91 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[1024  973 1078]
+ [  74    8  682]]
+Chi-squared test statistics: chi2_stat = 735.7588700577841 -- p_val = 1.7060484529404544e-160 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 838  942 1089]
+ [ 260   39  671]]
+Chi-squared test statistics: chi2_stat = 391.07485669661924 -- p_val = 1.1999795994417857e-85 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Docusate sodium 100 mg::1099278::C3153447
+Count matrix:
+ [[ 876  921 1096]
+ [ 222   60  664]]
+Chi-squared test statistics: chi2_stat = 355.162161317214 -- p_val = 7.542521894985217e-78 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Docusate sodium::71722::C0243237
+Count matrix:
+ [[ 902  953 1113]
+ [ 196   28  647]]
+Chi-squared test statistics: chi2_stat = 433.38307891245455 -- p_val = 7.799381051748742e-95 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[ 851  832 1126]
+ [ 247  149  634]]
+Chi-squared test statistics: chi2_stat = 153.9916792725954 -- p_val = 3.6402542404968192e-34 -- dof = 2
+
+
+
+Inspecting disease: Prostate Cancer
+
+3 0.14314402946068971
+4 0.14900182460594155
+5 0.14291467872222033
+6 0.10186892043467195
+7 0.09918278805596059
+8 0.09325216250792515
+9 0.079752042820723
+10 0.08115731208473607
+Number of clusters found:4, Silhouette score:0.149
+
+Cluster 0 numerosity: 2438
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.05 (2241 out of 43006 terms in the whole dataset-- N patients in cluster 2130)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.11 (2015 out of 18334 terms in the whole dataset-- N patients in cluster 1987)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.18 (1936 out of 10895 terms in the whole dataset-- N patients in cluster 1914)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.07 (2009 out of 27584 terms in the whole dataset-- N patients in cluster 1900)
+% most frequent term:medication::Cefoxitin::2189::C0007557 = 0.60 (1868 out of 3122 terms in the whole dataset-- N patients in cluster 1844)
+% most frequent term:medication::Tolterodine::119565::C0388753 = 0.40 (1764 out of 4418 terms in the whole dataset-- N patients in cluster 1720)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.05 (1711 out of 31640 terms in the whole dataset-- N patients in cluster 1651)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.08 (1525 out of 19539 terms in the whole dataset-- N patients in cluster 1448)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.08 (1374 out of 16383 terms in the whole dataset-- N patients in cluster 1290)
+% most frequent term:medication::Glycopyrrolate::4955::C0017970 = 0.15 (1266 out of 8370 terms in the whole dataset-- N patients in cluster 1250)
+
+
+Cluster 1 numerosity: 4829
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.16 (6774 out of 43006 terms in the whole dataset-- N patients in cluster 2856)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.18 (4912 out of 27584 terms in the whole dataset-- N patients in cluster 2618)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.15 (4695 out of 31640 terms in the whole dataset-- N patients in cluster 2399)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.18 (3477 out of 19539 terms in the whole dataset-- N patients in cluster 2072)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.18 (3339 out of 18334 terms in the whole dataset-- N patients in cluster 2062)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.19 (3090 out of 16383 terms in the whole dataset-- N patients in cluster 1928)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.14 (3386 out of 23709 terms in the whole dataset-- N patients in cluster 1805)
+% most frequent term:medication::Aspirin 81 mg::315431::C0983882 = 0.13 (3377 out of 25669 terms in the whole dataset-- N patients in cluster 1705)
+% most frequent term:medication::Docusate sodium 100 mg::1099278::C3153447 = 0.16 (3140 out of 20065 terms in the whole dataset-- N patients in cluster 1678)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.20 (2184 out of 10895 terms in the whole dataset-- N patients in cluster 1596)
+
+
+Cluster 2 numerosity: 1523
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.02 (348 out of 16383 terms in the whole dataset-- N patients in cluster 333)
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.01 (339 out of 27584 terms in the whole dataset-- N patients in cluster 331)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.01 (230 out of 43006 terms in the whole dataset-- N patients in cluster 222)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.01 (189 out of 19539 terms in the whole dataset-- N patients in cluster 183)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.01 (187 out of 31640 terms in the whole dataset-- N patients in cluster 183)
+% most frequent term:medication::Ciprofloxacin 500 mg::328287::C1123173 = 0.03 (190 out of 6112 terms in the whole dataset-- N patients in cluster 163)
+% most frequent term:medication::Cefazolin::2180::C0007546 = 0.01 (119 out of 13377 terms in the whole dataset-- N patients in cluster 115)
+% most frequent term:medication::Sildenafil 100 mg::316663::C0989893 = 0.11 (129 out of 1190 terms in the whole dataset-- N patients in cluster 111)
+% most frequent term:medication::ELECTROLYTE-A IV = 0.02 (112 out of 6301 terms in the whole dataset-- N patients in cluster 111)
+% most frequent term:medication::Meperidine::6754::C0025376 = 0.01 (106 out of 8446 terms in the whole dataset-- N patients in cluster 105)
+
+
+Cluster 3 numerosity: 615
+% most frequent term:medication::Fentanyl::4337::C0015846 = 0.01 (381 out of 27584 terms in the whole dataset-- N patients in cluster 361)
+% most frequent term:medication::Midazolam::6960::C0026056 = 0.02 (380 out of 16383 terms in the whole dataset-- N patients in cluster 357)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.01 (300 out of 43006 terms in the whole dataset-- N patients in cluster 290)
+% most frequent term:medication::Propofol::8782::C0033487 = 0.02 (301 out of 19539 terms in the whole dataset-- N patients in cluster 283)
+% most frequent term:medication::Morphine::7052::C0026549 = 0.01 (257 out of 18334 terms in the whole dataset-- N patients in cluster 256)
+% most frequent term:medication::Lidocaine::6387::C0023660 = 0.02 (248 out of 10895 terms in the whole dataset-- N patients in cluster 247)
+% most frequent term:medication::Tolterodine::119565::C0388753 = 0.05 (240 out of 4418 terms in the whole dataset-- N patients in cluster 237)
+% most frequent term:medication::Cefoxitin::2189::C0007557 = 0.07 (232 out of 3122 terms in the whole dataset-- N patients in cluster 232)
+% most frequent term:medication::Ondansetron::26225::C0061851 = 0.01 (241 out of 31640 terms in the whole dataset-- N patients in cluster 231)
+% most frequent term:medication::Glycopyrrolate::4955::C0017970 = 0.02 (189 out of 8370 terms in the whole dataset-- N patients in cluster 186)
+
+
+Odds ratio chi2 test for cluster 0term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 308 1973 1301  325]
+ [2130 2856  222  290]]
+Chi-squared test statistics: chi2_stat = 2079.911786103858 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[ 451 2767 1424  359]
+ [1987 2062   99  256]]
+Chi-squared test statistics: chi2_stat = 2211.6502829215465 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[ 524 3233 1427  368]
+ [1914 1596   96  247]]
+Chi-squared test statistics: chi2_stat = 2302.660570983364 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 538 2211 1192  254]
+ [1900 2618  331  361]]
+Chi-squared test statistics: chi2_stat = 1205.052447542924 -- p_val = 5.874741982601445e-261 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Cefoxitin::2189::C0007557
+Count matrix:
+ [[ 594 3937 1438  383]
+ [1844  892   85  232]]
+Chi-squared test statistics: chi2_stat = 3013.6193645588182 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Tolterodine::119565::C0388753
+Count matrix:
+ [[ 718 3842 1425  378]
+ [1720  987   98  237]]
+Chi-squared test statistics: chi2_stat = 2416.9850510126253 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 787 2430 1340  384]
+ [1651 2399  183  231]]
+Chi-squared test statistics: chi2_stat = 1202.3100727318204 -- p_val = 2.3120328977217075e-260 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 990 2757 1340  332]
+ [1448 2072  183  283]]
+Chi-squared test statistics: chi2_stat = 867.8748015775741 -- p_val = 8.223363659692185e-188 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[1148 2901 1190  258]
+ [1290 1928  333  357]]
+Chi-squared test statistics: chi2_stat = 446.7840176320304 -- p_val = 1.6219630230119884e-96 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Glycopyrrolate::4955::C0017970
+Count matrix:
+ [[1188 3568 1500  429]
+ [1250 1261   23  186]]
+Chi-squared test statistics: chi2_stat = 1168.1637815109673 -- p_val = 5.922718537631181e-253 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 308 1973 1301  325]
+ [2130 2856  222  290]]
+Chi-squared test statistics: chi2_stat = 2079.911786103858 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 538 2211 1192  254]
+ [1900 2618  331  361]]
+Chi-squared test statistics: chi2_stat = 1205.052447542924 -- p_val = 5.874741982601445e-261 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 787 2430 1340  384]
+ [1651 2399  183  231]]
+Chi-squared test statistics: chi2_stat = 1202.3100727318204 -- p_val = 2.3120328977217075e-260 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 990 2757 1340  332]
+ [1448 2072  183  283]]
+Chi-squared test statistics: chi2_stat = 867.8748015775741 -- p_val = 8.223363659692185e-188 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[ 451 2767 1424  359]
+ [1987 2062   99  256]]
+Chi-squared test statistics: chi2_stat = 2211.6502829215465 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[1148 2901 1190  258]
+ [1290 1928  333  357]]
+Chi-squared test statistics: chi2_stat = 446.7840176320304 -- p_val = 1.6219630230119884e-96 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[1299 3024 1472  485]
+ [1139 1805   51  130]]
+Chi-squared test statistics: chi2_stat = 890.8397426654665 -- p_val = 8.588835732613867e-193 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Aspirin 81 mg::315431::C0983882
+Count matrix:
+ [[2253 3124 1442  561]
+ [ 185 1705   81   54]]
+Chi-squared test statistics: chi2_stat = 1119.1092080163196 -- p_val = 2.6018784525239073e-242 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Docusate sodium 100 mg::1099278::C3153447
+Count matrix:
+ [[1252 3151 1464  470]
+ [1186 1678   59  145]]
+Chi-squared test statistics: chi2_stat = 890.3072449146126 -- p_val = 1.1205601312223975e-192 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[ 524 3233 1427  368]
+ [1914 1596   96  247]]
+Chi-squared test statistics: chi2_stat = 2302.660570983364 -- p_val = 0.0 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[1148 2901 1190  258]
+ [1290 1928  333  357]]
+Chi-squared test statistics: chi2_stat = 446.7840176320304 -- p_val = 1.6219630230119884e-96 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 538 2211 1192  254]
+ [1900 2618  331  361]]
+Chi-squared test statistics: chi2_stat = 1205.052447542924 -- p_val = 5.874741982601445e-261 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 308 1973 1301  325]
+ [2130 2856  222  290]]
+Chi-squared test statistics: chi2_stat = 2079.911786103858 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 990 2757 1340  332]
+ [1448 2072  183  283]]
+Chi-squared test statistics: chi2_stat = 867.8748015775741 -- p_val = 8.223363659692185e-188 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 787 2430 1340  384]
+ [1651 2399  183  231]]
+Chi-squared test statistics: chi2_stat = 1202.3100727318204 -- p_val = 2.3120328977217075e-260 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Ciprofloxacin 500 mg::328287::C1123173
+Count matrix:
+ [[1380 3454 1360  479]
+ [1058 1375  163  136]]
+Chi-squared test statistics: chi2_stat = 507.34425906703177 -- p_val = 1.2219090078568223e-109 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Cefazolin::2180::C0007546
+Count matrix:
+ [[2179 3393 1408  546]
+ [ 259 1436  115   69]]
+Chi-squared test statistics: chi2_stat = 597.7438635041402 -- p_val = 3.108075862492201e-129 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Sildenafil 100 mg::316663::C0989893
+Count matrix:
+ [[2382 4453 1412  570]
+ [  56  376  111   45]]
+Chi-squared test statistics: chi2_stat = 88.44162933904705 -- p_val = 4.734154850485778e-19 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::ELECTROLYTE-A IV
+Count matrix:
+ [[1656 3949 1412  520]
+ [ 782  880  111   95]]
+Chi-squared test statistics: chi2_stat = 395.4384113574485 -- p_val = 2.1538409022488895e-85 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Meperidine::6754::C0025376
+Count matrix:
+ [[1514 3572 1418  517]
+ [ 924 1257  105   98]]
+Chi-squared test statistics: chi2_stat = 507.0524035746245 -- p_val = 1.4134811424131819e-109 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: medication::Fentanyl::4337::C0015846
+Count matrix:
+ [[ 538 2211 1192  254]
+ [1900 2618  331  361]]
+Chi-squared test statistics: chi2_stat = 1205.052447542924 -- p_val = 5.874741982601445e-261 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Midazolam::6960::C0026056
+Count matrix:
+ [[1148 2901 1190  258]
+ [1290 1928  333  357]]
+Chi-squared test statistics: chi2_stat = 446.7840176320304 -- p_val = 1.6219630230119884e-96 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[ 308 1973 1301  325]
+ [2130 2856  222  290]]
+Chi-squared test statistics: chi2_stat = 2079.911786103858 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Propofol::8782::C0033487
+Count matrix:
+ [[ 990 2757 1340  332]
+ [1448 2072  183  283]]
+Chi-squared test statistics: chi2_stat = 867.8748015775741 -- p_val = 8.223363659692185e-188 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Morphine::7052::C0026549
+Count matrix:
+ [[ 451 2767 1424  359]
+ [1987 2062   99  256]]
+Chi-squared test statistics: chi2_stat = 2211.6502829215465 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Lidocaine::6387::C0023660
+Count matrix:
+ [[ 524 3233 1427  368]
+ [1914 1596   96  247]]
+Chi-squared test statistics: chi2_stat = 2302.660570983364 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Tolterodine::119565::C0388753
+Count matrix:
+ [[ 718 3842 1425  378]
+ [1720  987   98  237]]
+Chi-squared test statistics: chi2_stat = 2416.9850510126253 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Cefoxitin::2189::C0007557
+Count matrix:
+ [[ 594 3937 1438  383]
+ [1844  892   85  232]]
+Chi-squared test statistics: chi2_stat = 3013.6193645588182 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Ondansetron::26225::C0061851
+Count matrix:
+ [[ 787 2430 1340  384]
+ [1651 2399  183  231]]
+Chi-squared test statistics: chi2_stat = 1202.3100727318204 -- p_val = 2.3120328977217075e-260 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Glycopyrrolate::4955::C0017970
+Count matrix:
+ [[1188 3568 1500  429]
+ [1250 1261   23  186]]
+Chi-squared test statistics: chi2_stat = 1168.1637815109673 -- p_val = 5.922718537631181e-253 -- dof = 3
+
+
+
+UMAP embedding for LSTM encodings...
+Computed: LSTM encoded vectors umap
+Evaluating LSTM encodings...
+Cluster: 0 -- Entropy: 2.088, Purity: 0.377
+P=0.06 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+P=0.03 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.13 in cluster disease Parkinson's disease
+P=0.38 in cluster disease Prostate Cancer
+max(P) in cluster disease Prostate Cancer
+Cluster: 1 -- Entropy: 2.499, Purity: 0.274
+P=0.14 in cluster disease Alzheimer's disease
+P=0.27 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.17 in cluster disease Diabetes
+P=0.13 in cluster disease Multiple Myeloma
+P=0.09 in cluster disease Parkinson's disease
+P=0.20 in cluster disease Prostate Cancer
+Cluster: 2 -- Entropy: 2.433, Purity: 0.283
+P=0.12 in cluster disease Alzheimer's disease
+P=0.28 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.26 in cluster disease Diabetes
+P=0.13 in cluster disease Multiple Myeloma
+P=0.07 in cluster disease Parkinson's disease
+P=0.14 in cluster disease Prostate Cancer
+Cluster: 3 -- Entropy: 2.363, Purity: 0.337
+P=0.13 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.06 in cluster disease Diabetes
+P=0.10 in cluster disease Multiple Myeloma
+P=0.13 in cluster disease Parkinson's disease
+P=0.25 in cluster disease Prostate Cancer
+Cluster: 4 -- Entropy: 2.465, Purity: 0.299
+P=0.15 in cluster disease Alzheimer's disease
+P=0.30 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.09 in cluster disease Diabetes
+P=0.12 in cluster disease Multiple Myeloma
+P=0.12 in cluster disease Parkinson's disease
+P=0.21 in cluster disease Prostate Cancer
+Cluster: 5 -- Entropy: 2.272, Purity: 0.376
+P=0.09 in cluster disease Alzheimer's disease
+P=0.27 in cluster disease Breast Cancer
+P=0.38 in cluster disease Diabetes
+max(P) in cluster disease Diabetes
+P=0.09 in cluster disease Multiple Myeloma
+P=0.07 in cluster disease Parkinson's disease
+P=0.10 in cluster disease Prostate Cancer
+Average Entropy: 2.25
+Average Purity: 0.35
+ -- 3: 0.200
+ -- 4: 0.132
+ -- 5: 0.135
+ -- 6: 0.082
+ -- 7: 0.069
+ -- 8: 0.059
+ -- 9: 0.064
+ -- 10: 0.066
+No. of clusters: 3 -- Silhouette Score: 0.200
+
+
+Processing time: 2853.61 seconds
+
+Task completed
+

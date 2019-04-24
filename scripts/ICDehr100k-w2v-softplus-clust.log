@@ -1,0 +1,1590 @@
+[H[J
+Loading datasets...
+Number of subjects:31391
+Disease numerosities:
+ {"Parkinson's disease": 3839, 'Multiple Myeloma': 2705, 'Breast Cancer': 10121, 'Diabetes': 2205, "Alzheimer's disease": 3116, 'Prostate Cancer': 9405}
+UMAP embeddings for CNN-AE encodings...
+Computed: CNN - AE encoded vectors umap
+Evaluating CNN-AE encodings...
+Cluster: 0 -- Entropy: 2.232, Purity: 0.432
+P=0.17 in cluster disease Alzheimer's disease
+P=0.43 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.07 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.10 in cluster disease Parkinson's disease
+P=0.17 in cluster disease Prostate Cancer
+Cluster: 1 -- Entropy: 2.124, Purity: 0.337
+P=0.05 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.03 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.21 in cluster disease Parkinson's disease
+P=0.32 in cluster disease Prostate Cancer
+Cluster: 2 -- Entropy: 2.399, Purity: 0.261
+P=0.14 in cluster disease Alzheimer's disease
+P=0.17 in cluster disease Breast Cancer
+P=0.21 in cluster disease Diabetes
+P=0.02 in cluster disease Multiple Myeloma
+P=0.26 in cluster disease Parkinson's disease
+max(P) in cluster disease Parkinson's disease
+P=0.20 in cluster disease Prostate Cancer
+Cluster: 3 -- Entropy: 0.594, Purity: 0.884
+P=0.00 in cluster disease Alzheimer's disease
+P=0.10 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.01 in cluster disease Parkinson's disease
+P=0.88 in cluster disease Prostate Cancer
+max(P) in cluster disease Prostate Cancer
+Cluster: 4 -- Entropy: 0.400, Purity: 0.937
+P=0.00 in cluster disease Alzheimer's disease
+P=0.05 in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.94 in cluster disease Multiple Myeloma
+max(P) in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Cluster: 5 -- Entropy: 0.107, Purity: 0.988
+P=0.00 in cluster disease Alzheimer's disease
+P=0.99 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.00 in cluster disease Diabetes
+P=0.00 in cluster disease Multiple Myeloma
+P=0.00 in cluster disease Parkinson's disease
+P=0.01 in cluster disease Prostate Cancer
+Average Entropy: 1.76
+Average Purity: 0.52
+Cluster 0 numerosity = 11440
+Cluster 1 numerosity = 5311
+Cluster 2 numerosity = 6011
+Cluster 3 numerosity = 5163
+Cluster 4 numerosity = 1679
+Cluster 5 numerosity = 1787
+Inspecting disease: Alzheimer's disease
+
+3 0.11238589250890528
+4 0.12572487263560342
+5 0.04943775958687691
+6 0.04274948114656658
+7 0.04880672143701774
+8 0.05051762734377054
+9 0.05446465900077817
+10 0.04834074826637786
+Number of clusters found:4, Silhouette score:0.126
+
+Cluster 0 numerosity: 1332
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.35 (7927 out of 22887 terms in the whole dataset-- N patients in cluster 1332)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.07 (10207 out of 142102 terms in the whole dataset-- N patients in cluster 1120)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.38 (2760 out of 7324 terms in the whole dataset-- N patients in cluster 991)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.10 (3357 out of 35006 terms in the whole dataset-- N patients in cluster 913)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.13 (2899 out of 22660 terms in the whole dataset-- N patients in cluster 764)
+% most frequent term:icd9::Other persistent mental disorders due to conditions classified elsewhere::294.8::C0154338 = 0.41 (2739 out of 6734 terms in the whole dataset-- N patients in cluster 691)
+% most frequent term:icd9::Urinary tract infection, site not specified::599.0::C0042029 = 0.15 (1844 out of 12113 terms in the whole dataset-- N patients in cluster 655)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.09 (3974 out of 43839 terms in the whole dataset-- N patients in cluster 625)
+% most frequent term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.15 (2601 out of 16921 terms in the whole dataset-- N patients in cluster 603)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.04 (2548 out of 58342 terms in the whole dataset-- N patients in cluster 580)
+
+
+Cluster 1 numerosity: 907
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.42 (9583 out of 22887 terms in the whole dataset-- N patients in cluster 907)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.11 (2634 out of 24878 terms in the whole dataset-- N patients in cluster 715)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.09 (12097 out of 142102 terms in the whole dataset-- N patients in cluster 687)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.29 (2123 out of 7324 terms in the whole dataset-- N patients in cluster 491)
+% most frequent term:icd9::Dementia, unspecified, without behavioral disturbance::294.20::C3161078 = 0.36 (4282 out of 11818 terms in the whole dataset-- N patients in cluster 491)
+% most frequent term:icd9::Constipation, unspecified::564.00::C0009806 = 0.20 (5328 out of 27301 terms in the whole dataset-- N patients in cluster 476)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.18 (3447 out of 19256 terms in the whole dataset-- N patients in cluster 443)
+% most frequent term:icd9::Unspecified vitamin d deficiency::268.9::C0042870 = 0.15 (3046 out of 20974 terms in the whole dataset-- N patients in cluster 434)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.11 (5031 out of 43839 terms in the whole dataset-- N patients in cluster 425)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.07 (1104 out of 14826 terms in the whole dataset-- N patients in cluster 412)
+
+
+Cluster 2 numerosity: 616
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.15 (3347 out of 22887 terms in the whole dataset-- N patients in cluster 616)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.01 (1538 out of 142102 terms in the whole dataset-- N patients in cluster 372)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.10 (703 out of 7324 terms in the whole dataset-- N patients in cluster 288)
+% most frequent term:icd9::Benign essential hypertension::401.1::C0155583 = 0.06 (1907 out of 31383 terms in the whole dataset-- N patients in cluster 256)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.02 (428 out of 24878 terms in the whole dataset-- N patients in cluster 215)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.01 (406 out of 35006 terms in the whole dataset-- N patients in cluster 212)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.04 (708 out of 19256 terms in the whole dataset-- N patients in cluster 211)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.02 (987 out of 43839 terms in the whole dataset-- N patients in cluster 194)
+% most frequent term:icd9::Urinary tract infection, site not specified::599.0::C0042029 = 0.03 (389 out of 12113 terms in the whole dataset-- N patients in cluster 185)
+% most frequent term:icd9::Other persistent mental disorders due to conditions classified elsewhere::294.8::C0154338 = 0.07 (492 out of 6734 terms in the whole dataset-- N patients in cluster 179)
+
+
+Cluster 3 numerosity: 261
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.03 (722 out of 22887 terms in the whole dataset-- N patients in cluster 261)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.05 (330 out of 7324 terms in the whole dataset-- N patients in cluster 114)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (170 out of 142102 terms in the whole dataset-- N patients in cluster 103)
+% most frequent term:icd9::Dementia in conditions classified elsewhere with behavioral disturbance::294.11::C0878692 = 0.04 (133 out of 3564 terms in the whole dataset-- N patients in cluster 47)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (46 out of 35006 terms in the whole dataset-- N patients in cluster 39)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.00 (51 out of 58342 terms in the whole dataset-- N patients in cluster 38)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.00 (65 out of 43839 terms in the whole dataset-- N patients in cluster 36)
+% most frequent term:icd9::Depressive disorder, not elsewhere classified::311::C0868892 = 0.00 (67 out of 29970 terms in the whole dataset-- N patients in cluster 32)
+% most frequent term:icd9::Dementia, unspecified, without behavioral disturbance::294.20::C3161078 = 0.01 (64 out of 11818 terms in the whole dataset-- N patients in cluster 31)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.00 (55 out of 19256 terms in the whole dataset-- N patients in cluster 30)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0    0]
+ [1332  907  616  261]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 212  220  244  158]
+ [1120  687  372  103]]
+Chi-squared test statistics: chi2_stat = 286.61513457583726 -- p_val = 7.841720066369932e-62 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[341 416 328 147]
+ [991 491 288 114]]
+Chi-squared test statistics: chi2_stat = 202.6082767265153 -- p_val = 1.1523070993931676e-43 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[419 503 404 222]
+ [913 404 212  39]]
+Chi-squared test statistics: chi2_stat = 382.0580344974902 -- p_val = 1.7032913849846787e-82 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[568 680 504 236]
+ [764 227 112  25]]
+Chi-squared test statistics: chi2_stat = 473.86437113384255 -- p_val = 2.1995808214192473e-102 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Other persistent mental disorders due to conditions classified elsewhere::294.8::C0154338
+Count matrix:
+ [[641 595 437 245]
+ [691 312 179  16]]
+Chi-squared test statistics: chi2_stat = 245.92266360880544 -- p_val = 4.985018575945795e-53 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Urinary tract infection, site not specified::599.0::C0042029
+Count matrix:
+ [[677 561 431 253]
+ [655 346 185   8]]
+Chi-squared test statistics: chi2_stat = 221.55805544372197 -- p_val = 9.2450755817555e-48 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[707 482 422 225]
+ [625 425 194  36]]
+Chi-squared test statistics: chi2_stat = 134.96988296760597 -- p_val = 4.5909598379159203e-29 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Count matrix:
+ [[729 771 515 248]
+ [603 136 101  13]]
+Chi-squared test statistics: chi2_stat = 387.66834558689874 -- p_val = 1.0379455086259632e-83 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[752 495 478 223]
+ [580 412 138  38]]
+Chi-squared test statistics: chi2_stat = 163.59907498951907 -- p_val = 3.064597426681812e-35 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0    0]
+ [1332  907  616  261]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[828 192 401 234]
+ [504 715 215  27]]
+Chi-squared test statistics: chi2_stat = 590.9333689528373 -- p_val = 9.308757946993392e-128 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 212  220  244  158]
+ [1120  687  372  103]]
+Chi-squared test statistics: chi2_stat = 286.61513457583726 -- p_val = 7.841720066369932e-62 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[341 416 328 147]
+ [991 491 288 114]]
+Chi-squared test statistics: chi2_stat = 202.6082767265153 -- p_val = 1.1523070993931676e-43 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Dementia, unspecified, without behavioral disturbance::294.20::C3161078
+Count matrix:
+ [[818 416 487 230]
+ [514 491 129  31]]
+Chi-squared test statistics: chi2_stat = 253.21549805857234 -- p_val = 1.319299826714322e-54 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Constipation, unspecified::564.00::C0009806
+Count matrix:
+ [[782 431 448 246]
+ [550 476 168  15]]
+Chi-squared test statistics: chi2_stat = 229.5235649134261 -- p_val = 1.753173069173545e-49 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[818 464 405 231]
+ [514 443 211  30]]
+Chi-squared test statistics: chi2_stat = 126.12493648396607 -- p_val = 3.698808868405191e-27 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified vitamin d deficiency::268.9::C0042870
+Count matrix:
+ [[1103  473  559  245]
+ [ 229  434   57   16]]
+Chi-squared test statistics: chi2_stat = 440.39298315290023 -- p_val = 3.932980976595971e-95 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[707 482 422 225]
+ [625 425 194  36]]
+Chi-squared test statistics: chi2_stat = 134.96988296760597 -- p_val = 4.5909598379159203e-29 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[801 495 492 236]
+ [531 412 124  25]]
+Chi-squared test statistics: chi2_stat = 191.07957818208888 -- p_val = 3.567789816086919e-41 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0    0]
+ [1332  907  616  261]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 212  220  244  158]
+ [1120  687  372  103]]
+Chi-squared test statistics: chi2_stat = 286.61513457583726 -- p_val = 7.841720066369932e-62 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[341 416 328 147]
+ [991 491 288 114]]
+Chi-squared test statistics: chi2_stat = 202.6082767265153 -- p_val = 1.1523070993931676e-43 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Benign essential hypertension::401.1::C0155583
+Count matrix:
+ [[949 689 360 248]
+ [383 218 256  13]]
+Chi-squared test statistics: chi2_stat = 132.43947988564162 -- p_val = 1.6118476119870331e-28 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[828 192 401 234]
+ [504 715 215  27]]
+Chi-squared test statistics: chi2_stat = 590.9333689528373 -- p_val = 9.308757946993392e-128 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[419 503 404 222]
+ [913 404 212  39]]
+Chi-squared test statistics: chi2_stat = 382.0580344974902 -- p_val = 1.7032913849846787e-82 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[818 464 405 231]
+ [514 443 211  30]]
+Chi-squared test statistics: chi2_stat = 126.12493648396607 -- p_val = 3.698808868405191e-27 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[707 482 422 225]
+ [625 425 194  36]]
+Chi-squared test statistics: chi2_stat = 134.96988296760597 -- p_val = 4.5909598379159203e-29 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Urinary tract infection, site not specified::599.0::C0042029
+Count matrix:
+ [[677 561 431 253]
+ [655 346 185   8]]
+Chi-squared test statistics: chi2_stat = 221.55805544372197 -- p_val = 9.2450755817555e-48 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Other persistent mental disorders due to conditions classified elsewhere::294.8::C0154338
+Count matrix:
+ [[641 595 437 245]
+ [691 312 179  16]]
+Chi-squared test statistics: chi2_stat = 245.92266360880544 -- p_val = 4.985018575945795e-53 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0    0]
+ [1332  907  616  261]]
+empty class(es)
+Odds ratio chi2 test for cluster 3term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[341 416 328 147]
+ [991 491 288 114]]
+Chi-squared test statistics: chi2_stat = 202.6082767265153 -- p_val = 1.1523070993931676e-43 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 212  220  244  158]
+ [1120  687  372  103]]
+Chi-squared test statistics: chi2_stat = 286.61513457583726 -- p_val = 7.841720066369932e-62 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Dementia in conditions classified elsewhere with behavioral disturbance::294.11::C0878692
+Count matrix:
+ [[855 686 473 214]
+ [477 221 143  47]]
+Chi-squared test statistics: chi2_stat = 65.09232283516388 -- p_val = 4.793042174007337e-14 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[419 503 404 222]
+ [913 404 212  39]]
+Chi-squared test statistics: chi2_stat = 382.0580344974902 -- p_val = 1.7032913849846787e-82 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[752 495 478 223]
+ [580 412 138  38]]
+Chi-squared test statistics: chi2_stat = 163.59907498951907 -- p_val = 3.064597426681812e-35 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[707 482 422 225]
+ [625 425 194  36]]
+Chi-squared test statistics: chi2_stat = 134.96988296760597 -- p_val = 4.5909598379159203e-29 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Depressive disorder, not elsewhere classified::311::C0868892
+Count matrix:
+ [[831 523 462 229]
+ [501 384 154  32]]
+Chi-squared test statistics: chi2_stat = 112.26854895442993 -- p_val = 3.565179605932131e-24 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Dementia, unspecified, without behavioral disturbance::294.20::C3161078
+Count matrix:
+ [[818 416 487 230]
+ [514 491 129  31]]
+Chi-squared test statistics: chi2_stat = 253.21549805857234 -- p_val = 1.319299826714322e-54 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[818 464 405 231]
+ [514 443 211  30]]
+Chi-squared test statistics: chi2_stat = 126.12493648396607 -- p_val = 3.698808868405191e-27 -- dof = 3
+
+
+
+Inspecting disease: Breast Cancer
+
+3 0.15511632284839325
+4 0.14754626196585682
+5 0.14296011455222743
+6 0.09178387421544476
+7 0.09909577543665787
+8 0.10198154903250614
+9 0.08562475670680678
+10 0.08477657048596217
+Number of clusters found:3, Silhouette score:0.155
+
+Cluster 0 numerosity: 5781
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.57 (50720 out of 88939 terms in the whole dataset-- N patients in cluster 5761)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.25 (35374 out of 142102 terms in the whole dataset-- N patients in cluster 3118)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.24 (8402 out of 35006 terms in the whole dataset-- N patients in cluster 2989)
+% most frequent term:icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421 = 0.69 (7842 out of 11420 terms in the whole dataset-- N patients in cluster 2586)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.26 (6572 out of 24878 terms in the whole dataset-- N patients in cluster 2022)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.25 (14488 out of 58342 terms in the whole dataset-- N patients in cluster 1998)
+% most frequent term:icd9::Lump or mass in breast::611.72::C0024103 = 0.50 (4997 out of 10056 terms in the whole dataset-- N patients in cluster 1720)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.25 (10750 out of 43839 terms in the whole dataset-- N patients in cluster 1672)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.26 (3818 out of 14826 terms in the whole dataset-- N patients in cluster 1565)
+% most frequent term:icd9::Esophageal reflux::530.81::C0017168 = 0.30 (8853 out of 29975 terms in the whole dataset-- N patients in cluster 1555)
+
+
+Cluster 1 numerosity: 2301
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.35 (30892 out of 88939 terms in the whole dataset-- N patients in cluster 2301)
+% most frequent term:icd9::Abnormal mammogram, unspecified::793.80::C0949146 = 0.37 (3835 out of 10245 terms in the whole dataset-- N patients in cluster 1256)
+% most frequent term:icd9::Lump or mass in breast::611.72::C0024103 = 0.38 (3783 out of 10056 terms in the whole dataset-- N patients in cluster 1176)
+% most frequent term:icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421 = 0.23 (2579 out of 11420 terms in the whole dataset-- N patients in cluster 1079)
+% most frequent term:icd9::Other screening mammogram::V76.12::C0490033 = 0.24 (2997 out of 12493 terms in the whole dataset-- N patients in cluster 925)
+% most frequent term:icd9::Carcinoma in situ of breast::233.0::C0154084 = 0.45 (4738 out of 10415 terms in the whole dataset-- N patients in cluster 921)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.05 (1713 out of 35006 terms in the whole dataset-- N patients in cluster 869)
+% most frequent term:icd9::Screening mammogram for high-risk patient::V76.11::C0490032 = 0.31 (1010 out of 3248 terms in the whole dataset-- N patients in cluster 608)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.01 (1814 out of 142102 terms in the whole dataset-- N patients in cluster 505)
+% most frequent term:icd9::Malignant neoplasm of other specified sites of female breast::174.8::C0153555 = 0.34 (917 out of 2723 terms in the whole dataset-- N patients in cluster 481)
+
+
+Cluster 2 numerosity: 2039
+% most frequent term:icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653 = 0.07 (6381 out of 88939 terms in the whole dataset-- N patients in cluster 2037)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.01 (427 out of 35006 terms in the whole dataset-- N patients in cluster 376)
+% most frequent term:icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421 = 0.03 (364 out of 11420 terms in the whole dataset-- N patients in cluster 283)
+% most frequent term:icd9::Carcinoma in situ of breast::233.0::C0154084 = 0.05 (503 out of 10415 terms in the whole dataset-- N patients in cluster 253)
+% most frequent term:icd9::Lump or mass in breast::611.72::C0024103 = 0.04 (373 out of 10056 terms in the whole dataset-- N patients in cluster 251)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (359 out of 142102 terms in the whole dataset-- N patients in cluster 240)
+% most frequent term:icd9::Abnormal mammogram, unspecified::793.80::C0949146 = 0.03 (318 out of 10245 terms in the whole dataset-- N patients in cluster 212)
+% most frequent term:icd9::Personal history of allergy to penicillin::V14.0::C0260484 = 0.04 (178 out of 4378 terms in the whole dataset-- N patients in cluster 174)
+% most frequent term:icd9::Malignant neoplasm of other specified sites of female breast::174.8::C0153555 = 0.06 (166 out of 2723 terms in the whole dataset-- N patients in cluster 134)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.01 (245 out of 43839 terms in the whole dataset-- N patients in cluster 133)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  20    0    2]
+ [5761 2301 2037]]
+Chi-squared test statistics: chi2_stat = 10.757424192785148 -- p_val = 0.004613760183607079 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2663 1796 1799]
+ [3118  505  240]]
+Chi-squared test statistics: chi2_stat = 1467.5714346533396 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[2792 1432 1663]
+ [2989  869  376]]
+Chi-squared test statistics: chi2_stat = 705.6587030203377 -- p_val = 5.863535861247445e-154 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421
+Count matrix:
+ [[3195 1222 1756]
+ [2586 1079  283]]
+Chi-squared test statistics: chi2_stat = 680.9212307280791 -- p_val = 1.3798549694974222e-148 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[3759 1979 2019]
+ [2022  322   20]]
+Chi-squared test statistics: chi2_stat = 1118.9773675936835 -- p_val = 1.0402840498438007e-243 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[3783 2060 1965]
+ [1998  241   74]]
+Chi-squared test statistics: chi2_stat = 1076.9028944754575 -- p_val = 1.423992466900592e-234 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Lump or mass in breast::611.72::C0024103
+Count matrix:
+ [[4061 1125 1788]
+ [1720 1176  251]]
+Chi-squared test statistics: chi2_stat = 770.8330126163146 -- p_val = 4.127984671373802e-168 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[4109 2099 1906]
+ [1672  202  133]]
+Chi-squared test statistics: chi2_stat = 704.5065048738666 -- p_val = 1.043172750892678e-153 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[4216 2178 2017]
+ [1565  123   22]]
+Chi-squared test statistics: chi2_stat = 1008.2374739569882 -- p_val = 1.1588155283587355e-219 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Esophageal reflux::530.81::C0017168
+Count matrix:
+ [[4226 2050 1959]
+ [1555  251   80]]
+Chi-squared test statistics: chi2_stat = 642.013992193317 -- p_val = 3.8764388984335903e-140 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  20    0    2]
+ [5761 2301 2037]]
+Chi-squared test statistics: chi2_stat = 10.757424192785148 -- p_val = 0.004613760183607079 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Abnormal mammogram, unspecified::793.80::C0949146
+Count matrix:
+ [[4296 1045 1827]
+ [1485 1256  212]]
+Chi-squared test statistics: chi2_stat = 1100.9215786918726 -- p_val = 8.667955697623579e-240 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Lump or mass in breast::611.72::C0024103
+Count matrix:
+ [[4061 1125 1788]
+ [1720 1176  251]]
+Chi-squared test statistics: chi2_stat = 770.8330126163146 -- p_val = 4.127984671373802e-168 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421
+Count matrix:
+ [[3195 1222 1756]
+ [2586 1079  283]]
+Chi-squared test statistics: chi2_stat = 680.9212307280791 -- p_val = 1.3798549694974222e-148 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Other screening mammogram::V76.12::C0490033
+Count matrix:
+ [[4233 1376 1928]
+ [1548  925  111]]
+Chi-squared test statistics: chi2_stat = 697.8627325720038 -- p_val = 2.8908999328279145e-152 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Carcinoma in situ of breast::233.0::C0154084
+Count matrix:
+ [[4625 1380 1786]
+ [1156  921  253]]
+Chi-squared test statistics: chi2_stat = 534.9014201128958 -- p_val = 7.040969148647704e-117 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[2792 1432 1663]
+ [2989  869  376]]
+Chi-squared test statistics: chi2_stat = 705.6587030203377 -- p_val = 5.863535861247445e-154 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Screening mammogram for high-risk patient::V76.11::C0490032
+Count matrix:
+ [[4903 1693 1994]
+ [ 878  608   45]]
+Chi-squared test statistics: chi2_stat = 493.8252730388361 -- p_val = 5.850654433369211e-108 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2663 1796 1799]
+ [3118  505  240]]
+Chi-squared test statistics: chi2_stat = 1467.5714346533396 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of other specified sites of female breast::174.8::C0153555
+Count matrix:
+ [[4866 1820 1905]
+ [ 915  481  134]]
+Chi-squared test statistics: chi2_stat = 178.35726793537998 -- p_val = 1.8629936051858667e-39 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of breast (female), unspecified::174.9::C0235653
+Count matrix:
+ [[  20    0    2]
+ [5761 2301 2037]]
+Chi-squared test statistics: chi2_stat = 10.757424192785148 -- p_val = 0.004613760183607079 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[2792 1432 1663]
+ [2989  869  376]]
+Chi-squared test statistics: chi2_stat = 705.6587030203377 -- p_val = 5.863535861247445e-154 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of malignant neoplasm of breast::V10.3::C0260421
+Count matrix:
+ [[3195 1222 1756]
+ [2586 1079  283]]
+Chi-squared test statistics: chi2_stat = 680.9212307280791 -- p_val = 1.3798549694974222e-148 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Carcinoma in situ of breast::233.0::C0154084
+Count matrix:
+ [[4625 1380 1786]
+ [1156  921  253]]
+Chi-squared test statistics: chi2_stat = 534.9014201128958 -- p_val = 7.040969148647704e-117 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Lump or mass in breast::611.72::C0024103
+Count matrix:
+ [[4061 1125 1788]
+ [1720 1176  251]]
+Chi-squared test statistics: chi2_stat = 770.8330126163146 -- p_val = 4.127984671373802e-168 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[2663 1796 1799]
+ [3118  505  240]]
+Chi-squared test statistics: chi2_stat = 1467.5714346533396 -- p_val = 0.0 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Abnormal mammogram, unspecified::793.80::C0949146
+Count matrix:
+ [[4296 1045 1827]
+ [1485 1256  212]]
+Chi-squared test statistics: chi2_stat = 1100.9215786918726 -- p_val = 8.667955697623579e-240 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to penicillin::V14.0::C0260484
+Count matrix:
+ [[4919 2034 1865]
+ [ 862  267  174]]
+Chi-squared test statistics: chi2_stat = 58.94014822208345 -- p_val = 1.5896789822322604e-13 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of other specified sites of female breast::174.8::C0153555
+Count matrix:
+ [[4866 1820 1905]
+ [ 915  481  134]]
+Chi-squared test statistics: chi2_stat = 178.35726793537998 -- p_val = 1.8629936051858667e-39 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[4109 2099 1906]
+ [1672  202  133]]
+Chi-squared test statistics: chi2_stat = 704.5065048738666 -- p_val = 1.043172750892678e-153 -- dof = 2
+
+
+
+Inspecting disease: Diabetes
+
+3 0.10951548965955829
+4 0.08761687499978285
+5 0.10351195477878676
+6 0.09721263600952842
+7 0.10340253756922646
+8 0.10175494339139349
+9 0.08222383748185437
+10 0.07065813922502177
+Number of clusters found:3, Silhouette score:0.110
+
+Cluster 0 numerosity: 1358
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.37 (35225 out of 95229 terms in the whole dataset-- N patients in cluster 1347)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.19 (27068 out of 142102 terms in the whole dataset-- N patients in cluster 1197)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.21 (5273 out of 24878 terms in the whole dataset-- N patients in cluster 1036)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.24 (14247 out of 58342 terms in the whole dataset-- N patients in cluster 998)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.10 (3647 out of 35006 terms in the whole dataset-- N patients in cluster 848)
+% most frequent term:icd9::Routine general medical examination at a health care facility::V70.0::C0260851 = 0.24 (2915 out of 12227 terms in the whole dataset-- N patients in cluster 749)
+% most frequent term:icd9::Pain in limb::729.5::C0030196 = 0.27 (3004 out of 11054 terms in the whole dataset-- N patients in cluster 729)
+% most frequent term:icd9::Unspecified general medical examination::V70.9::C0260860 = 0.41 (3474 out of 8521 terms in the whole dataset-- N patients in cluster 708)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.14 (6121 out of 43839 terms in the whole dataset-- N patients in cluster 694)
+% most frequent term:icd9::Other screening mammogram::V76.12::C0490033 = 0.21 (2607 out of 12493 terms in the whole dataset-- N patients in cluster 664)
+
+
+Cluster 1 numerosity: 423
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.03 (2497 out of 95229 terms in the whole dataset-- N patients in cluster 415)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (2184 out of 142102 terms in the whole dataset-- N patients in cluster 381)
+% most frequent term:icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133 = 0.07 (2205 out of 29577 terms in the whole dataset-- N patients in cluster 352)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.03 (1594 out of 58342 terms in the whole dataset-- N patients in cluster 344)
+% most frequent term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.08 (1298 out of 16921 terms in the whole dataset-- N patients in cluster 336)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.02 (721 out of 35006 terms in the whole dataset-- N patients in cluster 269)
+% most frequent term:icd9::Other nonspecific abnormal results of function study of cardiovascular system::794.39::C2711989 = 0.25 (428 out of 1744 terms in the whole dataset-- N patients in cluster 251)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.03 (612 out of 22660 terms in the whole dataset-- N patients in cluster 243)
+% most frequent term:icd9::Other and unspecified angina pectoris::413.9::C0348588 = 0.14 (533 out of 3922 terms in the whole dataset-- N patients in cluster 239)
+% most frequent term:icd9::Percutaneous transluminal coronary angioplasty status::V45.82::C0375852 = 0.12 (861 out of 7184 terms in the whole dataset-- N patients in cluster 233)
+
+
+Cluster 2 numerosity: 424
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.10 (9236 out of 95229 terms in the whole dataset-- N patients in cluster 419)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.05 (7727 out of 142102 terms in the whole dataset-- N patients in cluster 395)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.08 (2870 out of 35006 terms in the whole dataset-- N patients in cluster 378)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.11 (2582 out of 22660 terms in the whole dataset-- N patients in cluster 337)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.06 (3283 out of 58342 terms in the whole dataset-- N patients in cluster 302)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.04 (944 out of 24878 terms in the whole dataset-- N patients in cluster 262)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.04 (1915 out of 43839 terms in the whole dataset-- N patients in cluster 260)
+% most frequent term:icd9::Shortness of breath::786.05::C0013404 = 0.09 (1319 out of 14049 terms in the whole dataset-- N patients in cluster 253)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.06 (1634 out of 25769 terms in the whole dataset-- N patients in cluster 240)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.05 (733 out of 14826 terms in the whole dataset-- N patients in cluster 232)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  11    8    5]
+ [1347  415  419]]
+Chi-squared test statistics: chi2_stat = 3.5426379030470647 -- p_val = 0.1701084759636284 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 161   42   29]
+ [1197  381  395]]
+Chi-squared test statistics: chi2_stat = 8.830566483425558 -- p_val = 0.01209112892795439 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[ 322  379  162]
+ [1036   44  262]]
+Chi-squared test statistics: chi2_stat = 587.9867629165306 -- p_val = 2.090724057493275e-128 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[360  79 122]
+ [998 344 302]]
+Chi-squared test statistics: chi2_stat = 13.504891706709088 -- p_val = 0.0011680193203065694 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[510 154  46]
+ [848 269 378]]
+Chi-squared test statistics: chi2_stat = 109.80331876259552 -- p_val = 1.4338782705866307e-24 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Routine general medical examination at a health care facility::V70.0::C0260851
+Count matrix:
+ [[609 409 274]
+ [749  14 150]]
+Chi-squared test statistics: chi2_stat = 365.19642062993483 -- p_val = 4.995797827426173e-80 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Pain in limb::729.5::C0030196
+Count matrix:
+ [[629 358 232]
+ [729  65 192]]
+Chi-squared test statistics: chi2_stat = 191.60870027467533 -- p_val = 2.4700138759367422e-42 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified general medical examination::V70.9::C0260860
+Count matrix:
+ [[650 402 266]
+ [708  21 158]]
+Chi-squared test statistics: chi2_stat = 300.38825397691863 -- p_val = 5.909074080321901e-66 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[664 207 164]
+ [694 216 260]]
+Chi-squared test statistics: chi2_stat = 14.378669170465939 -- p_val = 0.0007545910695135916 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other screening mammogram::V76.12::C0490033
+Count matrix:
+ [[694 414 315]
+ [664   9 109]]
+Chi-squared test statistics: chi2_stat = 330.06632516345337 -- p_val = 2.1232843548167013e-72 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  11    8    5]
+ [1347  415  419]]
+Chi-squared test statistics: chi2_stat = 3.5426379030470647 -- p_val = 0.1701084759636284 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 161   42   29]
+ [1197  381  395]]
+Chi-squared test statistics: chi2_stat = 8.830566483425558 -- p_val = 0.01209112892795439 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133
+Count matrix:
+ [[1035   71  235]
+ [ 323  352  189]]
+Chi-squared test statistics: chi2_stat = 484.44438127159293 -- p_val = 6.371463688301756e-106 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[360  79 122]
+ [998 344 302]]
+Chi-squared test statistics: chi2_stat = 13.504891706709088 -- p_val = 0.0011680193203065694 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Count matrix:
+ [[1023   87  195]
+ [ 335  336  229]]
+Chi-squared test statistics: chi2_stat = 438.2578154543346 -- p_val = 6.815921008021225e-96 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[510 154  46]
+ [848 269 378]]
+Chi-squared test statistics: chi2_stat = 109.80331876259552 -- p_val = 1.4338782705866307e-24 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Other nonspecific abnormal results of function study of cardiovascular system::794.39::C2711989
+Count matrix:
+ [[1230  172  371]
+ [ 128  251   53]]
+Chi-squared test statistics: chi2_stat = 526.8158667318329 -- p_val = 4.012250590521678e-115 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[821 180  87]
+ [537 243 337]]
+Chi-squared test statistics: chi2_stat = 215.83779268911414 -- p_val = 1.3533771024888573e-47 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified angina pectoris::413.9::C0348588
+Count matrix:
+ [[1151  184  317]
+ [ 207  239  107]]
+Chi-squared test statistics: chi2_stat = 292.20556412025553 -- p_val = 3.5348253475388044e-64 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Percutaneous transluminal coronary angioplasty status::V45.82::C0375852
+Count matrix:
+ [[1240  190  335]
+ [ 118  233   89]]
+Chi-squared test statistics: chi2_stat = 434.97314410092963 -- p_val = 3.521939330182548e-95 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  11    8    5]
+ [1347  415  419]]
+Chi-squared test statistics: chi2_stat = 3.5426379030470647 -- p_val = 0.1701084759636284 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 161   42   29]
+ [1197  381  395]]
+Chi-squared test statistics: chi2_stat = 8.830566483425558 -- p_val = 0.01209112892795439 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[510 154  46]
+ [848 269 378]]
+Chi-squared test statistics: chi2_stat = 109.80331876259552 -- p_val = 1.4338782705866307e-24 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[821 180  87]
+ [537 243 337]]
+Chi-squared test statistics: chi2_stat = 215.83779268911414 -- p_val = 1.3533771024888573e-47 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[360  79 122]
+ [998 344 302]]
+Chi-squared test statistics: chi2_stat = 13.504891706709088 -- p_val = 0.0011680193203065694 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[ 322  379  162]
+ [1036   44  262]]
+Chi-squared test statistics: chi2_stat = 587.9867629165306 -- p_val = 2.090724057493275e-128 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[664 207 164]
+ [694 216 260]]
+Chi-squared test statistics: chi2_stat = 14.378669170465939 -- p_val = 0.0007545910695135916 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Shortness of breath::786.05::C0013404
+Count matrix:
+ [[757 313 171]
+ [601 110 253]]
+Chi-squared test statistics: chi2_stat = 97.94777491014581 -- p_val = 5.381593881483994e-22 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[886 366 184]
+ [472  57 240]]
+Chi-squared test statistics: chi2_stat = 173.43806008232522 -- p_val = 2.179735398525618e-38 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[821 370 192]
+ [537  53 232]]
+Chi-squared test statistics: chi2_stat = 168.93401848425012 -- p_val = 2.0722587556169405e-37 -- dof = 2
+
+
+
+Inspecting disease: Multiple Myeloma
+
+3 0.12502126294096208
+4 0.134401222545245
+5 0.11388720735144052
+6 0.11425391407984037
+7 0.08823115076261107
+8 0.08476356074952049
+9 0.08534721270316775
+10 0.0823980369409795
+Number of clusters found:4, Silhouette score:0.134
+
+Cluster 0 numerosity: 771
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.45 (20029 out of 44533 terms in the whole dataset-- N patients in cluster 771)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (2785 out of 142102 terms in the whole dataset-- N patients in cluster 365)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.03 (679 out of 24878 terms in the whole dataset-- N patients in cluster 355)
+% most frequent term:icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677 = 0.25 (4809 out of 19259 terms in the whole dataset-- N patients in cluster 353)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.02 (615 out of 35006 terms in the whole dataset-- N patients in cluster 315)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.06 (1493 out of 25769 terms in the whole dataset-- N patients in cluster 273)
+% most frequent term:icd9::Antineoplastic and immunosuppressive drugs causing adverse effects in therapeutic use::E933.1::C0261796 = 0.31 (782 out of 2500 terms in the whole dataset-- N patients in cluster 267)
+% most frequent term:icd9::Diarrhea::787.91::C0011991 = 0.07 (497 out of 6696 terms in the whole dataset-- N patients in cluster 258)
+% most frequent term:icd9::Examination of participant in clinical trial::V70.7::C0949168 = 0.48 (2602 out of 5380 terms in the whole dataset-- N patients in cluster 256)
+% most frequent term:icd9::Neutropenia, unspecified::288.00::C0027947 = 0.29 (469 out of 1642 terms in the whole dataset-- N patients in cluster 211)
+
+
+Cluster 1 numerosity: 1085
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.24 (10579 out of 44533 terms in the whole dataset-- N patients in cluster 1079)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.04 (5711 out of 142102 terms in the whole dataset-- N patients in cluster 656)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.05 (1613 out of 35006 terms in the whole dataset-- N patients in cluster 536)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.08 (2157 out of 25769 terms in the whole dataset-- N patients in cluster 471)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.03 (1872 out of 58342 terms in the whole dataset-- N patients in cluster 357)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.06 (901 out of 14826 terms in the whole dataset-- N patients in cluster 347)
+% most frequent term:icd9::Acute kidney failure, unspecified::584.9::C0022660 = 0.15 (957 out of 6590 terms in the whole dataset-- N patients in cluster 323)
+% most frequent term:icd9::Shortness of breath::786.05::C0013404 = 0.06 (875 out of 14049 terms in the whole dataset-- N patients in cluster 321)
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.03 (3093 out of 95229 terms in the whole dataset-- N patients in cluster 320)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.05 (1069 out of 22660 terms in the whole dataset-- N patients in cluster 306)
+
+
+Cluster 2 numerosity: 452
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.26 (11666 out of 44533 terms in the whole dataset-- N patients in cluster 452)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.01 (319 out of 24878 terms in the whole dataset-- N patients in cluster 166)
+% most frequent term:icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677 = 0.11 (2075 out of 19259 terms in the whole dataset-- N patients in cluster 148)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (168 out of 35006 terms in the whole dataset-- N patients in cluster 125)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (563 out of 142102 terms in the whole dataset-- N patients in cluster 104)
+% most frequent term:icd9::Examination of participant in clinical trial::V70.7::C0949168 = 0.16 (855 out of 5380 terms in the whole dataset-- N patients in cluster 88)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.02 (435 out of 25769 terms in the whole dataset-- N patients in cluster 76)
+% most frequent term:icd9::Monoclonal paraproteinemia::273.1::C0026471 = 0.14 (389 out of 2748 terms in the whole dataset-- N patients in cluster 63)
+% most frequent term:icd9::Multiple myeloma, in remission::203.01::C0153869 = 0.16 (84 out of 539 terms in the whole dataset-- N patients in cluster 57)
+% most frequent term:icd9::Personal history of allergy to penicillin::V14.0::C0260484 = 0.01 (61 out of 4378 terms in the whole dataset-- N patients in cluster 54)
+
+
+Cluster 3 numerosity: 397
+% most frequent term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.02 (1108 out of 44533 terms in the whole dataset-- N patients in cluster 396)
+% most frequent term:icd9::Multiple myeloma::203.0::C0026764 = 0.11 (89 out of 842 terms in the whole dataset-- N patients in cluster 53)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (70 out of 142102 terms in the whole dataset-- N patients in cluster 52)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (44 out of 35006 terms in the whole dataset-- N patients in cluster 43)
+% most frequent term:icd9::Monoclonal paraproteinemia::273.1::C0026471 = 0.02 (66 out of 2748 terms in the whole dataset-- N patients in cluster 31)
+% most frequent term:icd9::Personal history of allergy to penicillin::V14.0::C0260484 = 0.00 (20 out of 4378 terms in the whole dataset-- N patients in cluster 20)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.00 (26 out of 25769 terms in the whole dataset-- N patients in cluster 19)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.00 (27 out of 58342 terms in the whole dataset-- N patients in cluster 17)
+% most frequent term:icd9::Other unknown and unspecified cause of morbidity and mortality::799.9::C0476465 = 0.01 (32 out of 3460 terms in the whole dataset-- N patients in cluster 17)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.00 (14 out of 24878 terms in the whole dataset-- N patients in cluster 14)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    6    0    1]
+ [ 771 1079  452  396]]
+Chi-squared test statistics: chi2_stat = 6.812594504412191 -- p_val = 0.07811706752863264 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[406 429 348 345]
+ [365 656 104  52]]
+Chi-squared test statistics: chi2_stat = 358.1177787557795 -- p_val = 2.605392058435658e-77 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[416 782 286 383]
+ [355 303 166  14]]
+Chi-squared test statistics: chi2_stat = 233.47303083723583 -- p_val = 2.454043641029525e-50 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677
+Count matrix:
+ [[418 826 304 386]
+ [353 259 148  11]]
+Chi-squared test statistics: chi2_stat = 257.39809947579204 -- p_val = 1.6429832134506334e-55 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[456 549 327 354]
+ [315 536 125  43]]
+Chi-squared test statistics: chi2_stat = 208.02499485238508 -- p_val = 7.780669972290707e-45 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[498 614 376 378]
+ [273 471  76  19]]
+Chi-squared test statistics: chi2_stat = 255.11690707716807 -- p_val = 5.117638765922973e-55 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Antineoplastic and immunosuppressive drugs causing adverse effects in therapeutic use::E933.1::C0261796
+Count matrix:
+ [[504 858 400 393]
+ [267 227  52   4]]
+Chi-squared test statistics: chi2_stat = 210.80847232695112 -- p_val = 1.9473841572364177e-45 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Diarrhea::787.91::C0011991
+Count matrix:
+ [[513 824 413 397]
+ [258 261  39   0]]
+Chi-squared test statistics: chi2_stat = 228.28358223775115 -- p_val = 3.2502551287159097e-49 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Examination of participant in clinical trial::V70.7::C0949168
+Count matrix:
+ [[515 953 364 396]
+ [256 132  88   1]]
+Chi-squared test statistics: chi2_stat = 234.6482315043594 -- p_val = 1.367010285699652e-50 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Neutropenia, unspecified::288.00::C0027947
+Count matrix:
+ [[560 895 419 397]
+ [211 190  33   0]]
+Chi-squared test statistics: chi2_stat = 176.63606295536886 -- p_val = 4.697688075777071e-38 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    6    0    1]
+ [ 771 1079  452  396]]
+Chi-squared test statistics: chi2_stat = 6.812594504412191 -- p_val = 0.07811706752863264 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[406 429 348 345]
+ [365 656 104  52]]
+Chi-squared test statistics: chi2_stat = 358.1177787557795 -- p_val = 2.605392058435658e-77 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[456 549 327 354]
+ [315 536 125  43]]
+Chi-squared test statistics: chi2_stat = 208.02499485238508 -- p_val = 7.780669972290707e-45 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[498 614 376 378]
+ [273 471  76  19]]
+Chi-squared test statistics: chi2_stat = 255.11690707716807 -- p_val = 5.117638765922973e-55 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[630 728 413 380]
+ [141 357  39  17]]
+Chi-squared test statistics: chi2_stat = 208.03721804456362 -- p_val = 7.733487714703172e-45 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[597 738 416 392]
+ [174 347  36   5]]
+Chi-squared test statistics: chi2_stat = 221.21634335185996 -- p_val = 1.0959232077608167e-47 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Acute kidney failure, unspecified::584.9::C0022660
+Count matrix:
+ [[651 762 443 393]
+ [120 323   9   4]]
+Chi-squared test statistics: chi2_stat = 272.41516804034416 -- p_val = 9.266999115631393e-59 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Shortness of breath::786.05::C0013404
+Count matrix:
+ [[595 764 410 392]
+ [176 321  42   5]]
+Chi-squared test statistics: chi2_stat = 184.90340142120567 -- p_val = 7.699793025456392e-40 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[661 765 421 385]
+ [110 320  31  12]]
+Chi-squared test statistics: chi2_stat = 206.89060357829584 -- p_val = 1.3682669535529133e-44 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[645 779 431 396]
+ [126 306  21   1]]
+Chi-squared test statistics: chi2_stat = 226.7658964984936 -- p_val = 6.918991898231059e-49 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    6    0    1]
+ [ 771 1079  452  396]]
+Chi-squared test statistics: chi2_stat = 6.812594504412191 -- p_val = 0.07811706752863264 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[416 782 286 383]
+ [355 303 166  14]]
+Chi-squared test statistics: chi2_stat = 233.47303083723583 -- p_val = 2.454043641029525e-50 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677
+Count matrix:
+ [[418 826 304 386]
+ [353 259 148  11]]
+Chi-squared test statistics: chi2_stat = 257.39809947579204 -- p_val = 1.6429832134506334e-55 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[456 549 327 354]
+ [315 536 125  43]]
+Chi-squared test statistics: chi2_stat = 208.02499485238508 -- p_val = 7.780669972290707e-45 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[406 429 348 345]
+ [365 656 104  52]]
+Chi-squared test statistics: chi2_stat = 358.1177787557795 -- p_val = 2.605392058435658e-77 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Examination of participant in clinical trial::V70.7::C0949168
+Count matrix:
+ [[515 953 364 396]
+ [256 132  88   1]]
+Chi-squared test statistics: chi2_stat = 234.6482315043594 -- p_val = 1.367010285699652e-50 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[498 614 376 378]
+ [273 471  76  19]]
+Chi-squared test statistics: chi2_stat = 255.11690707716807 -- p_val = 5.117638765922973e-55 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Monoclonal paraproteinemia::273.1::C0026471
+Count matrix:
+ [[685 920 389 366]
+ [ 86 165  63  31]]
+Chi-squared test statistics: chi2_stat = 16.937201242267207 -- p_val = 0.0007280735782507051 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Multiple myeloma, in remission::203.01::C0153869
+Count matrix:
+ [[ 692 1014  395  392]
+ [  79   71   57    5]]
+Chi-squared test statistics: chi2_stat = 46.74770753082964 -- p_val = 3.9327236411925124e-10 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to penicillin::V14.0::C0260484
+Count matrix:
+ [[704 976 398 377]
+ [ 67 109  54  20]]
+Chi-squared test statistics: chi2_stat = 13.424732282525255 -- p_val = 0.0038025893448754575 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Count matrix:
+ [[   0    6    0    1]
+ [ 771 1079  452  396]]
+Chi-squared test statistics: chi2_stat = 6.812594504412191 -- p_val = 0.07811706752863264 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Multiple myeloma::203.0::C0026764
+Count matrix:
+ [[663 990 404 344]
+ [108  95  48  53]]
+Chi-squared test statistics: chi2_stat = 14.57992747605154 -- p_val = 0.0022132049741002842 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[406 429 348 345]
+ [365 656 104  52]]
+Chi-squared test statistics: chi2_stat = 358.1177787557795 -- p_val = 2.605392058435658e-77 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[456 549 327 354]
+ [315 536 125  43]]
+Chi-squared test statistics: chi2_stat = 208.02499485238508 -- p_val = 7.780669972290707e-45 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Monoclonal paraproteinemia::273.1::C0026471
+Count matrix:
+ [[685 920 389 366]
+ [ 86 165  63  31]]
+Chi-squared test statistics: chi2_stat = 16.937201242267207 -- p_val = 0.0007280735782507051 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to penicillin::V14.0::C0260484
+Count matrix:
+ [[704 976 398 377]
+ [ 67 109  54  20]]
+Chi-squared test statistics: chi2_stat = 13.424732282525255 -- p_val = 0.0038025893448754575 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[498 614 376 378]
+ [273 471  76  19]]
+Chi-squared test statistics: chi2_stat = 255.11690707716807 -- p_val = 5.117638765922973e-55 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[630 728 413 380]
+ [141 357  39  17]]
+Chi-squared test statistics: chi2_stat = 208.03721804456362 -- p_val = 7.733487714703172e-45 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Other unknown and unspecified cause of morbidity and mortality::799.9::C0476465
+Count matrix:
+ [[732 993 438 380]
+ [ 39  92  14  17]]
+Chi-squared test statistics: chi2_stat = 21.90384875489119 -- p_val = 6.830608146526308e-05 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[416 782 286 383]
+ [355 303 166  14]]
+Chi-squared test statistics: chi2_stat = 233.47303083723583 -- p_val = 2.454043641029525e-50 -- dof = 3
+
+
+
+Inspecting disease: Parkinson's disease
+
+3 0.15112952984616707
+4 0.13820093130839312
+5 0.12616767918622238
+6 0.10332987072336514
+7 0.10755953646404182
+8 0.0999488497847111
+9 0.09725168600401311
+10 0.06321150365161315
+Number of clusters found:3, Silhouette score:0.151
+
+Cluster 0 numerosity: 1098
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.41 (13394 out of 32405 terms in the whole dataset-- N patients in cluster 1098)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.02 (687 out of 35006 terms in the whole dataset-- N patients in cluster 383)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (2335 out of 142102 terms in the whole dataset-- N patients in cluster 375)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.11 (2095 out of 19256 terms in the whole dataset-- N patients in cluster 358)
+% most frequent term:icd9::Depressive disorder, not elsewhere classified::311::C0868892 = 0.06 (1840 out of 29970 terms in the whole dataset-- N patients in cluster 322)
+% most frequent term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.07 (782 out of 11913 terms in the whole dataset-- N patients in cluster 195)
+% most frequent term:icd9::Constipation, unspecified::564.00::C0009806 = 0.04 (1167 out of 27301 terms in the whole dataset-- N patients in cluster 191)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.01 (572 out of 58342 terms in the whole dataset-- N patients in cluster 189)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.03 (464 out of 14826 terms in the whole dataset-- N patients in cluster 181)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.02 (398 out of 22660 terms in the whole dataset-- N patients in cluster 178)
+
+
+Cluster 1 numerosity: 981
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.11 (3405 out of 32405 terms in the whole dataset-- N patients in cluster 981)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (297 out of 142102 terms in the whole dataset-- N patients in cluster 204)
+% most frequent term:icd9::Depressive disorder, not elsewhere classified::311::C0868892 = 0.01 (233 out of 29970 terms in the whole dataset-- N patients in cluster 134)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.01 (241 out of 19256 terms in the whole dataset-- N patients in cluster 102)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (108 out of 35006 terms in the whole dataset-- N patients in cluster 101)
+% most frequent term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.01 (131 out of 11913 terms in the whole dataset-- N patients in cluster 86)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.00 (125 out of 58342 terms in the whole dataset-- N patients in cluster 86)
+% most frequent term:icd9::Abnormal involuntary movements::781.0::C0392702 = 0.05 (123 out of 2644 terms in the whole dataset-- N patients in cluster 72)
+% most frequent term:icd9::Rem sleep behavior disorder::327.42::C0751772 = 0.17 (110 out of 649 terms in the whole dataset-- N patients in cluster 64)
+% most frequent term:icd9::Personal history of allergy to penicillin::V14.0::C0260484 = 0.01 (64 out of 4378 terms in the whole dataset-- N patients in cluster 63)
+
+
+Cluster 2 numerosity: 1760
+% most frequent term:icd9::Paralysis agitans::332.0::C0030567 = 0.43 (13867 out of 32405 terms in the whole dataset-- N patients in cluster 1760)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.06 (8130 out of 142102 terms in the whole dataset-- N patients in cluster 1194)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.07 (2534 out of 35006 terms in the whole dataset-- N patients in cluster 922)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.05 (3102 out of 58342 terms in the whole dataset-- N patients in cluster 674)
+% most frequent term:icd9::Abnormality of gait::781.2::C0575081 = 0.17 (3178 out of 19256 terms in the whole dataset-- N patients in cluster 672)
+% most frequent term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.10 (1479 out of 14826 terms in the whole dataset-- N patients in cluster 608)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.08 (1759 out of 22660 terms in the whole dataset-- N patients in cluster 608)
+% most frequent term:icd9::Depressive disorder, not elsewhere classified::311::C0868892 = 0.10 (2859 out of 29970 terms in the whole dataset-- N patients in cluster 588)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.07 (2916 out of 43839 terms in the whole dataset-- N patients in cluster 576)
+% most frequent term:icd9::Constipation, unspecified::564.00::C0009806 = 0.10 (2757 out of 27301 terms in the whole dataset-- N patients in cluster 544)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [1098  981 1760]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[715 880 838]
+ [383 101 922]]
+Chi-squared test statistics: chi2_stat = 482.80094878701385 -- p_val = 1.4491256446570654e-105 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 723  777  566]
+ [ 375  204 1194]]
+Chi-squared test statistics: chi2_stat = 650.4917811591145 -- p_val = 5.5911926890437985e-142 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[ 740  879 1088]
+ [ 358  102  672]]
+Chi-squared test statistics: chi2_stat = 241.05873816538775 -- p_val = 4.516064126314588e-53 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Depressive disorder, not elsewhere classified::311::C0868892
+Count matrix:
+ [[ 776  847 1172]
+ [ 322  134  588]]
+Chi-squared test statistics: chi2_stat = 127.62007537002128 -- p_val = 1.9393345888925339e-28 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Anxiety state, unspecified::300.00::C0700613
+Count matrix:
+ [[ 903  895 1488]
+ [ 195   86  272]]
+Chi-squared test statistics: chi2_stat = 36.88825025028627 -- p_val = 9.768283031850326e-09 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Constipation, unspecified::564.00::C0009806
+Count matrix:
+ [[ 907  926 1216]
+ [ 191   55  544]]
+Chi-squared test statistics: chi2_stat = 256.2811457684147 -- p_val = 2.234890700877484e-56 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[ 909  895 1086]
+ [ 189   86  674]]
+Chi-squared test statistics: chi2_stat = 341.71686734517084 -- p_val = 6.267943447063613e-75 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[ 917  945 1152]
+ [ 181   36  608]]
+Chi-squared test statistics: chi2_stat = 378.7517806783494 -- p_val = 5.6897845305671024e-83 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[ 920  960 1152]
+ [ 178   21  608]]
+Chi-squared test statistics: chi2_stat = 419.8334980502937 -- p_val = 6.828325876624021e-92 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [1098  981 1760]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 723  777  566]
+ [ 375  204 1194]]
+Chi-squared test statistics: chi2_stat = 650.4917811591145 -- p_val = 5.5911926890437985e-142 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Depressive disorder, not elsewhere classified::311::C0868892
+Count matrix:
+ [[ 776  847 1172]
+ [ 322  134  588]]
+Chi-squared test statistics: chi2_stat = 127.62007537002128 -- p_val = 1.9393345888925339e-28 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[ 740  879 1088]
+ [ 358  102  672]]
+Chi-squared test statistics: chi2_stat = 241.05873816538775 -- p_val = 4.516064126314588e-53 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[715 880 838]
+ [383 101 922]]
+Chi-squared test statistics: chi2_stat = 482.80094878701385 -- p_val = 1.4491256446570654e-105 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Anxiety state, unspecified::300.00::C0700613
+Count matrix:
+ [[ 903  895 1488]
+ [ 195   86  272]]
+Chi-squared test statistics: chi2_stat = 36.88825025028627 -- p_val = 9.768283031850326e-09 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[ 909  895 1086]
+ [ 189   86  674]]
+Chi-squared test statistics: chi2_stat = 341.71686734517084 -- p_val = 6.267943447063613e-75 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Abnormal involuntary movements::781.0::C0392702
+Count matrix:
+ [[ 930  909 1519]
+ [ 168   72  241]]
+Chi-squared test statistics: chi2_stat = 33.97915482433254 -- p_val = 4.183312227952903e-08 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Rem sleep behavior disorder::327.42::C0751772
+Count matrix:
+ [[ 986  917 1710]
+ [ 112   64   50]]
+Chi-squared test statistics: chi2_stat = 67.06547452063676 -- p_val = 2.7347475676448173e-15 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to penicillin::V14.0::C0260484
+Count matrix:
+ [[ 994  918 1533]
+ [ 104   63  227]]
+Chi-squared test statistics: chi2_stat = 29.726857434057088 -- p_val = 3.50667022694619e-07 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Paralysis agitans::332.0::C0030567
+Count matrix:
+ [[   0    0    0]
+ [1098  981 1760]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 723  777  566]
+ [ 375  204 1194]]
+Chi-squared test statistics: chi2_stat = 650.4917811591145 -- p_val = 5.5911926890437985e-142 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[715 880 838]
+ [383 101 922]]
+Chi-squared test statistics: chi2_stat = 482.80094878701385 -- p_val = 1.4491256446570654e-105 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[ 909  895 1086]
+ [ 189   86  674]]
+Chi-squared test statistics: chi2_stat = 341.71686734517084 -- p_val = 6.267943447063613e-75 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Abnormality of gait::781.2::C0575081
+Count matrix:
+ [[ 740  879 1088]
+ [ 358  102  672]]
+Chi-squared test statistics: chi2_stat = 241.05873816538775 -- p_val = 4.516064126314588e-53 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Other malaise and fatigue::780.79::C0695252
+Count matrix:
+ [[ 917  945 1152]
+ [ 181   36  608]]
+Chi-squared test statistics: chi2_stat = 378.7517806783494 -- p_val = 5.6897845305671024e-83 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[ 920  960 1152]
+ [ 178   21  608]]
+Chi-squared test statistics: chi2_stat = 419.8334980502937 -- p_val = 6.828325876624021e-92 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Depressive disorder, not elsewhere classified::311::C0868892
+Count matrix:
+ [[ 776  847 1172]
+ [ 322  134  588]]
+Chi-squared test statistics: chi2_stat = 127.62007537002128 -- p_val = 1.9393345888925339e-28 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[ 940  934 1184]
+ [ 158   47  576]]
+Chi-squared test statistics: chi2_stat = 337.00069150196873 -- p_val = 6.6256675600363425e-74 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Constipation, unspecified::564.00::C0009806
+Count matrix:
+ [[ 907  926 1216]
+ [ 191   55  544]]
+Chi-squared test statistics: chi2_stat = 256.2811457684147 -- p_val = 2.234890700877484e-56 -- dof = 2
+
+
+
+Inspecting disease: Prostate Cancer
+
+3 0.14314402946068971
+4 0.14900182460594155
+5 0.14291467872222033
+6 0.10186892043467195
+7 0.09918278805596059
+8 0.09325216250792515
+9 0.079752042820723
+10 0.08115731208473607
+Number of clusters found:4, Silhouette score:0.149
+
+Cluster 0 numerosity: 2438
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.14 (7278 out of 51334 terms in the whole dataset-- N patients in cluster 2438)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.03 (1167 out of 35006 terms in the whole dataset-- N patients in cluster 1084)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.01 (1187 out of 142102 terms in the whole dataset-- N patients in cluster 987)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.01 (528 out of 43839 terms in the whole dataset-- N patients in cluster 476)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.01 (524 out of 58342 terms in the whole dataset-- N patients in cluster 459)
+% most frequent term:icd9::Esophageal reflux::530.81::C0017168 = 0.01 (326 out of 29975 terms in the whole dataset-- N patients in cluster 309)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.01 (305 out of 22660 terms in the whole dataset-- N patients in cluster 281)
+% most frequent term:icd9::Peritoneal adhesions (postoperative) (postinfection)::568.0::C0375362 = 0.40 (283 out of 715 terms in the whole dataset-- N patients in cluster 275)
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.00 (235 out of 95229 terms in the whole dataset-- N patients in cluster 188)
+% most frequent term:icd9::Personal history of malignant neoplasm of prostate::V10.46::C0260429 = 0.04 (195 out of 4869 terms in the whole dataset-- N patients in cluster 162)
+
+
+Cluster 1 numerosity: 4829
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.67 (34185 out of 51334 terms in the whole dataset-- N patients in cluster 4829)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.15 (21922 out of 142102 terms in the whole dataset-- N patients in cluster 3199)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.14 (4990 out of 35006 terms in the whole dataset-- N patients in cluster 2088)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.18 (10704 out of 58342 terms in the whole dataset-- N patients in cluster 2053)
+% most frequent term:icd9::Personal history of malignant neoplasm of prostate::V10.46::C0260429 = 0.85 (4144 out of 4869 terms in the whole dataset-- N patients in cluster 1826)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.17 (7516 out of 43839 terms in the whole dataset-- N patients in cluster 1601)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.14 (3374 out of 24878 terms in the whole dataset-- N patients in cluster 1254)
+% most frequent term:icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133 = 0.27 (7901 out of 29577 terms in the whole dataset-- N patients in cluster 1189)
+% most frequent term:icd9::Anemia, unspecified::285.9::C0002871 = 0.19 (4793 out of 25769 terms in the whole dataset-- N patients in cluster 1182)
+% most frequent term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.23 (3968 out of 16921 terms in the whole dataset-- N patients in cluster 1176)
+
+
+Cluster 2 numerosity: 1523
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.11 (5425 out of 51334 terms in the whole dataset-- N patients in cluster 1523)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (302 out of 142102 terms in the whole dataset-- N patients in cluster 278)
+% most frequent term:icd9::Impotence of organic origin::607.84::C0156309 = 0.07 (341 out of 5143 terms in the whole dataset-- N patients in cluster 182)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.00 (123 out of 43839 terms in the whole dataset-- N patients in cluster 119)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.00 (105 out of 35006 terms in the whole dataset-- N patients in cluster 99)
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.00 (99 out of 95229 terms in the whole dataset-- N patients in cluster 81)
+% most frequent term:icd9::Elevated prostate specific antigen [psa]::790.93::C0178415 = 0.04 (161 out of 3591 terms in the whole dataset-- N patients in cluster 81)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.00 (94 out of 58342 terms in the whole dataset-- N patients in cluster 80)
+% most frequent term:icd9::Urinary frequency::788.41::C0042023 = 0.01 (95 out of 6451 terms in the whole dataset-- N patients in cluster 66)
+% most frequent term:icd9::Esophageal reflux::530.81::C0017168 = 0.00 (58 out of 29975 terms in the whole dataset-- N patients in cluster 54)
+
+
+Cluster 3 numerosity: 615
+% most frequent term:icd9::Malignant neoplasm of prostate::185::C0376358 = 0.07 (3627 out of 51334 terms in the whole dataset-- N patients in cluster 615)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.00 (262 out of 142102 terms in the whole dataset-- N patients in cluster 206)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.01 (200 out of 35006 terms in the whole dataset-- N patients in cluster 190)
+% most frequent term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.00 (120 out of 43839 terms in the whole dataset-- N patients in cluster 108)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.00 (109 out of 58342 terms in the whole dataset-- N patients in cluster 93)
+% most frequent term:icd9::Impotence of organic origin::607.84::C0156309 = 0.06 (294 out of 5143 terms in the whole dataset-- N patients in cluster 80)
+% most frequent term:icd9::Urinary frequency::788.41::C0042023 = 0.04 (287 out of 6451 terms in the whole dataset-- N patients in cluster 79)
+% most frequent term:icd9::Elevated prostate specific antigen [psa]::790.93::C0178415 = 0.04 (146 out of 3591 terms in the whole dataset-- N patients in cluster 54)
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.00 (62 out of 95229 terms in the whole dataset-- N patients in cluster 50)
+% most frequent term:icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841 = 0.00 (49 out of 22660 terms in the whole dataset-- N patients in cluster 48)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2438 4829 1523  615]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[1354 2741 1424  425]
+ [1084 2088   99  190]]
+Chi-squared test statistics: chi2_stat = 758.0442622993762 -- p_val = 5.434242960239492e-164 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1451 1630 1245  409]
+ [ 987 3199  278  206]]
+Chi-squared test statistics: chi2_stat = 1278.6920457551796 -- p_val = 6.18318901686139e-277 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[1962 3228 1404  507]
+ [ 476 1601  119  108]]
+Chi-squared test statistics: chi2_stat = 473.43354770229166 -- p_val = 2.727064180107818e-102 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[1979 2776 1443  522]
+ [ 459 2053   80   93]]
+Chi-squared test statistics: chi2_stat = 1034.2090001447243 -- p_val = 6.823899010523891e-224 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Esophageal reflux::530.81::C0017168
+Count matrix:
+ [[2129 3817 1469  568]
+ [ 309 1012   54   47]]
+Chi-squared test statistics: chi2_stat = 325.3276890012491 -- p_val = 3.2765692209787766e-70 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[2157 3762 1504  567]
+ [ 281 1067   19   48]]
+Chi-squared test statistics: chi2_stat = 463.4969939146225 -- p_val = 3.8797530753685e-100 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Peritoneal adhesions (postoperative) (postinfection)::568.0::C0375362
+Count matrix:
+ [[2163 4676 1517  583]
+ [ 275  153    6   32]]
+Chi-squared test statistics: chi2_stat = 307.181394424647 -- p_val = 2.7762093280849193e-66 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[2250 3660 1442  565]
+ [ 188 1169   81   50]]
+Chi-squared test statistics: chi2_stat = 528.8890911250581 -- p_val = 2.615979205165105e-114 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Personal history of malignant neoplasm of prostate::V10.46::C0260429
+Count matrix:
+ [[2276 3003 1481  581]
+ [ 162 1826   42   34]]
+Chi-squared test statistics: chi2_stat = 1467.1148402601902 -- p_val = 0.0 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2438 4829 1523  615]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1451 1630 1245  409]
+ [ 987 3199  278  206]]
+Chi-squared test statistics: chi2_stat = 1278.6920457551796 -- p_val = 6.18318901686139e-277 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[1354 2741 1424  425]
+ [1084 2088   99  190]]
+Chi-squared test statistics: chi2_stat = 758.0442622993762 -- p_val = 5.434242960239492e-164 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[1979 2776 1443  522]
+ [ 459 2053   80   93]]
+Chi-squared test statistics: chi2_stat = 1034.2090001447243 -- p_val = 6.823899010523891e-224 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Personal history of malignant neoplasm of prostate::V10.46::C0260429
+Count matrix:
+ [[2276 3003 1481  581]
+ [ 162 1826   42   34]]
+Chi-squared test statistics: chi2_stat = 1467.1148402601902 -- p_val = 0.0 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[1962 3228 1404  507]
+ [ 476 1601  119  108]]
+Chi-squared test statistics: chi2_stat = 473.43354770229166 -- p_val = 2.727064180107818e-102 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[2414 3575 1520  610]
+ [  24 1254    3    5]]
+Chi-squared test statistics: chi2_stat = 1271.448963931865 -- p_val = 2.3056648107982832e-275 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133
+Count matrix:
+ [[2388 3640 1503  594]
+ [  50 1189   20   21]]
+Chi-squared test statistics: chi2_stat = 1025.3556957245682 -- p_val = 5.683815238327257e-222 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Anemia, unspecified::285.9::C0002871
+Count matrix:
+ [[2426 3647 1513  613]
+ [  12 1182   10    2]]
+Chi-squared test statistics: chi2_stat = 1205.9183977206812 -- p_val = 3.8115869650259666e-261 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Count matrix:
+ [[2325 3653 1478  585]
+ [ 113 1176   45   30]]
+Chi-squared test statistics: chi2_stat = 779.0618255957864 -- p_val = 1.503683567362504e-168 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2438 4829 1523  615]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1451 1630 1245  409]
+ [ 987 3199  278  206]]
+Chi-squared test statistics: chi2_stat = 1278.6920457551796 -- p_val = 6.18318901686139e-277 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Impotence of organic origin::607.84::C0156309
+Count matrix:
+ [[2292 3965 1341  535]
+ [ 146  864  182   80]]
+Chi-squared test statistics: chi2_stat = 200.50812608860156 -- p_val = 3.2761944950578495e-43 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[1962 3228 1404  507]
+ [ 476 1601  119  108]]
+Chi-squared test statistics: chi2_stat = 473.43354770229166 -- p_val = 2.727064180107818e-102 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[1354 2741 1424  425]
+ [1084 2088   99  190]]
+Chi-squared test statistics: chi2_stat = 758.0442622993762 -- p_val = 5.434242960239492e-164 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[2250 3660 1442  565]
+ [ 188 1169   81   50]]
+Chi-squared test statistics: chi2_stat = 528.8890911250581 -- p_val = 2.615979205165105e-114 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Elevated prostate specific antigen [psa]::790.93::C0178415
+Count matrix:
+ [[2345 4067 1442  561]
+ [  93  762   81   54]]
+Chi-squared test statistics: chi2_stat = 303.95675087401827 -- p_val = 1.3848347595971263e-65 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[1979 2776 1443  522]
+ [ 459 2053   80   93]]
+Chi-squared test statistics: chi2_stat = 1034.2090001447243 -- p_val = 6.823899010523891e-224 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Urinary frequency::788.41::C0042023
+Count matrix:
+ [[2346 4042 1457  536]
+ [  92  787   66   79]]
+Chi-squared test statistics: chi2_stat = 342.68689028927486 -- p_val = 5.716601126616469e-74 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Esophageal reflux::530.81::C0017168
+Count matrix:
+ [[2129 3817 1469  568]
+ [ 309 1012   54   47]]
+Chi-squared test statistics: chi2_stat = 325.3276890012491 -- p_val = 3.2765692209787766e-70 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Malignant neoplasm of prostate::185::C0376358
+Count matrix:
+ [[   0    0    0    0]
+ [2438 4829 1523  615]]
+empty class(es)
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[1451 1630 1245  409]
+ [ 987 3199  278  206]]
+Chi-squared test statistics: chi2_stat = 1278.6920457551796 -- p_val = 6.18318901686139e-277 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[1354 2741 1424  425]
+ [1084 2088   99  190]]
+Chi-squared test statistics: chi2_stat = 758.0442622993762 -- p_val = 5.434242960239492e-164 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Count matrix:
+ [[1962 3228 1404  507]
+ [ 476 1601  119  108]]
+Chi-squared test statistics: chi2_stat = 473.43354770229166 -- p_val = 2.727064180107818e-102 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[1979 2776 1443  522]
+ [ 459 2053   80   93]]
+Chi-squared test statistics: chi2_stat = 1034.2090001447243 -- p_val = 6.823899010523891e-224 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Impotence of organic origin::607.84::C0156309
+Count matrix:
+ [[2292 3965 1341  535]
+ [ 146  864  182   80]]
+Chi-squared test statistics: chi2_stat = 200.50812608860156 -- p_val = 3.2761944950578495e-43 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Urinary frequency::788.41::C0042023
+Count matrix:
+ [[2346 4042 1457  536]
+ [  92  787   66   79]]
+Chi-squared test statistics: chi2_stat = 342.68689028927486 -- p_val = 5.716601126616469e-74 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Elevated prostate specific antigen [psa]::790.93::C0178415
+Count matrix:
+ [[2345 4067 1442  561]
+ [  93  762   81   54]]
+Chi-squared test statistics: chi2_stat = 303.95675087401827 -- p_val = 1.3848347595971263e-65 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[2250 3660 1442  565]
+ [ 188 1169   81   50]]
+Chi-squared test statistics: chi2_stat = 528.8890911250581 -- p_val = 2.615979205165105e-114 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy, other than to medicinal agents, presenting hazards to health::V15.0::C0877841
+Count matrix:
+ [[2157 3762 1504  567]
+ [ 281 1067   19   48]]
+Chi-squared test statistics: chi2_stat = 463.4969939146225 -- p_val = 3.8797530753685e-100 -- dof = 3
+
+
+
+UMAP embedding for LSTM encodings...
+Computed: LSTM encoded vectors umap
+Evaluating LSTM encodings...
+Cluster: 0 -- Entropy: 2.088, Purity: 0.377
+P=0.06 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+P=0.03 in cluster disease Diabetes
+P=0.06 in cluster disease Multiple Myeloma
+P=0.13 in cluster disease Parkinson's disease
+P=0.38 in cluster disease Prostate Cancer
+max(P) in cluster disease Prostate Cancer
+Cluster: 1 -- Entropy: 2.499, Purity: 0.274
+P=0.14 in cluster disease Alzheimer's disease
+P=0.27 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.17 in cluster disease Diabetes
+P=0.13 in cluster disease Multiple Myeloma
+P=0.09 in cluster disease Parkinson's disease
+P=0.20 in cluster disease Prostate Cancer
+Cluster: 2 -- Entropy: 2.433, Purity: 0.283
+P=0.12 in cluster disease Alzheimer's disease
+P=0.28 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.26 in cluster disease Diabetes
+P=0.13 in cluster disease Multiple Myeloma
+P=0.07 in cluster disease Parkinson's disease
+P=0.14 in cluster disease Prostate Cancer
+Cluster: 3 -- Entropy: 2.363, Purity: 0.337
+P=0.13 in cluster disease Alzheimer's disease
+P=0.34 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.06 in cluster disease Diabetes
+P=0.10 in cluster disease Multiple Myeloma
+P=0.13 in cluster disease Parkinson's disease
+P=0.25 in cluster disease Prostate Cancer
+Cluster: 4 -- Entropy: 2.465, Purity: 0.299
+P=0.15 in cluster disease Alzheimer's disease
+P=0.30 in cluster disease Breast Cancer
+max(P) in cluster disease Breast Cancer
+P=0.09 in cluster disease Diabetes
+P=0.12 in cluster disease Multiple Myeloma
+P=0.12 in cluster disease Parkinson's disease
+P=0.21 in cluster disease Prostate Cancer
+Cluster: 5 -- Entropy: 2.272, Purity: 0.376
+P=0.09 in cluster disease Alzheimer's disease
+P=0.27 in cluster disease Breast Cancer
+P=0.38 in cluster disease Diabetes
+max(P) in cluster disease Diabetes
+P=0.09 in cluster disease Multiple Myeloma
+P=0.07 in cluster disease Parkinson's disease
+P=0.10 in cluster disease Prostate Cancer
+Average Entropy: 2.25
+Average Purity: 0.35
+ -- 3: 0.200
+ -- 4: 0.132
+ -- 5: 0.135
+ -- 6: 0.082
+ -- 7: 0.069
+ -- 8: 0.059
+ -- 9: 0.064
+ -- 10: 0.066
+No. of clusters: 3 -- Silhouette Score: 0.200
+
+
+Processing time: 2883.6 seconds
+
+Task completed
+

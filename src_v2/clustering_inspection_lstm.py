@@ -26,7 +26,7 @@ from time import time
 
 ##global variables
 FRpar = {'n_terms':10,
-         'ty_terms':['cpt']}
+         'ty_terms':['icd9']}
 
 # analyze clustering using silhouette scores
 def silhouette_analysis(data,
@@ -101,9 +101,9 @@ def single_plot(data, mrn_disease, colors, name, leg_labels=None):
         plt.yticks([])
         plt.scatter(x,y,c=cols, label=cl)
     if leg_labels is not None:
-        plt.legend(loc=2, labels=leg_labels, markerscale=1, fontsize=9)
+        plt.legend(loc=1, labels=leg_labels, markerscale=2, fontsize=10)
     else:
-        plt.legend(loc=2, markerscale=1, fontsize=9)
+        plt.legend(loc=1, markerscale=2, fontsize=12)
     plt.savefig(name, format='eps', dpi=1000) 
     
 # non-overlapping plots, one per cluster
@@ -386,34 +386,34 @@ def clustering_inspection(indir,
                 raw_ehr.setdefault(r[0], list()).extend(list(map(int, r[1::])))
                 
     ##Read LSTM encoded vectors file and ordered medical record numbers
-    #with open(expdir + '/LSTMencoded_vect.csv') as f:
-    #    rd = csv.reader(f)
-    #    lstm_encoded_vect = []
-    #    for r in rd:
-    #        lstm_encoded_vect.append(list(map(float, r)))
+    with open(expdir + '/LSTMencoded_vect.csv') as f:
+        rd = csv.reader(f)
+        lstm_encoded_vect = []
+        for r in rd:
+            lstm_encoded_vect.append(list(map(float, r)))
         
-    #with open(expdir + '/LSTMmrns.csv') as f:
-    #    rd = csv.reader(f)
-    #    lstm_mrns = [r[0] for r in rd]
+    with open(expdir + '/LSTMmrns.csv') as f:
+        rd = csv.reader(f)
+        lstm_mrns = [r[0] for r in rd]
 
     tmp_mrns = []
-    #tmp_lstm_mrns = []
+    tmp_lstm_mrns = []
     tmp_encoded = []
-    #tmp_lstm_encoded = []
-    #for (idx, m), m_lstm in zip(enumerate(set_mrns), lstm_mrns):
-    for idx, m in enumerate(set_mrns): 
+    tmp_lstm_encoded = []
+    for (idx, m), m_lstm in zip(enumerate(set_mrns), lstm_mrns):
+        #for idx, m in enumerate(set_mrns): 
         if m in gt_disease.keys():
             tmp_mrns.append(m)
             tmp_encoded.append(encoded[idx])
-     #   elif m_lstm in gt_disease.keys():
-     #       tmp_lstm_mrns.append(m_lstm)
-     #       tmp_lstm_encoded.append(lstm_encoded_vect[idx])
+        elif m_lstm in gt_disease.keys():
+            tmp_lstm_mrns.append(m_lstm)
+            tmp_lstm_encoded.append(lstm_encoded_vect[idx])
         else:
             pass
     set_mrns = tmp_mrns
-    #lstm_mrns = tmp_lstm_mrns
+    lstm_mrns = tmp_lstm_mrns
     encoded = tmp_encoded
-    #lstm_encoded_vect = tmp_lstm_encoded
+    lstm_encoded_vect = tmp_lstm_encoded
 
     # raw data (scaled) counts
     scaler = MinMaxScaler()
@@ -445,11 +445,9 @@ def clustering_inspection(indir,
     # choose the disease classes: first_disease, oth_disease
     disease_class_first = [gt_disease[m] for m in set_mrns]
     raw_disease_class_first = [gt_disease[m] for m in mrn_list]
-    #lstm_disease_class_first = [gt_disease[m] for m in lstm_mrns]
-    disease_dict = {d: i for i, d in enumerate(['Multiple Myeloma', 'Prostate Cancer', 'Diabetes', 'Alzheimer\'s disease',
-                                            'Parkinson\'s disease',
-                                            'Breast Cancer'])}
-    
+    lstm_disease_class_first = [gt_disease[m] for m in lstm_mrns]
+    disease_dict = {d: i for i, d in enumerate(['Breast Cancer', 'Prostate Cancer', 'Multiple Myeloma', 
+                                                'Parkinson\'s', 'Alzheimer\'s', 'Diabetes'])} 
     ##Parameters for CNN-AE and LSTM
     HCpar = {'linkage_clu':'ward',
              'affinity_clu':'euclidean',
@@ -532,21 +530,21 @@ def clustering_inspection(indir,
                 path.join(expdir, 'cnn-ae_sub-clust_plot.eps'))
  
     # UMAP on the LSTM encoded vectors
-    #print("UMAP embedding for LSTM encodings...")
-    #lstm_encoded_umap = reducer.fit_transform(lstm_encoded_vect).tolist()
-    #print("Computed: LSTM encoded vectors umap")
+    print("UMAP embedding for LSTM encodings...")
+    lstm_encoded_umap = reducer.fit_transform(lstm_encoded_vect).tolist()
+    print("Computed: LSTM encoded vectors umap")
 
-    #print("Evaluating LSTM encodings...")
+    print("Evaluating LSTM encodings...")
     ##LSTM encodings
     # plot data
-    #colors_lstm1 = [colors_vec[disease_dict[v]] for v in lstm_disease_class_first]
-    #single_plot(lstm_encoded_umap, lstm_disease_class_first, colors_lstm1, 
-    #            path.join(expdir, 'lstm_encodings_plot.eps'))
+    colors_lstm1 = [colors_vec[disease_dict[v]] for v in lstm_disease_class_first]
+    single_plot(lstm_encoded_umap, lstm_disease_class_first, colors_lstm1, 
+                path.join(expdir, 'lstm_encodings_plot.eps'))
     # plot cluster results
-    #clusters = outer_clustering_analysis(lstm_encoded_vect, lstm_disease_class_first, HCpar['linkage_clu'], 
-    #                                     HCpar['affinity_clu'], preproc=False)
- #   for c in set(clusters):
- #       print("Cluster {0} numerosity = {1}".format(c, clusters.count(c)))
+    clusters, _, _= outer_clustering_analysis(lstm_encoded_vect, lstm_disease_class_first, HCpar['linkage_clu'], 
+                                         HCpar['affinity_clu'], preproc=False)
+    for c in set(clusters):
+        print("Cluster {0} numerosity = {1}".format(c, clusters.count(c)))
     
  #   colors_lstm2 = [colormap[v] for v in clusters]
  #   single_plot(lstm_encoded_umap, clusters, colors_lstm2, 

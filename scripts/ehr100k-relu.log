@@ -1,28 +1,50 @@
 [H[J
 Vocabulary size: 30017
+Loaded pre-computed embeddings for 48697 concepts
 Cohort Size: 109434 -- Max Sequence Length: 64
 
 Learning rate: 0.0001
 Batch size: 16
 Kernel size: 5
 
+Found pre-computed embeddings for 27855 concepts
 No. of GPUs: 1
 
-Training for 10 epochs
+Training for 5 epochs
 
-Epoch 1 of 10
--- time =  10492.146
--- mean loss: 4.128
-Epoch 2 of 10
--- time =  10495.104
--- mean loss: 3.882
-Epoch 3 of 10
--- time =  10489.228
--- mean loss: 3.809
-Epoch 4 of 10
--- time =  10503.788
--- mean loss: 3.785
-Epoch 5 of 10
--- time =  10504.115
--- mean loss: 3.769
-Epoch 6 of 10
+Epoch 1 of 5
+-- time =  16186.825
+-- mean loss: 4.118
+Epoch 2 of 5
+-- time =  16196.486
+-- mean loss: 3.867
+Epoch 3 of 5
+-- time =  16191.806
+-- mean loss: 3.802
+Epoch 4 of 5
+-- time =  16191.605
+-- mean loss: 3.779
+Epoch 5 of 5
+-- time =  16193.027
+-- mean loss: 3.764
+
+Found new best model at epoch 5
+
+Evaluating the model
+Accuracy: 0.496 -- Loss: 3.730
+
+Running clustering on the encoded vectors
+Cluster: 0 -- Entropy: 1.994, Purity: 0.482
+Cluster: 1 -- Entropy: 2.097, Purity: 0.537
+Cluster: 2 -- Entropy: 0.702, Purity: 0.855
+Cluster: 3 -- Entropy: 0.376, Purity: 0.947
+Cluster: 4 -- Entropy: 0.965, Purity: 0.841
+Cluster: 5 -- Entropy: 1.969, Purity: 0.586
+Cluster: 6 -- Entropy: 1.372, Purity: 0.753
+Average Entropy: 1.34
+Average Purity: 0.71
+
+Processing time: 88981.75 seconds
+
+Task completed
+

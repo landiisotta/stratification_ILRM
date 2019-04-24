@@ -1,0 +1,317 @@
+[H[J
+Loading datasets...
+Number of subjects:31391
+Disease numerosities:
+ {"alzheimer's disease": 3116, 'malignant neoplasm of female breast': 10121, "parkinson's disease": 3839, 'diabetes': 2205, 'malignant tumor of prostate': 9405, 'multiple myeloma': 2705}
+UMAP embeddings for CNN-AE encodings...
+Computed: CNN - AE encoded vectors umap
+Evaluating CNN-AE encodings...
+Cluster: 0 -- Entropy: 2.350, Purity: 0.303
+max(P) in cluster disease malignant tumor of prostate
+Cluster: 1 -- Entropy: 2.274, Purity: 0.296
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 2 -- Entropy: 1.175, Purity: 0.608
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 3 -- Entropy: 1.915, Purity: 0.480
+max(P) in cluster disease malignant neoplasm of female breast
+Cluster: 4 -- Entropy: 2.490, Purity: 0.253
+max(P) in cluster disease alzheimer's disease
+Cluster: 5 -- Entropy: 1.972, Purity: 0.379
+max(P) in cluster disease malignant tumor of prostate
+Average Entropy: 2.06
+Average Purity: 0.38
+Cluster 0 numerosity = 6836
+Cluster 1 numerosity = 8619
+Cluster 2 numerosity = 4824
+Cluster 3 numerosity = 3862
+Cluster 4 numerosity = 2989
+Cluster 5 numerosity = 4261
+Inspecting disease: alzheimer's disease
+
+3 0.17926230810964197
+4 0.14976402619272935
+5 0.08139302293140445
+6 0.08652319143780833
+7 0.09452530107657098
+8 0.09575674255240832
+9 0.10656782245849868
+10 0.10048373868771926
+Number of clusters found:3, Silhouette score:0.179
+
+Cluster 0 numerosity: 464
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.07 (1617 out of 22887 terms in the whole dataset-- N patients in cluster 464)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (2180 out of 142102 terms in the whole dataset-- N patients in cluster 356)
+% most frequent term:medication::Acetaminophen 325 mg::315263::C0982952 = 0.03 (792 out of 23709 terms in the whole dataset-- N patients in cluster 333)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.09 (666 out of 7324 terms in the whole dataset-- N patients in cluster 298)
+% most frequent term:medication::Heparin::5224::C0019134 = 0.04 (777 out of 20473 terms in the whole dataset-- N patients in cluster 297)
+
+
+Cluster 1 numerosity: 1692
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.70 (16122 out of 22887 terms in the whole dataset-- N patients in cluster 1692)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.13 (18476 out of 142102 terms in the whole dataset-- N patients in cluster 1229)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.16 (3912 out of 24878 terms in the whole dataset-- N patients in cluster 1149)
+% most frequent term:medication::Donepezil::135447::C0527316 = 0.50 (5243 out of 10512 terms in the whole dataset-- N patients in cluster 940)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.50 (3667 out of 7324 terms in the whole dataset-- N patients in cluster 932)
+
+
+Cluster 2 numerosity: 960
+% most frequent term:icd9::Alzheimer's disease::331.0::C0002395 = 0.17 (3840 out of 22887 terms in the whole dataset-- N patients in cluster 960)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.02 (3356 out of 142102 terms in the whole dataset-- N patients in cluster 697)
+% most frequent term:medication::Heparin sodium::9877::C0037513 = 0.17 (2303 out of 13621 terms in the whole dataset-- N patients in cluster 668)
+% most frequent term:icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691 = 0.22 (1583 out of 7324 terms in the whole dataset-- N patients in cluster 654)
+% most frequent term:medication::Docusate sodium::71722::C0243237 = 0.13 (2037 out of 15733 terms in the whole dataset-- N patients in cluster 613)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [ 464 1692  960]]
+empty class(es)
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 108  463  263]
+ [ 356 1229  697]]
+Chi-squared test statistics: chi2_stat = 3.3865118964255885 -- p_val = 0.18391971498204837 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Acetaminophen 325 mg::315263::C0982952
+Count matrix:
+ [[ 131 1196  813]
+ [ 333  496  147]]
+Chi-squared test statistics: chi2_stat = 470.39738151552825 -- p_val = 7.153300228413799e-103 -- dof = 2
+Odds ratio chi2 test for cluster 0term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[166 760 306]
+ [298 932 654]]
+Chi-squared test statistics: chi2_stat = 46.809610833679336 -- p_val = 6.845767691687508e-11 -- dof = 2
+Odds ratio chi2 test for cluster 0term: medication::Heparin::5224::C0019134
+Count matrix:
+ [[ 167 1278  716]
+ [ 297  414  244]]
+Chi-squared test statistics: chi2_stat = 285.7158057444455 -- p_val = 9.069870501959465e-63 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [ 464 1692  960]]
+empty class(es)
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 108  463  263]
+ [ 356 1229  697]]
+Chi-squared test statistics: chi2_stat = 3.3865118964255885 -- p_val = 0.18391971498204837 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[ 355  543  757]
+ [ 109 1149  203]]
+Chi-squared test statistics: chi2_stat = 657.6399862430259 -- p_val = 1.567802843777165e-143 -- dof = 2
+Odds ratio chi2 test for cluster 1term: medication::Donepezil::135447::C0527316
+Count matrix:
+ [[250 752 497]
+ [214 940 463]]
+Chi-squared test statistics: chi2_stat = 20.446931829703118 -- p_val = 3.6308237471374696e-05 -- dof = 2
+Odds ratio chi2 test for cluster 1term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[166 760 306]
+ [298 932 654]]
+Chi-squared test statistics: chi2_stat = 46.809610833679336 -- p_val = 6.845767691687508e-11 -- dof = 2
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Alzheimer's disease::331.0::C0002395
+Count matrix:
+ [[   0    0    0]
+ [ 464 1692  960]]
+empty class(es)
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 108  463  263]
+ [ 356 1229  697]]
+Chi-squared test statistics: chi2_stat = 3.3865118964255885 -- p_val = 0.18391971498204837 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Heparin sodium::9877::C0037513
+Count matrix:
+ [[ 369 1137  292]
+ [  95  555  668]]
+Chi-squared test statistics: chi2_stat = 445.89988697608294 -- p_val = 1.4930343600344547e-97 -- dof = 2
+Odds ratio chi2 test for cluster 2term: icd9::Dementia in conditions classified elsewhere without behavioral disturbance::294.10::C0878691
+Count matrix:
+ [[166 760 306]
+ [298 932 654]]
+Chi-squared test statistics: chi2_stat = 46.809610833679336 -- p_val = 6.845767691687508e-11 -- dof = 2
+Odds ratio chi2 test for cluster 2term: medication::Docusate sodium::71722::C0243237
+Count matrix:
+ [[ 374 1220  347]
+ [  90  472  613]]
+Chi-squared test statistics: chi2_stat = 414.98155512974927 -- p_val = 7.725031477891987e-91 -- dof = 2
+
+
+
+Inspecting disease: diabetes
+
+3 0.09402757602740776
+4 0.11728987525917474
+5 0.10978174768819116
+6 0.11597642806998193
+7 0.10081581737124927
+8 0.09718789405111844
+9 0.10472845065209453
+10 0.11061772119870017
+Number of clusters found:4, Silhouette score:0.117
+
+Cluster 0 numerosity: 455
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.02 (2207 out of 95229 terms in the whole dataset-- N patients in cluster 450)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.01 (1849 out of 142102 terms in the whole dataset-- N patients in cluster 417)
+% most frequent term:medication::Aspirin::1191::C0004057 = 0.07 (1110 out of 17072 terms in the whole dataset-- N patients in cluster 378)
+% most frequent term:icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133 = 0.07 (1935 out of 29577 terms in the whole dataset-- N patients in cluster 376)
+% most frequent term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.07 (1114 out of 16921 terms in the whole dataset-- N patients in cluster 353)
+
+
+Cluster 1 numerosity: 735
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.19 (18195 out of 95229 terms in the whole dataset-- N patients in cluster 725)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.10 (13950 out of 142102 terms in the whole dataset-- N patients in cluster 624)
+% most frequent term:medication::Metformin::6809::C0025598 = 0.26 (5970 out of 22884 terms in the whole dataset-- N patients in cluster 612)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.11 (2846 out of 24878 terms in the whole dataset-- N patients in cluster 586)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.12 (7135 out of 58342 terms in the whole dataset-- N patients in cluster 511)
+
+
+Cluster 2 numerosity: 513
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.16 (15699 out of 95229 terms in the whole dataset-- N patients in cluster 510)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.09 (12447 out of 142102 terms in the whole dataset-- N patients in cluster 469)
+% most frequent term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.11 (6673 out of 58342 terms in the whole dataset-- N patients in cluster 413)
+% most frequent term:medication::Metformin::6809::C0025598 = 0.18 (4117 out of 22884 terms in the whole dataset-- N patients in cluster 413)
+% most frequent term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.09 (2203 out of 24878 terms in the whole dataset-- N patients in cluster 394)
+
+
+Cluster 3 numerosity: 502
+% most frequent term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.11 (10857 out of 95229 terms in the whole dataset-- N patients in cluster 496)
+% most frequent term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.06 (8733 out of 142102 terms in the whole dataset-- N patients in cluster 463)
+% most frequent term:medication::Glucagon::4832::C0017687 = 0.18 (2218 out of 12365 terms in the whole dataset-- N patients in cluster 433)
+% most frequent term:icd9::Personal history of allergy to medicinal agents::V14::C0260483 = 0.09 (3229 out of 35006 terms in the whole dataset-- N patients in cluster 426)
+% most frequent term:medication::Oxycodone::7804::C0030049 = 0.08 (3285 out of 43006 terms in the whole dataset-- N patients in cluster 423)
+
+
+Odds ratio chi2 test for cluster 0term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  5  10   3   6]
+ [450 725 510 496]]
+Chi-squared test statistics: chi2_stat = 1.7678058711142766 -- p_val = 0.6219656705107679 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 38 111  44  39]
+ [417 624 469 463]]
+Chi-squared test statistics: chi2_stat = 24.75618071890124 -- p_val = 1.7363257072601504e-05 -- dof = 3
+Odds ratio chi2 test for cluster 0term: medication::Aspirin::1191::C0004057
+Count matrix:
+ [[ 77 541 247 174]
+ [378 194 266 328]]
+Chi-squared test statistics: chi2_stat = 404.92009645816705 -- p_val = 1.9028807559399806e-87 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133
+Count matrix:
+ [[ 79 632 340 290]
+ [376 103 173 212]]
+Chi-squared test statistics: chi2_stat = 564.3062101484353 -- p_val = 5.50716975107753e-122 -- dof = 3
+Odds ratio chi2 test for cluster 0term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Count matrix:
+ [[102 634 328 241]
+ [353 101 185 261]]
+Chi-squared test statistics: chi2_stat = 508.4014408198303 -- p_val = 7.209829709636323e-110 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 1term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  5  10   3   6]
+ [450 725 510 496]]
+Chi-squared test statistics: chi2_stat = 1.7678058711142766 -- p_val = 0.6219656705107679 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 38 111  44  39]
+ [417 624 469 463]]
+Chi-squared test statistics: chi2_stat = 24.75618071890124 -- p_val = 1.7363257072601504e-05 -- dof = 3
+Odds ratio chi2 test for cluster 1term: medication::Metformin::6809::C0025598
+Count matrix:
+ [[209 123 100 206]
+ [246 612 413 296]]
+Chi-squared test statistics: chi2_stat = 175.1379643506535 -- p_val = 9.893803870816384e-38 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[410 149 119 185]
+ [ 45 586 394 317]]
+Chi-squared test statistics: chi2_stat = 661.9322701644361 -- p_val = 3.7690794847414833e-143 -- dof = 3
+Odds ratio chi2 test for cluster 1term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[106 224 100 131]
+ [349 511 413 371]]
+Chi-squared test statistics: chi2_stat = 20.60714224852237 -- p_val = 0.00012702349185762083 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 2term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  5  10   3   6]
+ [450 725 510 496]]
+Chi-squared test statistics: chi2_stat = 1.7678058711142766 -- p_val = 0.6219656705107679 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 38 111  44  39]
+ [417 624 469 463]]
+Chi-squared test statistics: chi2_stat = 24.75618071890124 -- p_val = 1.7363257072601504e-05 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Count matrix:
+ [[106 224 100 131]
+ [349 511 413 371]]
+Chi-squared test statistics: chi2_stat = 20.60714224852237 -- p_val = 0.00012702349185762083 -- dof = 3
+Odds ratio chi2 test for cluster 2term: medication::Metformin::6809::C0025598
+Count matrix:
+ [[209 123 100 206]
+ [246 612 413 296]]
+Chi-squared test statistics: chi2_stat = 175.1379643506535 -- p_val = 9.893803870816384e-38 -- dof = 3
+Odds ratio chi2 test for cluster 2term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Count matrix:
+ [[410 149 119 185]
+ [ 45 586 394 317]]
+Chi-squared test statistics: chi2_stat = 661.9322701644361 -- p_val = 3.7690794847414833e-143 -- dof = 3
+
+
+
+Odds ratio chi2 test for cluster 3term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Count matrix:
+ [[  5  10   3   6]
+ [450 725 510 496]]
+Chi-squared test statistics: chi2_stat = 1.7678058711142766 -- p_val = 0.6219656705107679 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Unspecified essential hypertension::401.9::C0085580
+Count matrix:
+ [[ 38 111  44  39]
+ [417 624 469 463]]
+Chi-squared test statistics: chi2_stat = 24.75618071890124 -- p_val = 1.7363257072601504e-05 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Glucagon::4832::C0017687
+Count matrix:
+ [[158 515 249  69]
+ [297 220 264 433]]
+Chi-squared test statistics: chi2_stat = 406.84837643662763 -- p_val = 7.273065161648161e-88 -- dof = 3
+Odds ratio chi2 test for cluster 3term: icd9::Personal history of allergy to medicinal agents::V14::C0260483
+Count matrix:
+ [[164 340 130  76]
+ [291 395 383 426]]
+Chi-squared test statistics: chi2_stat = 147.60211629494992 -- p_val = 8.669759305846886e-32 -- dof = 3
+Odds ratio chi2 test for cluster 3term: medication::Oxycodone::7804::C0030049
+Count matrix:
+ [[217 397 175  79]
+ [238 338 338 423]]
+Chi-squared test statistics: chi2_stat = 202.6376899714847 -- p_val = 1.1355661745763172e-43 -- dof = 3
+
+
+
+Inspecting disease: malignant neoplasm of female breast
+
+3 0.12377245146160733
+4 0.09501354712633206
+5 0.08581649318739062
+6 0.06914437713824009
+7 0.07677947684667218
+8 0.08415467990849396
+9 0.06673327486202171
+10 0.059387041910804884
+Number of clusters found:3, Silhouette score:0.124
+
+Cluster 0 numerosity: 5729

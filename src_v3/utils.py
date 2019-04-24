@@ -12,14 +12,14 @@ diseases = ['alzheimer\'s disease',
             'multiple myeloma',
             'parkinson\'s disease',
             'malignant neopasm of female breast',
-            'malignant tumor of prostate',
-            'type 2 dyabetes']
+            'malignant tumor of prostate']
+            #,'type 2 dyabetes']
 
 dtype = ['icd9',
          'icd10',
          'medication',
-#         'lab',
-#         'procedure',
+         'lab',
+         'procedure',
          'cpt']
 
 # data pre-processing parameters
@@ -45,5 +45,8 @@ seq_overlap = 0
 # save the best model
 
 
-def save_best_model(state, outdir):
-    torch.save(state, os.path.join(outdir, 'best_model.pt'))
+def save_best_model(epoch, model, optimizer, loss,  outdir):
+    torch.save({'epoch':epoch,
+                'model_state_dict': model.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'loss': loss}, os.path.join(outdir, 'best_model.pt'))
