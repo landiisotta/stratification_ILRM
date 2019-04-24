@@ -26,7 +26,8 @@ dtype = ['icd9',
 data_preproc_param = {'min_diagn': 3,
                       'n_rndm': 10000,
                       'age_step': 15,
-                      'len_min': 3}
+                      'min_seq_len': 3,
+                      'max_seq_len':10000}
 
 # model parameters
 model_param = {'num_epochs': 20,

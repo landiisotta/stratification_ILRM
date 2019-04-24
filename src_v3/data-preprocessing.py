@@ -28,7 +28,7 @@ with open(os.path.join(outdir, 'cohort-ehr.csv')) as f:
     next(rd)
     ehr_age = {}
     for r in rd:
-        ehr_age.setdefault(r[0], list()).append([int(r[1]), int(r[2])])
+        ehr_age.setdefault(r[0], list()).append((int(r[1]), int(r[2])))
 
 ##probability of term w to be in document D and 
 ##sum of the probabilities of term w to be in patient sequence s
@@ -66,39 +66,66 @@ with open(os.path.join(outdir, 'collection-frequencies.csv'), 'w') as f:
         wr.writerow(el)
 
 ##Sort ehrs with respect to age_in_days and eliminate stop words
-##Check min/max sequence length
+##Check min sequence length
 ehr_rid = {}
+count_short = 0
+count_long = 0
 for m in ehr_age:
-    if len(ehr_age[m]) < dpp['min_seq_len']:  
+    if len(ehr_age[m]) > dpp['min_seq_len']:  
         ehr_rid.setdefault(m, list()).extend(list(filter(lambda x: x[0] not in stop_words, 
                                                          ehr_age[m])))
         ehr_rid[m] = sorted(ehr_rid[m], key=lambda x: x[1])
-    
+    else:
+        count_short += 1
+
+##Set and shuffle 
 ehr_subseq = {}
+subseq_len = 0
+n_subseq = 0
 for m in ehr_rid:
-    if len(ehr_rid[m]) > dpp['max_seq_len']:
-        ehr_rid[m] = ehr_rid[m][-dpp['max_seq_len']:]
     step = ehr_rid[m][0][1] + dpp['age_step']
-    tmp = set()
+    tmp = []
     for el in ehr_rid[m]:
         if el[1] <= step:
-            tmp.add(int(el[0]))
+            if el[0] not in tmp:
+                tmp.append(el))
         else:
-            ehr_subseq.setdefault(m, list()).append(np.random.shuffle(list(tmp))
-            tmp = set()
+            subseq_len += len(tmp)
+            n_subseq += 1
+            ehr_subseq.setdefault(m, list()).extend(np.random.shuffle(tmp))
+            tmp = []
             step = el[1] + dpp['age_step']
-            tmp.add(int(el[0]))
-    ehr_subseq.setdefault(m, list()).append(np.random.shuffle(list(tmp)))
+            tmp.append(el)
+    subseq_len += len(tmp)
+    n_subseq += 1 
+    ehr_subseq.setdefault(m, list()).extend(np.random.shuffle(tmp))
+    if len(ehr_subseq[m]) > dpp['max_seq_len']:
+        count_long += 1
+        ehr_subseq[m] = ehr_subseq[m][-dpp['max_seq_len']:]
+    elif len(ehr_subseq[m]) < dpp['min_seq_len']:
+        count_short += 1
+        ehr_subseq.pop(m)
+
+print("The average number of tokens for each time slot of {0} days is: \
+       {1:.3f%}".format(dpp['age_step'], subseq_len/n_subseq))
+print("Number of dropped sequences: {0} (< {1}), number of trimmed sequences: {2} (> {3}). \
+       Initial total number of sequences: {4}.".format(count_short, dpp['min_seq_len'],
+                                                       count_long, dpp['max_seq_len'],
+                                                       len(ehr_age)))
+
+l = []
+    for m in ehr_subseq:
+        l.append(len(ehr_subseq[m]))
+print("The average length of ehr sequences is: {0:.2f}".format(np.mean(l)))
+print("The sequence length ranges from {0} to {1}".format(min(l), max(l)))
 
 with open(os.path.join(outdir, 'cohort-ehr-shuffle.csv'), 'w') as f:
     wr = csv.writer(f)
     for m in ehr_subseq:
-        for el in ehr_subseq[m]:
-            wr.writerow([m] + el)
+        wr.writerow([m] + [e[0] for e in ehr_subseq[m]])
 
 with open(os.path.join(outdir, 'cohort-ehr-shuffle-age.csv'), 'w') as f:
     wr = csv.writer(f)
     for m in ehr_subseq:
-        for el in ehr_subseq[m]:
-            wr.writerow([m, ehr_rid[m][0][1], ehr_rid[m][-1][1]] + el)
+        wr.writerow([m, ehr_subseq[m][0][1], ehr_subseq[m][-1][1]] + [e[0] for e in ehr_subseq[m]])
 
