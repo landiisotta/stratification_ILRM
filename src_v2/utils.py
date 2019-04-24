@@ -30,6 +30,7 @@ data_preproc_param = {'min_diagn': 3,
                       'max_seq_len': 10000}
 
 # model parameters
+<<<<<<< HEAD
 model_param = {'num_epochs': 20,
                'batch_size': 16,
                'embedding_size': 100,
@@ -39,7 +40,7 @@ model_param = {'num_epochs': 20,
                }
 
 # length of padded sub-sequences
-len_padded = 64
+len_padded = 32
 seq_overlap = 0
 
 
