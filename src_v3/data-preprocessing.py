@@ -18,12 +18,12 @@ from utils import data_preprocessing_pars as dpp
 with open(os.path.join(outdir, 'cohort-vocab.csv')) as f:
     rd = csv.reader(f)
     next(rd)
-    vocab = {}
     f_vocab = {}
+    idx_to_t = {}
     for r in rd:
         if not(bool(re.match('^icd', r))):
             f_vocab[r[0]] = int(r[1])
-        vocab[r[0]] = int(r[1])
+        idx_to_t[r[1]] = r[0]
 
 with open(os.path.join(outdir, 'cohort-ehr.csv')) as f:
     rd = csv.reader(f)
@@ -136,4 +136,22 @@ with open(os.path.join(outdir, 'cohort-ehr-shuffle-age.csv'), 'w') as f:
     wr.writerow("[MRN, AID_start, AID_stop, EHRseq]")
     for m in ehr_subseq:
         wr.writerow([m, ehr_subseq[m][0][1], ehr_subseq[m][-1][1]] + [e[0] for e in ehr_subseq[m]])
+
+##Create and save new vocabulary starting from 0
+idx = 0
+new_vocab = {}
+for m, seq in ehr_subseq.items():
+    for e in seq:
+        if idx_to_t[e[0]] not in new_vocab:
+            new_vocab[idx_to_t[e[0]]] = idx
+            idx += 1
+print("Dropped {0} out of {1} terms. Current \
+       number of terms is: {2}". format((len(idx_to_t)-len(new_vocab)), 
+                                        len(idx_to_t), len(new_vocab)))
+
+with open(os.path.join(outdir, 'cohort-new-vocab.csv'), 'w') as f:
+    wr = csv.writer(f)
+    wr.writerow(['LABEL', 'CODE'])
+    for l, c in new_vocab.items():
+        wr.writerow([l, c])
 
