@@ -125,17 +125,25 @@ print("The average length of ehr sequences is: {0:.2f}".format(np.mean(l)))
 print("The sequence length ranges from {0} to {1}".format(min(l), max(l)))
 
 ##Write ehrs 1)[MRN, EHRseq]; 2)[MRN,AID_start,AID_end,EHRseq]
-with open(os.path.join(outdir, 'cohort-ehr-shuffle.csv'), 'w') as f:
+with open(os.path.join(outdir, 'cohort-new-ehrseq.csv'), 'w') as f:
     wr = csv.writer(f)
     wr.writerow("[MRN, EHRseq]")
     for m in ehr_subseq:
         wr.writerow([m] + [e[0] for e in ehr_subseq[m]])
 
-with open(os.path.join(outdir, 'cohort-ehr-shuffle-age.csv'), 'w') as f:
+with open(os.path.join(outdir, 'cohort-new-ehrseq-age.csv'), 'w') as f:
     wr = csv.writer(f)
     wr.writerow("[MRN, AID_start, AID_stop, EHRseq]")
     for m in ehr_subseq:
-        wr.writerow([m, ehr_subseq[m][0][1], ehr_subseq[m][-1][1]] + [e[0] for e in ehr_subseq[m]])
+        wr.writerow([m, ehr_subseq[m][0][1], 
+                     ehr_subseq[m][-1][1]] + [e[0] for e in ehr_subseq[m]])
+
+with open(os.path.join(outdir, 'cohort-new-ehr-age.csv'), 'w') as f:
+    wr = csv.writer(f)
+    wr.writerow("[MRN, AID, EHR]")
+    for m, el in ehr_subseq.items():
+        for e in el:
+            wr.writerow([m, e[1], e[0]])
 
 ##Create and save new vocabulary starting from 0
 idx = 0
