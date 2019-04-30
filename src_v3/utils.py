@@ -6,15 +6,6 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
             'vocab': 'cohort-new_vocab.csv',
             'diseases': 'cohort-mrn_diseases.csv'}
 
-# diseases and term types
-
-diseases = ['alzheimer\'s disease',
-            'multiple myeloma',
-            'parkinson\'s disease',
-            'malignant neopasm of female breast',
-            'malignant tumor of prostate']
-            #,'type 2 dyabetes']
-
 dtype = ['icd9',
          'icd10',
          'medication',
@@ -44,8 +35,6 @@ seq_overlap = 0
 
 
 # save the best model
-
-
 def save_best_model(epoch, model, optimizer, loss,  outdir):
     torch.save({'epoch':epoch,
                 'model_state_dict': model.state_dict(),

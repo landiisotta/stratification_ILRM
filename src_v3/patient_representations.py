@@ -104,8 +104,13 @@ def learn_patient_representations(indir,
     # model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
-    mrn, encoded, encoded_avg, metrics_avg = train_and_evaluate(
-        model, data_generator_tr, data_generator_ts, loss_fn, optimizer, net.metrics, exp_dir)
+    mrn, encoded, encoded_avg, metrics_avg = train_and_evaluate(model, 
+                                                                data_generator_tr, 
+                                                                data_generator_ts, 
+                                                                loss_fn, 
+                                                                optimizer, 
+                                                                net.metrics, 
+                                                                exp_dir)
 
     # save results
 
@@ -131,8 +136,8 @@ def learn_patient_representations(indir,
         f.write('Mean loss: %.3f\n' % metrics_avg['loss'])
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
    
-    # ehr subseq with aige in days
-    outfile = os.path.join(exp_dir, 'ehr-subseq-aid.csv')
+    # ehr subseq with age in days
+    outfile = os.path.join(exp_dir, 'cohort-ehr-subseq-aid.csv')
     with open(indir, 'cohort-new-ehr-aid.csv') as f:
         rd = csv.reader(f)
         ehr_aid = {}
@@ -142,8 +147,8 @@ def learn_patient_representations(indir,
     for batch, list_m in data_generator:
         for b, m in zip(batch, list_m):
             if len(b) == 1:
-                ehr_subseq[m] = [ehr_aid[m][0][0], ehr_aid[m][-1][0]] \ +
-                                [e[1] for e in ehr_aid[m]]   
+                ehr_subseq[m] = [ehr_aid[m][0][0], ehr_aid[m][-1][0]] \
+                                + [e[1] for e in ehr_aid[m]]   
             else:
                 seq = [e[1] for e in ehr_aid[m]]
                 nseq, nleft = divmod(len(seq), ut.len_padded)
@@ -152,7 +157,7 @@ def learn_patient_representations(indir,
                 for i in range(0, len(seq) - ut.len_padded + 1,
                            ut.len_padded - ut.seq_overlap + 1):
                     ehr_subseq.setdefault(m, list()).append([ehr_aid[m][i][0], 
-                                                             ehr_aid[m][i + ut.len_padded][0]] \ 
+                                                             ehr_aid[m][i + ut.len_padded][0]] \
                                                              + seq[i:i + ut.len_padded])
     with open(outfile, 'w') as f:
         wr = csv.writer(f)

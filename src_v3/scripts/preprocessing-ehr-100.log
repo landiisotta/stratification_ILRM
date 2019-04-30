@@ -1,0 +1,20 @@
+[3;J[H[2J
+Loaded 57464 clinical concepts
+Loaded 1608741 patient MRNs
+
+Loaded data for 100 patients
+
+Selected terms with score within [0.000046, 2]
+Number of stop words: 43444
+The average number of tokens for each time slot of 15 days is: 21.002
+Number of dropped sequences: 2 (< 3), number of trimmed sequences: 0 (> 10000).
+Initial total number of patients: 100.
+Current number of patients: 98
+The average length of ehr sequences is: 116.37
+The sequence length ranges from 3 to 1389
+Dropped 43444 out of 57464 terms. Current number of terms is: 14020
+
+Processing time: 73.47 seconds
+
+Task completed
+
