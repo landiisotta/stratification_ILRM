@@ -1,6 +1,7 @@
 from os import path
 import h5py
 import csv
+from utils import f_dtype
 
 """
 Load the data as a dictionary with MRNs as keys. Every element (patient) of

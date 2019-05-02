@@ -6,12 +6,8 @@ dt_files = {'ehr': 'cohort-new_ehr.csv',
             'vocab': 'cohort-new_vocab.csv',
             'diseases': 'cohort-mrn_diseases.csv'}
 
-dtype = ['icd9',
-         'icd10',
-         'medication',
-         'lab',
-         'procedure',
-         'cpt']
+f_dtype = ['vitals',
+           'encounter']
 
 # data pre-processing parameters
 data_preproc_param = {'min_diagn': 3,

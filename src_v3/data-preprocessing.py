@@ -5,7 +5,7 @@ from time import time
 import argparse
 import sys
 import numpy as np
-from utils import dtype
+from utils import f_dtype
 from utils import data_preproc_param as dpp
 from load_dataset import load_dataset
 
@@ -20,7 +20,8 @@ TERM, sum(PATIENT_FREQUENCY/P), DOCUMENT_FREQUENCY and DF/D*sum(PF/P)
 
 
 def data_preprocessing(indir,
-                       outdir):
+                       outdir,
+                       exclude_terms=False):
 
     # we don\'t consider icd among the terms to filter out
     # Read vocabulary and EHRs
@@ -29,16 +30,40 @@ def data_preprocessing(indir,
     # experiment folder with date and time to save the representations
     exp_dir = os.path.join(outdir, 'ehr-{0}'.format(len(pehrs.keys())))
     os.makedirs(exp_dir)
-
-    ehr = {}
-    ehr_age = {}
-    seq_len = []
-    for mrn in pehrs.keys():
-        ehr_age[mrn] = [list(map(lambda x: int(x), pehrs[mrn]['events'][idx][0:2]))
+    
+    if exclude_terms:
+        vocab_tmp = {}
+        f_terms = []
+        for idx, lab in vidx.items():
+            if not(bool(re.match('|'.join(list(map(lambda x: '^' + x, f_dtype))), lab))):
+                vocab_tmp[idx] = lab
+            else:
+                f_terms.append(idx)
+        vidx = vocab_tmp
+        
+        ehr = {}
+        ehr_age = {}
+        seq_len = []
+        for mrn in pehrs.keys():
+            ehr_age[mrn] = list(filter(lambda x: x[0] not in f_terms, 
+                                       [list(map(lambda x: int(x), 
+                                                 pehrs[mrn]['events'][idx][0:2]))
+                                        for idx in range(len(pehrs[mrn]['events']))]))
+            ehr[mrn] = list(filter(lambda x: x not in f_terms, 
+                                   [int(pehrs[mrn]['events'][idx][0])
+                                   for idx in range(len(pehrs[mrn]['events']))]))
+            seq_len.append(len(ehr[mrn]))
+        print("Dropped {0} terms. Dtype: {1}".format(len(f_terms), '-'.join(f_dtype)))
+    else:
+        ehr = {}
+        ehr_age = {}
+        seq_len = []
+        for mrn in pehrs.keys():
+            ehr_age[mrn] = [list(map(lambda x: int(x), pehrs[mrn]['events'][idx][0:2]))
+                            for idx in range(len(pehrs[mrn]['events']))]
+            ehr[mrn] = [int(pehrs[mrn]['events'][idx][0])
                         for idx in range(len(pehrs[mrn]['events']))]
-        ehr[mrn] = [int(pehrs[mrn]['events'][idx][0])
-                    for idx in range(len(pehrs[mrn]['events']))]
-        seq_len.append(len(ehr[mrn]))
+            seq_len.append(len(ehr[mrn]))
 
     f_vocab = {}
     for idx, lab in vidx.items():
@@ -179,23 +204,24 @@ def data_preprocessing(indir,
             for e in el:
                 wr.writerow([mrn, e[1], e[0]])
 
-    # Create and save new vocabulary starting from 0
-    tdx = 0
-    new_vocab = {}
-    for idx, lab in vidx.items():
-        if idx not in stop_words:
-            new_vocab[vidx[idx]] = tdx
-            tdx += 1
-    print("Dropped {0} out of {1} terms. Current"
-          " number of terms is: {2}".format((len(vidx)-len(new_vocab)),
-                                            len(vidx),
-                                            len(new_vocab)))
+    # Create and save new vocabulary without stop words
+    if exclude_terms:
+        print("Dropped {0} out of {1} terms. Current"
+              " number of terms is: {2}".format(len(stop_words)+len(f_terms),
+                                            len(vidx)+len(f_terms),
+                                            len(vidx)-len(stop_words)))
+    else: 
+        print("Dropped {0} out of {1} terms. Current"
+              " number of terms is: {2}".format(len(stop_words),
+                                                len(vidx),
+                                                len(vidx)-len(stop_words)))
 
     with open(os.path.join(exp_dir, 'cohort-new-vocab.csv'), 'w') as f:
         wr = csv.writer(f)
         wr.writerow(['LABEL', 'CODE'])
-        for l, c in new_vocab.items():
-            wr.writerow([l, c])
+        for idx, lab in vidx.items():
+            if idx not in stop_words:
+                wr.writerow([lab, idx])
 
 # main function
 
@@ -205,6 +231,10 @@ def _process_args():
              description='EHR Preprocessing')
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
+    parser.add_argument('--exclude-terms', dest='b',
+                        action='store_true',
+                        default=False, 
+                        help='Exclude terms from vocabulary')
     return parser.parse_args(sys.argv[1:])
 
 
@@ -214,7 +244,8 @@ if __name__ == '__main__':
 
     start = time()
     data_preprocessing(indir=args.indir,
-                       outdir=args.outdir)
+                       outdir=args.outdir,
+                       exclude_terms=args.b)
 
     print('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
