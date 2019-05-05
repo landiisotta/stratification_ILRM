@@ -157,7 +157,7 @@ def _process_args():
                         help='Evaluate the baseline')
     parser.add_argument('-s', default=None, type=int,
                         help='Enable sub-sampling with data size '
-                        '(defaut: None)')
+                        '(default: None)')
     parser.add_argument('-e', default=None,
                         help='Pre-computed embeddings (defaut: None)')
     return parser.parse_args(sys.argv[1:])

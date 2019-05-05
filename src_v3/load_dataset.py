@@ -37,7 +37,8 @@ def load_dataset(datadir):
             pehrs[mrn]['demog'] = demog
 
             # clinical events
-            hst = list(zip(f[p]['event'][:],
+            hst = list(zip(list(map(lambda x: vidx[x], 
+                                    f[p]['event'][:])),
                             f[p]['age_in_days'][:],
                             f[p]['year'][:],
                             f[p]['day'][:]))

@@ -2,7 +2,7 @@
 Define the data to feed the deep learning model.
 
 If batch_size = 1, each sequence is padded to reach length multiple of
-"padded_seq_len"; each sequence is then trimmed into subsequences of
+"padded_seq_len"; each sequence is tehn trimmed in subsequences of
 length "padded_seq_len".
 """
 
@@ -53,7 +53,7 @@ class EHRdata(Dataset):
     def __getitem__(self, index):
         seq = self.ehr_list[index][1]
         pat = self.ehr_list[index][0]
-        return (seq, pat)
+        return (pat, seq)
 
 
     def __len__(self):
@@ -63,7 +63,7 @@ class EHRdata(Dataset):
 def ehr_collate(batch):
     data = []
     mrn = []
-    for seq, pat in batch:
+    for pat, seq in batch:
         mrn.append(pat)
         if len(seq) == len_padded:
             data.append(torch.tensor(
@@ -81,4 +81,4 @@ def ehr_collate(batch):
             raise Warning(
                 'Not all sequences have length multiple than %d' % len_padded)
 
-    return [data, mrn]
+    return [mrn, data]

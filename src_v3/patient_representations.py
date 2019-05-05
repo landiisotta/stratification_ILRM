@@ -21,15 +21,24 @@ Learn patient representations from the EHRs using an autoencoder of CNNs
 
 def learn_patient_representations(indir,
                                   outdir,
-                                  cv=False,
+                                  mrn_test_file=None,
                                   sampling=None,
                                   emb_filename=None):
 
     # experiment folder with date and time to save the representations
-    exp_dir = os.path.join(outdir, '-'.join(
+    if mrn_test_file is not None:
+        exp_dir = os.path.join(outdir, '-'.join(
         [indir,
-         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), '']))
-    os.makedirs(exp_dir)
+         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
+         mrn_test_file.split('.')[0],
+         'conv-ae']))
+        os.makedirs(exp_dir)
+    else:
+        exp_dir = os.path.join(outdir, '-'.join(
+                  [indir,
+                   datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
+                   'conv-ae']))
+        os.makedirs(exp_dir)
 
     # get the vocabulary size
     fvocab = os.path.join(indir, ut.dt_files['vocab'])
@@ -59,23 +68,36 @@ def learn_patient_representations(indir,
     torch.cuda.manual_seed(123)
 
     # load data
-    data_tr = EHRdata(indir, ut.dt_files['ehr-tr'], sampling)
-    data_generator_tr = DataLoader(data_tr,
-        ut.model_param['batch_size'],
-        shuffle=True,
-        collate_fn=ehr_collate)
-    if cv:
-        data_ts = EHRdata(indir, ut.dt_files['ehr-ts'], sampling)
+    data = EHRdata(indir, ut.dt_files['ehr-file'], sampling)
+    data_generator = DataLoader(data,
+                                ut.model_param['batch_size'],
+                                shuffle=True,
+                                collate_fn=ehr_collate)    
+    
+    if mrn_test_file is not None:
+        with open(os.path.join(indir, mrn_test_file)) as f:
+            rd = csv.reader(f)
+            mrn_test_list = [r for r in rd]
+        data_tr = []
+        data_ts = []
+        for el in data:
+            if el[0] in mrn_test_list:
+                data_ts.append(el)
+            else:
+                data_tr.append(el) 
+        data_generator_tr = DataLoader(data_tr,
+                                       ut.model_param['batch_size'],
+                                       shuffle=True,
+                                       collate_fn=ehr_collate)
         data_generator_ts = DataLoader(data_ts,
-        ut.model_param['batch_size'],
-        shuffle=True,
-        collate_fn=ehr_collate)
-    else:
-        data_generator_ts = data_generator_tr
-
+                                       ut.model_param['batch_size'],
+                                       shuffle=True,
+                                       collate_fn=ehr_collate)
+        print('Test cohort size: {0}'.format(len(data_ts)) 
+        print('Training cohort size: {0}\n'.format(len(data_tr)))    
+    
     print('Cohort Size: {0} -- Max Sequence Length: {1}\n'.format(
-        len(data_tr), ut.len_padded))
-
+          len(data), ut.len_padded))
     # define model and optimizer
     print('Learning rate: {0}'.format(ut.model_param['learning_rate']))
     print('Batch size: {0}'.format(ut.model_param['batch_size']))
@@ -104,7 +126,7 @@ def learn_patient_representations(indir,
     # model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
-    mrn, encoded, encoded_avg, metrics_avg = train_and_evaluate(model, 
+    mrn, encoded, encoded_avg, metrics_avg = train_and_evaluate(model,
                                                                 data_generator_tr, 
                                                                 data_generator_ts, 
                                                                 loss_fn, 
@@ -137,8 +159,8 @@ def learn_patient_representations(indir,
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
    
     # ehr subseq with age in days
-    outfile = os.path.join(exp_dir, 'cohort-ehr-subseq-aid.csv')
-    with open(indir, 'cohort-new-ehr-aid.csv') as f:
+    outfile = os.path.join(exp_dir, 'cohort-ehr-subseq-age_in_day.csv')
+    with open(indir, 'cohort-new-ehr-age_in_day.csv') as f:
         rd = csv.reader(f)
         ehr_aid = {}
         for r in rd:

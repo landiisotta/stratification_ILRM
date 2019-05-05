@@ -48,7 +48,7 @@ def train_and_evaluate(model, data_iter_tr, data_iter_ts,
     n_epoch = ut.model_param['num_epochs']
     for epoch in range(1, n_epoch + 1):
         print('Epoch {0} of {1}'.format(epoch, n_epoch))
-
+        
         start = time()
         mrn, encoded, encoded_avg, loss_mean = train(
             model, optimizer, loss_fn, data_iter_tr)
