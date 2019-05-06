@@ -100,7 +100,6 @@ def data_preprocessing(indir,
         
     ehr = {}
     ehr_age = {}
-    seq_len = []
     for mrn in pehrs.keys():
         tmp_list = list(filter(lambda x: x[0] not in f_terms,
                                [pehrs[mrn]['events'][idx][0:2]
@@ -108,7 +107,6 @@ def data_preprocessing(indir,
         if len(tmp_list) > dpp['min_seq_len']:
             ehr_age[mrn] = tmp_list
             ehr[mrn] = [tl[0] for tl in tmp_list]
-            seq_len.append(len(ehr[mrn]))
         else:
             count_short += 1
     print("Dropped {0} terms. Dtype: {1}\n".format(len(f_terms), '-'.join(f_dtype)))
@@ -240,7 +238,9 @@ def data_preprocessing(indir,
     for mrn in ehr_subseq:
         f_seq_len.append(len(ehr_subseq[mrn]))
     print("The average length of ehr sequences is:"
-          " {0:.2f}".format(np.mean(f_seq_len)))
+          " {0:.2f} (Std: {1:.2f})".format(np.mean(f_seq_len),
+                                       np.std(f_seq_len)))
+    print("Median length of ehr sequences: {0}".format(np.median(f_seq_len)))
     print("The sequence length ranges"
           " from {0} to {1}".format(min(f_seq_len),
                                     max(f_seq_len)))
@@ -281,8 +281,8 @@ def _process_args():
              description='EHR Preprocessing')
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
-    parser.add_argument(dest='test_set', default=None, 
-                        type=str, help='Add fold')
+    parser.add_argument('--test_set', dest='test_set', default=None, 
+                        help='Add fold')
     return parser.parse_args(sys.argv[1:])
 
 

@@ -5,7 +5,7 @@ import torch
 import numpy as np
 
 
-def evaluate(model, loss_fn, data_iter, metrics, best_eval=False):
+def evaluate(model, loss_fn, data_iter_ts, metrics, best_eval=False):
     model.eval()
     summ = []
     encoded_list = []
@@ -13,7 +13,7 @@ def evaluate(model, loss_fn, data_iter, metrics, best_eval=False):
     mrn_list = []
 
     with torch.no_grad():
-        for idx, (list_batch, list_mrn) in enumerate(data_iter):
+        for idx, (list_mrn, list_batch) in enumerate(data_iter_ts):
             for batch, mrn in zip(list_batch, list_mrn):
                 batch = batch.cuda()
                 out, encoded = model(batch)
@@ -27,7 +27,7 @@ def evaluate(model, loss_fn, data_iter, metrics, best_eval=False):
                 if best_eval:
                     encoded_list_avg.append(
                         np.mean(encoded.tolist(), axis=0).tolist())
-                    encoded_list.append(encoded.tolist()))
+                    encoded_list.append(encoded.tolist())
                     mrn_list.append(mrn)
         metrics_mean = {metric: np.mean(
             [x[metric] for x in summ]) for metric in summ[0]}

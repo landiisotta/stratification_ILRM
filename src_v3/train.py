@@ -13,15 +13,14 @@ import csv
 import os
 
 
-def train(model, optimizer, loss_fn, data_iter):
+def train(model, optimizer, loss_fn, data_iter_tr):
     model.train()
     encoded_list = []
     encoded_avg_list = []
     loss_list = []
     mrn_list = []
-    for idx, (list_batch, list_mrn) in enumerate(data_iter):
+    for idx, (list_mrn, list_batch) in enumerate(data_iter_tr):
         loss_batch = []
-
         for batch, mrn in zip(list_batch, list_mrn):
             batch = batch.cuda()
             optimizer.zero_grad()
@@ -32,7 +31,7 @@ def train(model, optimizer, loss_fn, data_iter):
             loss_batch.append(loss.item())
             encoded_avg_list.append(
                 np.mean(encoded_vect.tolist(), axis=0).tolist())
-            encoded_list.append(encoded_vect.tolist()))
+            encoded_list.append(encoded_vect.tolist())
             mrn_list.append(mrn)
 
         loss_list.append(np.mean(loss_batch))
@@ -64,7 +63,7 @@ def train_and_evaluate(model, data_iter_tr, data_iter_ts,
             with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 for m, e in zip(mrn, encoded_avg):
-                    wr.writerow([m, e])
+                    wr.writerow([m] + e)
            
             outfile = os.path.join(exp_dir, 'TRencoded_vect.csv')
             with open(outfile, 'w') as f:

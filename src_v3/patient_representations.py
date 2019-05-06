@@ -4,7 +4,6 @@ from train import train_and_evaluate
 from time import time
 from datetime import datetime
 from torch.utils.data import DataLoader
-import clustering as clu
 import model.net as net
 import torch.nn as nn
 import torch
@@ -21,27 +20,20 @@ Learn patient representations from the EHRs using an autoencoder of CNNs
 
 def learn_patient_representations(indir,
                                   outdir,
-                                  mrn_test_file=None,
+                                  test_set=False,
                                   sampling=None,
                                   emb_filename=None):
 
     # experiment folder with date and time to save the representations
-    if mrn_test_file is not None:
-        exp_dir = os.path.join(outdir, '-'.join(
-        [indir,
-         datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
-         mrn_test_file.split('.')[0],
-         'conv-ae']))
-        os.makedirs(exp_dir)
-    else:
-        exp_dir = os.path.join(outdir, '-'.join(
-                  [indir,
-                   datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
-                   'conv-ae']))
-        os.makedirs(exp_dir)
+    exp_dir = os.path.join(outdir, '-'.join(
+    [indir,
+    datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
+    'conv-ae']))
+    os.makedirs(exp_dir)
 
     # get the vocabulary size
-    fvocab = os.path.join(indir, ut.dt_files['vocab'])
+    fvocab = os.path.join(os.path.join(outdir,indir), 
+                          ut.dt_files['vocab'])
     with open(fvocab) as f:
         rd = csv.reader(f)
         next(rd)
@@ -68,48 +60,36 @@ def learn_patient_representations(indir,
     torch.cuda.manual_seed(123)
 
     # load data
-    data = EHRdata(indir, ut.dt_files['ehr-file'], sampling)
-    data_generator = DataLoader(data,
-                                ut.model_param['batch_size'],
-                                shuffle=True,
-                                collate_fn=ehr_collate)    
-    
-    if mrn_test_file is not None:
-        with open(os.path.join(indir, mrn_test_file)) as f:
-            rd = csv.reader(f)
-            mrn_test_list = [r for r in rd]
-        data_tr = []
-        data_ts = []
-        for el in data:
-            if el[0] in mrn_test_list:
-                data_ts.append(el)
-            else:
-                data_tr.append(el) 
-        data_generator_tr = DataLoader(data_tr,
-                                       ut.model_param['batch_size'],
-                                       shuffle=True,
-                                       collate_fn=ehr_collate)
+    data_tr = EHRdata(os.path.join(outdir, indir), ut.dt_files['ehr-file'], sampling)
+    data_generator_tr = DataLoader(data_tr,
+                                   ut.model_param['batch_size'],
+                                   shuffle=True,
+                                   collate_fn=ehr_collate)    
+    if test_set:
+        data_ts = EHRdata(os.path.join(outdir, indir), ut.dt_files['ehr-file-test'],
+                          sampling)
+        
         data_generator_ts = DataLoader(data_ts,
                                        ut.model_param['batch_size'],
                                        shuffle=True,
                                        collate_fn=ehr_collate)
-        print('Test cohort size: {0}'.format(len(data_ts)) 
-        print('Training cohort size: {0}\n'.format(len(data_tr)))    
-    
-    print('Cohort Size: {0} -- Max Sequence Length: {1}\n'.format(
-          len(data), ut.len_padded))
+        print("Test cohort size: {0}".format(len(data_ts)))
+    else:
+        data_generator_ts = data_generator_tr
+
+    print('Training cohort size: {0}\n'.format(len(data_tr))) 
+    print('Max Sequence Length: {0}\n'.format(ut.len_padded))
     # define model and optimizer
     print('Learning rate: {0}'.format(ut.model_param['learning_rate']))
     print('Batch size: {0}'.format(ut.model_param['batch_size']))
     print('Kernel size: {0}\n'.format(ut.model_param['kernel_size']))
-
+    
     model = net.ehrEncoding(vocab_size=vocab_size,
                             max_seq_len=ut.len_padded,
                             emb_size=ut.model_param['embedding_size'],
                             kernel_size=ut.model_param['kernel_size'],
                             pre_embs=embs,
-                            vocab=vocab
-                            )
+                            vocab=vocab)
 
     optimizer = torch.optim.Adam(model.parameters(),
                                  lr=ut.model_param['learning_rate'],
@@ -126,6 +106,7 @@ def learn_patient_representations(indir,
     # model.cuda()
     loss_fn = net.criterion
     print('Training for {} epochs\n'.format(ut.model_param['num_epochs']))
+    
     mrn, encoded, encoded_avg, metrics_avg = train_and_evaluate(model,
                                                                 data_generator_tr, 
                                                                 data_generator_ts, 
@@ -142,7 +123,7 @@ def learn_patient_representations(indir,
         wr = csv.writer(f)
         wr.writerow(["MRN", "ENCODED-AVG"])
         for m, e in zip(mrn, encoded_avg):
-            wr.writerow([m, e])
+            wr.writerow([m] + e)
 
     outfile = os.path.join(exp_dir, 'encoded_vect.csv')
     with open(outfile, 'w') as f:
@@ -159,35 +140,77 @@ def learn_patient_representations(indir,
         f.write('Accuracy: %.3f\n' % metrics_avg['accuracy'])
    
     # ehr subseq with age in days
-    outfile = os.path.join(exp_dir, 'cohort-ehr-subseq-age_in_day.csv')
-    with open(indir, 'cohort-new-ehr-age_in_day.csv') as f:
+    outfile = os.path.join(exp_dir, 'cohort-ehr-subseq{0}-age_in_day.csv'.format(ut.len_padded))
+    with open(os.path.join(os.path.join(outdir, indir), 'cohort-new-ehr-age_in_day.csv')) as f:
         rd = csv.reader(f)
+        next(rd)
         ehr_aid = {}
         for r in rd:
-            ehr_aid.setdefault(r[0], list()).append([int(r[1]), int(r[2]]))
+            ehr_aid.setdefault(r[0], list()).append([int(r[1]), int(r[2])])
     ehr_subseq = {}
-    for batch, list_m in data_generator:
+    for list_m, batch in data_generator_tr:
         for b, m in zip(batch, list_m):
             if len(b) == 1:
-                ehr_subseq[m] = [ehr_aid[m][0][0], ehr_aid[m][-1][0]] \
-                                + [e[1] for e in ehr_aid[m]]   
+                ehr_subseq[m] = [[ehr_aid[m][0][0], ehr_aid[m][-1][0]] \
+                                + [e[1] for e in ehr_aid[m]]]   
             else:
                 seq = [e[1] for e in ehr_aid[m]]
+                age = [e[0] for e in ehr_aid[m]]
                 nseq, nleft = divmod(len(seq), ut.len_padded)
-                seq = seq + [0] * \
-                     (ut.len_padded - nleft - (ut.seq_overlap - 1) * nseq)    
+                if nleft > 0:
+                    seq = seq + [0] * \
+                          (ut.len_padded - nleft)
+                    age = age + [0] * \
+                          (ut.len_padded - nleft)    
                 for i in range(0, len(seq) - ut.len_padded + 1,
-                           ut.len_padded - ut.seq_overlap + 1):
-                    ehr_subseq.setdefault(m, list()).append([ehr_aid[m][i][0], 
-                                                             ehr_aid[m][i + ut.len_padded][0]] \
-                                                             + seq[i:i + ut.len_padded])
+                               ut.len_padded + 1):
+                    ehr_subseq.setdefault(m, list()).append([age[i], 
+                                                             list(filter(lambda x: x!=0, 
+                                                                         age[i:i+ut.len_padded]))[-1]] + \
+                                                             seq[i:i+ut.len_padded])
     with open(outfile, 'w') as f:
         wr = csv.writer(f)
         wr.writerow(["MRN", "AID_start", "AID_end", "EHRsubseq"])
-        for m, subseq in ehr_aid.items():
+        for m, subseq in ehr_subseq.items():
             for seq in subseq:
-                wr.writerow([m] + [s in seq if s != 0])
+                wr.writerow([m] + [seq[0], seq[1]] + list(filter(lambda x: x!=0, seq[2:])))
 
+    if test_set:
+        outfile = os.path.join(exp_dir, 'cohort_test-ehr-subseq{0}-age_in_day.csv'.format(ut.len_padded))
+        with open(os.path.join('/'.join([outdir, indir]), 'cohort_test-new-ehr-age_in_day.csv')) as f:
+            rd = csv.reader(f)
+            next(rd)
+            ehr_aid = {}
+            for r in rd:
+                ehr_aid.setdefault(r[0], list()).append([int(r[1]), int(r[2])])
+        ehr_subseq = {}
+        for list_m, batch in data_generator_ts:
+            for b, m in zip(batch, list_m):
+                if len(b) == 1:
+                    ehr_subseq[m] = [[ehr_aid[m][0][0], ehr_aid[m][-1][0]] \
+                                    + [e[1] for e in ehr_aid[m]]]
+                else:
+                    seq = [e[1] for e in ehr_aid[m]]
+                    age = [e[0] for e in ehr_aid[m]]
+                    nseq, nleft = divmod(len(seq), ut.len_padded)
+                    if nleft > 0:
+                        seq = seq + [0] * \
+                              (ut.len_padded - nleft)
+                        age = age + [0] * \
+                              (ut.len_padded - nleft)
+                    for i in range(0, len(seq) - ut.len_padded + 1,
+                                   ut.len_padded + 1):
+                        ehr_subseq.setdefault(m, list()).append([age[i],
+                                                                 list(filter(lambda x: x!=0, 
+                                                                             age[i:i+ut.len_padded]))[-1]] + \
+                                                                 seq[i:i+ut.len_padded])
+        with open(outfile, 'w') as f:
+            wr = csv.writer(f)
+            wr.writerow(["MRN", "AID_start", "AID_end", "EHRsubseq"])
+            for m, subseq in ehr_subseq.items():
+                for seq in subseq:
+                    wr.writerow([m] + [seq[0], seq[1]] + list(filter(lambda x: x!=0, seq[2:])))
+    
     return
 
 
@@ -199,9 +222,8 @@ def _process_args():
         'representations from longitudinal EHRs')
     parser.add_argument(dest='indir', help='EHR dataset directory')
     parser.add_argument(dest='outdir', help='Output directory')
-    parser.add_argument(dest='disease_dt', help='Disease dataset name')
-    parser.add_argument('--eval-baseline', dest='b', action='store_true',
-                        help='Evaluate the baseline')
+    parser.add_argument('--test_set', dest='test_set',
+                        default=False)
     parser.add_argument('-s', default=None, type=int,
                         help='Enable sub-sampling with data size '
                         '(default: None)')
@@ -217,11 +239,11 @@ if __name__ == '__main__':
     start = time()
     learn_patient_representations(indir=args.indir,
                                   outdir=args.outdir,
-                                  disease_dt=args.disease_dt,
-                                  eval_baseline=args.b,
+                                  test_set=args.test_set,
                                   sampling=args.s,
                                   emb_filename=args.e)
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
 
     print ('Task completed\n')
+
