@@ -26,9 +26,4 @@ then
     sampling="-s $sampling"
 fi
 
-# without sampling
 CUDA_VISIBLE_DEVICES=$gpu ../../myvenv/bin/python -u $projdir/src_v3/patient_representations.py $indir $outdir $test_set $sampling -e $emb_file
-
-# with sampling
-# CUDA_VISIBLE_DEVICES=$gpu ../myvenv/bin/python -u $projdir/src_v2/patient_representations.py $indir $outdir $disease_dt -s $sampling $eval_baseline
-
