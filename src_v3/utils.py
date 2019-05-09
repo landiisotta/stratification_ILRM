@@ -26,7 +26,7 @@ model_param = {'num_epochs': 5,
 
 # length of padded sub-sequences
 len_padded = 64
-
+dim_baseline = 100
 
 # save the best model
 def save_best_model(epoch, model, optimizer, loss,  outdir):

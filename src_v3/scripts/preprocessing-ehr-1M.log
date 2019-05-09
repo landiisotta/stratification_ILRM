@@ -1,3 +1,8 @@
 [H[J
 Loaded 57464 clinical concepts
 Loaded 1608741 patient MRNs
+
+Loaded data for 1608741 patients
+
+Dropped 39 terms. Dtype: vitals-encounter
+

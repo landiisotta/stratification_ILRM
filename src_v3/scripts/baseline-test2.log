@@ -1,0 +1,62 @@
+[H[J
+Loading test dataset
+Loaded test dataset with 1 patients
+Loading training dataset
+Loaded dataset with 47 patients and 13222 concepts
+
+Rescaling the COUNT matrix
+Applying SVD
+
+Rescaling the COUNT test matrix
+Applying SVD to test set
+Applying DEEP PATIENT
+Initializing: 3-layer SDAs
+
+Training: 3-layer SDAs
+
+training: DA [layer: 1]
+(*) preprocessing: normalize features
+(*) epoch 1, cost 3919.080
+(*) epoch 2, cost 599.352
+(*) epoch 3, cost 203.505
+(*) epoch 4, cost 130.557
+(*) epoch 5, cost 111.735
+(*) epoch 6, cost 101.782
+(*) epoch 7, cost 94.699
+(*) epoch 8, cost 88.717
+(*) epoch 9, cost 83.955
+(*) epoch 10, cost 79.763
+(*) training time: 1.11 sec.
+Applying: DA [layer: 1]
+
+training: DA [layer: 2]
+(*) preprocessing: normalize features
+(*) epoch 1, cost 42.732
+(*) epoch 2, cost 34.805
+(*) epoch 3, cost 32.633
+(*) epoch 4, cost 30.871
+(*) epoch 5, cost 29.766
+(*) epoch 6, cost 28.632
+(*) epoch 7, cost 27.802
+(*) training time: 0.01 sec.
+Applying: DA [layer: 2]
+
+training: DA [layer: 3]
+(*) preprocessing: normalize features
+(*) epoch 1, cost 40.495
+(*) epoch 2, cost 30.757
+(*) epoch 3, cost 29.525
+(*) epoch 4, cost 28.794
+(*) training time: 0.01 sec.
+
+Training time: 3.54 sec.
+
+Applying: 3-layer SDA
+(*) applying: DA [layer: 1]
+(*) applying: DA [layer: 2]
+(*) applying: DA [layer: 3]
+
+Processing time: 5.69 seconds
+
+Task completed
+
