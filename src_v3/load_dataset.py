@@ -45,8 +45,8 @@ def load_dataset(datadir):
 
             pehrs[mrn]['events'] = sorted(set(hst), key=lambda x: (x[1]))
 
-#            if len(pehrs) == 100:
-#                break
+            if len(pehrs) == 100:
+                break
 
     print('\nLoaded data for %d patients\n' % len(pehrs))
     return (pehrs, vidx, pidx)

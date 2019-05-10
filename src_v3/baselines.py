@@ -16,7 +16,8 @@ import csv
 import os
 
 
-def run_baselines(indir, outdir, n_dim=ut.dim_baseline,
+def run_baselines(indir, outdir, 
+                  n_dim=ut.dim_baseline,
                   test_set=False):
 
     try:
@@ -31,7 +32,7 @@ def run_baselines(indir, outdir, n_dim=ut.dim_baseline,
         print('Loading training dataset')
         mrns, raw_data, ehrs, _ = _load_ehr_dataset(indir)
     else:
-        print('Loading training datasets')
+        print('Loading training dataset')
         mrns, raw_data, ehrs, vocab = _load_ehr_dataset(indir)
         mrns_ts = mrns
         raw_data_ts = raw_data
@@ -70,6 +71,7 @@ def run_baselines(indir, outdir, n_dim=ut.dim_baseline,
     dp_mtx = _deep_patient(raw_mtx, raw_mtx_ts, n_dim)
     _save_matrices(outdir, 'dp-mtx.npy', dp_mtx)
     if test_set:
+         print('Saving DEEP PATIENT output with input: test set')
         _save_matrices(outdir, 'dp-mtx-test.npy', dp_mtx)
 
 
@@ -138,10 +140,12 @@ def _load_ehr_dataset(indir):
 # run deep patient model
 
 def _deep_patient(data_tr, data_ts, n_dim):
+    param = {'epochs': 10,
+             'batch_size': 4,
+             'corrupt_lvl': 0.05}
     sda = dp.SDA(data_tr.shape[1], nhidden=n_dim, nlayer=3,
-                 param={'epochs': 10,
-                        'batch_size': 4,
-                        'corrupt_lvl': 0.05})
+                 param=param)
+    print('Parameters DEEP PATIENT: {0}'.format(param.items()))
     sda.train(data_tr)
     return sda.apply(data_ts)
 

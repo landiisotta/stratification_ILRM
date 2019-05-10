@@ -14,4 +14,5 @@ then
     test_set="--test_set $test_set"
 fi
 
-../../myvenv/bin/python -u $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set 
+#../../myvenv/bin/python $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set
+../../myvenv/bin/python -m cProfile -s tottime $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set 
