@@ -18,7 +18,7 @@ Return the stop word list and the list of:
 TERM, sum(PATIENT_FREQUENCY/P), DOCUMENT_FREQUENCY and DF/D*sum(PF/P)
 '''
 
-
+# computationally expensive function here! (see log file for partial times and profile) 
 def COHORTsubseq_set_shuffle(data, stop_words):
     len_ss = n_ss = 0
     tmp_count_short = tmp_count_long = 0
@@ -51,7 +51,7 @@ def COHORTsubseq_set_shuffle(data, stop_words):
     print("The average number of tokens for each time slot of {0} days is:"
           " {1:.3f}".format(dpp['age_step'], len_ss/n_ss))
     print("The average number of subsequences for each "
-          "subject is: {0}".format(n_ss/len(data)))
+          "subject is: {0:.3f}".format(n_ss/len(data)))
     
     return ehr_subseq, tmp_count_short, tmp_count_long
 
@@ -68,6 +68,7 @@ def data_preprocessing(indir,
     count_long = 0
    
     if test_set is not None:
+        print("Loading test set: {0}".format(test_set))
         with open(os.path.join(indir, test_set)) as f:
             rd = csv.reader(f)
             mrn_test = [r[0] for r in rd if r[0] in pehrs.keys()] # NO NEED FOR THIS FOR 1M DATA 
@@ -75,7 +76,7 @@ def data_preprocessing(indir,
         pehrs_tr = {mrn: pehrs[mrn] for mrn in pehrs.keys() 
                     if mrn not in mrn_test}
         pehrs = pehrs_tr
-
+        print("Loaded test data for {0} patients\n".format(len(pehrs_ts)))
         # experiment folder with date and time to save the representations
         exp_dir = os.path.join(outdir, 'ehr-{0}'.format('-'.join([str(len(pehrs.keys())), 
                                                         test_set.split('.')[0]])))
@@ -135,8 +136,8 @@ def data_preprocessing(indir,
                               key=lambda x: x[3])
 
     # Set minimum threshold
-    min_thresh = 0.001
-    max_thresh = 0.2
+    min_thresh = 1e-07
+    max_thresh = 100.0
     print("Selected terms with score"
           " within [{0:.6f}, {1}]".format(min_thresh, max_thresh))
 
@@ -161,7 +162,7 @@ def data_preprocessing(indir,
                      "DOCUMENT_FREQUENCY", "DF/D*sum(PF/P)"])
         wr.writerows([el for el in coll_freq_sorted])
 
-    print('Partial execution time:{0}'.format(round(time() - start, 2)))
+    print('End stop words selection. Time: {0} seconds\n'.format(round(time() - start, 2)))
 
     # Sort ehrs with respect to age_in_days and eliminate stop words
     # Check min sequence length
@@ -193,9 +194,12 @@ def data_preprocessing(indir,
             if len(tmp_list) > dpp['min_seq_len']:
                 ehr_rid_ts.setdefault(mrn, list()).extend(sorted(tmp_list, 
                                                           key=lambda x: x[1]))
-        print("Set and shuffle subsequences for test set:")
+        print("Starting set and shuffle subsequences on test set...")
         ehr_subseq_ts, _, _ = COHORTsubseq_set_shuffle(ehr_rid_ts, f_terms + stop_words)
-
+        print("Ended set and shuffle subsequences on test set. Time: {0} seconds\n".format(round(time() - start, 2)))
+        print("Dropped {0} sequences from test set. "
+              "Initial numerosity: {1} -- Final numerosity: {2}\n".format(len(pehrs_ts) - len(ehr_subseq_ts), 
+        len(pehrs_ts), len(ehr_subseq_ts)))
         # Write ehrs 1)[MRN, EHRseq]; 2)[MRN,AID_start,AID_end,EHRseq]
         with open(os.path.join(exp_dir, 'cohort_test-new-ehrseq.csv'), 'w') as f:
             wr = csv.writer(f)
@@ -217,22 +221,22 @@ def data_preprocessing(indir,
                 for e in el:
                     wr.writerow([mrn, e[1], new_vidx[e[0]]])
 
-    print('Starting subsampling time: {0}'.format(round(time() - start, 2)))
-
+    print('Starting set and shuffle subsequences on training set...')
     ehr_subseq, tmp_count_short, tmp_count_long = COHORTsubseq_set_shuffle(ehr_age, stop_words)
     count_short += tmp_count_short
     count_long += tmp_count_long
-    print('Time after subseq and shuffling:{0}'.format(round(time() - start, 2)))
+    print('Ended set and shuffle subsequences on training set. Time: {0} seconds\n'.format(round(time() - start, 2)))
 
     # Report statistics
+    print("Training set statistics:")
     print("Number of dropped sequences: {0} (< {1}),"
-          " number of trimmed sequences: {2} (> {3}).\n"
-          "Initial total number of patients: {4}.\n"
-          "Current number of patients: {5}".format(count_short,
+          " number of trimmed sequences: {2} (> {3})"
+          " Initial total number of patients: {4}"
+          " Current number of patients: {5}\n".format(count_short,
                                                    dpp['min_seq_len'],
                                                    count_long,
                                                    dpp['max_seq_len'],
-                                                   len(ehr_age),
+                                                   len(pehrs),
                                                    len(ehr_subseq)))
     
     f_seq_len = [len(ehr_subseq[mrn]) for mrn in ehr_subseq]
@@ -241,7 +245,7 @@ def data_preprocessing(indir,
                                        np.std(f_seq_len)))
     print("Median length of ehr sequences: {0}".format(np.median(f_seq_len)))
     print("The sequence length ranges"
-          " from {0} to {1}".format(min(f_seq_len),
+          " from {0} to {1}\n".format(min(f_seq_len),
                                     max(f_seq_len)))
 
 
