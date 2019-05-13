@@ -139,7 +139,7 @@ def data_preprocessing(indir,
     min_thresh = 1e-07
     max_thresh = 100.0
     print("Selected terms with score"
-          " within [{0:.6f}, {1}]".format(min_thresh, max_thresh))
+          " within [{0}, {1}]".format(min_thresh, max_thresh))
 
     stop_words = []
     for cfs in reversed(coll_freq_sorted):
@@ -197,7 +197,7 @@ def data_preprocessing(indir,
         print("Starting set and shuffle subsequences on test set...")
         ehr_subseq_ts, _, _ = COHORTsubseq_set_shuffle(ehr_rid_ts, f_terms + stop_words)
         print("Ended set and shuffle subsequences on test set. Time: {0} seconds\n".format(round(time() - start, 2)))
-        print("Dropped {0} sequences from test set. "
+        print("Dropped {0} sequences from test set.\n"
               "Initial numerosity: {1} -- Final numerosity: {2}\n".format(len(pehrs_ts) - len(ehr_subseq_ts), 
         len(pehrs_ts), len(ehr_subseq_ts)))
         # Write ehrs 1)[MRN, EHRseq]; 2)[MRN,AID_start,AID_end,EHRseq]

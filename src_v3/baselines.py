@@ -20,11 +20,6 @@ def run_baselines(indir, outdir,
                   n_dim=ut.dim_baseline,
                   test_set=False):
 
-    try:
-        os.mkdir(outdir)
-    except OSError:
-        pass
-    
     if test_set:
         print('Loading test dataset')
         mrns_ts, raw_data_ts, ehrs_ts, vocab = _load_test_dataset(indir)
@@ -43,25 +38,23 @@ def run_baselines(indir, outdir,
     print('\nRescaling the COUNT matrix')
     scaler = MinMaxScaler()
     raw_mtx = scaler.fit_transform(raw_data)
-    _save_matrices(outdir, 'raw-mtx.npy', raw_mtx)
 
     print('Applying SVD')
     svd = TruncatedSVD(n_components=n_dim)
     svd_mtx = svd.fit_transform(raw_mtx)
-    _save_matrices(outdir, 'svd-mtx.npy', svd_mtx)
 
     if test_set:
         print('\nRescaling the COUNT test matrix')
         scaler = MinMaxScaler()
-        raw_mtx_ts = scaler.fit_transform(raw_data_ts)
-        _save_matrices(outdir, 'raw-mtx-test.npy', raw_mtx_ts)
+        raw_mtx_ts = scaler.transform(raw_data_ts)
+        _save_matrices(outdir, 'raw-mtx.npy', raw_mtx_ts)
 
         print('Applying SVD to test set')
-        svd_mtx_ts = svd.fit_transform(raw_mtx_ts)
-        _save_matrices(outdir, 'svd-mtx-test.npy', svd_mtx_ts)
+        svd_mtx_ts = svd.transform(raw_mtx_ts)
+        _save_matrices(outdir, 'svd-mtx.npy', svd_mtx_ts)
     else:
-        raw_mtx_ts = raw_mtx
-        svd_mtx_ts = svd_mtx
+        _save_matrices(outdir, 'raw-mtx.npy', raw_mtx)
+        _save_matrices(outdir, 'svd-mtx.npy', svd_mtx)
     # print('Applying ICA')
     # ica = FastICA(n_components=n_dim, max_iter=5, tol=0.01, whiten=True)
     # ica_mtx = ica.fit_transform(raw_mtx)
@@ -69,11 +62,10 @@ def run_baselines(indir, outdir,
 
     print('Applying DEEP PATIENT')
     dp_mtx = _deep_patient(raw_mtx, raw_mtx_ts, n_dim)
-    _save_matrices(outdir, 'dp-mtx.npy', dp_mtx)
     if test_set:
-         print('Saving DEEP PATIENT output with input: test set')
-        _save_matrices(outdir, 'dp-mtx-test.npy', dp_mtx)
-
+        _save_matrices(outdir, 'dp-mtx.npy', dp_mtx)
+    else:
+        _save_matrices(outdir, 'dp-mtx.npy', dp_mtx)
 
 """
 Private Functions
@@ -169,6 +161,7 @@ def _process_args():
     parser = argparse.ArgumentParser(
              description='Baselines')
     parser.add_argument(dest='indir', help='EHR dataset directory')
+    parser.add_argument(dest='outdir', help='output directory')
     parser.add_argument('--test_set', dest='test_set', default=False,
                         help='Add fold')
     return parser.parse_args(sys.argv[1:])
@@ -177,13 +170,9 @@ if __name__ == '__main__':
     args = _process_args()
     print ('')
     
-    outdir = os.path.join(args.indir, 
-                          '-'.join(['baselines',
-                                    datetime.now().strftime('%Y-%m-%d-%H-%M-%S')]))
-
     start = time()
     run_baselines(indir=args.indir,
-                  outdir = outdir,
+                  outdir = args.outdir,
                   test_set=args.test_set)
 
     print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))

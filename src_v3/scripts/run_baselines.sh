@@ -5,6 +5,7 @@ projdir=../..
 datadir=$projdir/data_v3
 
 indir=$datadir/experiments/ehr-100
+outdir = $indir/encodings
 
 gpu=1
 

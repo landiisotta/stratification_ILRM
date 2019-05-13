@@ -5,7 +5,7 @@ projdir=../..
 datadir=$projdir/data_v3
 
 indir=$datadir
-outdir=$indir/experiments/
+outdir=$indir/experiments
 
 test_set=$1
 

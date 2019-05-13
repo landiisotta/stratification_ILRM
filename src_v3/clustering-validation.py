@@ -1,28 +1,67 @@
-from sklearn.metrics import silhouette_score
 from sklearn.cluster import AgglomerativeClustering
 from sklearn import preprocessing
 import numpy as np
 import csv
+import utils as ut
+from utils import HCpar
+import re
+import argparse
+from time import time
+
+def clustering_inspection(datadir, indir, outdir, list_model):
+    
+    with open(os.path.join(indir, 'cohort-new-vocab.csv')) as f:
+        vocab = {}
+        rd = csv.reader(f)
+        next(rd)
+        for r in rd:
+            vocab[r[0]] = r[1]
+
+    print('Loading data...')
+    baselines = {}
+    mrn = False
+    for mod in list_model:
+        if mod == 'conv-ae':
+            with open(os.path.join(outdir, mod + '-avg*')) as f:
+                rd = csv.reader(f)
+                convae_mrn = convae_v = []
+                for r in rd:
+                convae_mtx.append(r[1::])
+                convae_mrn.append([r[0])
+            gt_disease_convae, disease_class_convae = _load_ground_truth(datadir, 
+                                                                         convae_mrn)
+            cluster_evaluation(convae_mtx, convae_mrn, 
+                               disease_class_convae, vocab, mod)
+        else:
+            baseline_mtx = np.load(os.path.join(outdir, mod + '*'))
+            if mrn:
+                with open(os.path.join(outdir, 'bs-mrn.txt')) as f:
+                    rd = csv.reader(f)
+                    mrn_list = [r for r in rd]
+                gt_disease_bs, disease_class_bs = _load_groud_truth(datadir, 
+                                                                    mrn_list)
+            mrn = True
+            cluster_evaluation(baseline_mtx, disease_class, mrn_list, vocab, mod)
 
 
-# run the full clustering evaluation
-def eval_hierarchical_clustering(data,
-                                 gt_clu,
-                                 min_clu,
-                                 max_clu,
-                                 affinity_clu='euclidean',
-                                 preproc=False):
+def cluster_evaluation(data_mtx, gt_clu, mrns, vocab,
+                       HCpar, model_name):
 
-    # normalize data
-    if preproc:
-        data = preprocessing.scale(data)
+    label = model_name.upper()
+    print('Evaluating {0} embeddings\n'.format(label))
+    
+    # evaluate cluster results
+    clu = _outer_clustering_analysis(
+          data_mtx, gt_clu, 
+          HCpar['linkage_clu'], HCpar['affinity_clu'])
 
-    # external cluster analysis
-    _outer_clustering_analysis(data, gt_clu, affinity_clu)
+    with open(os.path.join(outdir, 'outer-cl-{0}.txt'.format(model_name)), 'w') as f:
+        f.write('\n'.join(clu))
 
-    return
+"""
+Private Functions
+"""
 
-# external clustering analysis
 def _outer_clustering_analysis(data,
                                gt_clu,
                                linkage,
@@ -87,50 +126,18 @@ def _outer_clustering_analysis(data,
         print('-- cluster {0}: {1}'.format(c, clusters.count(c)))
 
     return clusters
- 
-def _load_ehr_dataset(indir, sampling):
-    # read the vocabulary
-    with open(path.join(indir, 'cohort-new_vocab.csv')) as f:
-        rd = csv.reader(f)
-        next(rd)
-        vcb = {r[1]: r[0] for r in rd}
-
-    # read raw data
-    with open(path.join(indir, 'cohort-new_ehr.csv')) as f:
-        rd = csv.reader(f)
-        ehrs = {}
-        for r in rd:
-            ehrs.setdefault(r[0], list()).extend(list(map(int, r[1::])))
-    print('Loaded dataset with {0} patients and {1} concepts'.format(
-        len(ehrs), len(vcb)))
-
-    # sub-sample
-    if sampling > 0:
-        sa_mrns = [m for m in ehrs.keys()]
-        random.shuffle(sa_mrns)
-        sa_mrns = set(sa_mrns[:sampling])
-        sa_ehrs = {k: v for k, v in ehrs.items() if k in sa_mrns}
-        ehrs = sa_ehrs
-        print('-- retained {0} patients'.format(len(ehrs)))
-
-    # create raw data (scaled) counts
-    mrns = [m for m in ehrs.keys()]
-    data = ehrs.values()
-    raw_dt = np.zeros((len(data), len(vcb)))
-    for idx, token_list in enumerate(data):
-        for t in token_list:
-            raw_dt[idx, t - 1] += 1
-
-    return (mrns, raw_dt, ehrs, vcb)
 
 
 def _load_ground_truth(indir, mrns):
-    mrn_set = set(mrns)
 
     # list of diagnosed diseases associated with MRNs
     with open(path.join(indir, 'cohort-mrn_diseases.csv')) as f:
         rd = csv.reader(f)
-        mrn_disease = {r[0]: r[1::] for r in rd}
+        next(rd)
+        mrn_disease = {}
+        for r in rd:
+            if r[0] not in mrn_diseases and bool(re.match('|'.join(ut.diseases), r[1].lower())):
+                mrn_disease[r[0]] = r[1]
 
     # ground truth using the first diagnosis
     gt_disease = {m: mrn_disease[m][0]
@@ -141,32 +148,32 @@ def _load_ground_truth(indir, mrns):
 
     return (gt_disease, disease_class)
 
+
 """
 Main Function
 """
+def _process_args():
+    parser = argparse.ArgumentParser(
+          description='Outer clustering encodings evaluation')
+    parser.add_argument(dest='datadir', 
+          help='Directory whith the unprocessed data')
+    parser.add_argument(dest='indir',
+          help='Directory with the processed data')
+    parser.add_argument(dest='outdir',
+          help='Directory with the encodings')
+
 
 if __name__ == '__main__':
-    print ('')
-
-    # define parameters
-    datadir = '../data'
-    dt_name = 'ehr-100k'
-
-    indir = os.path.join(datadir, dt_name)
-    outdir = os.path.join(datadir, 'experiments',
-                          '{0}-baselines'.format(dt_name))
-    sampling = -1
-    exclude_oth = True
+    args = _process_args()
+    print('')
 
     start = time()
-    gt_file = os.path.join(indir, ut.dt_files['diseases'])
-    gt_disease = clu.load_mrn_disease(gt_file)
-    min_clu = 2
-    max_clu = 10
+    
+    clustering_inspection(datadir=args.datadir,
+                          indir=args.indir,
+                          outdir=args.outdir,
+                          list_model=ut.list_model)
 
-    print('\nRunning clustering on the encoded vectors')
-    gt_disease_enc = [gt_disease[m][0] for m in mrn]
-    clu.eval_hierarchical_clustering(
-        encoded, gt_disease_enc, min_clu, max_clu, preproc=True)
+    print('\nProcessing time: %s seconds' % round(time()-start, 2))
 
-    print ('\nProcessing time: %s seconds\n' % round(time() - start, 2))
+    print('Task completed\n') 

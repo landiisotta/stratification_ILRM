@@ -5,8 +5,8 @@ projdir=../..
 datadir=$projdir/data_v3
 
 
-outdir=$datadir/experiments
-indir=ehr-49-test-2
+indir=$datadir/experiments
+outdir=ehr-49-test-2
 
 gpu=1
 

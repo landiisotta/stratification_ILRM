@@ -23,6 +23,11 @@ model_param = {'num_epochs': 5,
                'weight_decay': 1e-5
                }
 
+# embeddings to evaluate
+ev_model = ['conv-ae', 'raw', 'svd', 'dp']
+# list of diseases to consider
+diseases = []
+
 # length of padded sub-sequences
 len_padded = 64
 dim_baseline = 100

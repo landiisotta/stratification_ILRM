@@ -25,10 +25,7 @@ def learn_patient_representations(indir,
                                   emb_filename=None):
 
     # experiment folder with date and time to save the representations
-    exp_dir = os.path.join(outdir, '-'.join(
-    [indir,
-    datetime.now().strftime('%Y-%m-%d-%H-%M-%S'), 
-    'conv-ae']))
+    exp_dir = os.path.join(outdir, 'encodings')
     os.makedirs(exp_dir)
 
     # get the vocabulary size
@@ -118,14 +115,14 @@ def learn_patient_representations(indir,
     # save results
 
     # encoded vectors (representations)
-    outfile = os.path.join(exp_dir, 'encoded-avg_vect.csv')
+    outfile = os.path.join(exp_dir, 'convae-avg_vect.csv')
     with open(outfile, 'w') as f:
         wr = csv.writer(f)
         wr.writerow(["MRN", "ENCODED-AVG"])
         for m, e in zip(mrn, encoded_avg):
             wr.writerow([m] + e)
 
-    outfile = os.path.join(exp_dir, 'encoded_vect.csv')
+    outfile = os.path.join(exp_dir, 'convae_vect.csv')
     with open(outfile, 'w') as f:
         wr = csv.writer(f)
         wr.writerow(["MRN", "ENCODED-SUBSEQ"])
