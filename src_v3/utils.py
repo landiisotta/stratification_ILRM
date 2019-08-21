@@ -1,3 +1,4 @@
+import torch
 import os
 
 # dataset filenames
@@ -12,11 +13,11 @@ f_dtype = ['vitals',
 data_preproc_param = {'min_diagn': 3,
                       'age_step': 15,
                       'min_seq_len': 3,
-                      'max_seq_len':10000}
+                      'max_seq_len':5000}
 
 # model parameters
-model_param = {'num_epochs': 5,
-               'batch_size': 1,
+model_param = {'num_epochs': 10,
+               'batch_size': 128,
                'embedding_size': 100,
                'kernel_size': 5,
                'learning_rate': 0.0001,
@@ -24,13 +25,25 @@ model_param = {'num_epochs': 5,
                }
 
 # embeddings to evaluate
-ev_model = ['conv-ae', 'raw', 'svd', 'dp']
-# list of diseases to consider
-diseases = []
+ev_model = ['convae', 'raw', 'svd', 'tfidf']
+
+HCpar = {'linkage_clu': 'ward',
+         'affinity_clu': 'euclidean',
+         'min_cl': 3,
+         'max_cl': 15}
+
+FRpar = {'n_terms': 50}
+
+# diseases to consider for internal validation
+val_disease = ['T2D', 'PD', 'AD', 'MM', 'BC', 'PC']
+select_terms = ['icd9']
 
 # length of padded sub-sequences
-len_padded = 64
+len_padded = 32
 dim_baseline = 100
+
+# n iter outer clustering inspection
+n_iter = 100
 
 # save the best model
 def save_best_model(epoch, model, optimizer, loss,  outdir):

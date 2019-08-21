@@ -1,10 +1,13 @@
 #! /bin/zsh
 
-projdir = ../../
-datadir = $projdir/data_v3
+projdir=../..
+datadir=$projdir/data_v3
 
-indir = $datadir/experiments/ehr-
+indir=$datadir/experiments/ehr-804371-test-2
 
-outdir = $datadir/encodings
+encdir=$indir/encodings
 
-../../myvenv/bin/python -u $projdir/src_v3/clustering-validation.py $datadir $indir $outdir
+# choose between SNOMED and CCS-SINGLE
+code='snomed'
+
+../../myvenv/bin/python -u $projdir/src_v3/clustering-validation.py $datadir $indir $encdir $code

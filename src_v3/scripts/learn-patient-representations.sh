@@ -6,9 +6,9 @@ datadir=$projdir/data_v3
 
 
 indir=$datadir/experiments
-outdir=ehr-49-test-2
+outdir=ehr-804370-test-1
 
-gpu=1
+gpu=3
 
 emb_file=$datadir/embeddings/word2vec-pheno-embedding-100.emb
 

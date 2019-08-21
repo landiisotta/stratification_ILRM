@@ -15,4 +15,4 @@ then
 fi
 
 #../../myvenv/bin/python $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set
-../../myvenv/bin/python -m cProfile -s tottime $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set 
+../../myvenv/bin/python $projdir/src_v3/data-preprocessing.py $indir $outdir $test_set 

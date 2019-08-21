@@ -59,13 +59,13 @@ def train_and_evaluate(model, data_iter_tr, data_iter_ts,
         is_best_2 = epoch == n_epoch
         if is_best_1 or is_best_2:
 
-            outfile = os.path.join(exp_dir, 'TRencoded-avg_vect.csv')
+            outfile = os.path.join(exp_dir, 'TRconvae-avg_vect.csv')
             with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 for m, e in zip(mrn, encoded_avg):
                     wr.writerow([m] + e)
            
-            outfile = os.path.join(exp_dir, 'TRencoded_vect.csv')
+            outfile = os.path.join(exp_dir, 'TRconvae_vect.csv')
             with open(outfile, 'w') as f:
                 wr = csv.writer(f)
                 for m, evs in zip(mrn, encoded):

@@ -34,12 +34,13 @@ class ehrEncoding(nn.Module):
             weight_mtx = np.zeros((vocab_size, emb_size))
             wfound = 0
             for i in range(vocab_size):
-                try:
-                    weight_mtx[i] = pre_embs[vocab[i]]
-                    wfound += 1
-                except KeyError:
-                    weight_mtx[i] = np.random.normal(
-                        scale=0.6, size=(emb_size,))
+                if i != 0:
+                    try:
+                        weight_mtx[i] = pre_embs[vocab[i]]
+                        wfound += 1
+                    except KeyError:
+                        weight_mtx[i] = np.random.normal(
+                            scale=0.6, size=(emb_size,))
             print('Found pre-computed embeddings for {0} concepts'.format(
                 wfound))
             self.embedding.from_pretrained(torch.FloatTensor(weight_mtx))

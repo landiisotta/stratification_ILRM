@@ -1,0 +1,1733 @@
+
+Cohort T2D numerosity: 1997
+
+3 0.55473316
+4 0.36292353
+5 0.23865148
+6 0.15009965
+7 0.15422343
+8 0.15855634
+9 0.15594418
+10 0.137189
+11 0.12646446
+12 0.10363572
+13 0.10450397
+14 0.09976456
+Number of clusters found:3, Silhouette score:0.555
+
+Cluster 0 numerosity: 941
+% term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.47 (938 terms in cluster (1.00), out of 1990 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.47 (839 terms in cluster (0.89), out of 1799 terms in the disease dataset
+
+% term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.47 (732 terms in cluster (0.78), out of 1565 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.47 (723 terms in cluster (0.77), out of 1554 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.47 (632 terms in cluster (0.67), out of 1352 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.47 (625 terms in cluster (0.66), out of 1332 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.46 (571 terms in cluster (0.61), out of 1240 terms in the disease dataset
+
+% term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.46 (548 terms in cluster (0.58), out of 1195 terms in the disease dataset
+
+% term:icd9::Cough::786.2::C0010200 = 0.47 (544 terms in cluster (0.58), out of 1152 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.46 (539 terms in cluster (0.57), out of 1174 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.46 (519 terms in cluster (0.55), out of 1118 terms in the disease dataset
+
+% term:icd9::Pain in limb::729.5::C0030196 = 0.48 (512 terms in cluster (0.54), out of 1071 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.45 (505 terms in cluster (0.54), out of 1117 terms in the disease dataset
+
+% term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.47 (487 terms in cluster (0.52), out of 1033 terms in the disease dataset
+
+% term:icd9::Diarrhea::787.91::C0011991 = 0.47 (483 terms in cluster (0.51), out of 1038 terms in the disease dataset
+
+% term:icd9::Nausea alone::787.02::C0375548 = 0.48 (481 terms in cluster (0.51), out of 992 terms in the disease dataset
+
+% term:icd9::Counseling nos::V65.40::C0740209 = 0.49 (475 terms in cluster (0.50), out of 979 terms in the disease dataset
+
+% term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.48 (464 terms in cluster (0.49), out of 958 terms in the disease dataset
+
+% term:icd9::Rash and other nonspecific skin eruption::782.1::C0015230 = 0.48 (457 terms in cluster (0.49), out of 961 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.47 (456 terms in cluster (0.48), out of 974 terms in the disease dataset
+
+% term:icd9::Constipation, unspecified::564.00::C0009806 = 0.47 (455 terms in cluster (0.48), out of 962 terms in the disease dataset
+
+% term:icd9::Backache, unspecified::724.5::C0004604 = 0.49 (453 terms in cluster (0.48), out of 923 terms in the disease dataset
+
+% term:icd9::Obesity, unspecified::278.00::C0028754 = 0.46 (451 terms in cluster (0.48), out of 971 terms in the disease dataset
+
+% term:icd9::Personal history of tobacco use::V15.82::C0040335 = 0.46 (432 terms in cluster (0.46), out of 937 terms in the disease dataset
+
+% term:icd9::Esophageal reflux::530.81::C0017168 = 0.46 (414 terms in cluster (0.44), out of 899 terms in the disease dataset
+
+% term:icd9::Anemia, unspecified::285.9::C0002871 = 0.47 (403 terms in cluster (0.43), out of 864 terms in the disease dataset
+
+% term:icd9::Unspecified general medical examination::V70.9::C0260860 = 0.46 (390 terms in cluster (0.41), out of 850 terms in the disease dataset
+
+% term:icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133 = 0.47 (379 terms in cluster (0.40), out of 802 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.48 (376 terms in cluster (0.40), out of 786 terms in the disease dataset
+
+% term:icd9::Routine general medical examination at a health care facility::V70.0::C0260851 = 0.46 (374 terms in cluster (0.40), out of 810 terms in the disease dataset
+
+% term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.49 (373 terms in cluster (0.40), out of 761 terms in the disease dataset
+
+% term:icd9::Asthma, unspecified type, unspecified::493.90::C0155886 = 0.45 (370 terms in cluster (0.39), out of 817 terms in the disease dataset
+
+% term:icd9::Generalized anxiety disorder::300.02::C0270549 = 0.50 (363 terms in cluster (0.39), out of 730 terms in the disease dataset
+
+% term:icd9::Vomiting alone::787.03::C0728950 = 0.49 (362 terms in cluster (0.38), out of 741 terms in the disease dataset
+
+% term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, uncontrolled::250.02::C0375115 = 0.47 (361 terms in cluster (0.38), out of 774 terms in the disease dataset
+
+% term:icd9::Dysuria::788.1::C0013428 = 0.50 (360 terms in cluster (0.38), out of 722 terms in the disease dataset
+
+% term:icd9::Other specified cardiac dysrhythmias::427.89::C0348626 = 0.49 (359 terms in cluster (0.38), out of 740 terms in the disease dataset
+
+% term:icd9::Unspecified fall::E888.9::C0085639 = 0.47 (352 terms in cluster (0.37), out of 749 terms in the disease dataset
+
+% term:icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959 = 0.47 (349 terms in cluster (0.37), out of 742 terms in the disease dataset
+
+% term:icd9::Benign essential hypertension::401.1::C0155583 = 0.48 (345 terms in cluster (0.37), out of 719 terms in the disease dataset
+
+% term:icd9::Persistent vomiting::536.2::C0152165 = 0.48 (340 terms in cluster (0.36), out of 704 terms in the disease dataset
+
+% term:icd9::Lumbago::724.2::C0024031 = 0.49 (338 terms in cluster (0.36), out of 691 terms in the disease dataset
+
+% term:icd9::Pain in joint, lower leg::719.46::C0838227 = 0.49 (328 terms in cluster (0.35), out of 671 terms in the disease dataset
+
+% term:icd9::Other screening mammogram::V76.12::C0490033 = 0.47 (322 terms in cluster (0.34), out of 686 terms in the disease dataset
+
+% term:icd9::Fracture, cause unspecified::E887::C0016658 = 0.48 (318 terms in cluster (0.34), out of 663 terms in the disease dataset
+
+% term:icd9::Other problems related to lifestyle::V69.8::C0348774 = 0.47 (312 terms in cluster (0.33), out of 661 terms in the disease dataset
+
+% term:icd9::Other specified vaccinations against streptococcus pneumoniae [pneumococcus]::V03.82::C0375766 = 0.48 (308 terms in cluster (0.33), out of 648 terms in the disease dataset
+
+% term:icd9::Other and unspecified angina pectoris::413.9::C0348588 = 0.49 (303 terms in cluster (0.32), out of 618 terms in the disease dataset
+
+% term:icd9::Hypoglycemia, unspecified::251.2::C0020615 = 0.45 (301 terms in cluster (0.32), out of 667 terms in the disease dataset
+
+% term:icd9::Influenza with other respiratory manifestations::487.1::C0021414 = 0.45 (297 terms in cluster (0.32), out of 667 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Comparison: (0, 1) -- p=0.9268045136490786, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.9712654872071688, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.8156369106351574, corr_p=1.0, rej=False
+            0    1
+subcluster        
+0           3  938
+1           4  874
+2           0  178
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.5129797960450311, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04632305472020805, corr_p=0.13896916416062416, rej=False
+Comparison: (1, 2) -- p=0.1042412224238562, corr_p=0.3127236672715686, rej=False
+              0    1
+subcluster          
+0           102  839
+1            86  792
+2            10  168
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Comparison: (0, 1) -- p=0.9048769763980631, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.1836531598308307, corr_p=0.5509594794924921, rej=False
+Comparison: (1, 2) -- p=0.22007091756719435, corr_p=0.6602127527015831, rej=False
+              0    1
+subcluster          
+0           209  732
+1           192  686
+2            31  147
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=3.845017786868401e-07, corr_p=1.1535053360605202e-06, rej=True
+Comparison: (0, 2) -- p=3.773914708376779e-21, corr_p=1.1321744125130337e-20, rej=True
+Comparison: (1, 2) -- p=1.4198031132512895e-39, corr_p=4.2594093397538683e-39, rej=True
+              0    1
+subcluster          
+0           218  723
+1           121  757
+2           104   74
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.00013239493674756348, corr_p=0.0003971848102426904, rej=True
+Comparison: (0, 2) -- p=6.8746238909966186e-18, corr_p=2.0623871672989857e-17, rej=True
+Comparison: (1, 2) -- p=1.336138180946183e-28, corr_p=4.008414542838549e-28, rej=True
+              0    1
+subcluster          
+0           309  632
+1           216  662
+2           120   58
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.03691068473956617, corr_p=0.11073205421869851, rej=False
+Comparison: (0, 2) -- p=7.905376786038094e-07, corr_p=2.371613035811428e-06, rej=True
+Comparison: (1, 2) -- p=4.554615019420066e-10, corr_p=1.3663845058260198e-09, rej=True
+              0    1
+subcluster          
+0           316  625
+1           254  624
+2            95   83
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.00010482218870394175, corr_p=0.00031446656611182523, rej=True
+Comparison: (0, 2) -- p=1.9582408233490516e-11, corr_p=5.874722470047155e-11, rej=True
+Comparison: (1, 2) -- p=1.0164973873612783e-19, corr_p=3.049492162083835e-19, rej=True
+              0    1
+subcluster          
+0           370  571
+1           268  610
+2           119   59
+Pairwise odds ratio chi2 test for term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Comparison: (0, 1) -- p=1.146087336397412e-09, corr_p=3.438262009192236e-09, rej=True
+Comparison: (0, 2) -- p=9.7743533781678e-34, corr_p=2.9323060134503403e-33, rej=True
+Comparison: (1, 2) -- p=3.8025997011950965e-56, corr_p=1.140779910358529e-55, rej=True
+              0    1
+subcluster          
+0           393  548
+1           246  632
+2           163   15
+Pairwise odds ratio chi2 test for term: icd9::Cough::786.2::C0010200
+Comparison: (0, 1) -- p=2.873795391029938e-05, corr_p=8.621386173089814e-05, rej=True
+Comparison: (0, 2) -- p=1.8067693555093166e-32, corr_p=5.42030806652795e-32, rej=True
+Comparison: (1, 2) -- p=2.1534663994416557e-46, corr_p=6.460399198324967e-46, rej=True
+              0    1
+subcluster          
+0           397  544
+1           286  592
+2           162   16
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=2.166200044719878e-07, corr_p=6.498600134159634e-07, rej=True
+Comparison: (0, 2) -- p=6.376763144670723e-24, corr_p=1.913028943401217e-23, rej=True
+Comparison: (1, 2) -- p=1.0708555898064427e-39, corr_p=3.212566769419328e-39, rej=True
+              0    1
+subcluster          
+0           402  539
+1           271  607
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.0005722535896608123, corr_p=0.0017167607689824367, rej=True
+Comparison: (0, 2) -- p=1.763422770533283e-13, corr_p=5.290268311599849e-13, rej=True
+Comparison: (1, 2) -- p=7.360163282046463e-21, corr_p=2.2080489846139388e-20, rej=True
+              0    1
+subcluster          
+0           422  519
+1           323  555
+2           134   44
+Pairwise odds ratio chi2 test for term: icd9::Pain in limb::729.5::C0030196
+Comparison: (0, 1) -- p=0.04830032992617015, corr_p=0.14490098977851046, rej=False
+Comparison: (0, 2) -- p=1.0421585302174911e-14, corr_p=3.1264755906524734e-14, rej=True
+Comparison: (1, 2) -- p=8.928246706534572e-19, corr_p=2.6784740119603716e-18, rej=True
+              0    1
+subcluster          
+0           429  512
+1           359  519
+2           138   40
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=2.172879533287687e-07, corr_p=6.518638599863062e-07, rej=True
+Comparison: (0, 2) -- p=1.67062458004681e-16, corr_p=5.01187374014043e-16, rej=True
+Comparison: (1, 2) -- p=1.9156973967965488e-29, corr_p=5.747092190389646e-29, rej=True
+              0    1
+subcluster          
+0           436  505
+1           301  577
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Comparison: (0, 1) -- p=0.9365678263404599, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.7282368793085212, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.6767884127687729, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           454  487
+1           421  457
+2            89   89
+Pairwise odds ratio chi2 test for term: icd9::Diarrhea::787.91::C0011991
+Comparison: (0, 1) -- p=0.00015672069072890303, corr_p=0.0004701620721867091, rej=True
+Comparison: (0, 2) -- p=3.8830683996726416e-19, corr_p=1.1649205199017924e-18, rej=True
+Comparison: (1, 2) -- p=2.5132728510336437e-28, corr_p=7.539818553100931e-28, rej=True
+              0    1
+subcluster          
+0           458  483
+1           349  529
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Nausea alone::787.02::C0375548
+Comparison: (0, 1) -- p=0.08654165594024923, corr_p=0.25962496782074773, rej=False
+Comparison: (0, 2) -- p=6.057476074371323e-19, corr_p=1.817242822311397e-18, rej=True
+Comparison: (1, 2) -- p=1.0292541355539017e-22, corr_p=3.0877624066617053e-22, rej=True
+              0    1
+subcluster          
+0           460  481
+1           393  485
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Counseling nos::V65.40::C0740209
+Comparison: (0, 1) -- p=0.015328858823921621, corr_p=0.045986576471764865, rej=True
+Comparison: (0, 2) -- p=4.125276695024123e-28, corr_p=1.2375830085072368e-27, rej=True
+Comparison: (1, 2) -- p=1.6174819525127854e-34, corr_p=4.852445857538356e-34, rej=True
+              0    1
+subcluster          
+0           466  475
+1           384  494
+2           168   10
+Pairwise odds ratio chi2 test for term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Comparison: (0, 1) -- p=8.761203962278027e-06, corr_p=2.628361188683408e-05, rej=True
+Comparison: (0, 2) -- p=4.1649677628774307e-19, corr_p=1.2494903288632293e-18, rej=True
+Comparison: (1, 2) -- p=3.9326936051561204e-30, corr_p=1.1798080815468361e-29, rej=True
+              0    1
+subcluster          
+0           477  464
+1           537  341
+2            25  153
+Pairwise odds ratio chi2 test for term: icd9::Rash and other nonspecific skin eruption::782.1::C0015230
+Comparison: (0, 1) -- p=0.0032230372397161248, corr_p=0.009669111719148374, rej=True
+Comparison: (0, 2) -- p=2.4974581219158492e-22, corr_p=7.492374365747547e-22, rej=True
+Comparison: (1, 2) -- p=1.9392439337257116e-29, corr_p=5.817731801177135e-29, rej=True
+              0    1
+subcluster          
+0           484  457
+1           390  488
+2           162   16
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.0020133374193509104, corr_p=0.006040012258052731, rej=True
+Comparison: (0, 2) -- p=1.2452178693566507e-15, corr_p=3.7356536080699524e-15, rej=True
+Comparison: (1, 2) -- p=4.0089542960539277e-22, corr_p=1.2026862888161784e-21, rej=True
+              0    1
+subcluster          
+0           485  456
+1           388  490
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Constipation, unspecified::564.00::C0009806
+Comparison: (0, 1) -- p=0.0008734809208759154, corr_p=0.0026204427626277463, rej=True
+Comparison: (0, 2) -- p=5.598207047782198e-24, corr_p=1.6794621143346592e-23, rej=True
+Comparison: (1, 2) -- p=2.4329847134668942e-32, corr_p=7.298954140400683e-32, rej=True
+              0    1
+subcluster          
+0           486  455
+1           384  494
+2           165   13
+Pairwise odds ratio chi2 test for term: icd9::Backache, unspecified::724.5::C0004604
+Comparison: (0, 1) -- p=0.34718644605147575, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=7.143180367117902e-16, corr_p=2.1429541101353708e-15, rej=True
+Comparison: (1, 2) -- p=1.176948533813622e-17, corr_p=3.530845601440866e-17, rej=True
+              0    1
+subcluster          
+0           488  453
+1           435  443
+2           151   27
+Pairwise odds ratio chi2 test for term: icd9::Obesity, unspecified::278.00::C0028754
+Comparison: (0, 1) -- p=0.07861935957311823, corr_p=0.2358580787193547, rej=False
+Comparison: (0, 2) -- p=0.0017264093451520297, corr_p=0.005179228035456089, rej=True
+Comparison: (1, 2) -- p=3.543195446266512e-05, corr_p=0.00010629586338799536, rej=True
+              0    1
+subcluster          
+0           490  451
+1           420  458
+2           116   62
+Pairwise odds ratio chi2 test for term: icd9::Personal history of tobacco use::V15.82::C0040335
+Comparison: (0, 1) -- p=0.10926751011012983, corr_p=0.32780253033038953, rej=False
+Comparison: (0, 2) -- p=0.06964118822128326, corr_p=0.2089235646638498, rej=False
+Comparison: (1, 2) -- p=0.006229442405265139, corr_p=0.018688327215795417, rej=True
+              0    1
+subcluster          
+0           509  432
+1           441  437
+2           110   68
+Pairwise odds ratio chi2 test for term: icd9::Esophageal reflux::530.81::C0017168
+Comparison: (0, 1) -- p=0.0004085216148170918, corr_p=0.0012255648444512753, rej=True
+Comparison: (0, 2) -- p=1.161130442910609e-13, corr_p=3.4833913287318273e-13, rej=True
+Comparison: (1, 2) -- p=1.71568847324978e-20, corr_p=5.14706541974934e-20, rej=True
+              0    1
+subcluster          
+0           527  414
+1           418  460
+2           153   25
+Pairwise odds ratio chi2 test for term: icd9::Anemia, unspecified::285.9::C0002871
+Comparison: (0, 1) -- p=0.002159591388926519, corr_p=0.006478774166779557, rej=True
+Comparison: (0, 2) -- p=9.843063220493576e-15, corr_p=2.952918966148073e-14, rej=True
+Comparison: (1, 2) -- p=1.2114481602856889e-20, corr_p=3.634344480857067e-20, rej=True
+              0    1
+subcluster          
+0           538  403
+1           438  440
+2           157   21
+Pairwise odds ratio chi2 test for term: icd9::Unspecified general medical examination::V70.9::C0260860
+Comparison: (0, 1) -- p=5.836631138809332e-06, corr_p=1.7509893416427994e-05, rej=True
+Comparison: (0, 2) -- p=1.1238303604960515e-24, corr_p=3.371491081488154e-24, rej=True
+Comparison: (1, 2) -- p=1.5868928203807044e-35, corr_p=4.760678461142113e-35, rej=True
+              0    1
+subcluster          
+0           551  390
+1           420  458
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133
+Comparison: (0, 1) -- p=3.1772707455644358e-06, corr_p=9.531812236693306e-06, rej=True
+Comparison: (0, 2) -- p=5.55379298170272e-35, corr_p=1.666137894510816e-34, rej=True
+Comparison: (1, 2) -- p=1.011458692357102e-51, corr_p=3.034376077071306e-51, rej=True
+              0    1
+subcluster          
+0           562  379
+1           617  261
+2            16  162
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.2525738464592992, corr_p=0.7577215393778975, rej=False
+Comparison: (0, 2) -- p=4.065270212682971e-07, corr_p=1.2195810638048913e-06, rej=True
+Comparison: (1, 2) -- p=1.4373703507725412e-08, corr_p=4.3121110523176234e-08, rej=True
+              0    1
+subcluster          
+0           565  376
+1           503  375
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Routine general medical examination at a health care facility::V70.0::C0260851
+Comparison: (0, 1) -- p=4.006110131917634e-05, corr_p=0.00012018330395752901, rej=True
+Comparison: (0, 2) -- p=3.506533495172983e-23, corr_p=1.051960048551895e-22, rej=True
+Comparison: (1, 2) -- p=2.0875828395100935e-32, corr_p=6.26274851853028e-32, rej=True
+              0    1
+subcluster          
+0           567  374
+1           444  434
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Anxiety state, unspecified::300.00::C0700613
+Comparison: (0, 1) -- p=0.520000040630828, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=2.8172098551454215e-10, corr_p=8.451629565436264e-10, rej=True
+Comparison: (1, 2) -- p=3.292369037351882e-11, corr_p=9.877107112055646e-11, rej=True
+              0    1
+subcluster          
+0           568  373
+1           516  362
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Asthma, unspecified type, unspecified::493.90::C0155886
+Comparison: (0, 1) -- p=0.0012531964056701483, corr_p=0.003759589217010445, rej=True
+Comparison: (0, 2) -- p=8.679083447083499e-07, corr_p=2.6037250341250497e-06, rej=True
+Comparison: (1, 2) -- p=3.3729264562302844e-11, corr_p=1.0118779368690854e-10, rej=True
+              0    1
+subcluster          
+0           571  370
+1           466  412
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Generalized anxiety disorder::300.02::C0270549
+Comparison: (0, 1) -- p=0.8680134674900574, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=1.9086158310583118e-10, corr_p=5.725847493174936e-10, rej=True
+Comparison: (1, 2) -- p=1.122522009030087e-10, corr_p=3.367566027090261e-10, rej=True
+              0    1
+subcluster          
+0           578  363
+1           535  343
+2           154   24
+Pairwise odds ratio chi2 test for term: icd9::Vomiting alone::787.03::C0728950
+Comparison: (0, 1) -- p=0.1216719871446681, corr_p=0.36501596143400433, rej=False
+Comparison: (0, 2) -- p=8.19102000666287e-18, corr_p=2.457306001998861e-17, rej=True
+Comparison: (1, 2) -- p=1.167253121064599e-20, corr_p=3.5017593631937966e-20, rej=True
+              0    1
+subcluster          
+0           579  362
+1           508  370
+2           169    9
+Pairwise odds ratio chi2 test for term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, uncontrolled::250.02::C0375115
+Comparison: (0, 1) -- p=0.006529078234847461, corr_p=0.01958723470454238, rej=True
+Comparison: (0, 2) -- p=4.5923271439900115e-12, corr_p=1.3776981431970035e-11, rej=True
+Comparison: (1, 2) -- p=1.3033939469663932e-16, corr_p=3.9101818408991797e-16, rej=True
+              0    1
+subcluster          
+0           580  361
+1           485  393
+2           158   20
+Pairwise odds ratio chi2 test for term: icd9::Dysuria::788.1::C0013428
+Comparison: (0, 1) -- p=0.2939058300509369, corr_p=0.8817174901528106, rej=False
+Comparison: (0, 2) -- p=1.197943345228104e-20, corr_p=3.593830035684312e-20, rej=True
+Comparison: (1, 2) -- p=1.266476708945924e-22, corr_p=3.799430126837772e-22, rej=True
+              0    1
+subcluster          
+0           581  360
+1           520  358
+2           174    4
+Pairwise odds ratio chi2 test for term: icd9::Other specified cardiac dysrhythmias::427.89::C0348626
+Comparison: (0, 1) -- p=0.0957377272335249, corr_p=0.2872131817005747, rej=False
+Comparison: (0, 2) -- p=0.10557265511111598, corr_p=0.31671796533334795, rej=False
+Comparison: (1, 2) -- p=0.008917919804237515, corr_p=0.026753759412712547, rej=True
+              0    1
+subcluster          
+0           582  359
+1           577  301
+2            98   80
+Pairwise odds ratio chi2 test for term: icd9::Unspecified fall::E888.9::C0085639
+Comparison: (0, 1) -- p=0.002761297213248696, corr_p=0.008283891639746088, rej=True
+Comparison: (0, 2) -- p=3.751805294890244e-18, corr_p=1.1255415884670734e-17, rej=True
+Comparison: (1, 2) -- p=6.517859124585687e-24, corr_p=1.955357737375706e-23, rej=True
+              0    1
+subcluster          
+0           589  352
+1           488  390
+2           171    7
+Pairwise odds ratio chi2 test for term: icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959
+Comparison: (0, 1) -- p=0.006091907253890531, corr_p=0.018275721761671592, rej=True
+Comparison: (0, 2) -- p=1.1691222568077692e-15, corr_p=3.5073667704233073e-15, rej=True
+Comparison: (1, 2) -- p=1.2848028004541817e-20, corr_p=3.854408401362545e-20, rej=True
+              0    1
+subcluster          
+0           592  349
+1           496  382
+2           167   11
+Pairwise odds ratio chi2 test for term: icd9::Benign essential hypertension::401.1::C0155583
+Comparison: (0, 1) -- p=0.20906099984546375, corr_p=0.6271829995363912, rej=False
+Comparison: (0, 2) -- p=1.648702640697695e-08, corr_p=4.946107922093085e-08, rej=True
+Comparison: (1, 2) -- p=3.3733643139565916e-10, corr_p=1.0120092941869774e-09, rej=True
+              0    1
+subcluster          
+0           596  345
+1           530  348
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Persistent vomiting::536.2::C0152165
+Comparison: (0, 1) -- p=0.059073280419450695, corr_p=0.17721984125835208, rej=False
+Comparison: (0, 2) -- p=1.2998482047425725e-16, corr_p=3.899544614227717e-16, rej=True
+Comparison: (1, 2) -- p=6.144580476408966e-20, corr_p=1.8433741429226898e-19, rej=True
+              0    1
+subcluster          
+0           601  340
+1           522  356
+2           170    8
+Pairwise odds ratio chi2 test for term: icd9::Lumbago::724.2::C0024031
+Comparison: (0, 1) -- p=0.13716309220986123, corr_p=0.4114892766295837, rej=False
+Comparison: (0, 2) -- p=5.0341029835863253e-17, corr_p=1.5102308950758977e-16, rej=True
+Comparison: (1, 2) -- p=1.2884934504949203e-19, corr_p=3.865480351484761e-19, rej=True
+              0    1
+subcluster          
+0           603  338
+1           532  346
+2           171    7
+Pairwise odds ratio chi2 test for term: icd9::Pain in joint, lower leg::719.46::C0838227
+Comparison: (0, 1) -- p=0.09664325145438554, corr_p=0.2899297543631566, rej=False
+Comparison: (0, 2) -- p=1.3376229112096364e-18, corr_p=4.012868733628909e-18, rej=True
+Comparison: (1, 2) -- p=1.5128174310868846e-21, corr_p=4.538452293260654e-21, rej=True
+              0    1
+subcluster          
+0           613  328
+1           538  340
+2           175    3
+Pairwise odds ratio chi2 test for term: icd9::Other screening mammogram::V76.12::C0490033
+Comparison: (0, 1) -- p=0.0020317837873076597, corr_p=0.006095351361922979, rej=True
+Comparison: (0, 2) -- p=2.31552721377825e-19, corr_p=6.94658164133475e-19, rej=True
+Comparison: (1, 2) -- p=4.0792480798899715e-25, corr_p=1.2237744239669914e-24, rej=True
+              0    1
+subcluster          
+0           619  322
+1           515  363
+2           177    1
+Pairwise odds ratio chi2 test for term: icd9::Fracture, cause unspecified::E887::C0016658
+Comparison: (0, 1) -- p=0.022175220679865406, corr_p=0.06652566203959621, rej=False
+Comparison: (0, 2) -- p=2.039429124471099e-18, corr_p=6.118287373413298e-18, rej=True
+Comparison: (1, 2) -- p=1.7721062478818526e-22, corr_p=5.316318743645557e-22, rej=True
+              0    1
+subcluster          
+0           623  318
+1           535  343
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Other problems related to lifestyle::V69.8::C0348774
+Comparison: (0, 1) -- p=0.017506377257972563, corr_p=0.05251913177391769, rej=False
+Comparison: (0, 2) -- p=1.9542844157939807e-13, corr_p=5.862853247381942e-13, rej=True
+Comparison: (1, 2) -- p=3.034268448535832e-17, corr_p=9.102805345607497e-17, rej=True
+              0    1
+subcluster          
+0           629  312
+1           539  339
+2           168   10
+Pairwise odds ratio chi2 test for term: icd9::Other specified vaccinations against streptococcus pneumoniae [pneumococcus]::V03.82::C0375766
+Comparison: (0, 1) -- p=0.030092689903642587, corr_p=0.09027806971092776, rej=False
+Comparison: (0, 2) -- p=1.1395465375279393e-13, corr_p=3.418639612583818e-13, rej=True
+Comparison: (1, 2) -- p=4.0523843382636205e-17, corr_p=1.215715301479086e-16, rej=True
+              0    1
+subcluster          
+0           633  308
+1           547  331
+2           169    9
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified angina pectoris::413.9::C0348588
+Comparison: (0, 1) -- p=2.564910479223969e-05, corr_p=7.694731437671907e-05, rej=True
+Comparison: (0, 2) -- p=4.0880458934437086e-14, corr_p=1.2264137680331125e-13, rej=True
+Comparison: (1, 2) -- p=6.11414688565508e-25, corr_p=1.834244065696524e-24, rej=True
+              0    1
+subcluster          
+0           638  303
+1           674  204
+2            67  111
+Pairwise odds ratio chi2 test for term: icd9::Hypoglycemia, unspecified::251.2::C0020615
+Comparison: (0, 1) -- p=0.00021599717159964755, corr_p=0.0006479915147989426, rej=True
+Comparison: (0, 2) -- p=3.649317370567298e-12, corr_p=1.0947952111701895e-11, rej=True
+Comparison: (1, 2) -- p=4.321840500529226e-18, corr_p=1.2965521501587678e-17, rej=True
+              0    1
+subcluster          
+0           640  301
+1           523  355
+2           167   11
+Pairwise odds ratio chi2 test for term: icd9::Influenza with other respiratory manifestations::487.1::C0021414
+Comparison: (0, 1) -- p=9.246311987870787e-06, corr_p=2.7738935963612364e-05, rej=True
+Comparison: (0, 2) -- p=1.2853244025678447e-15, corr_p=3.855973207703534e-15, rej=True
+Comparison: (1, 2) -- p=2.0552968650664662e-23, corr_p=6.165890595199399e-23, rej=True
+              0    1
+subcluster          
+0           644  297
+1           512  366
+2           174    4
+
+
+
+Cluster 1 numerosity: 878
+% term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.44 (874 terms in cluster (1.00), out of 1990 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.44 (792 terms in cluster (0.90), out of 1799 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.49 (757 terms in cluster (0.86), out of 1554 terms in the disease dataset
+
+% term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.44 (686 terms in cluster (0.78), out of 1565 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.49 (662 terms in cluster (0.75), out of 1352 terms in the disease dataset
+
+% term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.53 (632 terms in cluster (0.72), out of 1195 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.47 (624 terms in cluster (0.71), out of 1332 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.49 (610 terms in cluster (0.69), out of 1240 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.52 (607 terms in cluster (0.69), out of 1174 terms in the disease dataset
+
+% term:icd9::Cough::786.2::C0010200 = 0.51 (592 terms in cluster (0.67), out of 1152 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.52 (577 terms in cluster (0.66), out of 1117 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.50 (555 terms in cluster (0.63), out of 1118 terms in the disease dataset
+
+% term:icd9::Diarrhea::787.91::C0011991 = 0.51 (529 terms in cluster (0.60), out of 1038 terms in the disease dataset
+
+% term:icd9::Pain in limb::729.5::C0030196 = 0.48 (519 terms in cluster (0.59), out of 1071 terms in the disease dataset
+
+% term:icd9::Counseling nos::V65.40::C0740209 = 0.50 (494 terms in cluster (0.56), out of 979 terms in the disease dataset
+
+% term:icd9::Constipation, unspecified::564.00::C0009806 = 0.51 (494 terms in cluster (0.56), out of 962 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.50 (490 terms in cluster (0.56), out of 974 terms in the disease dataset
+
+% term:icd9::Rash and other nonspecific skin eruption::782.1::C0015230 = 0.51 (488 terms in cluster (0.56), out of 961 terms in the disease dataset
+
+% term:icd9::Nausea alone::787.02::C0375548 = 0.49 (485 terms in cluster (0.55), out of 992 terms in the disease dataset
+
+% term:icd9::Esophageal reflux::530.81::C0017168 = 0.51 (460 terms in cluster (0.52), out of 899 terms in the disease dataset
+
+% term:icd9::Unspecified general medical examination::V70.9::C0260860 = 0.54 (458 terms in cluster (0.52), out of 850 terms in the disease dataset
+
+% term:icd9::Obesity, unspecified::278.00::C0028754 = 0.47 (458 terms in cluster (0.52), out of 971 terms in the disease dataset
+
+% term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.44 (457 terms in cluster (0.52), out of 1033 terms in the disease dataset
+
+% term:icd9::Backache, unspecified::724.5::C0004604 = 0.48 (443 terms in cluster (0.50), out of 923 terms in the disease dataset
+
+% term:icd9::Anemia, unspecified::285.9::C0002871 = 0.51 (440 terms in cluster (0.50), out of 864 terms in the disease dataset
+
+% term:icd9::Personal history of tobacco use::V15.82::C0040335 = 0.47 (437 terms in cluster (0.50), out of 937 terms in the disease dataset
+
+% term:icd9::Routine general medical examination at a health care facility::V70.0::C0260851 = 0.54 (434 terms in cluster (0.49), out of 810 terms in the disease dataset
+
+% term:icd9::Asthma, unspecified type, unspecified::493.90::C0155886 = 0.50 (412 terms in cluster (0.47), out of 817 terms in the disease dataset
+
+% term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, uncontrolled::250.02::C0375115 = 0.51 (393 terms in cluster (0.45), out of 774 terms in the disease dataset
+
+% term:icd9::Unspecified fall::E888.9::C0085639 = 0.52 (390 terms in cluster (0.44), out of 749 terms in the disease dataset
+
+% term:icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959 = 0.51 (382 terms in cluster (0.44), out of 742 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.48 (375 terms in cluster (0.43), out of 786 terms in the disease dataset
+
+% term:icd9::Vomiting alone::787.03::C0728950 = 0.50 (370 terms in cluster (0.42), out of 741 terms in the disease dataset
+
+% term:icd9::Influenza with other respiratory manifestations::487.1::C0021414 = 0.55 (366 terms in cluster (0.42), out of 667 terms in the disease dataset
+
+% term:icd9::Other screening mammogram::V76.12::C0490033 = 0.53 (363 terms in cluster (0.41), out of 686 terms in the disease dataset
+
+% term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.48 (362 terms in cluster (0.41), out of 761 terms in the disease dataset
+
+% term:icd9::Dysuria::788.1::C0013428 = 0.50 (358 terms in cluster (0.41), out of 722 terms in the disease dataset
+
+% term:icd9::Persistent vomiting::536.2::C0152165 = 0.51 (356 terms in cluster (0.41), out of 704 terms in the disease dataset
+
+% term:icd9::Hypoglycemia, unspecified::251.2::C0020615 = 0.53 (355 terms in cluster (0.40), out of 667 terms in the disease dataset
+
+% term:icd9::Benign essential hypertension::401.1::C0155583 = 0.48 (348 terms in cluster (0.40), out of 719 terms in the disease dataset
+
+% term:icd9::Lumbago::724.2::C0024031 = 0.50 (346 terms in cluster (0.39), out of 691 terms in the disease dataset
+
+% term:icd9::Acute nasopharyngitis [common cold]::460::C0009443 = 0.54 (344 terms in cluster (0.39), out of 639 terms in the disease dataset
+
+% term:icd9::Generalized anxiety disorder::300.02::C0270549 = 0.47 (343 terms in cluster (0.39), out of 730 terms in the disease dataset
+
+% term:icd9::Fracture, cause unspecified::E887::C0016658 = 0.52 (343 terms in cluster (0.39), out of 663 terms in the disease dataset
+
+% term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.36 (341 terms in cluster (0.39), out of 958 terms in the disease dataset
+
+% term:icd9::Pain in joint, lower leg::719.46::C0838227 = 0.51 (340 terms in cluster (0.39), out of 671 terms in the disease dataset
+
+% term:icd9::Other problems related to lifestyle::V69.8::C0348774 = 0.51 (339 terms in cluster (0.39), out of 661 terms in the disease dataset
+
+% term:icd9::Other specified vaccinations against streptococcus pneumoniae [pneumococcus]::V03.82::C0375766 = 0.51 (331 terms in cluster (0.38), out of 648 terms in the disease dataset
+
+% term:icd9::Other specified cardiac dysrhythmias::427.89::C0348626 = 0.41 (301 terms in cluster (0.34), out of 740 terms in the disease dataset
+
+% term:icd9::Depressive disorder, not elsewhere classified::311::C0868892 = 0.50 (299 terms in cluster (0.34), out of 593 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Comparison: (0, 1) -- p=0.9268045136490786, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.9712654872071688, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.8156369106351574, corr_p=1.0, rej=False
+            0    1
+subcluster        
+0           3  938
+1           4  874
+2           0  178
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.5129797960450311, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04632305472020805, corr_p=0.13896916416062416, rej=False
+Comparison: (1, 2) -- p=0.1042412224238562, corr_p=0.3127236672715686, rej=False
+              0    1
+subcluster          
+0           102  839
+1            86  792
+2            10  168
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=3.845017786868401e-07, corr_p=1.1535053360605202e-06, rej=True
+Comparison: (0, 2) -- p=3.773914708376779e-21, corr_p=1.1321744125130337e-20, rej=True
+Comparison: (1, 2) -- p=1.4198031132512895e-39, corr_p=4.2594093397538683e-39, rej=True
+              0    1
+subcluster          
+0           218  723
+1           121  757
+2           104   74
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Comparison: (0, 1) -- p=0.9048769763980631, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.1836531598308307, corr_p=0.5509594794924921, rej=False
+Comparison: (1, 2) -- p=0.22007091756719435, corr_p=0.6602127527015831, rej=False
+              0    1
+subcluster          
+0           209  732
+1           192  686
+2            31  147
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.00013239493674756348, corr_p=0.0003971848102426904, rej=True
+Comparison: (0, 2) -- p=6.8746238909966186e-18, corr_p=2.0623871672989857e-17, rej=True
+Comparison: (1, 2) -- p=1.336138180946183e-28, corr_p=4.008414542838549e-28, rej=True
+              0    1
+subcluster          
+0           309  632
+1           216  662
+2           120   58
+Pairwise odds ratio chi2 test for term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Comparison: (0, 1) -- p=1.146087336397412e-09, corr_p=3.438262009192236e-09, rej=True
+Comparison: (0, 2) -- p=9.7743533781678e-34, corr_p=2.9323060134503403e-33, rej=True
+Comparison: (1, 2) -- p=3.8025997011950965e-56, corr_p=1.140779910358529e-55, rej=True
+              0    1
+subcluster          
+0           393  548
+1           246  632
+2           163   15
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.03691068473956617, corr_p=0.11073205421869851, rej=False
+Comparison: (0, 2) -- p=7.905376786038094e-07, corr_p=2.371613035811428e-06, rej=True
+Comparison: (1, 2) -- p=4.554615019420066e-10, corr_p=1.3663845058260198e-09, rej=True
+              0    1
+subcluster          
+0           316  625
+1           254  624
+2            95   83
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.00010482218870394175, corr_p=0.00031446656611182523, rej=True
+Comparison: (0, 2) -- p=1.9582408233490516e-11, corr_p=5.874722470047155e-11, rej=True
+Comparison: (1, 2) -- p=1.0164973873612783e-19, corr_p=3.049492162083835e-19, rej=True
+              0    1
+subcluster          
+0           370  571
+1           268  610
+2           119   59
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=2.166200044719878e-07, corr_p=6.498600134159634e-07, rej=True
+Comparison: (0, 2) -- p=6.376763144670723e-24, corr_p=1.913028943401217e-23, rej=True
+Comparison: (1, 2) -- p=1.0708555898064427e-39, corr_p=3.212566769419328e-39, rej=True
+              0    1
+subcluster          
+0           402  539
+1           271  607
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Cough::786.2::C0010200
+Comparison: (0, 1) -- p=2.873795391029938e-05, corr_p=8.621386173089814e-05, rej=True
+Comparison: (0, 2) -- p=1.8067693555093166e-32, corr_p=5.42030806652795e-32, rej=True
+Comparison: (1, 2) -- p=2.1534663994416557e-46, corr_p=6.460399198324967e-46, rej=True
+              0    1
+subcluster          
+0           397  544
+1           286  592
+2           162   16
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=2.172879533287687e-07, corr_p=6.518638599863062e-07, rej=True
+Comparison: (0, 2) -- p=1.67062458004681e-16, corr_p=5.01187374014043e-16, rej=True
+Comparison: (1, 2) -- p=1.9156973967965488e-29, corr_p=5.747092190389646e-29, rej=True
+              0    1
+subcluster          
+0           436  505
+1           301  577
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.0005722535896608123, corr_p=0.0017167607689824367, rej=True
+Comparison: (0, 2) -- p=1.763422770533283e-13, corr_p=5.290268311599849e-13, rej=True
+Comparison: (1, 2) -- p=7.360163282046463e-21, corr_p=2.2080489846139388e-20, rej=True
+              0    1
+subcluster          
+0           422  519
+1           323  555
+2           134   44
+Pairwise odds ratio chi2 test for term: icd9::Diarrhea::787.91::C0011991
+Comparison: (0, 1) -- p=0.00015672069072890303, corr_p=0.0004701620721867091, rej=True
+Comparison: (0, 2) -- p=3.8830683996726416e-19, corr_p=1.1649205199017924e-18, rej=True
+Comparison: (1, 2) -- p=2.5132728510336437e-28, corr_p=7.539818553100931e-28, rej=True
+              0    1
+subcluster          
+0           458  483
+1           349  529
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Pain in limb::729.5::C0030196
+Comparison: (0, 1) -- p=0.04830032992617015, corr_p=0.14490098977851046, rej=False
+Comparison: (0, 2) -- p=1.0421585302174911e-14, corr_p=3.1264755906524734e-14, rej=True
+Comparison: (1, 2) -- p=8.928246706534572e-19, corr_p=2.6784740119603716e-18, rej=True
+              0    1
+subcluster          
+0           429  512
+1           359  519
+2           138   40
+Pairwise odds ratio chi2 test for term: icd9::Counseling nos::V65.40::C0740209
+Comparison: (0, 1) -- p=0.015328858823921621, corr_p=0.045986576471764865, rej=True
+Comparison: (0, 2) -- p=4.125276695024123e-28, corr_p=1.2375830085072368e-27, rej=True
+Comparison: (1, 2) -- p=1.6174819525127854e-34, corr_p=4.852445857538356e-34, rej=True
+              0    1
+subcluster          
+0           466  475
+1           384  494
+2           168   10
+Pairwise odds ratio chi2 test for term: icd9::Constipation, unspecified::564.00::C0009806
+Comparison: (0, 1) -- p=0.0008734809208759154, corr_p=0.0026204427626277463, rej=True
+Comparison: (0, 2) -- p=5.598207047782198e-24, corr_p=1.6794621143346592e-23, rej=True
+Comparison: (1, 2) -- p=2.4329847134668942e-32, corr_p=7.298954140400683e-32, rej=True
+              0    1
+subcluster          
+0           486  455
+1           384  494
+2           165   13
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.0020133374193509104, corr_p=0.006040012258052731, rej=True
+Comparison: (0, 2) -- p=1.2452178693566507e-15, corr_p=3.7356536080699524e-15, rej=True
+Comparison: (1, 2) -- p=4.0089542960539277e-22, corr_p=1.2026862888161784e-21, rej=True
+              0    1
+subcluster          
+0           485  456
+1           388  490
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Rash and other nonspecific skin eruption::782.1::C0015230
+Comparison: (0, 1) -- p=0.0032230372397161248, corr_p=0.009669111719148374, rej=True
+Comparison: (0, 2) -- p=2.4974581219158492e-22, corr_p=7.492374365747547e-22, rej=True
+Comparison: (1, 2) -- p=1.9392439337257116e-29, corr_p=5.817731801177135e-29, rej=True
+              0    1
+subcluster          
+0           484  457
+1           390  488
+2           162   16
+Pairwise odds ratio chi2 test for term: icd9::Nausea alone::787.02::C0375548
+Comparison: (0, 1) -- p=0.08654165594024923, corr_p=0.25962496782074773, rej=False
+Comparison: (0, 2) -- p=6.057476074371323e-19, corr_p=1.817242822311397e-18, rej=True
+Comparison: (1, 2) -- p=1.0292541355539017e-22, corr_p=3.0877624066617053e-22, rej=True
+              0    1
+subcluster          
+0           460  481
+1           393  485
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Esophageal reflux::530.81::C0017168
+Comparison: (0, 1) -- p=0.0004085216148170918, corr_p=0.0012255648444512753, rej=True
+Comparison: (0, 2) -- p=1.161130442910609e-13, corr_p=3.4833913287318273e-13, rej=True
+Comparison: (1, 2) -- p=1.71568847324978e-20, corr_p=5.14706541974934e-20, rej=True
+              0    1
+subcluster          
+0           527  414
+1           418  460
+2           153   25
+Pairwise odds ratio chi2 test for term: icd9::Unspecified general medical examination::V70.9::C0260860
+Comparison: (0, 1) -- p=5.836631138809332e-06, corr_p=1.7509893416427994e-05, rej=True
+Comparison: (0, 2) -- p=1.1238303604960515e-24, corr_p=3.371491081488154e-24, rej=True
+Comparison: (1, 2) -- p=1.5868928203807044e-35, corr_p=4.760678461142113e-35, rej=True
+              0    1
+subcluster          
+0           551  390
+1           420  458
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Obesity, unspecified::278.00::C0028754
+Comparison: (0, 1) -- p=0.07861935957311823, corr_p=0.2358580787193547, rej=False
+Comparison: (0, 2) -- p=0.0017264093451520297, corr_p=0.005179228035456089, rej=True
+Comparison: (1, 2) -- p=3.543195446266512e-05, corr_p=0.00010629586338799536, rej=True
+              0    1
+subcluster          
+0           490  451
+1           420  458
+2           116   62
+Pairwise odds ratio chi2 test for term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Comparison: (0, 1) -- p=0.9365678263404599, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.7282368793085212, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.6767884127687729, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           454  487
+1           421  457
+2            89   89
+Pairwise odds ratio chi2 test for term: icd9::Backache, unspecified::724.5::C0004604
+Comparison: (0, 1) -- p=0.34718644605147575, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=7.143180367117902e-16, corr_p=2.1429541101353708e-15, rej=True
+Comparison: (1, 2) -- p=1.176948533813622e-17, corr_p=3.530845601440866e-17, rej=True
+              0    1
+subcluster          
+0           488  453
+1           435  443
+2           151   27
+Pairwise odds ratio chi2 test for term: icd9::Anemia, unspecified::285.9::C0002871
+Comparison: (0, 1) -- p=0.002159591388926519, corr_p=0.006478774166779557, rej=True
+Comparison: (0, 2) -- p=9.843063220493576e-15, corr_p=2.952918966148073e-14, rej=True
+Comparison: (1, 2) -- p=1.2114481602856889e-20, corr_p=3.634344480857067e-20, rej=True
+              0    1
+subcluster          
+0           538  403
+1           438  440
+2           157   21
+Pairwise odds ratio chi2 test for term: icd9::Personal history of tobacco use::V15.82::C0040335
+Comparison: (0, 1) -- p=0.10926751011012983, corr_p=0.32780253033038953, rej=False
+Comparison: (0, 2) -- p=0.06964118822128326, corr_p=0.2089235646638498, rej=False
+Comparison: (1, 2) -- p=0.006229442405265139, corr_p=0.018688327215795417, rej=True
+              0    1
+subcluster          
+0           509  432
+1           441  437
+2           110   68
+Pairwise odds ratio chi2 test for term: icd9::Routine general medical examination at a health care facility::V70.0::C0260851
+Comparison: (0, 1) -- p=4.006110131917634e-05, corr_p=0.00012018330395752901, rej=True
+Comparison: (0, 2) -- p=3.506533495172983e-23, corr_p=1.051960048551895e-22, rej=True
+Comparison: (1, 2) -- p=2.0875828395100935e-32, corr_p=6.26274851853028e-32, rej=True
+              0    1
+subcluster          
+0           567  374
+1           444  434
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Asthma, unspecified type, unspecified::493.90::C0155886
+Comparison: (0, 1) -- p=0.0012531964056701483, corr_p=0.003759589217010445, rej=True
+Comparison: (0, 2) -- p=8.679083447083499e-07, corr_p=2.6037250341250497e-06, rej=True
+Comparison: (1, 2) -- p=3.3729264562302844e-11, corr_p=1.0118779368690854e-10, rej=True
+              0    1
+subcluster          
+0           571  370
+1           466  412
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, uncontrolled::250.02::C0375115
+Comparison: (0, 1) -- p=0.006529078234847461, corr_p=0.01958723470454238, rej=True
+Comparison: (0, 2) -- p=4.5923271439900115e-12, corr_p=1.3776981431970035e-11, rej=True
+Comparison: (1, 2) -- p=1.3033939469663932e-16, corr_p=3.9101818408991797e-16, rej=True
+              0    1
+subcluster          
+0           580  361
+1           485  393
+2           158   20
+Pairwise odds ratio chi2 test for term: icd9::Unspecified fall::E888.9::C0085639
+Comparison: (0, 1) -- p=0.002761297213248696, corr_p=0.008283891639746088, rej=True
+Comparison: (0, 2) -- p=3.751805294890244e-18, corr_p=1.1255415884670734e-17, rej=True
+Comparison: (1, 2) -- p=6.517859124585687e-24, corr_p=1.955357737375706e-23, rej=True
+              0    1
+subcluster          
+0           589  352
+1           488  390
+2           171    7
+Pairwise odds ratio chi2 test for term: icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959
+Comparison: (0, 1) -- p=0.006091907253890531, corr_p=0.018275721761671592, rej=True
+Comparison: (0, 2) -- p=1.1691222568077692e-15, corr_p=3.5073667704233073e-15, rej=True
+Comparison: (1, 2) -- p=1.2848028004541817e-20, corr_p=3.854408401362545e-20, rej=True
+              0    1
+subcluster          
+0           592  349
+1           496  382
+2           167   11
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.2525738464592992, corr_p=0.7577215393778975, rej=False
+Comparison: (0, 2) -- p=4.065270212682971e-07, corr_p=1.2195810638048913e-06, rej=True
+Comparison: (1, 2) -- p=1.4373703507725412e-08, corr_p=4.3121110523176234e-08, rej=True
+              0    1
+subcluster          
+0           565  376
+1           503  375
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Vomiting alone::787.03::C0728950
+Comparison: (0, 1) -- p=0.1216719871446681, corr_p=0.36501596143400433, rej=False
+Comparison: (0, 2) -- p=8.19102000666287e-18, corr_p=2.457306001998861e-17, rej=True
+Comparison: (1, 2) -- p=1.167253121064599e-20, corr_p=3.5017593631937966e-20, rej=True
+              0    1
+subcluster          
+0           579  362
+1           508  370
+2           169    9
+Pairwise odds ratio chi2 test for term: icd9::Influenza with other respiratory manifestations::487.1::C0021414
+Comparison: (0, 1) -- p=9.246311987870787e-06, corr_p=2.7738935963612364e-05, rej=True
+Comparison: (0, 2) -- p=1.2853244025678447e-15, corr_p=3.855973207703534e-15, rej=True
+Comparison: (1, 2) -- p=2.0552968650664662e-23, corr_p=6.165890595199399e-23, rej=True
+              0    1
+subcluster          
+0           644  297
+1           512  366
+2           174    4
+Pairwise odds ratio chi2 test for term: icd9::Other screening mammogram::V76.12::C0490033
+Comparison: (0, 1) -- p=0.0020317837873076597, corr_p=0.006095351361922979, rej=True
+Comparison: (0, 2) -- p=2.31552721377825e-19, corr_p=6.94658164133475e-19, rej=True
+Comparison: (1, 2) -- p=4.0792480798899715e-25, corr_p=1.2237744239669914e-24, rej=True
+              0    1
+subcluster          
+0           619  322
+1           515  363
+2           177    1
+Pairwise odds ratio chi2 test for term: icd9::Anxiety state, unspecified::300.00::C0700613
+Comparison: (0, 1) -- p=0.520000040630828, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=2.8172098551454215e-10, corr_p=8.451629565436264e-10, rej=True
+Comparison: (1, 2) -- p=3.292369037351882e-11, corr_p=9.877107112055646e-11, rej=True
+              0    1
+subcluster          
+0           568  373
+1           516  362
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Dysuria::788.1::C0013428
+Comparison: (0, 1) -- p=0.2939058300509369, corr_p=0.8817174901528106, rej=False
+Comparison: (0, 2) -- p=1.197943345228104e-20, corr_p=3.593830035684312e-20, rej=True
+Comparison: (1, 2) -- p=1.266476708945924e-22, corr_p=3.799430126837772e-22, rej=True
+              0    1
+subcluster          
+0           581  360
+1           520  358
+2           174    4
+Pairwise odds ratio chi2 test for term: icd9::Persistent vomiting::536.2::C0152165
+Comparison: (0, 1) -- p=0.059073280419450695, corr_p=0.17721984125835208, rej=False
+Comparison: (0, 2) -- p=1.2998482047425725e-16, corr_p=3.899544614227717e-16, rej=True
+Comparison: (1, 2) -- p=6.144580476408966e-20, corr_p=1.8433741429226898e-19, rej=True
+              0    1
+subcluster          
+0           601  340
+1           522  356
+2           170    8
+Pairwise odds ratio chi2 test for term: icd9::Hypoglycemia, unspecified::251.2::C0020615
+Comparison: (0, 1) -- p=0.00021599717159964755, corr_p=0.0006479915147989426, rej=True
+Comparison: (0, 2) -- p=3.649317370567298e-12, corr_p=1.0947952111701895e-11, rej=True
+Comparison: (1, 2) -- p=4.321840500529226e-18, corr_p=1.2965521501587678e-17, rej=True
+              0    1
+subcluster          
+0           640  301
+1           523  355
+2           167   11
+Pairwise odds ratio chi2 test for term: icd9::Benign essential hypertension::401.1::C0155583
+Comparison: (0, 1) -- p=0.20906099984546375, corr_p=0.6271829995363912, rej=False
+Comparison: (0, 2) -- p=1.648702640697695e-08, corr_p=4.946107922093085e-08, rej=True
+Comparison: (1, 2) -- p=3.3733643139565916e-10, corr_p=1.0120092941869774e-09, rej=True
+              0    1
+subcluster          
+0           596  345
+1           530  348
+2           152   26
+Pairwise odds ratio chi2 test for term: icd9::Lumbago::724.2::C0024031
+Comparison: (0, 1) -- p=0.13716309220986123, corr_p=0.4114892766295837, rej=False
+Comparison: (0, 2) -- p=5.0341029835863253e-17, corr_p=1.5102308950758977e-16, rej=True
+Comparison: (1, 2) -- p=1.2884934504949203e-19, corr_p=3.865480351484761e-19, rej=True
+              0    1
+subcluster          
+0           603  338
+1           532  346
+2           171    7
+Pairwise odds ratio chi2 test for term: icd9::Acute nasopharyngitis [common cold]::460::C0009443
+Comparison: (0, 1) -- p=0.00027084466938769584, corr_p=0.0008125340081630876, rej=True
+Comparison: (0, 2) -- p=3.5354955648446066e-15, corr_p=1.060648669453382e-14, rej=True
+Comparison: (1, 2) -- p=2.767206598447853e-21, corr_p=8.301619795343559e-21, rej=True
+              0    1
+subcluster          
+0           650  291
+1           534  344
+2           174    4
+Pairwise odds ratio chi2 test for term: icd9::Generalized anxiety disorder::300.02::C0270549
+Comparison: (0, 1) -- p=0.8680134674900574, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=1.9086158310583118e-10, corr_p=5.725847493174936e-10, rej=True
+Comparison: (1, 2) -- p=1.122522009030087e-10, corr_p=3.367566027090261e-10, rej=True
+              0    1
+subcluster          
+0           578  363
+1           535  343
+2           154   24
+Pairwise odds ratio chi2 test for term: icd9::Fracture, cause unspecified::E887::C0016658
+Comparison: (0, 1) -- p=0.022175220679865406, corr_p=0.06652566203959621, rej=False
+Comparison: (0, 2) -- p=2.039429124471099e-18, corr_p=6.118287373413298e-18, rej=True
+Comparison: (1, 2) -- p=1.7721062478818526e-22, corr_p=5.316318743645557e-22, rej=True
+              0    1
+subcluster          
+0           623  318
+1           535  343
+2           176    2
+Pairwise odds ratio chi2 test for term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Comparison: (0, 1) -- p=8.761203962278027e-06, corr_p=2.628361188683408e-05, rej=True
+Comparison: (0, 2) -- p=4.1649677628774307e-19, corr_p=1.2494903288632293e-18, rej=True
+Comparison: (1, 2) -- p=3.9326936051561204e-30, corr_p=1.1798080815468361e-29, rej=True
+              0    1
+subcluster          
+0           477  464
+1           537  341
+2            25  153
+Pairwise odds ratio chi2 test for term: icd9::Pain in joint, lower leg::719.46::C0838227
+Comparison: (0, 1) -- p=0.09664325145438554, corr_p=0.2899297543631566, rej=False
+Comparison: (0, 2) -- p=1.3376229112096364e-18, corr_p=4.012868733628909e-18, rej=True
+Comparison: (1, 2) -- p=1.5128174310868846e-21, corr_p=4.538452293260654e-21, rej=True
+              0    1
+subcluster          
+0           613  328
+1           538  340
+2           175    3
+Pairwise odds ratio chi2 test for term: icd9::Other problems related to lifestyle::V69.8::C0348774
+Comparison: (0, 1) -- p=0.017506377257972563, corr_p=0.05251913177391769, rej=False
+Comparison: (0, 2) -- p=1.9542844157939807e-13, corr_p=5.862853247381942e-13, rej=True
+Comparison: (1, 2) -- p=3.034268448535832e-17, corr_p=9.102805345607497e-17, rej=True
+              0    1
+subcluster          
+0           629  312
+1           539  339
+2           168   10
+Pairwise odds ratio chi2 test for term: icd9::Other specified vaccinations against streptococcus pneumoniae [pneumococcus]::V03.82::C0375766
+Comparison: (0, 1) -- p=0.030092689903642587, corr_p=0.09027806971092776, rej=False
+Comparison: (0, 2) -- p=1.1395465375279393e-13, corr_p=3.418639612583818e-13, rej=True
+Comparison: (1, 2) -- p=4.0523843382636205e-17, corr_p=1.215715301479086e-16, rej=True
+              0    1
+subcluster          
+0           633  308
+1           547  331
+2           169    9
+Pairwise odds ratio chi2 test for term: icd9::Other specified cardiac dysrhythmias::427.89::C0348626
+Comparison: (0, 1) -- p=0.0957377272335249, corr_p=0.2872131817005747, rej=False
+Comparison: (0, 2) -- p=0.10557265511111598, corr_p=0.31671796533334795, rej=False
+Comparison: (1, 2) -- p=0.008917919804237515, corr_p=0.026753759412712547, rej=True
+              0    1
+subcluster          
+0           582  359
+1           577  301
+2            98   80
+Pairwise odds ratio chi2 test for term: icd9::Depressive disorder, not elsewhere classified::311::C0868892
+Comparison: (0, 1) -- p=0.10514730532676163, corr_p=0.31544191598028487, rej=False
+Comparison: (0, 2) -- p=1.1894419517851028e-12, corr_p=3.5683258553553083e-12, rej=True
+Comparison: (1, 2) -- p=4.925190303794285e-15, corr_p=1.4775570911382856e-14, rej=True
+              0    1
+subcluster          
+0           655  286
+1           579  299
+2           170    8
+
+
+
+Cluster 2 numerosity: 178
+% term:icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113 = 0.09 (178 terms in cluster (1.00), out of 1990 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.09 (168 terms in cluster (0.94), out of 1799 terms in the disease dataset
+
+% term:icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133 = 0.20 (162 terms in cluster (0.91), out of 802 terms in the disease dataset
+
+% term:icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134 = 0.16 (153 terms in cluster (0.86), out of 958 terms in the disease dataset
+
+% term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.09 (147 terms in cluster (0.83), out of 1565 terms in the disease dataset
+
+% term:icd9::Other nonspecific abnormal results of function study of cardiovascular system::794.39::C2711989 = 0.31 (123 terms in cluster (0.69), out of 402 terms in the disease dataset
+
+% term:icd9::Other and unspecified angina pectoris::413.9::C0348588 = 0.18 (111 terms in cluster (0.62), out of 618 terms in the disease dataset
+
+% term:icd9::Percutaneous transluminal coronary angioplasty status::V45.82::C0375852 = 0.25 (103 terms in cluster (0.58), out of 417 terms in the disease dataset
+
+% term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.09 (89 terms in cluster (0.50), out of 1033 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.06 (83 terms in cluster (0.47), out of 1332 terms in the disease dataset
+
+% term:icd9::Other specified cardiac dysrhythmias::427.89::C0348626 = 0.11 (80 terms in cluster (0.45), out of 740 terms in the disease dataset
+
+% term:icd9::Sinoatrial node dysfunction::427.81::C0428908 = 0.14 (80 terms in cluster (0.45), out of 585 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.05 (74 terms in cluster (0.42), out of 1554 terms in the disease dataset
+
+% term:icd9::Peripheral vascular disease, unspecified::443.9::C0085096 = 0.16 (73 terms in cluster (0.41), out of 462 terms in the disease dataset
+
+% term:icd9::Long-term (current) use of aspirin::V58.66::C2911205 = 0.17 (72 terms in cluster (0.40), out of 417 terms in the disease dataset
+
+% term:icd9::Personal history of tobacco use::V15.82::C0040335 = 0.07 (68 terms in cluster (0.38), out of 937 terms in the disease dataset
+
+% term:icd9::Atherosclerosis of native arteries of the extremities, unspecified::440.20::C0375294 = 0.30 (65 terms in cluster (0.37), out of 214 terms in the disease dataset
+
+% term:icd9::Obesity, unspecified::278.00::C0028754 = 0.06 (62 terms in cluster (0.35), out of 971 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.05 (59 terms in cluster (0.33), out of 1240 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.04 (58 terms in cluster (0.33), out of 1352 terms in the disease dataset
+
+% term:icd9::Aneurysm of iliac artery::442.2::C0162870 = 0.37 (57 terms in cluster (0.32), out of 156 terms in the disease dataset
+
+% term:icd9::Chronic total occlusion of artery of the extremities::440.4::C1955783 = 0.39 (54 terms in cluster (0.30), out of 139 terms in the disease dataset
+
+% term:icd9::Other chest pain::786.59::C0029537 = 0.11 (54 terms in cluster (0.30), out of 501 terms in the disease dataset
+
+% term:icd9::Atherosclerosis of native arteries of the extremities with intermittent claudication::440.21::C0375295 = 0.29 (50 terms in cluster (0.28), out of 174 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.04 (44 terms in cluster (0.25), out of 1118 terms in the disease dataset
+
+% term:icd9::Cardiovascular disease, unspecified::429.2 = 0.26 (44 terms in cluster (0.25), out of 172 terms in the disease dataset
+
+% term:icd9::Old myocardial infarction::412::C0155668 = 0.15 (43 terms in cluster (0.24), out of 283 terms in the disease dataset
+
+% term:icd9::Long-term (current) use of antiplatelet/antithrombotic::V58.63::C2911179 = 0.27 (41 terms in cluster (0.23), out of 153 terms in the disease dataset
+
+% term:icd9::Family history of ischemic heart disease::V17.3::C0260520 = 0.25 (41 terms in cluster (0.23), out of 161 terms in the disease dataset
+
+% term:icd9::Pain in limb::729.5::C0030196 = 0.04 (40 terms in cluster (0.22), out of 1071 terms in the disease dataset
+
+% term:icd9::Intermediate coronary syndrome::411.1::C0002965 = 0.17 (38 terms in cluster (0.21), out of 222 terms in the disease dataset
+
+% term:icd9::Other premature beats::427.69::C0029712 = 0.10 (37 terms in cluster (0.21), out of 371 terms in the disease dataset
+
+% term:icd9::Congestive heart failure, unspecified::428.0::C0018802 = 0.07 (37 terms in cluster (0.21), out of 560 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.03 (35 terms in cluster (0.20), out of 1117 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.04 (35 terms in cluster (0.20), out of 786 terms in the disease dataset
+
+% term:icd9::Chronic total occlusion of coronary artery::414.2::C1955779 = 0.29 (35 terms in cluster (0.20), out of 122 terms in the disease dataset
+
+% term:icd9::Asthma, unspecified type, unspecified::493.90::C0155886 = 0.04 (35 terms in cluster (0.20), out of 817 terms in the disease dataset
+
+% term:icd9::Cardiac catheterization as the cause of abnormal reaction of patient, or of later complication, without mention of misadventure at time of procedure::E879.0::C0261588 = 0.16 (34 terms in cluster (0.19), out of 218 terms in the disease dataset
+
+% term:icd9::Undiagnosed cardiac murmurs::785.2::C0375546 = 0.06 (34 terms in cluster (0.19), out of 592 terms in the disease dataset
+
+% term:icd9::Long-term (current) use of insulin::V58.67::C1455979 = 0.06 (31 terms in cluster (0.17), out of 505 terms in the disease dataset
+
+% term:icd9::Syncope and collapse::780.2::C0039070 = 0.05 (31 terms in cluster (0.17), out of 571 terms in the disease dataset
+
+% term:icd9::Supraventricular premature beats::427.61::C0033036 = 0.11 (30 terms in cluster (0.17), out of 282 terms in the disease dataset
+
+% term:icd9::Other complications due to other cardiac device, implant, and graft::996.72::C0161790 = 0.25 (30 terms in cluster (0.17), out of 122 terms in the disease dataset
+
+% term:icd9::First degree atrioventricular block::426.11::C0085614 = 0.13 (30 terms in cluster (0.17), out of 236 terms in the disease dataset
+
+% term:icd9::Aortocoronary bypass status::V45.81::C0032811 = 0.18 (30 terms in cluster (0.17), out of 170 terms in the disease dataset
+
+% term:icd9::Renal failure, unspecified::586::C0035078 = 0.07 (29 terms in cluster (0.16), out of 430 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.03 (28 terms in cluster (0.16), out of 974 terms in the disease dataset
+
+% term:icd9::Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage i through stage iv, or unspecified::403.90::C0494574 = 0.09 (28 terms in cluster (0.16), out of 328 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.02 (28 terms in cluster (0.16), out of 1174 terms in the disease dataset
+
+% term:icd9::Surgical operation with implant of artificial internal device causing abnormal patient reaction, or later complication,without mention of misadventure at time of operation::E878.1::C0261579 = 0.17 (27 terms in cluster (0.15), out of 161 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Diabetes mellitus without mention of complication, type ii or unspecified type, not stated as uncontrolled::250.00::C0375113
+Comparison: (0, 1) -- p=0.9268045136490786, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.9712654872071688, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.8156369106351574, corr_p=1.0, rej=False
+            0    1
+subcluster        
+0           3  938
+1           4  874
+2           0  178
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.5129797960450311, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04632305472020805, corr_p=0.13896916416062416, rej=False
+Comparison: (1, 2) -- p=0.1042412224238562, corr_p=0.3127236672715686, rej=False
+              0    1
+subcluster          
+0           102  839
+1            86  792
+2            10  168
+Pairwise odds ratio chi2 test for term: icd9::Coronary atherosclerosis of unspecified type of vessel, native or graft::414.00::C0837133
+Comparison: (0, 1) -- p=3.1772707455644358e-06, corr_p=9.531812236693306e-06, rej=True
+Comparison: (0, 2) -- p=5.55379298170272e-35, corr_p=1.666137894510816e-34, rej=True
+Comparison: (1, 2) -- p=1.011458692357102e-51, corr_p=3.034376077071306e-51, rej=True
+              0    1
+subcluster          
+0           562  379
+1           617  261
+2            16  162
+Pairwise odds ratio chi2 test for term: icd9::Coronary atherosclerosis of native coronary artery::414.01::C0837134
+Comparison: (0, 1) -- p=8.761203962278027e-06, corr_p=2.628361188683408e-05, rej=True
+Comparison: (0, 2) -- p=4.1649677628774307e-19, corr_p=1.2494903288632293e-18, rej=True
+Comparison: (1, 2) -- p=3.9326936051561204e-30, corr_p=1.1798080815468361e-29, rej=True
+              0    1
+subcluster          
+0           477  464
+1           537  341
+2            25  153
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Comparison: (0, 1) -- p=0.9048769763980631, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.1836531598308307, corr_p=0.5509594794924921, rej=False
+Comparison: (1, 2) -- p=0.22007091756719435, corr_p=0.6602127527015831, rej=False
+              0    1
+subcluster          
+0           209  732
+1           192  686
+2            31  147
+Pairwise odds ratio chi2 test for term: icd9::Other nonspecific abnormal results of function study of cardiovascular system::794.39::C2711989
+Comparison: (0, 1) -- p=8.158497704236734e-10, corr_p=2.44754931127102e-09, rej=True
+Comparison: (0, 2) -- p=1.5541732215589888e-39, corr_p=4.662519664676966e-39, rej=True
+Comparison: (1, 2) -- p=5.959344011632561e-72, corr_p=1.7878032034897684e-71, rej=True
+              0    1
+subcluster          
+0           749  192
+1           791   87
+2            55  123
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified angina pectoris::413.9::C0348588
+Comparison: (0, 1) -- p=2.564910479223969e-05, corr_p=7.694731437671907e-05, rej=True
+Comparison: (0, 2) -- p=4.0880458934437086e-14, corr_p=1.2264137680331125e-13, rej=True
+Comparison: (1, 2) -- p=6.11414688565508e-25, corr_p=1.834244065696524e-24, rej=True
+              0    1
+subcluster          
+0           638  303
+1           674  204
+2            67  111
+Pairwise odds ratio chi2 test for term: icd9::Percutaneous transluminal coronary angioplasty status::V45.82::C0375852
+Comparison: (0, 1) -- p=0.0018601889284176616, corr_p=0.0055805667852529845, rej=True
+Comparison: (0, 2) -- p=1.1422150493657417e-25, corr_p=3.426645148097225e-25, rej=True
+Comparison: (1, 2) -- p=3.290843441154424e-37, corr_p=9.872530323463273e-37, rej=True
+              0    1
+subcluster          
+0           753  188
+1           752  126
+2            75  103
+Pairwise odds ratio chi2 test for term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Comparison: (0, 1) -- p=0.9365678263404599, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.7282368793085212, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.6767884127687729, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           454  487
+1           421  457
+2            89   89
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.03691068473956617, corr_p=0.11073205421869851, rej=False
+Comparison: (0, 2) -- p=7.905376786038094e-07, corr_p=2.371613035811428e-06, rej=True
+Comparison: (1, 2) -- p=4.554615019420066e-10, corr_p=1.3663845058260198e-09, rej=True
+              0    1
+subcluster          
+0           316  625
+1           254  624
+2            95   83
+Pairwise odds ratio chi2 test for term: icd9::Other specified cardiac dysrhythmias::427.89::C0348626
+Comparison: (0, 1) -- p=0.0957377272335249, corr_p=0.2872131817005747, rej=False
+Comparison: (0, 2) -- p=0.10557265511111598, corr_p=0.31671796533334795, rej=False
+Comparison: (1, 2) -- p=0.008917919804237515, corr_p=0.026753759412712547, rej=True
+              0    1
+subcluster          
+0           582  359
+1           577  301
+2            98   80
+Pairwise odds ratio chi2 test for term: icd9::Sinoatrial node dysfunction::427.81::C0428908
+Comparison: (0, 1) -- p=0.19913659924713734, corr_p=0.597409797741412, rej=False
+Comparison: (0, 2) -- p=4.589847099569893e-05, corr_p=0.0001376954129870968, rej=True
+Comparison: (1, 2) -- p=1.0445671034589304e-06, corr_p=3.1337013103767912e-06, rej=True
+              0    1
+subcluster          
+0           667  274
+1           647  231
+2            98   80
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=3.845017786868401e-07, corr_p=1.1535053360605202e-06, rej=True
+Comparison: (0, 2) -- p=3.773914708376779e-21, corr_p=1.1321744125130337e-20, rej=True
+Comparison: (1, 2) -- p=1.4198031132512895e-39, corr_p=4.2594093397538683e-39, rej=True
+              0    1
+subcluster          
+0           218  723
+1           121  757
+2           104   74
+Pairwise odds ratio chi2 test for term: icd9::Peripheral vascular disease, unspecified::443.9::C0085096
+Comparison: (0, 1) -- p=0.8850246793340214, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=5.883064723373207e-08, corr_p=1.764919417011962e-07, rej=True
+Comparison: (1, 2) -- p=3.5766022369907756e-08, corr_p=1.0729806710972326e-07, rej=True
+              0    1
+subcluster          
+0           738  203
+1           692  186
+2           105   73
+Pairwise odds ratio chi2 test for term: icd9::Long-term (current) use of aspirin::V58.66::C2911205
+Comparison: (0, 1) -- p=0.008384425616448248, corr_p=0.025153276849344743, rej=True
+Comparison: (0, 2) -- p=9.149091192112137e-08, corr_p=2.744727357633641e-07, rej=True
+Comparison: (1, 2) -- p=8.614859975769574e-13, corr_p=2.5844579927308722e-12, rej=True
+              0    1
+subcluster          
+0           740  201
+1           734  144
+2           106   72
+Pairwise odds ratio chi2 test for term: icd9::Personal history of tobacco use::V15.82::C0040335
+Comparison: (0, 1) -- p=0.10926751011012983, corr_p=0.32780253033038953, rej=False
+Comparison: (0, 2) -- p=0.06964118822128326, corr_p=0.2089235646638498, rej=False
+Comparison: (1, 2) -- p=0.006229442405265139, corr_p=0.018688327215795417, rej=True
+              0    1
+subcluster          
+0           509  432
+1           441  437
+2           110   68
+Pairwise odds ratio chi2 test for term: icd9::Atherosclerosis of native arteries of the extremities, unspecified::440.20::C0375294
+Comparison: (0, 1) -- p=0.0028772630210824224, corr_p=0.008631789063247268, rej=True
+Comparison: (0, 2) -- p=7.684925833820804e-20, corr_p=2.305477750146241e-19, rej=True
+Comparison: (1, 2) -- p=7.157074947501316e-31, corr_p=2.147122484250395e-30, rej=True
+              0   1
+subcluster         
+0           846  95
+1           824  54
+2           113  65
+Pairwise odds ratio chi2 test for term: icd9::Obesity, unspecified::278.00::C0028754
+Comparison: (0, 1) -- p=0.07861935957311823, corr_p=0.2358580787193547, rej=False
+Comparison: (0, 2) -- p=0.0017264093451520297, corr_p=0.005179228035456089, rej=True
+Comparison: (1, 2) -- p=3.543195446266512e-05, corr_p=0.00010629586338799536, rej=True
+              0    1
+subcluster          
+0           490  451
+1           420  458
+2           116   62
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.00010482218870394175, corr_p=0.00031446656611182523, rej=True
+Comparison: (0, 2) -- p=1.9582408233490516e-11, corr_p=5.874722470047155e-11, rej=True
+Comparison: (1, 2) -- p=1.0164973873612783e-19, corr_p=3.049492162083835e-19, rej=True
+              0    1
+subcluster          
+0           370  571
+1           268  610
+2           119   59
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.00013239493674756348, corr_p=0.0003971848102426904, rej=True
+Comparison: (0, 2) -- p=6.8746238909966186e-18, corr_p=2.0623871672989857e-17, rej=True
+Comparison: (1, 2) -- p=1.336138180946183e-28, corr_p=4.008414542838549e-28, rej=True
+              0    1
+subcluster          
+0           309  632
+1           216  662
+2           120   58
+Pairwise odds ratio chi2 test for term: icd9::Aneurysm of iliac artery::442.2::C0162870
+Comparison: (0, 1) -- p=0.0003498591089281284, corr_p=0.0010495773267843852, rej=True
+Comparison: (0, 2) -- p=4.2293931243987975e-21, corr_p=1.2688179373196393e-20, rej=True
+Comparison: (1, 2) -- p=6.820680571108294e-36, corr_p=2.046204171332488e-35, rej=True
+              0   1
+subcluster         
+0           872  69
+1           848  30
+2           121  57
+Pairwise odds ratio chi2 test for term: icd9::Chronic total occlusion of artery of the extremities::440.4::C1955783
+Comparison: (0, 1) -- p=0.0026339335272120828, corr_p=0.007901800581636248, rej=True
+Comparison: (0, 2) -- p=2.51901147139951e-22, corr_p=7.55703441419853e-22, rej=True
+Comparison: (1, 2) -- p=8.210328566452574e-35, corr_p=2.463098569935772e-34, rej=True
+              0   1
+subcluster         
+0           883  58
+1           851  27
+2           124  54
+Pairwise odds ratio chi2 test for term: icd9::Other chest pain::786.59::C0029537
+Comparison: (0, 1) -- p=0.5315289430521386, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.08490650649783535, corr_p=0.254719519493506, rej=False
+Comparison: (1, 2) -- p=0.19177829788307715, corr_p=0.5753348936492315, rej=False
+              0    1
+subcluster          
+0           716  225
+1           656  222
+2           124   54
+Pairwise odds ratio chi2 test for term: icd9::Atherosclerosis of native arteries of the extremities with intermittent claudication::440.21::C0375295
+Comparison: (0, 1) -- p=0.034555121859758335, corr_p=0.103665365579275, rej=False
+Comparison: (0, 2) -- p=2.6011509758102967e-14, corr_p=7.803452927430891e-14, rej=True
+Comparison: (1, 2) -- p=9.324180914060108e-21, corr_p=2.7972542742180325e-20, rej=True
+              0   1
+subcluster         
+0           865  76
+1           830  48
+2           128  50
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.0005722535896608123, corr_p=0.0017167607689824367, rej=True
+Comparison: (0, 2) -- p=1.763422770533283e-13, corr_p=5.290268311599849e-13, rej=True
+Comparison: (1, 2) -- p=7.360163282046463e-21, corr_p=2.2080489846139388e-20, rej=True
+              0    1
+subcluster          
+0           422  519
+1           323  555
+2           134   44
+Pairwise odds ratio chi2 test for term: icd9::Cardiovascular disease, unspecified::429.2
+Comparison: (0, 1) -- p=0.12860326089356916, corr_p=0.3858097826807075, rej=False
+Comparison: (0, 2) -- p=7.292134211177633e-11, corr_p=2.1876402633532898e-10, rej=True
+Comparison: (1, 2) -- p=1.1016742665869499e-14, corr_p=3.3050227997608494e-14, rej=True
+              0   1
+subcluster         
+0           866  75
+1           825  53
+2           134  44
+Pairwise odds ratio chi2 test for term: icd9::Old myocardial infarction::412::C0155668
+Comparison: (0, 1) -- p=0.8521910791323173, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0003641392527343119, corr_p=0.0010924177582029358, rej=True
+Comparison: (1, 2) -- p=0.00021127428511560792, corr_p=0.0006338228553468238, rej=True
+              0    1
+subcluster          
+0           815  126
+1           764  114
+2           135   43
+Pairwise odds ratio chi2 test for term: icd9::Long-term (current) use of antiplatelet/antithrombotic::V58.63::C2911179
+Comparison: (0, 1) -- p=0.024032359285016715, corr_p=0.07209707785505015, rej=False
+Comparison: (0, 2) -- p=4.209874960427502e-10, corr_p=1.2629624881282506e-09, rej=True
+Comparison: (1, 2) -- p=5.615827954435209e-16, corr_p=1.6847483863305627e-15, rej=True
+              0   1
+subcluster         
+0           871  70
+1           836  42
+2           137  41
+Pairwise odds ratio chi2 test for term: icd9::Family history of ischemic heart disease::V17.3::C0260520
+Comparison: (0, 1) -- p=0.1606369254430467, corr_p=0.4819107763291401, rej=False
+Comparison: (0, 2) -- p=4.209874960427502e-10, corr_p=1.2629624881282506e-09, rej=True
+Comparison: (1, 2) -- p=1.7031524894628732e-13, corr_p=5.10945746838862e-13, rej=True
+              0   1
+subcluster         
+0           871  70
+1           828  50
+2           137  41
+Pairwise odds ratio chi2 test for term: icd9::Pain in limb::729.5::C0030196
+Comparison: (0, 1) -- p=0.04830032992617015, corr_p=0.14490098977851046, rej=False
+Comparison: (0, 2) -- p=1.0421585302174911e-14, corr_p=3.1264755906524734e-14, rej=True
+Comparison: (1, 2) -- p=8.928246706534572e-19, corr_p=2.6784740119603716e-18, rej=True
+              0    1
+subcluster          
+0           429  512
+1           359  519
+2           138   40
+Pairwise odds ratio chi2 test for term: icd9::Intermediate coronary syndrome::411.1::C0002965
+Comparison: (0, 1) -- p=0.055348295392251674, corr_p=0.16604488617675503, rej=False
+Comparison: (0, 2) -- p=0.0005317841683992988, corr_p=0.0015953525051978965, rej=True
+Comparison: (1, 2) -- p=1.2775230533912885e-06, corr_p=3.832569160173866e-06, rej=True
+              0    1
+subcluster          
+0           833  108
+1           802   76
+2           140   38
+Pairwise odds ratio chi2 test for term: icd9::Other premature beats::427.69::C0029712
+Comparison: (0, 1) -- p=0.4156876700618285, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.6820434989265672, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.3579141782352827, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           761  180
+1           724  154
+2           141   37
+Pairwise odds ratio chi2 test for term: icd9::Congestive heart failure, unspecified::428.0::C0018802
+Comparison: (0, 1) -- p=0.4035714521904963, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.06308332139889267, corr_p=0.189249964196678, rej=False
+Comparison: (1, 2) -- p=0.020061224105050637, corr_p=0.06018367231515191, rej=False
+              0    1
+subcluster          
+0           679  262
+1           617  261
+2           141   37
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=2.172879533287687e-07, corr_p=6.518638599863062e-07, rej=True
+Comparison: (0, 2) -- p=1.67062458004681e-16, corr_p=5.01187374014043e-16, rej=True
+Comparison: (1, 2) -- p=1.9156973967965488e-29, corr_p=5.747092190389646e-29, rej=True
+              0    1
+subcluster          
+0           436  505
+1           301  577
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.2525738464592992, corr_p=0.7577215393778975, rej=False
+Comparison: (0, 2) -- p=4.065270212682971e-07, corr_p=1.2195810638048913e-06, rej=True
+Comparison: (1, 2) -- p=1.4373703507725412e-08, corr_p=4.3121110523176234e-08, rej=True
+              0    1
+subcluster          
+0           565  376
+1           503  375
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Chronic total occlusion of coronary artery::414.2::C1955779
+Comparison: (0, 1) -- p=0.006014835707898344, corr_p=0.01804450712369503, rej=True
+Comparison: (0, 2) -- p=5.382372678876102e-09, corr_p=1.6147118036628305e-08, rej=True
+Comparison: (1, 2) -- p=3.1123233481578106e-16, corr_p=9.336970044473433e-16, rej=True
+              0   1
+subcluster         
+0           883  58
+1           849  29
+2           143  35
+Pairwise odds ratio chi2 test for term: icd9::Asthma, unspecified type, unspecified::493.90::C0155886
+Comparison: (0, 1) -- p=0.0012531964056701483, corr_p=0.003759589217010445, rej=True
+Comparison: (0, 2) -- p=8.679083447083499e-07, corr_p=2.6037250341250497e-06, rej=True
+Comparison: (1, 2) -- p=3.3729264562302844e-11, corr_p=1.0118779368690854e-10, rej=True
+              0    1
+subcluster          
+0           571  370
+1           466  412
+2           143   35
+Pairwise odds ratio chi2 test for term: icd9::Cardiac catheterization as the cause of abnormal reaction of patient, or of later complication, without mention of misadventure at time of procedure::E879.0::C0261588
+Comparison: (0, 1) -- p=0.4083176781650729, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0025469010870076, corr_p=0.007640703261022801, rej=True
+Comparison: (1, 2) -- p=0.0003081179376112959, corr_p=0.0009243538128338877, rej=True
+              0    1
+subcluster          
+0           840  101
+1           795   83
+2           144   34
+Pairwise odds ratio chi2 test for term: icd9::Undiagnosed cardiac murmurs::785.2::C0375546
+Comparison: (0, 1) -- p=0.3511655181500194, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.00536789813646898, corr_p=0.01610369440940694, rej=True
+Comparison: (1, 2) -- p=0.0010136838628175531, corr_p=0.0030410515884526593, rej=True
+              0    1
+subcluster          
+0           662  279
+1           599  279
+2           144   34
+Pairwise odds ratio chi2 test for term: icd9::Long-term (current) use of insulin::V58.67::C1455979
+Comparison: (0, 1) -- p=0.4733194652209438, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.03081328410627013, corr_p=0.0924398523188104, rej=False
+Comparison: (1, 2) -- p=0.010642113721401999, corr_p=0.03192634116420599, rej=True
+              0    1
+subcluster          
+0           703  238
+1           642  236
+2           147   31
+Pairwise odds ratio chi2 test for term: icd9::Syncope and collapse::780.2::C0039070
+Comparison: (0, 1) -- p=0.2650909310403392, corr_p=0.7952727931210176, rej=False
+Comparison: (0, 2) -- p=0.003008357754863994, corr_p=0.009025073264591982, rej=True
+Comparison: (1, 2) -- p=0.00037496794145406903, corr_p=0.001124903824362207, rej=True
+              0    1
+subcluster          
+0           673  268
+1           606  272
+2           147   31
+Pairwise odds ratio chi2 test for term: icd9::Supraventricular premature beats::427.61::C0033036
+Comparison: (0, 1) -- p=0.14005972783537993, corr_p=0.4201791835061398, rej=False
+Comparison: (0, 2) -- p=0.1630145508880519, corr_p=0.48904365266415567, rej=False
+Comparison: (1, 2) -- p=0.645055978750257, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           822  119
+1           745  133
+2           148   30
+Pairwise odds ratio chi2 test for term: icd9::Other complications due to other cardiac device, implant, and graft::996.72::C0161790
+Comparison: (0, 1) -- p=0.019521511654228607, corr_p=0.05856453496268582, rej=False
+Comparison: (0, 2) -- p=3.573201738227091e-06, corr_p=1.0719605214681273e-05, rej=True
+Comparison: (1, 2) -- p=5.655677341384456e-11, corr_p=1.6967032024153369e-10, rej=True
+              0   1
+subcluster         
+0           882  59
+1           845  33
+2           148  30
+Pairwise odds ratio chi2 test for term: icd9::First degree atrioventricular block::426.11::C0085614
+Comparison: (0, 1) -- p=0.14137459621455958, corr_p=0.4241237886436787, rej=False
+Comparison: (0, 2) -- p=0.1388746626881592, corr_p=0.41662398806447765, rej=False
+Comparison: (1, 2) -- p=0.01411615256906988, corr_p=0.04234845770720964, rej=True
+              0    1
+subcluster          
+0           824  117
+1           789   89
+2           148   30
+Pairwise odds ratio chi2 test for term: icd9::Aortocoronary bypass status::V45.81::C0032811
+Comparison: (0, 1) -- p=0.37157881906880885, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0006492095800483998, corr_p=0.0019476287401451993, rej=True
+Comparison: (1, 2) -- p=4.5329609389952426e-05, corr_p=0.00013598882816985726, rej=True
+              0   1
+subcluster         
+0           863  78
+1           816  62
+2           148  30
+Pairwise odds ratio chi2 test for term: icd9::Renal failure, unspecified::586::C0035078
+Comparison: (0, 1) -- p=0.17639816489293897, corr_p=0.529194494678817, rej=False
+Comparison: (0, 2) -- p=0.2103708863400453, corr_p=0.6311126590201359, rej=False
+Comparison: (1, 2) -- p=0.045684933996498436, corr_p=0.13705480198949532, rej=False
+              0    1
+subcluster          
+0           746  195
+1           672  206
+2           149   29
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.0020133374193509104, corr_p=0.006040012258052731, rej=True
+Comparison: (0, 2) -- p=1.2452178693566507e-15, corr_p=3.7356536080699524e-15, rej=True
+Comparison: (1, 2) -- p=4.0089542960539277e-22, corr_p=1.2026862888161784e-21, rej=True
+              0    1
+subcluster          
+0           485  456
+1           388  490
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage i through stage iv, or unspecified::403.90::C0494574
+Comparison: (0, 1) -- p=0.17629749539691464, corr_p=0.5288924861907439, rej=False
+Comparison: (0, 2) -- p=0.9747155964019232, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.5857197574159844, corr_p=1.0, rej=False
+              0    1
+subcluster          
+0           797  144
+1           722  156
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=2.166200044719878e-07, corr_p=6.498600134159634e-07, rej=True
+Comparison: (0, 2) -- p=6.376763144670723e-24, corr_p=1.913028943401217e-23, rej=True
+Comparison: (1, 2) -- p=1.0708555898064427e-39, corr_p=3.212566769419328e-39, rej=True
+              0    1
+subcluster          
+0           402  539
+1           271  607
+2           150   28
+Pairwise odds ratio chi2 test for term: icd9::Surgical operation with implant of artificial internal device causing abnormal patient reaction, or later complication,without mention of misadventure at time of operation::E878.1::C0261579
+Comparison: (0, 1) -- p=0.5679314059469537, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.002404741235834788, corr_p=0.007214223707504365, rej=True
+Comparison: (1, 2) -- p=0.0005208158287906879, corr_p=0.0015624474863720635, rej=True
+              0   1
+subcluster         
+0           868  73
+1           817  61
+2           151  27
+
+
+
+Multiple comparison t-test for AGE:
+Test Multiple Comparison ttest_ind 
+FWER=0.05 method=bonf
+alphacSidak=0.02, alphacBonf=0.017
+=============================================
+group1 group2   stat   pval  pval_corr reject
+---------------------------------------------
+     0      1  4.0061 0.0001    0.0002   True
+     0      2 -6.7765    0.0       0.0   True
+     1      2 -9.2004    0.0       0.0   True
+---------------------------------------------
+             score                                                 
+             count   mean    std    min    25%    50%    75%    max
+subcluster                                                         
+0          941.000 65.282 12.541 28.000 57.000 66.000 74.000 90.000
+1          878.000 62.936 12.409 25.000 55.000 63.000 71.000 90.000
+2          178.000 71.989  9.497 37.000 65.000 72.000 79.000 90.000
+
+Multiple comparison t-test for SEQUENCE LENGTH:
+Test Multiple Comparison ttest_ind 
+FWER=0.05 method=bonf
+alphacSidak=0.02, alphacBonf=0.017
+===========================================
+group1 group2   stat  pval pval_corr reject
+-------------------------------------------
+     0      1 -4.3953  0.0       0.0   True
+     0      2  11.433  0.0       0.0   True
+     1      2 14.0123  0.0       0.0   True
+-------------------------------------------
+             score                                                            
+             count     mean      std    min     25%      50%      75%      max
+subcluster                                                                    
+0          941.000 1688.440 1498.083 27.000 411.000 1189.000 2686.000 5000.000
+1          878.000 1999.041 1514.519 36.000 754.250 1585.000 2964.000 5000.000
+2          178.000  392.247  472.361 28.000 110.250  238.500  469.000 2795.000
+
+Multiple comparison chi-square test for SEX:
+Comparison: (0, 1) -- p=0.236, corr_p=0.707, rej=False
+Comparison: (0, 2) -- p=0.000, corr_p=0.001, rej=True
+Comparison: (1, 2) -- p=0.000, corr_p=0.000, rej=True
+   female  male
+0     564   377
+1     551   327
+2      80    98
+
+Processing time: 375.33 seconds
+Task completed
+

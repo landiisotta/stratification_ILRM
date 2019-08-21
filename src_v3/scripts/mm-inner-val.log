@@ -1,0 +1,1733 @@
+
+Cohort MM numerosity: 3882
+
+3 0.48977327
+4 0.32351348
+5 0.2277448
+6 0.11577462
+7 0.124162324
+8 0.13067892
+9 0.13597044
+10 0.12118688
+11 0.12488689
+12 0.10738634
+13 0.10868438
+14 0.11229455
+Number of clusters found:3, Silhouette score:0.490
+
+Cluster 0 numerosity: 1947
+% term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.50 (1944 terms in cluster (1.00), out of 3876 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.52 (943 terms in cluster (0.48), out of 1819 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.51 (856 terms in cluster (0.44), out of 1680 terms in the disease dataset
+
+% term:icd9::Anemia, unspecified::285.9::C0002871 = 0.50 (830 terms in cluster (0.43), out of 1650 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.51 (807 terms in cluster (0.41), out of 1581 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.51 (795 terms in cluster (0.41), out of 1566 terms in the disease dataset
+
+% term:icd9::Diarrhea::787.91::C0011991 = 0.50 (764 terms in cluster (0.39), out of 1525 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.50 (749 terms in cluster (0.38), out of 1513 terms in the disease dataset
+
+% term:icd9::Constipation, unspecified::564.00::C0009806 = 0.50 (709 terms in cluster (0.36), out of 1406 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.52 (705 terms in cluster (0.36), out of 1361 terms in the disease dataset
+
+% term:icd9::Nausea alone::787.02::C0375548 = 0.52 (703 terms in cluster (0.36), out of 1361 terms in the disease dataset
+
+% term:icd9::Cough::786.2::C0010200 = 0.51 (689 terms in cluster (0.35), out of 1356 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.51 (650 terms in cluster (0.33), out of 1272 terms in the disease dataset
+
+% term:icd9::Rash and other nonspecific skin eruption::782.1::C0015230 = 0.51 (606 terms in cluster (0.31), out of 1184 terms in the disease dataset
+
+% term:icd9::Counseling nos::V65.40::C0740209 = 0.50 (585 terms in cluster (0.30), out of 1178 terms in the disease dataset
+
+% term:icd9::Backache, unspecified::724.5::C0004604 = 0.51 (582 terms in cluster (0.30), out of 1139 terms in the disease dataset
+
+% term:icd9::Other inflammatory and toxic neuropathy::357.89::C0154764 = 0.49 (553 terms in cluster (0.28), out of 1129 terms in the disease dataset
+
+% term:icd9::Other disorders of bone and cartilage::733.99::C0029586 = 0.51 (549 terms in cluster (0.28), out of 1080 terms in the disease dataset
+
+% term:icd9::Vomiting alone::787.03::C0728950 = 0.53 (529 terms in cluster (0.27), out of 993 terms in the disease dataset
+
+% term:icd9::Persistent vomiting::536.2::C0152165 = 0.53 (524 terms in cluster (0.27), out of 983 terms in the disease dataset
+
+% term:icd9::Fracture, cause unspecified::E887::C0016658 = 0.51 (523 terms in cluster (0.27), out of 1026 terms in the disease dataset
+
+% term:icd9::Dissection of aorta, thoracic::441.01::C0729233 = 0.53 (516 terms in cluster (0.27), out of 970 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.51 (512 terms in cluster (0.26), out of 998 terms in the disease dataset
+
+% term:icd9::Syncope and collapse::780.2::C0039070 = 0.53 (509 terms in cluster (0.26), out of 964 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.52 (501 terms in cluster (0.26), out of 971 terms in the disease dataset
+
+% term:icd9::Unspecified disease of the salivary glands::527.9::C0036093 = 0.53 (499 terms in cluster (0.26), out of 934 terms in the disease dataset
+
+% term:icd9::Unspecified inflammatory and toxic neuropathy::357.9::C0154758 = 0.50 (498 terms in cluster (0.26), out of 987 terms in the disease dataset
+
+% term:icd9::Unspecified organ or tissue replaced by transplant::V42.9::C0041866 = 0.51 (479 terms in cluster (0.25), out of 939 terms in the disease dataset
+
+% term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.49 (464 terms in cluster (0.24), out of 942 terms in the disease dataset
+
+% term:icd9::Generalized anxiety disorder::300.02::C0270549 = 0.50 (435 terms in cluster (0.22), out of 878 terms in the disease dataset
+
+% term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.49 (432 terms in cluster (0.22), out of 883 terms in the disease dataset
+
+% term:icd9::Unspecified pleural effusion::511.9::C0032227 = 0.52 (429 terms in cluster (0.22), out of 823 terms in the disease dataset
+
+% term:icd9::Esophageal reflux::530.81::C0017168 = 0.53 (410 terms in cluster (0.21), out of 772 terms in the disease dataset
+
+% term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.52 (392 terms in cluster (0.20), out of 758 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.52 (391 terms in cluster (0.20), out of 757 terms in the disease dataset
+
+% term:icd9::Other specified cardiac dysrhythmias::427.89::C0348626 = 0.52 (371 terms in cluster (0.19), out of 708 terms in the disease dataset
+
+% term:icd9::Hematuria, unspecified::599.70::C0018965 = 0.49 (369 terms in cluster (0.19), out of 750 terms in the disease dataset
+
+% term:icd9::Lumbago::724.2::C0024031 = 0.54 (367 terms in cluster (0.19), out of 682 terms in the disease dataset
+
+% term:icd9::Thrombocytopenia, unspecified::287.5::C0040034 = 0.53 (363 terms in cluster (0.19), out of 689 terms in the disease dataset
+
+% term:icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677 = 0.53 (358 terms in cluster (0.18), out of 680 terms in the disease dataset
+
+% term:icd9::Dysuria::788.1::C0013428 = 0.51 (357 terms in cluster (0.18), out of 694 terms in the disease dataset
+
+% term:icd9::Unspecified fall::E888.9::C0085639 = 0.50 (351 terms in cluster (0.18), out of 700 terms in the disease dataset
+
+% term:icd9::Hemorrhage, unspecified::459.0::C0019080 = 0.50 (351 terms in cluster (0.18), out of 707 terms in the disease dataset
+
+% term:icd9::Pain in limb::729.5::C0030196 = 0.53 (350 terms in cluster (0.18), out of 665 terms in the disease dataset
+
+% term:icd9::Renal failure, unspecified::586::C0035078 = 0.50 (349 terms in cluster (0.18), out of 697 terms in the disease dataset
+
+% term:icd9::Tic disorder, unspecified::307.20::C0040188 = 0.52 (347 terms in cluster (0.18), out of 668 terms in the disease dataset
+
+% term:icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091 = 0.48 (347 terms in cluster (0.18), out of 726 terms in the disease dataset
+
+% term:icd9::Iron deficiency anemia, unspecified::280.9::C0162316 = 0.50 (344 terms in cluster (0.18), out of 692 terms in the disease dataset
+
+% term:icd9::Acute nasopharyngitis [common cold]::460::C0009443 = 0.52 (338 terms in cluster (0.17), out of 649 terms in the disease dataset
+
+% term:icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959 = 0.51 (337 terms in cluster (0.17), out of 656 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Comparison: (0, 1) -- p=0.8198367176730008, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5322337645555512, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.28291748065481837, corr_p=0.8487524419644551, rej=False
+            0     1
+subcluster         
+0           3  1944
+1           1  1476
+2           2   456
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.1852272408254932, corr_p=0.5556817224764796, rej=False
+Comparison: (0, 2) -- p=7.920836013994603e-16, corr_p=2.376250804198381e-15, rej=True
+Comparison: (1, 2) -- p=3.741669362572862e-18, corr_p=1.1225008087718586e-17, rej=True
+               0    1
+subcluster           
+0           1004  943
+1            727  750
+2            332  126
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=0.11699096061962026, corr_p=0.3509728818588608, rej=False
+Comparison: (0, 2) -- p=1.1853099691680794e-08, corr_p=3.555929907504238e-08, rej=True
+Comparison: (1, 2) -- p=5.847172056420535e-11, corr_p=1.7541516169261605e-10, rej=True
+               0    1
+subcluster           
+0           1091  856
+1            787  690
+2            324  134
+Pairwise odds ratio chi2 test for term: icd9::Anemia, unspecified::285.9::C0002871
+Comparison: (0, 1) -- p=0.0004866041077440569, corr_p=0.0014598123232321706, rej=True
+Comparison: (0, 2) -- p=6.406968371923862e-16, corr_p=1.9220905115771585e-15, rej=True
+Comparison: (1, 2) -- p=1.2333388394562661e-23, corr_p=3.700016518368798e-23, rej=True
+               0    1
+subcluster           
+0           1117  830
+1            758  719
+2            357  101
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.029520312596883362, corr_p=0.08856093779065008, rej=False
+Comparison: (0, 2) -- p=5.622943315189639e-13, corr_p=1.6868829945568916e-12, rej=True
+Comparison: (1, 2) -- p=5.592970342617353e-17, corr_p=1.6778911027852058e-16, rej=True
+               0    1
+subcluster           
+0           1140  807
+1            809  668
+2            352  106
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=0.779138018777436, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.02333857282525715, corr_p=0.07001571847577145, rej=False
+Comparison: (1, 2) -- p=0.016294498044518105, corr_p=0.04888349413355432, rej=True
+               0    1
+subcluster           
+0           1152  795
+1            866  611
+2            298  160
+Pairwise odds ratio chi2 test for term: icd9::Diarrhea::787.91::C0011991
+Comparison: (0, 1) -- p=0.0070938055084373815, corr_p=0.021281416525312145, rej=True
+Comparison: (0, 2) -- p=7.75517686106071e-09, corr_p=2.3265530583182132e-08, rej=True
+Comparison: (1, 2) -- p=2.99742933552478e-13, corr_p=8.99228800657434e-13, rej=True
+               0    1
+subcluster           
+0           1183  764
+1            829  648
+2            345  113
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=0.0007030352265628464, corr_p=0.002109105679688539, rej=True
+Comparison: (0, 2) -- p=8.744502736376168e-09, corr_p=2.62335082091285e-08, rej=True
+Comparison: (1, 2) -- p=1.4101807201624562e-14, corr_p=4.2305421604873686e-14, rej=True
+               0    1
+subcluster           
+0           1198  749
+1            823  654
+2            348  110
+Pairwise odds ratio chi2 test for term: icd9::Constipation, unspecified::564.00::C0009806
+Comparison: (0, 1) -- p=0.11163273240571785, corr_p=0.3348981972171535, rej=False
+Comparison: (0, 2) -- p=3.0022887972797954e-05, corr_p=9.006866391839386e-05, rej=True
+Comparison: (1, 2) -- p=4.056106627287559e-07, corr_p=1.2168319881862678e-06, rej=True
+               0    1
+subcluster           
+0           1238  709
+1            899  578
+2            339  119
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.9773840371991476, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=9.028725712720057e-05, corr_p=0.00027086177138160167, rej=True
+Comparison: (1, 2) -- p=0.0001359338928824633, corr_p=0.0004078016786473899, rej=True
+               0    1
+subcluster           
+0           1242  705
+1            942  535
+2            337  121
+Pairwise odds ratio chi2 test for term: icd9::Nausea alone::787.02::C0375548
+Comparison: (0, 1) -- p=0.08244541272922244, corr_p=0.2473362381876673, rej=False
+Comparison: (0, 2) -- p=5.826057418778678e-14, corr_p=1.7478172256336035e-13, rej=True
+Comparison: (1, 2) -- p=5.2020109730207904e-17, corr_p=1.560603291906237e-16, rej=True
+               0    1
+subcluster           
+0           1244  703
+1            900  577
+2            377   81
+Pairwise odds ratio chi2 test for term: icd9::Cough::786.2::C0010200
+Comparison: (0, 1) -- p=0.4266820539939148, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0008709516335745396, corr_p=0.002612854900723619, rej=True
+Comparison: (1, 2) -- p=0.00017290533647702463, corr_p=0.0005187160094310739, rej=True
+               0    1
+subcluster           
+0           1258  689
+1            934  543
+2            334  124
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.23006409203105593, corr_p=0.6901922760931678, rej=False
+Comparison: (0, 2) -- p=1.3137301066665041e-06, corr_p=3.941190319999512e-06, rej=True
+Comparison: (1, 2) -- p=4.62706286478751e-08, corr_p=1.388118859436253e-07, rej=True
+               0    1
+subcluster           
+0           1297  650
+1            954  523
+2            359   99
+Pairwise odds ratio chi2 test for term: icd9::Rash and other nonspecific skin eruption::782.1::C0015230
+Comparison: (0, 1) -- p=0.366986299738047, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=2.158600786393353e-05, corr_p=6.47580235918006e-05, rej=True
+Comparison: (1, 2) -- p=2.4748144139114245e-06, corr_p=7.4244432417342734e-06, rej=True
+               0    1
+subcluster           
+0           1341  606
+1            995  482
+2            362   96
+Pairwise odds ratio chi2 test for term: icd9::Counseling nos::V65.40::C0740209
+Comparison: (0, 1) -- p=0.14544280544431618, corr_p=0.4363284163329485, rej=False
+Comparison: (0, 2) -- p=0.033246024911195694, corr_p=0.09973807473358709, rej=False
+Comparison: (1, 2) -- p=0.002701047660495121, corr_p=0.008103142981485362, rej=True
+               0    1
+subcluster           
+0           1362  585
+1            998  479
+2            344  114
+Pairwise odds ratio chi2 test for term: icd9::Backache, unspecified::724.5::C0004604
+Comparison: (0, 1) -- p=0.2757446333248439, corr_p=0.8272338999745317, rej=False
+Comparison: (0, 2) -- p=9.302426457591827e-06, corr_p=2.790727937277548e-05, rej=True
+Comparison: (1, 2) -- p=5.697604237705404e-07, corr_p=1.7092812713116211e-06, rej=True
+               0    1
+subcluster           
+0           1365  582
+1           1009  468
+2            369   89
+Pairwise odds ratio chi2 test for term: icd9::Other inflammatory and toxic neuropathy::357.89::C0154764
+Comparison: (0, 1) -- p=1.2960613254000098e-07, corr_p=3.8881839762000294e-07, rej=True
+Comparison: (0, 2) -- p=1.6988692045038507e-22, corr_p=5.096607613511552e-22, rej=True
+Comparison: (1, 2) -- p=3.370515454831869e-35, corr_p=1.0111546364495607e-34, rej=True
+               0    1
+subcluster           
+0           1394  553
+1            931  546
+2            428   30
+Pairwise odds ratio chi2 test for term: icd9::Other disorders of bone and cartilage::733.99::C0029586
+Comparison: (0, 1) -- p=0.0005086525602398692, corr_p=0.0015259576807196075, rej=True
+Comparison: (0, 2) -- p=2.5206756864708696e-21, corr_p=7.56202705941261e-21, rej=True
+Comparison: (1, 2) -- p=5.793866578729511e-29, corr_p=1.7381599736188534e-28, rej=True
+               0    1
+subcluster           
+0           1398  549
+1            978  499
+2            426   32
+Pairwise odds ratio chi2 test for term: icd9::Vomiting alone::787.03::C0728950
+Comparison: (0, 1) -- p=0.6345095258664153, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=8.258061799738704e-13, corr_p=2.477418539921611e-12, rej=True
+Comparison: (1, 2) -- p=2.748464968087312e-13, corr_p=8.245394904261937e-13, rej=True
+               0    1
+subcluster           
+0           1418  529
+1           1064  413
+2            407   51
+Pairwise odds ratio chi2 test for term: icd9::Persistent vomiting::536.2::C0152165
+Comparison: (0, 1) -- p=0.6400053224033577, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=7.782192594203505e-13, corr_p=2.3346577782610517e-12, rej=True
+Comparison: (1, 2) -- p=2.6645745117917065e-13, corr_p=7.99372353537512e-13, rej=True
+               0    1
+subcluster           
+0           1423  524
+1           1068  409
+2            408   50
+Pairwise odds ratio chi2 test for term: icd9::Fracture, cause unspecified::E887::C0016658
+Comparison: (0, 1) -- p=0.10236399686746428, corr_p=0.30709199060239284, rej=False
+Comparison: (0, 2) -- p=1.0760967403525627e-07, corr_p=3.2282902210576883e-07, rej=True
+Comparison: (1, 2) -- p=7.057531546859696e-10, corr_p=2.117259464057909e-09, rej=True
+               0    1
+subcluster           
+0           1424  523
+1           1042  435
+2            390   68
+Pairwise odds ratio chi2 test for term: icd9::Dissection of aorta, thoracic::441.01::C0729233
+Comparison: (0, 1) -- p=0.3388469469294309, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=8.009994710627544e-16, corr_p=2.402998413188263e-15, rej=True
+Comparison: (1, 2) -- p=2.893018172332491e-17, corr_p=8.679054516997473e-17, rej=True
+               0    1
+subcluster           
+0           1431  516
+1           1063  414
+2            418   40
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.6031671376562167, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.000701400984372826, corr_p=0.002104202953118478, rej=True
+Comparison: (1, 2) -- p=0.0002704640289923452, corr_p=0.0008113920869770356, rej=True
+               0    1
+subcluster           
+0           1435  512
+1           1076  401
+2            373   85
+Pairwise odds ratio chi2 test for term: icd9::Syncope and collapse::780.2::C0039070
+Comparison: (0, 1) -- p=0.20016113973329158, corr_p=0.6004834191998747, rej=False
+Comparison: (0, 2) -- p=9.722232644204825e-16, corr_p=2.9166697932614478e-15, rej=True
+Comparison: (1, 2) -- p=7.948850746052252e-18, corr_p=2.3846552238156755e-17, rej=True
+               0    1
+subcluster           
+0           1438  509
+1           1061  416
+2            419   39
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.8908951960878065, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0022340474532811625, corr_p=0.006702142359843488, rej=True
+Comparison: (1, 2) -- p=0.002027202610543263, corr_p=0.0060816078316297895, rej=True
+               0    1
+subcluster           
+0           1446  501
+1           1093  384
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Unspecified disease of the salivary glands::527.9::C0036093
+Comparison: (0, 1) -- p=0.5438634999207679, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=5.1529648634242845e-14, corr_p=1.5458894590272853e-13, rej=True
+Comparison: (1, 2) -- p=9.472913604414026e-15, corr_p=2.8418740813242078e-14, rej=True
+               0    1
+subcluster           
+0           1448  499
+1           1084  393
+2            416   42
+Pairwise odds ratio chi2 test for term: icd9::Unspecified inflammatory and toxic neuropathy::357.9::C0154758
+Comparison: (0, 1) -- p=0.0002723092530976977, corr_p=0.0008169277592930931, rej=True
+Comparison: (0, 2) -- p=8.09072515847934e-20, corr_p=2.427217547543802e-19, rej=True
+Comparison: (1, 2) -- p=1.7833180913964503e-27, corr_p=5.349954274189351e-27, rej=True
+               0    1
+subcluster           
+0           1449  498
+1           1015  462
+2            431   27
+Pairwise odds ratio chi2 test for term: icd9::Unspecified organ or tissue replaced by transplant::V42.9::C0041866
+Comparison: (0, 1) -- p=0.0004212459592238456, corr_p=0.0012637378776715368, rej=True
+Comparison: (0, 2) -- p=1.7005413386963583e-23, corr_p=5.1016240160890753e-23, rej=True
+Comparison: (1, 2) -- p=3.8271693282989914e-31, corr_p=1.1481507984896973e-30, rej=True
+               0    1
+subcluster           
+0           1468  479
+1           1033  444
+2            442   16
+Pairwise odds ratio chi2 test for term: icd9::Anxiety state, unspecified::300.00::C0700613
+Comparison: (0, 1) -- p=0.0371056518302997, corr_p=0.1113169554908991, rej=False
+Comparison: (0, 2) -- p=0.0029821743138606785, corr_p=0.008946522941582036, rej=True
+Comparison: (1, 2) -- p=3.0252699714283826e-05, corr_p=9.075809914285148e-05, rej=True
+               0    1
+subcluster           
+0           1483  464
+1           1078  399
+2            379   79
+Pairwise odds ratio chi2 test for term: icd9::Generalized anxiety disorder::300.02::C0270549
+Comparison: (0, 1) -- p=0.0463592130098952, corr_p=0.1390776390296856, rej=False
+Comparison: (0, 2) -- p=0.0007278903191463463, corr_p=0.002183670957439039, rej=True
+Comparison: (1, 2) -- p=6.779522528666984e-06, corr_p=2.0338567586000952e-05, rej=True
+               0    1
+subcluster           
+0           1512  435
+1           1103  374
+2            389   69
+Pairwise odds ratio chi2 test for term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Comparison: (0, 1) -- p=0.10006402249236412, corr_p=0.3001920674770924, rej=False
+Comparison: (0, 2) -- p=0.15238752717829726, corr_p=0.45716258153489175, rej=False
+Comparison: (1, 2) -- p=0.01489476199621785, corr_p=0.04468428598865355, rej=True
+               0    1
+subcluster           
+0           1515  432
+1           1113  364
+2            371   87
+Pairwise odds ratio chi2 test for term: icd9::Unspecified pleural effusion::511.9::C0032227
+Comparison: (0, 1) -- p=0.016887345800139446, corr_p=0.05066203740041834, rej=False
+Comparison: (0, 2) -- p=7.060039421442433e-20, corr_p=2.11801182643273e-19, rej=True
+Comparison: (1, 2) -- p=2.0980940912190277e-24, corr_p=6.2942822736570835e-24, rej=True
+               0    1
+subcluster           
+0           1518  429
+1           1099  378
+2            442   16
+Pairwise odds ratio chi2 test for term: icd9::Esophageal reflux::530.81::C0017168
+Comparison: (0, 1) -- p=0.033530761912831476, corr_p=0.10059228573849444, rej=False
+Comparison: (0, 2) -- p=0.9318712595823126, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.2265668502231611, corr_p=0.6797005506694833, rej=False
+               0    1
+subcluster           
+0           1537  410
+1           1210  267
+2            363   95
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Comparison: (0, 1) -- p=0.17170118327246878, corr_p=0.5151035498174064, rej=False
+Comparison: (0, 2) -- p=0.6630654313173943, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.17766078908031552, corr_p=0.5329823672409466, rej=False
+               0    1
+subcluster           
+0           1555  392
+1           1208  269
+2            361   97
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.4367088555179087, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5720643013024331, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.9858944296536459, corr_p=1.0, rej=False
+               0    1
+subcluster           
+0           1556  391
+1           1197  280
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Other specified cardiac dysrhythmias::427.89::C0348626
+Comparison: (0, 1) -- p=0.2849789916505451, corr_p=0.8549369749516352, rej=False
+Comparison: (0, 2) -- p=1.6007363346736281e-09, corr_p=4.802209004020885e-09, rej=True
+Comparison: (1, 2) -- p=6.82015558992645e-11, corr_p=2.046046676977935e-10, rej=True
+               0    1
+subcluster           
+0           1576  371
+1           1173  304
+2            425   33
+Pairwise odds ratio chi2 test for term: icd9::Hematuria, unspecified::599.70::C0018965
+Comparison: (0, 1) -- p=0.027468791181505817, corr_p=0.08240637354451745, rej=False
+Comparison: (0, 2) -- p=0.0005808526013903594, corr_p=0.001742557804171078, rej=True
+Comparison: (1, 2) -- p=3.096508434861856e-06, corr_p=9.289525304585568e-06, rej=True
+               0    1
+subcluster           
+0           1578  369
+1           1151  326
+2            403   55
+Pairwise odds ratio chi2 test for term: icd9::Lumbago::724.2::C0024031
+Comparison: (0, 1) -- p=0.1930665265319743, corr_p=0.5791995795959228, rej=False
+Comparison: (0, 2) -- p=0.012698643492675458, corr_p=0.038095930478026375, rej=True
+Comparison: (1, 2) -- p=0.10915133758355944, corr_p=0.3274540127506783, rej=False
+               0    1
+subcluster           
+0           1580  367
+1           1225  252
+2            395   63
+Pairwise odds ratio chi2 test for term: icd9::Thrombocytopenia, unspecified::287.5::C0040034
+Comparison: (0, 1) -- p=0.03170713626253622, corr_p=0.09512140878760866, rej=False
+Comparison: (0, 2) -- p=3.9569172984053144e-20, corr_p=1.1870751895215945e-19, rej=True
+Comparison: (1, 2) -- p=5.690777192018963e-24, corr_p=1.707233157605689e-23, rej=True
+               0    1
+subcluster           
+0           1584  363
+1           1157  320
+2            452    6
+Pairwise odds ratio chi2 test for term: icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677
+Comparison: (0, 1) -- p=0.016908317424588374, corr_p=0.050724952273765125, rej=False
+Comparison: (0, 2) -- p=1.9441570680230696e-22, corr_p=5.832471204069209e-22, rej=True
+Comparison: (1, 2) -- p=7.436054491005091e-27, corr_p=2.230816347301527e-26, rej=True
+               0    1
+subcluster           
+0           1589  358
+1           1156  321
+2            457    1
+Pairwise odds ratio chi2 test for term: icd9::Dysuria::788.1::C0013428
+Comparison: (0, 1) -- p=0.9878948721592172, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04241071230240577, corr_p=0.1272321369072173, rej=False
+Comparison: (1, 2) -- p=0.04424419521530349, corr_p=0.13273258564591048, rej=False
+               0    1
+subcluster           
+0           1590  357
+1           1205  272
+2            393   65
+Pairwise odds ratio chi2 test for term: icd9::Unspecified fall::E888.9::C0085639
+Comparison: (0, 1) -- p=0.13484182985802295, corr_p=0.40452548957406886, rej=False
+Comparison: (0, 2) -- p=0.0007478466185092749, corr_p=0.0022435398555278245, rej=True
+Comparison: (1, 2) -- p=2.817105740708366e-05, corr_p=8.451317222125098e-05, rej=True
+               0    1
+subcluster           
+0           1596  351
+1           1180  297
+2            406   52
+Pairwise odds ratio chi2 test for term: icd9::Hemorrhage, unspecified::459.0::C0019080
+Comparison: (0, 1) -- p=0.008989442188846697, corr_p=0.026968326566540093, rej=True
+Comparison: (0, 2) -- p=1.4610027604439452e-07, corr_p=4.383008281331836e-07, rej=True
+Comparison: (1, 2) -- p=4.316146151484199e-11, corr_p=1.2948438454452597e-10, rej=True
+               0    1
+subcluster           
+0           1596  351
+1           1157  320
+2            422   36
+Pairwise odds ratio chi2 test for term: icd9::Pain in limb::729.5::C0030196
+Comparison: (0, 1) -- p=0.9840914856990721, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.00021785250742760952, corr_p=0.0006535575222828286, rej=True
+Comparison: (1, 2) -- p=0.0002831654317801435, corr_p=0.0008494962953404304, rej=True
+               0    1
+subcluster           
+0           1597  350
+1           1211  266
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Renal failure, unspecified::586::C0035078
+Comparison: (0, 1) -- p=0.0033933010864446436, corr_p=0.01017990325933393, rej=True
+Comparison: (0, 2) -- p=1.0509533744027732e-11, corr_p=3.1528601232083196e-11, rej=True
+Comparison: (1, 2) -- p=2.444550640670128e-16, corr_p=7.333651922010385e-16, rej=True
+               0    1
+subcluster           
+0           1598  349
+1           1152  325
+2            435   23
+Pairwise odds ratio chi2 test for term: icd9::Tic disorder, unspecified::307.20::C0040188
+Comparison: (0, 1) -- p=0.1918244387318222, corr_p=0.5754733161954666, rej=False
+Comparison: (0, 2) -- p=7.618718442986591e-09, corr_p=2.2856155328959773e-08, rej=True
+Comparison: (1, 2) -- p=1.605200667323934e-10, corr_p=4.815602001971802e-10, rej=True
+               0    1
+subcluster           
+0           1600  347
+1           1187  290
+2            427   31
+Pairwise odds ratio chi2 test for term: icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091
+Comparison: (0, 1) -- p=0.0011710940551204515, corr_p=0.0035132821653613543, rej=True
+Comparison: (0, 2) -- p=0.00028499835885474736, corr_p=0.000854995076564242, rej=True
+Comparison: (1, 2) -- p=6.013962523175787e-08, corr_p=1.8041887569527362e-07, rej=True
+               0    1
+subcluster           
+0           1600  347
+1           1147  330
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Iron deficiency anemia, unspecified::280.9::C0162316
+Comparison: (0, 1) -- p=0.0024448483071477967, corr_p=0.0073345449214433905, rej=True
+Comparison: (0, 2) -- p=1.1083623905935743e-10, corr_p=3.325087171780723e-10, rej=True
+Comparison: (1, 2) -- p=2.3853222792342384e-15, corr_p=7.155966837702716e-15, rej=True
+               0    1
+subcluster           
+0           1603  344
+1           1154  323
+2            433   25
+Pairwise odds ratio chi2 test for term: icd9::Acute nasopharyngitis [common cold]::460::C0009443
+Comparison: (0, 1) -- p=0.7293328994626596, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0002556039861635073, corr_p=0.000766811958490522, rej=True
+Comparison: (1, 2) -- p=0.00014331575668603954, corr_p=0.00042994727005811863, rej=True
+               0    1
+subcluster           
+0           1609  338
+1           1213  264
+2            411   47
+Pairwise odds ratio chi2 test for term: icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959
+Comparison: (0, 1) -- p=0.4888557486199092, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0006819714113741088, corr_p=0.0020459142341223264, rej=True
+Comparison: (1, 2) -- p=0.00017801607852418617, corr_p=0.0005340482355725585, rej=True
+               0    1
+subcluster           
+0           1610  337
+1           1207  270
+2            409   49
+
+
+
+Cluster 1 numerosity: 1477
+% term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.38 (1476 terms in cluster (1.00), out of 3876 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.41 (750 terms in cluster (0.51), out of 1819 terms in the disease dataset
+
+% term:icd9::Anemia, unspecified::285.9::C0002871 = 0.44 (719 terms in cluster (0.49), out of 1650 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.41 (690 terms in cluster (0.47), out of 1680 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.42 (668 terms in cluster (0.45), out of 1581 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.43 (654 terms in cluster (0.44), out of 1513 terms in the disease dataset
+
+% term:icd9::Diarrhea::787.91::C0011991 = 0.42 (648 terms in cluster (0.44), out of 1525 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.39 (611 terms in cluster (0.41), out of 1566 terms in the disease dataset
+
+% term:icd9::Constipation, unspecified::564.00::C0009806 = 0.41 (578 terms in cluster (0.39), out of 1406 terms in the disease dataset
+
+% term:icd9::Nausea alone::787.02::C0375548 = 0.42 (577 terms in cluster (0.39), out of 1361 terms in the disease dataset
+
+% term:icd9::Other inflammatory and toxic neuropathy::357.89::C0154764 = 0.48 (546 terms in cluster (0.37), out of 1129 terms in the disease dataset
+
+% term:icd9::Cough::786.2::C0010200 = 0.40 (543 terms in cluster (0.37), out of 1356 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.39 (535 terms in cluster (0.36), out of 1361 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.41 (523 terms in cluster (0.35), out of 1272 terms in the disease dataset
+
+% term:icd9::Other disorders of bone and cartilage::733.99::C0029586 = 0.46 (499 terms in cluster (0.34), out of 1080 terms in the disease dataset
+
+% term:icd9::Rash and other nonspecific skin eruption::782.1::C0015230 = 0.41 (482 terms in cluster (0.33), out of 1184 terms in the disease dataset
+
+% term:icd9::Counseling nos::V65.40::C0740209 = 0.41 (479 terms in cluster (0.32), out of 1178 terms in the disease dataset
+
+% term:icd9::Backache, unspecified::724.5::C0004604 = 0.41 (468 terms in cluster (0.32), out of 1139 terms in the disease dataset
+
+% term:icd9::Unspecified inflammatory and toxic neuropathy::357.9::C0154758 = 0.47 (462 terms in cluster (0.31), out of 987 terms in the disease dataset
+
+% term:icd9::Unspecified organ or tissue replaced by transplant::V42.9::C0041866 = 0.47 (444 terms in cluster (0.30), out of 939 terms in the disease dataset
+
+% term:icd9::Fracture, cause unspecified::E887::C0016658 = 0.42 (435 terms in cluster (0.29), out of 1026 terms in the disease dataset
+
+% term:icd9::Syncope and collapse::780.2::C0039070 = 0.43 (416 terms in cluster (0.28), out of 964 terms in the disease dataset
+
+% term:icd9::Dissection of aorta, thoracic::441.01::C0729233 = 0.43 (414 terms in cluster (0.28), out of 970 terms in the disease dataset
+
+% term:icd9::Vomiting alone::787.03::C0728950 = 0.42 (413 terms in cluster (0.28), out of 993 terms in the disease dataset
+
+% term:icd9::Persistent vomiting::536.2::C0152165 = 0.42 (409 terms in cluster (0.28), out of 983 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.40 (401 terms in cluster (0.27), out of 998 terms in the disease dataset
+
+% term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.42 (399 terms in cluster (0.27), out of 942 terms in the disease dataset
+
+% term:icd9::Unspecified disease of the salivary glands::527.9::C0036093 = 0.42 (393 terms in cluster (0.27), out of 934 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.40 (384 terms in cluster (0.26), out of 971 terms in the disease dataset
+
+% term:icd9::Unspecified pleural effusion::511.9::C0032227 = 0.46 (378 terms in cluster (0.26), out of 823 terms in the disease dataset
+
+% term:icd9::Generalized anxiety disorder::300.02::C0270549 = 0.43 (374 terms in cluster (0.25), out of 878 terms in the disease dataset
+
+% term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.41 (364 terms in cluster (0.25), out of 883 terms in the disease dataset
+
+% term:icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091 = 0.45 (330 terms in cluster (0.22), out of 726 terms in the disease dataset
+
+% term:icd9::Hematuria, unspecified::599.70::C0018965 = 0.43 (326 terms in cluster (0.22), out of 750 terms in the disease dataset
+
+% term:icd9::Renal failure, unspecified::586::C0035078 = 0.47 (325 terms in cluster (0.22), out of 697 terms in the disease dataset
+
+% term:icd9::Iron deficiency anemia, unspecified::280.9::C0162316 = 0.47 (323 terms in cluster (0.22), out of 692 terms in the disease dataset
+
+% term:icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677 = 0.47 (321 terms in cluster (0.22), out of 680 terms in the disease dataset
+
+% term:icd9::Thrombocytopenia, unspecified::287.5::C0040034 = 0.46 (320 terms in cluster (0.22), out of 689 terms in the disease dataset
+
+% term:icd9::Hemorrhage, unspecified::459.0::C0019080 = 0.45 (320 terms in cluster (0.22), out of 707 terms in the disease dataset
+
+% term:icd9::Other specified cardiac dysrhythmias::427.89::C0348626 = 0.43 (304 terms in cluster (0.21), out of 708 terms in the disease dataset
+
+% term:icd9::Neutropenia, unspecified::288.00::C0027947 = 0.48 (301 terms in cluster (0.20), out of 630 terms in the disease dataset
+
+% term:icd9::Unspecified fall::E888.9::C0085639 = 0.42 (297 terms in cluster (0.20), out of 700 terms in the disease dataset
+
+% term:icd9::Nausea with vomiting::787.01::C0027498 = 0.45 (292 terms in cluster (0.20), out of 653 terms in the disease dataset
+
+% term:icd9::Tic disorder, unspecified::307.20::C0040188 = 0.43 (290 terms in cluster (0.20), out of 668 terms in the disease dataset
+
+% term:icd9::Hypotension, unspecified::458.9::C0020649 = 0.47 (285 terms in cluster (0.19), out of 605 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.37 (280 terms in cluster (0.19), out of 757 terms in the disease dataset
+
+% term:icd9::Generalized hyperhidrosis::780.8::C0476476 = 0.43 (277 terms in cluster (0.19), out of 644 terms in the disease dataset
+
+% term:icd9::Painful respiration::786.52::C0423729 = 0.49 (276 terms in cluster (0.19), out of 562 terms in the disease dataset
+
+% term:icd9::Dysuria::788.1::C0013428 = 0.39 (272 terms in cluster (0.18), out of 694 terms in the disease dataset
+
+% term:icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959 = 0.41 (270 terms in cluster (0.18), out of 656 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Comparison: (0, 1) -- p=0.8198367176730008, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5322337645555512, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.28291748065481837, corr_p=0.8487524419644551, rej=False
+            0     1
+subcluster         
+0           3  1944
+1           1  1476
+2           2   456
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.1852272408254932, corr_p=0.5556817224764796, rej=False
+Comparison: (0, 2) -- p=7.920836013994603e-16, corr_p=2.376250804198381e-15, rej=True
+Comparison: (1, 2) -- p=3.741669362572862e-18, corr_p=1.1225008087718586e-17, rej=True
+               0    1
+subcluster           
+0           1004  943
+1            727  750
+2            332  126
+Pairwise odds ratio chi2 test for term: icd9::Anemia, unspecified::285.9::C0002871
+Comparison: (0, 1) -- p=0.0004866041077440569, corr_p=0.0014598123232321706, rej=True
+Comparison: (0, 2) -- p=6.406968371923862e-16, corr_p=1.9220905115771585e-15, rej=True
+Comparison: (1, 2) -- p=1.2333388394562661e-23, corr_p=3.700016518368798e-23, rej=True
+               0    1
+subcluster           
+0           1117  830
+1            758  719
+2            357  101
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=0.11699096061962026, corr_p=0.3509728818588608, rej=False
+Comparison: (0, 2) -- p=1.1853099691680794e-08, corr_p=3.555929907504238e-08, rej=True
+Comparison: (1, 2) -- p=5.847172056420535e-11, corr_p=1.7541516169261605e-10, rej=True
+               0    1
+subcluster           
+0           1091  856
+1            787  690
+2            324  134
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.029520312596883362, corr_p=0.08856093779065008, rej=False
+Comparison: (0, 2) -- p=5.622943315189639e-13, corr_p=1.6868829945568916e-12, rej=True
+Comparison: (1, 2) -- p=5.592970342617353e-17, corr_p=1.6778911027852058e-16, rej=True
+               0    1
+subcluster           
+0           1140  807
+1            809  668
+2            352  106
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=0.0007030352265628464, corr_p=0.002109105679688539, rej=True
+Comparison: (0, 2) -- p=8.744502736376168e-09, corr_p=2.62335082091285e-08, rej=True
+Comparison: (1, 2) -- p=1.4101807201624562e-14, corr_p=4.2305421604873686e-14, rej=True
+               0    1
+subcluster           
+0           1198  749
+1            823  654
+2            348  110
+Pairwise odds ratio chi2 test for term: icd9::Diarrhea::787.91::C0011991
+Comparison: (0, 1) -- p=0.0070938055084373815, corr_p=0.021281416525312145, rej=True
+Comparison: (0, 2) -- p=7.75517686106071e-09, corr_p=2.3265530583182132e-08, rej=True
+Comparison: (1, 2) -- p=2.99742933552478e-13, corr_p=8.99228800657434e-13, rej=True
+               0    1
+subcluster           
+0           1183  764
+1            829  648
+2            345  113
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=0.779138018777436, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.02333857282525715, corr_p=0.07001571847577145, rej=False
+Comparison: (1, 2) -- p=0.016294498044518105, corr_p=0.04888349413355432, rej=True
+               0    1
+subcluster           
+0           1152  795
+1            866  611
+2            298  160
+Pairwise odds ratio chi2 test for term: icd9::Constipation, unspecified::564.00::C0009806
+Comparison: (0, 1) -- p=0.11163273240571785, corr_p=0.3348981972171535, rej=False
+Comparison: (0, 2) -- p=3.0022887972797954e-05, corr_p=9.006866391839386e-05, rej=True
+Comparison: (1, 2) -- p=4.056106627287559e-07, corr_p=1.2168319881862678e-06, rej=True
+               0    1
+subcluster           
+0           1238  709
+1            899  578
+2            339  119
+Pairwise odds ratio chi2 test for term: icd9::Nausea alone::787.02::C0375548
+Comparison: (0, 1) -- p=0.08244541272922244, corr_p=0.2473362381876673, rej=False
+Comparison: (0, 2) -- p=5.826057418778678e-14, corr_p=1.7478172256336035e-13, rej=True
+Comparison: (1, 2) -- p=5.2020109730207904e-17, corr_p=1.560603291906237e-16, rej=True
+               0    1
+subcluster           
+0           1244  703
+1            900  577
+2            377   81
+Pairwise odds ratio chi2 test for term: icd9::Other inflammatory and toxic neuropathy::357.89::C0154764
+Comparison: (0, 1) -- p=1.2960613254000098e-07, corr_p=3.8881839762000294e-07, rej=True
+Comparison: (0, 2) -- p=1.6988692045038507e-22, corr_p=5.096607613511552e-22, rej=True
+Comparison: (1, 2) -- p=3.370515454831869e-35, corr_p=1.0111546364495607e-34, rej=True
+               0    1
+subcluster           
+0           1394  553
+1            931  546
+2            428   30
+Pairwise odds ratio chi2 test for term: icd9::Cough::786.2::C0010200
+Comparison: (0, 1) -- p=0.4266820539939148, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0008709516335745396, corr_p=0.002612854900723619, rej=True
+Comparison: (1, 2) -- p=0.00017290533647702463, corr_p=0.0005187160094310739, rej=True
+               0    1
+subcluster           
+0           1258  689
+1            934  543
+2            334  124
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.9773840371991476, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=9.028725712720057e-05, corr_p=0.00027086177138160167, rej=True
+Comparison: (1, 2) -- p=0.0001359338928824633, corr_p=0.0004078016786473899, rej=True
+               0    1
+subcluster           
+0           1242  705
+1            942  535
+2            337  121
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.23006409203105593, corr_p=0.6901922760931678, rej=False
+Comparison: (0, 2) -- p=1.3137301066665041e-06, corr_p=3.941190319999512e-06, rej=True
+Comparison: (1, 2) -- p=4.62706286478751e-08, corr_p=1.388118859436253e-07, rej=True
+               0    1
+subcluster           
+0           1297  650
+1            954  523
+2            359   99
+Pairwise odds ratio chi2 test for term: icd9::Other disorders of bone and cartilage::733.99::C0029586
+Comparison: (0, 1) -- p=0.0005086525602398692, corr_p=0.0015259576807196075, rej=True
+Comparison: (0, 2) -- p=2.5206756864708696e-21, corr_p=7.56202705941261e-21, rej=True
+Comparison: (1, 2) -- p=5.793866578729511e-29, corr_p=1.7381599736188534e-28, rej=True
+               0    1
+subcluster           
+0           1398  549
+1            978  499
+2            426   32
+Pairwise odds ratio chi2 test for term: icd9::Rash and other nonspecific skin eruption::782.1::C0015230
+Comparison: (0, 1) -- p=0.366986299738047, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=2.158600786393353e-05, corr_p=6.47580235918006e-05, rej=True
+Comparison: (1, 2) -- p=2.4748144139114245e-06, corr_p=7.4244432417342734e-06, rej=True
+               0    1
+subcluster           
+0           1341  606
+1            995  482
+2            362   96
+Pairwise odds ratio chi2 test for term: icd9::Counseling nos::V65.40::C0740209
+Comparison: (0, 1) -- p=0.14544280544431618, corr_p=0.4363284163329485, rej=False
+Comparison: (0, 2) -- p=0.033246024911195694, corr_p=0.09973807473358709, rej=False
+Comparison: (1, 2) -- p=0.002701047660495121, corr_p=0.008103142981485362, rej=True
+               0    1
+subcluster           
+0           1362  585
+1            998  479
+2            344  114
+Pairwise odds ratio chi2 test for term: icd9::Backache, unspecified::724.5::C0004604
+Comparison: (0, 1) -- p=0.2757446333248439, corr_p=0.8272338999745317, rej=False
+Comparison: (0, 2) -- p=9.302426457591827e-06, corr_p=2.790727937277548e-05, rej=True
+Comparison: (1, 2) -- p=5.697604237705404e-07, corr_p=1.7092812713116211e-06, rej=True
+               0    1
+subcluster           
+0           1365  582
+1           1009  468
+2            369   89
+Pairwise odds ratio chi2 test for term: icd9::Unspecified inflammatory and toxic neuropathy::357.9::C0154758
+Comparison: (0, 1) -- p=0.0002723092530976977, corr_p=0.0008169277592930931, rej=True
+Comparison: (0, 2) -- p=8.09072515847934e-20, corr_p=2.427217547543802e-19, rej=True
+Comparison: (1, 2) -- p=1.7833180913964503e-27, corr_p=5.349954274189351e-27, rej=True
+               0    1
+subcluster           
+0           1449  498
+1           1015  462
+2            431   27
+Pairwise odds ratio chi2 test for term: icd9::Unspecified organ or tissue replaced by transplant::V42.9::C0041866
+Comparison: (0, 1) -- p=0.0004212459592238456, corr_p=0.0012637378776715368, rej=True
+Comparison: (0, 2) -- p=1.7005413386963583e-23, corr_p=5.1016240160890753e-23, rej=True
+Comparison: (1, 2) -- p=3.8271693282989914e-31, corr_p=1.1481507984896973e-30, rej=True
+               0    1
+subcluster           
+0           1468  479
+1           1033  444
+2            442   16
+Pairwise odds ratio chi2 test for term: icd9::Fracture, cause unspecified::E887::C0016658
+Comparison: (0, 1) -- p=0.10236399686746428, corr_p=0.30709199060239284, rej=False
+Comparison: (0, 2) -- p=1.0760967403525627e-07, corr_p=3.2282902210576883e-07, rej=True
+Comparison: (1, 2) -- p=7.057531546859696e-10, corr_p=2.117259464057909e-09, rej=True
+               0    1
+subcluster           
+0           1424  523
+1           1042  435
+2            390   68
+Pairwise odds ratio chi2 test for term: icd9::Syncope and collapse::780.2::C0039070
+Comparison: (0, 1) -- p=0.20016113973329158, corr_p=0.6004834191998747, rej=False
+Comparison: (0, 2) -- p=9.722232644204825e-16, corr_p=2.9166697932614478e-15, rej=True
+Comparison: (1, 2) -- p=7.948850746052252e-18, corr_p=2.3846552238156755e-17, rej=True
+               0    1
+subcluster           
+0           1438  509
+1           1061  416
+2            419   39
+Pairwise odds ratio chi2 test for term: icd9::Dissection of aorta, thoracic::441.01::C0729233
+Comparison: (0, 1) -- p=0.3388469469294309, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=8.009994710627544e-16, corr_p=2.402998413188263e-15, rej=True
+Comparison: (1, 2) -- p=2.893018172332491e-17, corr_p=8.679054516997473e-17, rej=True
+               0    1
+subcluster           
+0           1431  516
+1           1063  414
+2            418   40
+Pairwise odds ratio chi2 test for term: icd9::Vomiting alone::787.03::C0728950
+Comparison: (0, 1) -- p=0.6345095258664153, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=8.258061799738704e-13, corr_p=2.477418539921611e-12, rej=True
+Comparison: (1, 2) -- p=2.748464968087312e-13, corr_p=8.245394904261937e-13, rej=True
+               0    1
+subcluster           
+0           1418  529
+1           1064  413
+2            407   51
+Pairwise odds ratio chi2 test for term: icd9::Persistent vomiting::536.2::C0152165
+Comparison: (0, 1) -- p=0.6400053224033577, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=7.782192594203505e-13, corr_p=2.3346577782610517e-12, rej=True
+Comparison: (1, 2) -- p=2.6645745117917065e-13, corr_p=7.99372353537512e-13, rej=True
+               0    1
+subcluster           
+0           1423  524
+1           1068  409
+2            408   50
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.6031671376562167, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.000701400984372826, corr_p=0.002104202953118478, rej=True
+Comparison: (1, 2) -- p=0.0002704640289923452, corr_p=0.0008113920869770356, rej=True
+               0    1
+subcluster           
+0           1435  512
+1           1076  401
+2            373   85
+Pairwise odds ratio chi2 test for term: icd9::Anxiety state, unspecified::300.00::C0700613
+Comparison: (0, 1) -- p=0.0371056518302997, corr_p=0.1113169554908991, rej=False
+Comparison: (0, 2) -- p=0.0029821743138606785, corr_p=0.008946522941582036, rej=True
+Comparison: (1, 2) -- p=3.0252699714283826e-05, corr_p=9.075809914285148e-05, rej=True
+               0    1
+subcluster           
+0           1483  464
+1           1078  399
+2            379   79
+Pairwise odds ratio chi2 test for term: icd9::Unspecified disease of the salivary glands::527.9::C0036093
+Comparison: (0, 1) -- p=0.5438634999207679, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=5.1529648634242845e-14, corr_p=1.5458894590272853e-13, rej=True
+Comparison: (1, 2) -- p=9.472913604414026e-15, corr_p=2.8418740813242078e-14, rej=True
+               0    1
+subcluster           
+0           1448  499
+1           1084  393
+2            416   42
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.8908951960878065, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0022340474532811625, corr_p=0.006702142359843488, rej=True
+Comparison: (1, 2) -- p=0.002027202610543263, corr_p=0.0060816078316297895, rej=True
+               0    1
+subcluster           
+0           1446  501
+1           1093  384
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Unspecified pleural effusion::511.9::C0032227
+Comparison: (0, 1) -- p=0.016887345800139446, corr_p=0.05066203740041834, rej=False
+Comparison: (0, 2) -- p=7.060039421442433e-20, corr_p=2.11801182643273e-19, rej=True
+Comparison: (1, 2) -- p=2.0980940912190277e-24, corr_p=6.2942822736570835e-24, rej=True
+               0    1
+subcluster           
+0           1518  429
+1           1099  378
+2            442   16
+Pairwise odds ratio chi2 test for term: icd9::Generalized anxiety disorder::300.02::C0270549
+Comparison: (0, 1) -- p=0.0463592130098952, corr_p=0.1390776390296856, rej=False
+Comparison: (0, 2) -- p=0.0007278903191463463, corr_p=0.002183670957439039, rej=True
+Comparison: (1, 2) -- p=6.779522528666984e-06, corr_p=2.0338567586000952e-05, rej=True
+               0    1
+subcluster           
+0           1512  435
+1           1103  374
+2            389   69
+Pairwise odds ratio chi2 test for term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Comparison: (0, 1) -- p=0.10006402249236412, corr_p=0.3001920674770924, rej=False
+Comparison: (0, 2) -- p=0.15238752717829726, corr_p=0.45716258153489175, rej=False
+Comparison: (1, 2) -- p=0.01489476199621785, corr_p=0.04468428598865355, rej=True
+               0    1
+subcluster           
+0           1515  432
+1           1113  364
+2            371   87
+Pairwise odds ratio chi2 test for term: icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091
+Comparison: (0, 1) -- p=0.0011710940551204515, corr_p=0.0035132821653613543, rej=True
+Comparison: (0, 2) -- p=0.00028499835885474736, corr_p=0.000854995076564242, rej=True
+Comparison: (1, 2) -- p=6.013962523175787e-08, corr_p=1.8041887569527362e-07, rej=True
+               0    1
+subcluster           
+0           1600  347
+1           1147  330
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Hematuria, unspecified::599.70::C0018965
+Comparison: (0, 1) -- p=0.027468791181505817, corr_p=0.08240637354451745, rej=False
+Comparison: (0, 2) -- p=0.0005808526013903594, corr_p=0.001742557804171078, rej=True
+Comparison: (1, 2) -- p=3.096508434861856e-06, corr_p=9.289525304585568e-06, rej=True
+               0    1
+subcluster           
+0           1578  369
+1           1151  326
+2            403   55
+Pairwise odds ratio chi2 test for term: icd9::Renal failure, unspecified::586::C0035078
+Comparison: (0, 1) -- p=0.0033933010864446436, corr_p=0.01017990325933393, rej=True
+Comparison: (0, 2) -- p=1.0509533744027732e-11, corr_p=3.1528601232083196e-11, rej=True
+Comparison: (1, 2) -- p=2.444550640670128e-16, corr_p=7.333651922010385e-16, rej=True
+               0    1
+subcluster           
+0           1598  349
+1           1152  325
+2            435   23
+Pairwise odds ratio chi2 test for term: icd9::Iron deficiency anemia, unspecified::280.9::C0162316
+Comparison: (0, 1) -- p=0.0024448483071477967, corr_p=0.0073345449214433905, rej=True
+Comparison: (0, 2) -- p=1.1083623905935743e-10, corr_p=3.325087171780723e-10, rej=True
+Comparison: (1, 2) -- p=2.3853222792342384e-15, corr_p=7.155966837702716e-15, rej=True
+               0    1
+subcluster           
+0           1603  344
+1           1154  323
+2            433   25
+Pairwise odds ratio chi2 test for term: icd9::Encounter for antineoplastic chemotherapy::V58.11::C1561677
+Comparison: (0, 1) -- p=0.016908317424588374, corr_p=0.050724952273765125, rej=False
+Comparison: (0, 2) -- p=1.9441570680230696e-22, corr_p=5.832471204069209e-22, rej=True
+Comparison: (1, 2) -- p=7.436054491005091e-27, corr_p=2.230816347301527e-26, rej=True
+               0    1
+subcluster           
+0           1589  358
+1           1156  321
+2            457    1
+Pairwise odds ratio chi2 test for term: icd9::Thrombocytopenia, unspecified::287.5::C0040034
+Comparison: (0, 1) -- p=0.03170713626253622, corr_p=0.09512140878760866, rej=False
+Comparison: (0, 2) -- p=3.9569172984053144e-20, corr_p=1.1870751895215945e-19, rej=True
+Comparison: (1, 2) -- p=5.690777192018963e-24, corr_p=1.707233157605689e-23, rej=True
+               0    1
+subcluster           
+0           1584  363
+1           1157  320
+2            452    6
+Pairwise odds ratio chi2 test for term: icd9::Hemorrhage, unspecified::459.0::C0019080
+Comparison: (0, 1) -- p=0.008989442188846697, corr_p=0.026968326566540093, rej=True
+Comparison: (0, 2) -- p=1.4610027604439452e-07, corr_p=4.383008281331836e-07, rej=True
+Comparison: (1, 2) -- p=4.316146151484199e-11, corr_p=1.2948438454452597e-10, rej=True
+               0    1
+subcluster           
+0           1596  351
+1           1157  320
+2            422   36
+Pairwise odds ratio chi2 test for term: icd9::Other specified cardiac dysrhythmias::427.89::C0348626
+Comparison: (0, 1) -- p=0.2849789916505451, corr_p=0.8549369749516352, rej=False
+Comparison: (0, 2) -- p=1.6007363346736281e-09, corr_p=4.802209004020885e-09, rej=True
+Comparison: (1, 2) -- p=6.82015558992645e-11, corr_p=2.046046676977935e-10, rej=True
+               0    1
+subcluster           
+0           1576  371
+1           1173  304
+2            425   33
+Pairwise odds ratio chi2 test for term: icd9::Neutropenia, unspecified::288.00::C0027947
+Comparison: (0, 1) -- p=0.00348620068203759, corr_p=0.01045860204611277, rej=True
+Comparison: (0, 2) -- p=9.511032046203647e-16, corr_p=2.8533096138610938e-15, rej=True
+Comparison: (1, 2) -- p=1.2351965567270673e-20, corr_p=3.705589670181202e-20, rej=True
+               0    1
+subcluster           
+0           1627  320
+1           1176  301
+2            449    9
+Pairwise odds ratio chi2 test for term: icd9::Unspecified fall::E888.9::C0085639
+Comparison: (0, 1) -- p=0.13484182985802295, corr_p=0.40452548957406886, rej=False
+Comparison: (0, 2) -- p=0.0007478466185092749, corr_p=0.0022435398555278245, rej=True
+Comparison: (1, 2) -- p=2.817105740708366e-05, corr_p=8.451317222125098e-05, rej=True
+               0    1
+subcluster           
+0           1596  351
+1           1180  297
+2            406   52
+Pairwise odds ratio chi2 test for term: icd9::Nausea with vomiting::787.01::C0027498
+Comparison: (0, 1) -- p=0.03440434119330306, corr_p=0.10321302357990918, rej=False
+Comparison: (0, 2) -- p=1.361389402040312e-07, corr_p=4.084168206120936e-07, rej=True
+Comparison: (1, 2) -- p=2.4556715143173325e-10, corr_p=7.367014542951997e-10, rej=True
+               0    1
+subcluster           
+0           1618  329
+1           1185  292
+2            426   32
+Pairwise odds ratio chi2 test for term: icd9::Tic disorder, unspecified::307.20::C0040188
+Comparison: (0, 1) -- p=0.1918244387318222, corr_p=0.5754733161954666, rej=False
+Comparison: (0, 2) -- p=7.618718442986591e-09, corr_p=2.2856155328959773e-08, rej=True
+Comparison: (1, 2) -- p=1.605200667323934e-10, corr_p=4.815602001971802e-10, rej=True
+               0    1
+subcluster           
+0           1600  347
+1           1187  290
+2            427   31
+Pairwise odds ratio chi2 test for term: icd9::Hypotension, unspecified::458.9::C0020649
+Comparison: (0, 1) -- p=0.00694905743738507, corr_p=0.02084717231215521, rej=True
+Comparison: (0, 2) -- p=1.2387402769892153e-12, corr_p=3.716220830967646e-12, rej=True
+Comparison: (1, 2) -- p=8.335076424436277e-17, corr_p=2.500522927330883e-16, rej=True
+               0    1
+subcluster           
+0           1641  306
+1           1192  285
+2            444   14
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.4367088555179087, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5720643013024331, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.9858944296536459, corr_p=1.0, rej=False
+               0    1
+subcluster           
+0           1556  391
+1           1197  280
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Generalized hyperhidrosis::780.8::C0476476
+Comparison: (0, 1) -- p=0.2772343824073151, corr_p=0.8317031472219454, rej=False
+Comparison: (0, 2) -- p=2.9522371785385896e-08, corr_p=8.856711535615768e-08, rej=True
+Comparison: (1, 2) -- p=1.4251100710587035e-09, corr_p=4.27533021317611e-09, rej=True
+               0    1
+subcluster           
+0           1611  336
+1           1200  277
+2            427   31
+Pairwise odds ratio chi2 test for term: icd9::Painful respiration::786.52::C0423729
+Comparison: (0, 1) -- p=0.00027528422716971803, corr_p=0.0008258526815091541, rej=True
+Comparison: (0, 2) -- p=4.9531024837700184e-11, corr_p=1.4859307451310055e-10, rej=True
+Comparison: (1, 2) -- p=1.7461726754350071e-16, corr_p=5.238518026305021e-16, rej=True
+               0    1
+subcluster           
+0           1674  273
+1           1201  276
+2            445   13
+Pairwise odds ratio chi2 test for term: icd9::Dysuria::788.1::C0013428
+Comparison: (0, 1) -- p=0.9878948721592172, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04241071230240577, corr_p=0.1272321369072173, rej=False
+Comparison: (1, 2) -- p=0.04424419521530349, corr_p=0.13273258564591048, rej=False
+               0    1
+subcluster           
+0           1590  357
+1           1205  272
+2            393   65
+Pairwise odds ratio chi2 test for term: icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959
+Comparison: (0, 1) -- p=0.4888557486199092, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0006819714113741088, corr_p=0.0020459142341223264, rej=True
+Comparison: (1, 2) -- p=0.00017801607852418617, corr_p=0.0005340482355725585, rej=True
+               0    1
+subcluster           
+0           1610  337
+1           1207  270
+2            409   49
+
+
+
+Cluster 2 numerosity: 458
+% term:icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260 = 0.12 (456 terms in cluster (1.00), out of 3876 terms in the disease dataset
+
+% term:icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538 = 0.10 (160 terms in cluster (0.35), out of 1566 terms in the disease dataset
+
+% term:icd9::Other malaise and fatigue::780.79::C0695252 = 0.08 (134 terms in cluster (0.29), out of 1680 terms in the disease dataset
+
+% term:icd9::Edema::782.3::C0013604 = 0.07 (126 terms in cluster (0.28), out of 1819 terms in the disease dataset
+
+% term:icd9::Cough::786.2::C0010200 = 0.09 (124 terms in cluster (0.27), out of 1356 terms in the disease dataset
+
+% term:icd9::Unspecified essential hypertension::401.9::C0085580 = 0.09 (121 terms in cluster (0.26), out of 1361 terms in the disease dataset
+
+% term:icd9::Constipation, unspecified::564.00::C0009806 = 0.08 (119 terms in cluster (0.26), out of 1406 terms in the disease dataset
+
+% term:icd9::Counseling nos::V65.40::C0740209 = 0.10 (114 terms in cluster (0.25), out of 1178 terms in the disease dataset
+
+% term:icd9::Diarrhea::787.91::C0011991 = 0.07 (113 terms in cluster (0.25), out of 1525 terms in the disease dataset
+
+% term:icd9::Fever, unspecified::780.60::C0015967 = 0.07 (110 terms in cluster (0.24), out of 1513 terms in the disease dataset
+
+% term:icd9::Shortness of breath::786.05::C0013404 = 0.07 (106 terms in cluster (0.23), out of 1581 terms in the disease dataset
+
+% term:icd9::Anemia, unspecified::285.9::C0002871 = 0.06 (101 terms in cluster (0.22), out of 1650 terms in the disease dataset
+
+% term:icd9::Chest pain, unspecified::786.50::C0008031 = 0.08 (99 terms in cluster (0.22), out of 1272 terms in the disease dataset
+
+% term:icd9::Other and unspecified hyperlipidemia::272.4::C0348494 = 0.13 (97 terms in cluster (0.21), out of 758 terms in the disease dataset
+
+% term:icd9::Rash and other nonspecific skin eruption::782.1::C0015230 = 0.08 (96 terms in cluster (0.21), out of 1184 terms in the disease dataset
+
+% term:icd9::Esophageal reflux::530.81::C0017168 = 0.12 (95 terms in cluster (0.21), out of 772 terms in the disease dataset
+
+% term:icd9::Backache, unspecified::724.5::C0004604 = 0.08 (89 terms in cluster (0.19), out of 1139 terms in the disease dataset
+
+% term:icd9::Routine general medical examination at a health care facility::V70.0::C0260851 = 0.29 (88 terms in cluster (0.19), out of 305 terms in the disease dataset
+
+% term:icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452 = 0.10 (87 terms in cluster (0.19), out of 883 terms in the disease dataset
+
+% term:icd9::Abdominal pain, unspecified site::789.00::C0000737 = 0.09 (86 terms in cluster (0.19), out of 971 terms in the disease dataset
+
+% term:icd9::Palpitations::785.1::C0030252 = 0.11 (86 terms in cluster (0.19), out of 757 terms in the disease dataset
+
+% term:icd9::Dizziness and giddiness::780.4::C0476206 = 0.09 (85 terms in cluster (0.19), out of 998 terms in the disease dataset
+
+% term:icd9::Nausea alone::787.02::C0375548 = 0.06 (81 terms in cluster (0.18), out of 1361 terms in the disease dataset
+
+% term:icd9::Anxiety state, unspecified::300.00::C0700613 = 0.08 (79 terms in cluster (0.17), out of 942 terms in the disease dataset
+
+% term:icd9::Unspecified vitamin d deficiency::268.9::C0042870 = 0.18 (78 terms in cluster (0.17), out of 424 terms in the disease dataset
+
+% term:icd9::Asthma, unspecified type, unspecified::493.90::C0155886 = 0.14 (72 terms in cluster (0.16), out of 508 terms in the disease dataset
+
+% term:icd9::Osteoporosis, unspecified::733.00::C0029456 = 0.13 (71 terms in cluster (0.16), out of 541 terms in the disease dataset
+
+% term:icd9::Generalized anxiety disorder::300.02::C0270549 = 0.08 (69 terms in cluster (0.15), out of 878 terms in the disease dataset
+
+% term:icd9::Fracture, cause unspecified::E887::C0016658 = 0.07 (68 terms in cluster (0.15), out of 1026 terms in the disease dataset
+
+% term:icd9::Dysuria::788.1::C0013428 = 0.09 (65 terms in cluster (0.14), out of 694 terms in the disease dataset
+
+% term:icd9::Lumbago::724.2::C0024031 = 0.09 (63 terms in cluster (0.14), out of 682 terms in the disease dataset
+
+% term:icd9::Pure hypercholesterolemia::272.0::C0678189 = 0.15 (62 terms in cluster (0.14), out of 414 terms in the disease dataset
+
+% term:icd9::Family history of osteoporosis::V17.81::C2911643 = 0.13 (62 terms in cluster (0.14), out of 464 terms in the disease dataset
+
+% term:icd9::Throat pain::784.1::C0242429 = 0.12 (58 terms in cluster (0.13), out of 480 terms in the disease dataset
+
+% term:icd9::Pain in joint, site unspecified::719.40::C0003862 = 0.14 (57 terms in cluster (0.12), out of 409 terms in the disease dataset
+
+% term:icd9::Unspecified acquired hypothyroidism::244.9::C0020676 = 0.14 (56 terms in cluster (0.12), out of 412 terms in the disease dataset
+
+% term:icd9::Hematuria, unspecified::599.70::C0018965 = 0.07 (55 terms in cluster (0.12), out of 750 terms in the disease dataset
+
+% term:icd9::Unspecified fall::E888.9::C0085639 = 0.07 (52 terms in cluster (0.11), out of 700 terms in the disease dataset
+
+% term:icd9::Vomiting alone::787.03::C0728950 = 0.05 (51 terms in cluster (0.11), out of 993 terms in the disease dataset
+
+% term:icd9::Persistent vomiting::536.2::C0152165 = 0.05 (50 terms in cluster (0.11), out of 983 terms in the disease dataset
+
+% term:icd9::Malignant neoplasm of colon, unspecified site::153.9::C0007102 = 0.23 (50 terms in cluster (0.11), out of 221 terms in the disease dataset
+
+% term:icd9::Pain in limb::729.5::C0030196 = 0.07 (49 terms in cluster (0.11), out of 665 terms in the disease dataset
+
+% term:icd9::Cyanosis::782.5::C0010520 = 0.17 (49 terms in cluster (0.11), out of 284 terms in the disease dataset
+
+% term:icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091 = 0.07 (49 terms in cluster (0.11), out of 726 terms in the disease dataset
+
+% term:icd9::Routine gynecological examination::V72.31::C1455982 = 0.33 (49 terms in cluster (0.11), out of 147 terms in the disease dataset
+
+% term:icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959 = 0.07 (49 terms in cluster (0.11), out of 656 terms in the disease dataset
+
+% term:icd9::Acute nasopharyngitis [common cold]::460::C0009443 = 0.07 (47 terms in cluster (0.10), out of 649 terms in the disease dataset
+
+% term:icd9::Monoclonal paraproteinemia::273.1::C0026471 = 0.08 (46 terms in cluster (0.10), out of 571 terms in the disease dataset
+
+% term:icd9::Personal history of tobacco use::V15.82::C0040335 = 0.09 (45 terms in cluster (0.10), out of 517 terms in the disease dataset
+
+% term:icd9::Calculus of kidney::592.0::C0022650 = 0.16 (44 terms in cluster (0.10), out of 280 terms in the disease dataset
+
+
+
+Pairwise odds ratio chi2 test for term: icd9::Multiple myeloma, without mention of having achieved remission::203.00::C2349260
+Comparison: (0, 1) -- p=0.8198367176730008, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5322337645555512, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.28291748065481837, corr_p=0.8487524419644551, rej=False
+            0     1
+subcluster         
+0           3  1944
+1           1  1476
+2           2   456
+Pairwise odds ratio chi2 test for term: icd9::Complications affecting other specified body systems, not elsewhere classified, hypertension::997.91::C0020538
+Comparison: (0, 1) -- p=0.779138018777436, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.02333857282525715, corr_p=0.07001571847577145, rej=False
+Comparison: (1, 2) -- p=0.016294498044518105, corr_p=0.04888349413355432, rej=True
+               0    1
+subcluster           
+0           1152  795
+1            866  611
+2            298  160
+Pairwise odds ratio chi2 test for term: icd9::Other malaise and fatigue::780.79::C0695252
+Comparison: (0, 1) -- p=0.11699096061962026, corr_p=0.3509728818588608, rej=False
+Comparison: (0, 2) -- p=1.1853099691680794e-08, corr_p=3.555929907504238e-08, rej=True
+Comparison: (1, 2) -- p=5.847172056420535e-11, corr_p=1.7541516169261605e-10, rej=True
+               0    1
+subcluster           
+0           1091  856
+1            787  690
+2            324  134
+Pairwise odds ratio chi2 test for term: icd9::Edema::782.3::C0013604
+Comparison: (0, 1) -- p=0.1852272408254932, corr_p=0.5556817224764796, rej=False
+Comparison: (0, 2) -- p=7.920836013994603e-16, corr_p=2.376250804198381e-15, rej=True
+Comparison: (1, 2) -- p=3.741669362572862e-18, corr_p=1.1225008087718586e-17, rej=True
+               0    1
+subcluster           
+0           1004  943
+1            727  750
+2            332  126
+Pairwise odds ratio chi2 test for term: icd9::Cough::786.2::C0010200
+Comparison: (0, 1) -- p=0.4266820539939148, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0008709516335745396, corr_p=0.002612854900723619, rej=True
+Comparison: (1, 2) -- p=0.00017290533647702463, corr_p=0.0005187160094310739, rej=True
+               0    1
+subcluster           
+0           1258  689
+1            934  543
+2            334  124
+Pairwise odds ratio chi2 test for term: icd9::Unspecified essential hypertension::401.9::C0085580
+Comparison: (0, 1) -- p=0.9773840371991476, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=9.028725712720057e-05, corr_p=0.00027086177138160167, rej=True
+Comparison: (1, 2) -- p=0.0001359338928824633, corr_p=0.0004078016786473899, rej=True
+               0    1
+subcluster           
+0           1242  705
+1            942  535
+2            337  121
+Pairwise odds ratio chi2 test for term: icd9::Constipation, unspecified::564.00::C0009806
+Comparison: (0, 1) -- p=0.11163273240571785, corr_p=0.3348981972171535, rej=False
+Comparison: (0, 2) -- p=3.0022887972797954e-05, corr_p=9.006866391839386e-05, rej=True
+Comparison: (1, 2) -- p=4.056106627287559e-07, corr_p=1.2168319881862678e-06, rej=True
+               0    1
+subcluster           
+0           1238  709
+1            899  578
+2            339  119
+Pairwise odds ratio chi2 test for term: icd9::Counseling nos::V65.40::C0740209
+Comparison: (0, 1) -- p=0.14544280544431618, corr_p=0.4363284163329485, rej=False
+Comparison: (0, 2) -- p=0.033246024911195694, corr_p=0.09973807473358709, rej=False
+Comparison: (1, 2) -- p=0.002701047660495121, corr_p=0.008103142981485362, rej=True
+               0    1
+subcluster           
+0           1362  585
+1            998  479
+2            344  114
+Pairwise odds ratio chi2 test for term: icd9::Diarrhea::787.91::C0011991
+Comparison: (0, 1) -- p=0.0070938055084373815, corr_p=0.021281416525312145, rej=True
+Comparison: (0, 2) -- p=7.75517686106071e-09, corr_p=2.3265530583182132e-08, rej=True
+Comparison: (1, 2) -- p=2.99742933552478e-13, corr_p=8.99228800657434e-13, rej=True
+               0    1
+subcluster           
+0           1183  764
+1            829  648
+2            345  113
+Pairwise odds ratio chi2 test for term: icd9::Fever, unspecified::780.60::C0015967
+Comparison: (0, 1) -- p=0.0007030352265628464, corr_p=0.002109105679688539, rej=True
+Comparison: (0, 2) -- p=8.744502736376168e-09, corr_p=2.62335082091285e-08, rej=True
+Comparison: (1, 2) -- p=1.4101807201624562e-14, corr_p=4.2305421604873686e-14, rej=True
+               0    1
+subcluster           
+0           1198  749
+1            823  654
+2            348  110
+Pairwise odds ratio chi2 test for term: icd9::Shortness of breath::786.05::C0013404
+Comparison: (0, 1) -- p=0.029520312596883362, corr_p=0.08856093779065008, rej=False
+Comparison: (0, 2) -- p=5.622943315189639e-13, corr_p=1.6868829945568916e-12, rej=True
+Comparison: (1, 2) -- p=5.592970342617353e-17, corr_p=1.6778911027852058e-16, rej=True
+               0    1
+subcluster           
+0           1140  807
+1            809  668
+2            352  106
+Pairwise odds ratio chi2 test for term: icd9::Anemia, unspecified::285.9::C0002871
+Comparison: (0, 1) -- p=0.0004866041077440569, corr_p=0.0014598123232321706, rej=True
+Comparison: (0, 2) -- p=6.406968371923862e-16, corr_p=1.9220905115771585e-15, rej=True
+Comparison: (1, 2) -- p=1.2333388394562661e-23, corr_p=3.700016518368798e-23, rej=True
+               0    1
+subcluster           
+0           1117  830
+1            758  719
+2            357  101
+Pairwise odds ratio chi2 test for term: icd9::Chest pain, unspecified::786.50::C0008031
+Comparison: (0, 1) -- p=0.23006409203105593, corr_p=0.6901922760931678, rej=False
+Comparison: (0, 2) -- p=1.3137301066665041e-06, corr_p=3.941190319999512e-06, rej=True
+Comparison: (1, 2) -- p=4.62706286478751e-08, corr_p=1.388118859436253e-07, rej=True
+               0    1
+subcluster           
+0           1297  650
+1            954  523
+2            359   99
+Pairwise odds ratio chi2 test for term: icd9::Other and unspecified hyperlipidemia::272.4::C0348494
+Comparison: (0, 1) -- p=0.17170118327246878, corr_p=0.5151035498174064, rej=False
+Comparison: (0, 2) -- p=0.6630654313173943, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.17766078908031552, corr_p=0.5329823672409466, rej=False
+               0    1
+subcluster           
+0           1555  392
+1           1208  269
+2            361   97
+Pairwise odds ratio chi2 test for term: icd9::Rash and other nonspecific skin eruption::782.1::C0015230
+Comparison: (0, 1) -- p=0.366986299738047, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=2.158600786393353e-05, corr_p=6.47580235918006e-05, rej=True
+Comparison: (1, 2) -- p=2.4748144139114245e-06, corr_p=7.4244432417342734e-06, rej=True
+               0    1
+subcluster           
+0           1341  606
+1            995  482
+2            362   96
+Pairwise odds ratio chi2 test for term: icd9::Esophageal reflux::530.81::C0017168
+Comparison: (0, 1) -- p=0.033530761912831476, corr_p=0.10059228573849444, rej=False
+Comparison: (0, 2) -- p=0.9318712595823126, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.2265668502231611, corr_p=0.6797005506694833, rej=False
+               0    1
+subcluster           
+0           1537  410
+1           1210  267
+2            363   95
+Pairwise odds ratio chi2 test for term: icd9::Backache, unspecified::724.5::C0004604
+Comparison: (0, 1) -- p=0.2757446333248439, corr_p=0.8272338999745317, rej=False
+Comparison: (0, 2) -- p=9.302426457591827e-06, corr_p=2.790727937277548e-05, rej=True
+Comparison: (1, 2) -- p=5.697604237705404e-07, corr_p=1.7092812713116211e-06, rej=True
+               0    1
+subcluster           
+0           1365  582
+1           1009  468
+2            369   89
+Pairwise odds ratio chi2 test for term: icd9::Routine general medical examination at a health care facility::V70.0::C0260851
+Comparison: (0, 1) -- p=2.0086489605624195e-05, corr_p=6.0259468816872585e-05, rej=True
+Comparison: (0, 2) -- p=8.713538046828819e-13, corr_p=2.6140614140486456e-12, rej=True
+Comparison: (1, 2) -- p=5.6907217699577165e-25, corr_p=1.707216530987315e-24, rej=True
+               0    1
+subcluster           
+0           1793  154
+1           1414   63
+2            370   88
+Pairwise odds ratio chi2 test for term: icd9::Need for prophylactic vaccination and inoculation against influenza::V04.81::C1260452
+Comparison: (0, 1) -- p=0.10006402249236412, corr_p=0.3001920674770924, rej=False
+Comparison: (0, 2) -- p=0.15238752717829726, corr_p=0.45716258153489175, rej=False
+Comparison: (1, 2) -- p=0.01489476199621785, corr_p=0.04468428598865355, rej=True
+               0    1
+subcluster           
+0           1515  432
+1           1113  364
+2            371   87
+Pairwise odds ratio chi2 test for term: icd9::Abdominal pain, unspecified site::789.00::C0000737
+Comparison: (0, 1) -- p=0.8908951960878065, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0022340474532811625, corr_p=0.006702142359843488, rej=True
+Comparison: (1, 2) -- p=0.002027202610543263, corr_p=0.0060816078316297895, rej=True
+               0    1
+subcluster           
+0           1446  501
+1           1093  384
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Palpitations::785.1::C0030252
+Comparison: (0, 1) -- p=0.4367088555179087, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5720643013024331, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.9858944296536459, corr_p=1.0, rej=False
+               0    1
+subcluster           
+0           1556  391
+1           1197  280
+2            372   86
+Pairwise odds ratio chi2 test for term: icd9::Dizziness and giddiness::780.4::C0476206
+Comparison: (0, 1) -- p=0.6031671376562167, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.000701400984372826, corr_p=0.002104202953118478, rej=True
+Comparison: (1, 2) -- p=0.0002704640289923452, corr_p=0.0008113920869770356, rej=True
+               0    1
+subcluster           
+0           1435  512
+1           1076  401
+2            373   85
+Pairwise odds ratio chi2 test for term: icd9::Nausea alone::787.02::C0375548
+Comparison: (0, 1) -- p=0.08244541272922244, corr_p=0.2473362381876673, rej=False
+Comparison: (0, 2) -- p=5.826057418778678e-14, corr_p=1.7478172256336035e-13, rej=True
+Comparison: (1, 2) -- p=5.2020109730207904e-17, corr_p=1.560603291906237e-16, rej=True
+               0    1
+subcluster           
+0           1244  703
+1            900  577
+2            377   81
+Pairwise odds ratio chi2 test for term: icd9::Anxiety state, unspecified::300.00::C0700613
+Comparison: (0, 1) -- p=0.0371056518302997, corr_p=0.1113169554908991, rej=False
+Comparison: (0, 2) -- p=0.0029821743138606785, corr_p=0.008946522941582036, rej=True
+Comparison: (1, 2) -- p=3.0252699714283826e-05, corr_p=9.075809914285148e-05, rej=True
+               0    1
+subcluster           
+0           1483  464
+1           1078  399
+2            379   79
+Pairwise odds ratio chi2 test for term: icd9::Unspecified vitamin d deficiency::268.9::C0042870
+Comparison: (0, 1) -- p=0.2641740616751688, corr_p=0.7925221850255064, rej=False
+Comparison: (0, 2) -- p=0.00019002174512267007, corr_p=0.0005700652353680103, rej=True
+Comparison: (1, 2) -- p=9.413909588168448e-06, corr_p=2.8241728764505342e-05, rej=True
+               0    1
+subcluster           
+0           1740  207
+1           1338  139
+2            380   78
+Pairwise odds ratio chi2 test for term: icd9::Asthma, unspecified type, unspecified::493.90::C0155886
+Comparison: (0, 1) -- p=0.4960656982310959, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.16208922546762228, corr_p=0.48626767640286683, rej=False
+Comparison: (1, 2) -- p=0.06533754035070242, corr_p=0.19601262105210726, rej=False
+               0    1
+subcluster           
+0           1692  255
+1           1296  181
+2            386   72
+Pairwise odds ratio chi2 test for term: icd9::Osteoporosis, unspecified::733.00::C0029456
+Comparison: (0, 1) -- p=0.40853734152921084, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.5137257744859767, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.2263694415834485, corr_p=0.6791083247503454, rej=False
+               0    1
+subcluster           
+0           1671  276
+1           1283  194
+2            387   71
+Pairwise odds ratio chi2 test for term: icd9::Generalized anxiety disorder::300.02::C0270549
+Comparison: (0, 1) -- p=0.0463592130098952, corr_p=0.1390776390296856, rej=False
+Comparison: (0, 2) -- p=0.0007278903191463463, corr_p=0.002183670957439039, rej=True
+Comparison: (1, 2) -- p=6.779522528666984e-06, corr_p=2.0338567586000952e-05, rej=True
+               0    1
+subcluster           
+0           1512  435
+1           1103  374
+2            389   69
+Pairwise odds ratio chi2 test for term: icd9::Fracture, cause unspecified::E887::C0016658
+Comparison: (0, 1) -- p=0.10236399686746428, corr_p=0.30709199060239284, rej=False
+Comparison: (0, 2) -- p=1.0760967403525627e-07, corr_p=3.2282902210576883e-07, rej=True
+Comparison: (1, 2) -- p=7.057531546859696e-10, corr_p=2.117259464057909e-09, rej=True
+               0    1
+subcluster           
+0           1424  523
+1           1042  435
+2            390   68
+Pairwise odds ratio chi2 test for term: icd9::Dysuria::788.1::C0013428
+Comparison: (0, 1) -- p=0.9878948721592172, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.04241071230240577, corr_p=0.1272321369072173, rej=False
+Comparison: (1, 2) -- p=0.04424419521530349, corr_p=0.13273258564591048, rej=False
+               0    1
+subcluster           
+0           1590  357
+1           1205  272
+2            393   65
+Pairwise odds ratio chi2 test for term: icd9::Lumbago::724.2::C0024031
+Comparison: (0, 1) -- p=0.1930665265319743, corr_p=0.5791995795959228, rej=False
+Comparison: (0, 2) -- p=0.012698643492675458, corr_p=0.038095930478026375, rej=True
+Comparison: (1, 2) -- p=0.10915133758355944, corr_p=0.3274540127506783, rej=False
+               0    1
+subcluster           
+0           1580  367
+1           1225  252
+2            395   63
+Pairwise odds ratio chi2 test for term: icd9::Pure hypercholesterolemia::272.0::C0678189
+Comparison: (0, 1) -- p=0.4712401103194106, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.09052838512134657, corr_p=0.2715851553640397, rej=False
+Comparison: (1, 2) -- p=0.03048127443369859, corr_p=0.09144382330109577, rej=False
+               0    1
+subcluster           
+0           1740  207
+1           1332  145
+2            396   62
+Pairwise odds ratio chi2 test for term: icd9::Family history of osteoporosis::V17.81::C2911643
+Comparison: (0, 1) -- p=0.3965268334262847, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.47298045966878133, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.19651697465544804, corr_p=0.5895509239663441, rej=False
+               0    1
+subcluster           
+0           1710  237
+1           1312  165
+2            396   62
+Pairwise odds ratio chi2 test for term: icd9::Throat pain::784.1::C0242429
+Comparison: (0, 1) -- p=0.8779311062203315, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.8581337831258066, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.9715718554070457, corr_p=1.0, rej=False
+               0    1
+subcluster           
+0           1709  238
+1           1293  184
+2            400   58
+Pairwise odds ratio chi2 test for term: icd9::Pain in joint, site unspecified::719.40::C0003862
+Comparison: (0, 1) -- p=0.34328326810960363, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.33322730753983565, corr_p=0.999681922619507, rej=False
+Comparison: (1, 2) -- p=0.10749954617536679, corr_p=0.3224986385261004, rej=False
+               0    1
+subcluster           
+0           1738  209
+1           1334  143
+2            401   57
+Pairwise odds ratio chi2 test for term: icd9::Unspecified acquired hypothyroidism::244.9::C0020676
+Comparison: (0, 1) -- p=0.3053689926274227, corr_p=0.916106977882268, rej=False
+Comparison: (0, 2) -- p=0.4613843983137652, corr_p=1.0, rej=False
+Comparison: (1, 2) -- p=0.15161514310609703, corr_p=0.4548454293182911, rej=False
+               0    1
+subcluster           
+0           1735  212
+1           1333  144
+2            402   56
+Pairwise odds ratio chi2 test for term: icd9::Hematuria, unspecified::599.70::C0018965
+Comparison: (0, 1) -- p=0.027468791181505817, corr_p=0.08240637354451745, rej=False
+Comparison: (0, 2) -- p=0.0005808526013903594, corr_p=0.001742557804171078, rej=True
+Comparison: (1, 2) -- p=3.096508434861856e-06, corr_p=9.289525304585568e-06, rej=True
+               0    1
+subcluster           
+0           1578  369
+1           1151  326
+2            403   55
+Pairwise odds ratio chi2 test for term: icd9::Unspecified fall::E888.9::C0085639
+Comparison: (0, 1) -- p=0.13484182985802295, corr_p=0.40452548957406886, rej=False
+Comparison: (0, 2) -- p=0.0007478466185092749, corr_p=0.0022435398555278245, rej=True
+Comparison: (1, 2) -- p=2.817105740708366e-05, corr_p=8.451317222125098e-05, rej=True
+               0    1
+subcluster           
+0           1596  351
+1           1180  297
+2            406   52
+Pairwise odds ratio chi2 test for term: icd9::Vomiting alone::787.03::C0728950
+Comparison: (0, 1) -- p=0.6345095258664153, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=8.258061799738704e-13, corr_p=2.477418539921611e-12, rej=True
+Comparison: (1, 2) -- p=2.748464968087312e-13, corr_p=8.245394904261937e-13, rej=True
+               0    1
+subcluster           
+0           1418  529
+1           1064  413
+2            407   51
+Pairwise odds ratio chi2 test for term: icd9::Persistent vomiting::536.2::C0152165
+Comparison: (0, 1) -- p=0.6400053224033577, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=7.782192594203505e-13, corr_p=2.3346577782610517e-12, rej=True
+Comparison: (1, 2) -- p=2.6645745117917065e-13, corr_p=7.99372353537512e-13, rej=True
+               0    1
+subcluster           
+0           1423  524
+1           1068  409
+2            408   50
+Pairwise odds ratio chi2 test for term: icd9::Malignant neoplasm of colon, unspecified site::153.9::C0007102
+Comparison: (0, 1) -- p=0.00042055821167086694, corr_p=0.0012616746350126008, rej=True
+Comparison: (0, 2) -- p=0.0005202330095337422, corr_p=0.0015606990286012267, rej=True
+Comparison: (1, 2) -- p=7.5419378776276e-10, corr_p=2.26258136328828e-09, rej=True
+               0    1
+subcluster           
+0           1827  120
+1           1426   51
+2            408   50
+Pairwise odds ratio chi2 test for term: icd9::Pain in limb::729.5::C0030196
+Comparison: (0, 1) -- p=0.9840914856990721, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.00021785250742760952, corr_p=0.0006535575222828286, rej=True
+Comparison: (1, 2) -- p=0.0002831654317801435, corr_p=0.0008494962953404304, rej=True
+               0    1
+subcluster           
+0           1597  350
+1           1211  266
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Cyanosis::782.5::C0010520
+Comparison: (0, 1) -- p=0.0583406309366564, corr_p=0.17502189280996922, rej=False
+Comparison: (0, 2) -- p=0.037516256145496925, corr_p=0.11254876843649078, rej=False
+Comparison: (1, 2) -- p=0.0006438864220184965, corr_p=0.0019316592660554896, rej=True
+               0    1
+subcluster           
+0           1799  148
+1           1390   87
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Disorder of bone and cartilage, unspecified::733.90::C0152091
+Comparison: (0, 1) -- p=0.0011710940551204515, corr_p=0.0035132821653613543, rej=True
+Comparison: (0, 2) -- p=0.00028499835885474736, corr_p=0.000854995076564242, rej=True
+Comparison: (1, 2) -- p=6.013962523175787e-08, corr_p=1.8041887569527362e-07, rej=True
+               0    1
+subcluster           
+0           1600  347
+1           1147  330
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Routine gynecological examination::V72.31::C1455982
+Comparison: (0, 1) -- p=0.00010226264544821742, corr_p=0.00030678793634465225, rej=True
+Comparison: (0, 2) -- p=5.085538791188926e-09, corr_p=1.5256616373566778e-08, rej=True
+Comparison: (1, 2) -- p=6.159413142047188e-19, corr_p=1.8478239426141564e-18, rej=True
+               0   1
+subcluster          
+0           1872  75
+1           1454  23
+2            409  49
+Pairwise odds ratio chi2 test for term: icd9::Osteoarthrosis, unspecified whether generalized or localized, site unspecified::715.90::C0157959
+Comparison: (0, 1) -- p=0.4888557486199092, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0006819714113741088, corr_p=0.0020459142341223264, rej=True
+Comparison: (1, 2) -- p=0.00017801607852418617, corr_p=0.0005340482355725585, rej=True
+               0    1
+subcluster           
+0           1610  337
+1           1207  270
+2            409   49
+Pairwise odds ratio chi2 test for term: icd9::Acute nasopharyngitis [common cold]::460::C0009443
+Comparison: (0, 1) -- p=0.7293328994626596, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.0002556039861635073, corr_p=0.000766811958490522, rej=True
+Comparison: (1, 2) -- p=0.00014331575668603954, corr_p=0.00042994727005811863, rej=True
+               0    1
+subcluster           
+0           1609  338
+1           1213  264
+2            411   47
+Pairwise odds ratio chi2 test for term: icd9::Monoclonal paraproteinemia::273.1::C0026471
+Comparison: (0, 1) -- p=0.0021571055391707106, corr_p=0.006471316617512131, rej=True
+Comparison: (0, 2) -- p=0.04589903051465461, corr_p=0.13769709154396384, rej=False
+Comparison: (1, 2) -- p=0.00016269175039152755, corr_p=0.0004880752511745827, rej=True
+               0    1
+subcluster           
+0           1681  266
+1           1218  259
+2            412   46
+Pairwise odds ratio chi2 test for term: icd9::Personal history of tobacco use::V15.82::C0040335
+Comparison: (0, 1) -- p=0.3219817110134765, corr_p=0.9659451330404295, rej=False
+Comparison: (0, 2) -- p=0.056174502161101855, corr_p=0.16852350648330555, rej=False
+Comparison: (1, 2) -- p=0.013052324866226083, corr_p=0.03915697459867825, rej=True
+               0    1
+subcluster           
+0           1689  258
+1           1263  214
+2            413   45
+Pairwise odds ratio chi2 test for term: icd9::Calculus of kidney::592.0::C0022650
+Comparison: (0, 1) -- p=0.924316700959608, corr_p=1.0, rej=False
+Comparison: (0, 2) -- p=0.051454034040108995, corr_p=0.15436210212032697, rej=False
+Comparison: (1, 2) -- p=0.07883990928235483, corr_p=0.2365197278470645, rej=False
+               0    1
+subcluster           
+0           1814  133
+1           1374  103
+2            414   44
+
+
+
+Multiple comparison t-test for AGE:
+Test Multiple Comparison ttest_ind 
+FWER=0.05 method=bonf
+alphacSidak=0.02, alphacBonf=0.017
+============================================
+group1 group2  stat   pval  pval_corr reject
+--------------------------------------------
+     0      1 -0.625  0.532       1.0  False
+     0      2 1.2635 0.2065    0.6196  False
+     1      2 1.6259 0.1041    0.3124  False
+--------------------------------------------
+              score                                                
+              count   mean    std   min    25%    50%    75%    max
+subcluster                                                         
+0          1947.000 65.438 14.038 4.000 57.000 66.000 75.000 90.000
+1          1477.000 65.736 13.559 1.000 57.000 66.000 75.000 90.000
+2           458.000 64.472 17.331 9.000 54.000 67.000 77.000 90.000
+
+Multiple comparison t-test for SEQUENCE LENGTH:
+Test Multiple Comparison ttest_ind 
+FWER=0.05 method=bonf
+alphacSidak=0.02, alphacBonf=0.017
+=============================================
+group1 group2   stat   pval  pval_corr reject
+---------------------------------------------
+     0      1 -3.6202 0.0003    0.0009   True
+     0      2 12.1746    0.0       0.0   True
+     1      2 14.3372    0.0       0.0   True
+---------------------------------------------
+              score                                                           
+              count     mean      std    min     25%     50%      75%      max
+subcluster                                                                    
+0          1947.000  926.250 1192.221  4.000 116.500 412.000 1253.500 5000.000
+1          1477.000 1077.362 1232.379 30.000 193.000 573.000 1490.000 5000.000
+2           458.000  240.513  364.233  3.000  26.000  81.500  300.750 2353.000
+
+Multiple comparison chi-square test for SEX:
+Comparison: (0, 1) -- p=0.608, corr_p=1.000, rej=False
+Comparison: (0, 2) -- p=0.000, corr_p=0.000, rej=True
+Comparison: (1, 2) -- p=0.000, corr_p=0.001, rej=True
+   female  male
+0     950   996
+1     735   742
+2     274   183
+
+Processing time: 670.56 seconds
+Task completed
+

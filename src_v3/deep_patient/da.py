@@ -7,7 +7,7 @@ import theano.tensor as T
 import theano
 import timeit
 
-max_sample = 200000
+max_sample = 0
 
 
 class DA(object):
@@ -51,7 +51,7 @@ class DA(object):
 
         self._init_train_param(param)
 
-        self.normalizer = preproc.MinMaxScaler()
+        # self.normalizer = preproc.MinMaxScaler()
 
         if init_log:
             self._log()
@@ -71,19 +71,20 @@ class DA(object):
         except Exception:
             pass
 
-        if data.shape[0] > max_sample:
+        # if data.shape[0] > max_sample:
+        if max_sample != 0:
             idx = [i for i in range(data.shape[0])]
             random.shuffle(idx)
             idx = idx[:max_sample]
             data = data[idx, :]
             print('resized data: using %d samples' % (data.shape[0]))
 
-        print('(*) preprocessing: normalize features')
-        data = self.normalizer.fit_transform(data)
+        # print('(*) preprocessing: normalize features')
+        # data = self.normalizer.fit_transform(data)
 
         dt = theano.shared(value=data.astype(
             theano.config.floatX), borrow=True)
-
+        print(dt.get_value().shape)
         nbatch = int(dt.get_value().shape[0] / self.batch_size)
 
         idx = T.lscalar()
@@ -125,7 +126,7 @@ class DA(object):
             data = data.toarray()
         except Exception:
             pass
-        data = self.normalizer.transform(data)
+        # data = self.normalizer.transform(data)
 
         dt = theano.shared(data, borrow=True)
         hrepr = self._hidden_representation(dt)

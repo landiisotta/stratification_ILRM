@@ -25,11 +25,11 @@ def learn_patient_representations(indir,
                                   emb_filename=None):
 
     # experiment folder with date and time to save the representations
-    exp_dir = os.path.join(outdir, 'encodings')
+    exp_dir = os.path.join(indir, outdir, 'encodings')
     os.makedirs(exp_dir)
 
     # get the vocabulary size
-    fvocab = os.path.join(os.path.join(outdir,indir), 
+    fvocab = os.path.join(os.path.join(indir,outdir), 
                           ut.dt_files['vocab'])
     with open(fvocab) as f:
         rd = csv.reader(f)
@@ -57,13 +57,13 @@ def learn_patient_representations(indir,
     torch.cuda.manual_seed(123)
 
     # load data
-    data_tr = EHRdata(os.path.join(outdir, indir), ut.dt_files['ehr-file'], sampling)
+    data_tr = EHRdata(os.path.join(indir, outdir), ut.dt_files['ehr-file'], sampling)
     data_generator_tr = DataLoader(data_tr,
                                    ut.model_param['batch_size'],
                                    shuffle=True,
                                    collate_fn=ehr_collate)    
     if test_set:
-        data_ts = EHRdata(os.path.join(outdir, indir), ut.dt_files['ehr-file-test'],
+        data_ts = EHRdata(os.path.join(indir, outdir), ut.dt_files['ehr-file-test'],
                           sampling)
         
         data_generator_ts = DataLoader(data_ts,
@@ -138,7 +138,7 @@ def learn_patient_representations(indir,
    
     # ehr subseq with age in days
     outfile = os.path.join(exp_dir, 'cohort-ehr-subseq{0}-age_in_day.csv'.format(ut.len_padded))
-    with open(os.path.join(os.path.join(outdir, indir), 'cohort-new-ehr-age_in_day.csv')) as f:
+    with open(os.path.join(os.path.join(indir, outdir), 'cohort-new-ehr-age_in_day.csv')) as f:
         rd = csv.reader(f)
         next(rd)
         ehr_aid = {}
@@ -174,7 +174,7 @@ def learn_patient_representations(indir,
 
     if test_set:
         outfile = os.path.join(exp_dir, 'cohort_test-ehr-subseq{0}-age_in_day.csv'.format(ut.len_padded))
-        with open(os.path.join('/'.join([outdir, indir]), 'cohort_test-new-ehr-age_in_day.csv')) as f:
+        with open(os.path.join('/'.join([indir, outdir]), 'cohort_test-new-ehr-age_in_day.csv')) as f:
             rd = csv.reader(f)
             next(rd)
             ehr_aid = {}

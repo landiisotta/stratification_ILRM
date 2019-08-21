@@ -137,13 +137,12 @@ def data_preprocessing(indir,
 
     # Set minimum threshold
     min_thresh = 1e-07
-    max_thresh = 100.0
     print("Selected terms with score"
-          " within [{0}, {1}]".format(min_thresh, max_thresh))
+          " greater than {0}".format(min_thresh))
 
     stop_words = []
     for cfs in reversed(coll_freq_sorted):
-        if cfs[-1] <= min_thresh or cfs[-1] >= max_thresh:
+        if cfs[-1] <= min_thresh:
             stop_words.append(cfs[0])
             if cfs[-1] !=0:
                 label = cfs[0].split('::')
@@ -178,7 +177,7 @@ def data_preprocessing(indir,
     with open(os.path.join(exp_dir, 'cohort-new-vocab.csv'), 'w') as f:
         wr = csv.writer(f)
         wr.writerow(['LABEL', 'CODE'])
-        cod = 0
+        cod = 1 ##vocabulary starting from 1 for padding
         new_vidx = {}
         for idx, lab in vidx.items():
             if lab not in stop_words:
